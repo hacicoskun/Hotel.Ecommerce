@@ -10,7 +10,7 @@ namespace Hotel_Ecoomerce.DAL.Context
 {
     public class DatabaseContext : DbContext, IDisposable
     {
-        public DatabaseContext() : base("Server=DESKTOP-7MPM6RE;Database=Hotel_Ecommerce;Trusted_Connection=True;") { }
+        public DatabaseContext() : base("Data Source=94.73.146.4;Initial Catalog=u9491448_hotel; User Id=u9491448_hotelUs;Password=GHvn11N5BGyc48V;") { }
         public DbSet<AnasayfaSlider> AnasayfaSlider { get; set; }
         public DbSet<BiziTakipEdin> PanelUsers { get; set; }
         public DbSet<Iletisim> Iletisim { get; set; }

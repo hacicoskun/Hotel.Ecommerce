@@ -132,13 +132,39 @@
         <hr />
         <label>Otel Özelliklerini Seçiniz:<span class="mandatory">*</span></label><br />
 
-        @for (int i = 0; i < Model.OtelOzellikleri.Count(); i++)
-        {
-            <input type="checkbox" id="cbotelo_@i" name="OtelOzellikleri[]" />
-            <label for="cbotelo_@i">&nbsp @Model.OtelOzellikleri[i].OtelOzellik</label>
-            <br />
+        <table>
+            <tr>
+                <td> <input type="checkbox" id="cboteloda_1" name="OdaOzellikleri[]" /><label for="cboteloda_1">&nbsp Aqua Park</label><br /></td>
+                <td> <input type="checkbox" id="cboteloda_2" name="OdaOzellikleri[]" /><label for="cboteloda_2">&nbsp Casino</label><br /></td>
+                <td> <input type="checkbox" id="cboteloda_3" name="OdaOzellikleri[]" /><label for="cboteloda_3">&nbsp Buhar Odası</label><br /></td>
+                <td> <input type="checkbox" id="cboteloda_4" name="OdaOzellikleri[]" /><label for="cboteloda_4">&nbsp Sauna</label><br /></td>
+            </tr>
+            <tr>
+                <td> <input type="checkbox" id="cboteloda_1" name="OdaOzellikleri[]" /><label for="cboteloda_1">&nbsp Otopark</label><br /></td>
+                <td> <input type="checkbox" id="cboteloda_2" name="OdaOzellikleri[]" /><label for="cboteloda_2">&nbsp Kablosuz İnternet</label><br /></td>
+                <td> <input type="checkbox" id="cboteloda_3" name="OdaOzellikleri[]" /><label for="cboteloda_3">&nbsp Hamam</label><br /></td>
+                <td> <input type="checkbox" id="cboteloda_4" name="OdaOzellikleri[]" /><label for="cboteloda_4">&nbsp Açık Havuz</label><br /></td>
+            </tr>
+            <tr>
+                <td> <input type="checkbox" id="cboteloda_1" name="OdaOzellikleri[]" /><label for="cboteloda_1">&nbsp Toplantı Salonu</label><br /></td>
+                <td> <input type="checkbox" id="cboteloda_2" name="OdaOzellikleri[]" /><label for="cboteloda_2">&nbsp Doktor</label><br /></td>
+                <td> <input type="checkbox" id="cboteloda_3" name="OdaOzellikleri[]" /><label for="cboteloda_3">&nbsp Emanet Kasa</label><br /></td>
+                <td> <input type="checkbox" id="cboteloda_4" name="OdaOzellikleri[]" /><label for="cboteloda_4">&nbsp Oyun Salonu</label><br /></td>
+            </tr>
+            <tr>
 
-        }
+                <td> <input type="checkbox" id="cboteloda_5" name="OdaOzellikleri[]" /><label for="cboteloda_5">&nbsp Animasyon</label><br /></td>
+                <td> <input type="checkbox" id="cboteloda_6" name="OdaOzellikleri[]" /><label for="cboteloda_6">&nbsp Kapalı Havuz</label><br /></td> 
+                <td> <input type="checkbox" id="cboteloda_5" name="OdaOzellikleri[]" /><label for="cboteloda_5">&nbsp Fitness Center</label><br /></td>
+                <td> <input type="checkbox" id="cboteloda_6" name="OdaOzellikleri[]" /><label for="cboteloda_6">&nbsp Masaj</label><br /></td>
+
+            </tr>
+            <tr>
+
+                <td> <input type="checkbox" id="cboteloda_5" name="OdaOzellikleri[]" /><label for="cboteloda_5">&nbsp Motorlu Su Sporları</label><br /></td>
+                <td> <input type="checkbox" id="cboteloda_6" name="OdaOzellikleri[]" /><label for="cboteloda_6">&nbsp Şezlong</label><br /></td>
+            </tr>
+        </table>
 
     </div>
 
@@ -152,11 +178,7 @@
             <input type="checkbox" id="cboteloda_@i" name="OdaOzellikleri[]" /><label for="cboteloda_@i">&nbsp @Model.OdaOzellikleri[i].OdaOzellikAdi</label><br />
         }
     </div>
-    <script type="text/javascript">
-        var ckeditorOtelProgrami = CKEDITOR.replace('ckeditorOtelProgrami');
-        var ckeditorOdaProgrami = CKEDITOR.replace('ckeditorOdaProgrami');
 
-    </script>
     <div class="col-xs-12">
         <hr />
         <label>Otel Programı</label>
@@ -233,3 +255,8 @@
     </div>
 </div>
 <script src="~/Areas/Files/ckeditor/ckeditor.js"></script>
+<script type="text/javascript">
+    var ckeditorOtelProgrami = CKEDITOR.replace('ckeditorOtelProgrami');
+    var ckeditorOdaProgrami = CKEDITOR.replace('ckeditorOdaProgrami');
+
+</script>
