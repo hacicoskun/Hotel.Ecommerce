@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel_Ecoomerce.DAL", "Hote
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel_Ecommerce.Repository", "Hotel_Ecommerce.Repository\Hotel_Ecommerce.Repository.csproj", "{C58DC4FF-A1F5-4185-A239-FAE08E459466}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel_Ecommerce.Helper", "Hotel_Ecommerce.Helper\Hotel_Ecommerce.Helper.csproj", "{CCA0F46C-1FC0-4212-B53D-ADE68FD02BCB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C58DC4FF-A1F5-4185-A239-FAE08E459466}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C58DC4FF-A1F5-4185-A239-FAE08E459466}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C58DC4FF-A1F5-4185-A239-FAE08E459466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCA0F46C-1FC0-4212-B53D-ADE68FD02BCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCA0F46C-1FC0-4212-B53D-ADE68FD02BCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCA0F46C-1FC0-4212-B53D-ADE68FD02BCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCA0F46C-1FC0-4212-B53D-ADE68FD02BCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
