@@ -12,6 +12,6 @@ namespace Hotel_Ecoomerce.DAL.Concrete
     {
         public string KullaniciAdi { get; set; }
         public string Sifre { get; set; }
-        public bool AktifMi { get; set; }
+        public string AdSoyad { get; set; }
     }
 }

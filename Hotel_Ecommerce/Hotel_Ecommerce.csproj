@@ -509,6 +509,16 @@
     <Content Include="Areas\Files\ckeditor\skins\moono-lisa\images\spinner.gif" />
     <Content Include="Areas\Files\ckeditor\styles.js" />
     <Content Include="Areas\Files\css\cblistcss.css" />
+    <Content Include="Areas\Files\login\assets\css\bootstrap.min.css" />
+    <Content Include="Areas\Files\login\assets\css\galaxy-style.css" />
+    <Content Include="Areas\Files\login\assets\img\2.gif" />
+    <Content Include="Areas\Files\login\assets\img\shape.png" />
+    <Content Include="Areas\Files\login\assets\img\user.png" />
+    <Content Include="Areas\Files\login\assets\js\bootstrap.min.js" />
+    <Content Include="Areas\Files\login\assets\js\custom.js" />
+    <Content Include="Areas\Files\login\assets\js\jquery-3.3.1.min.js" />
+    <Content Include="Areas\Files\login\assets\js\particles.js" />
+    <Content Include="Areas\Files\login\assets\js\popper.min.js" />
     <Content Include="Areas\Files\select2\css\select2.css" />
     <Content Include="Areas\Files\select2\css\select2.min.css" />
     <Content Include="Areas\Files\select2\js\i18n\ar.js" />
@@ -3990,6 +4000,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdminLoginController.cs" />
     <Compile Include="Areas\Admin\Controllers\AdminBaseController.cs" />
     <Compile Include="Areas\Admin\Controllers\CreateHotelController.cs" />
     <Compile Include="Areas\Admin\Model\HotelModel.cs" />
@@ -4824,6 +4835,8 @@
     <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Admin\Views\CreateHotel\CreateHotel.cshtml" />
     <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminLogin\Index.cshtml" />
     <Content Include="Areas\Files\ckeditor\CHANGES.md" />
     <Content Include="Areas\Files\ckeditor\LICENSE.md" />
     <Content Include="Areas\Files\ckeditor\plugins\scayt\CHANGELOG.md" />
@@ -4854,6 +4867,10 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Hotel_Ecommerce.Helper\Hotel_Ecommerce.Helper.csproj">
+      <Project>{cca0f46c-1fc0-4212-b53d-ade68fd02bcb}</Project>
+      <Name>Hotel_Ecommerce.Helper</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Hotel_Ecommerce.Repository\Hotel_Ecommerce.Repository.csproj">
       <Project>{c58dc4ff-a1f5-4185-a239-fae08e459466}</Project>
       <Name>Hotel_Ecommerce.Repository</Name>
