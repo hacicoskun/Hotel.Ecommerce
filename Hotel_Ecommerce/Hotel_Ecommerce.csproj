@@ -111,6 +111,15 @@
     <Content Include="Areas\Files\cjs\takvim.js" />
     <Content Include="Areas\Files\cjs\takvim1.10.2.js" />
     <Content Include="Areas\Files\css\cblistcss.css" />
+    <Content Include="Areas\Files\login\assets\css\bootstrap.min.css" />
+    <Content Include="Areas\Files\login\assets\css\galaxy-style.css" />
+    <Content Include="Areas\Files\login\assets\img\1.gif.gif" />
+    <Content Include="Areas\Files\login\assets\img\shape.png" />
+    <Content Include="Areas\Files\login\assets\js\bootstrap.min.js" />
+    <Content Include="Areas\Files\login\assets\js\custom.js" />
+    <Content Include="Areas\Files\login\assets\js\jquery-3.3.1.min.js" />
+    <Content Include="Areas\Files\login\assets\js\particles.js" />
+    <Content Include="Areas\Files\login\assets\js\popper.min.js" />
     <Content Include="Areas\Files\select2\css\select2.css" />
     <Content Include="Areas\Files\select2\css\select2.min.css" />
     <Content Include="Areas\Files\select2\js\i18n\ar.js" />
@@ -3592,6 +3601,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdminLoginController.cs" />
     <Compile Include="Areas\Admin\Controllers\CreateHotelController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -4424,6 +4434,8 @@
     <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Admin\Views\CreateHotel\CreateHotel.cshtml" />
     <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminLogin\Index.cshtml" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

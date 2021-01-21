@@ -1,0 +1,146 @@
+﻿
+@{
+    Layout = null;
+    ViewBag.Title = "Index";
+}
+
+<style type="text/css">
+    .responsive-image {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Oturum Aç</title>
+    <link href="/Areas/Files/login/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Areas/Files/login/assets/css/galaxy-style.css" rel="stylesheet" />
+    @*<link href="/assets/material-fonts/css/materialdesignicons.min.css" rel="stylesheet" />*@
+    @*<link rel="shortcut icon" type="image/png" href="~/Content/images/fav.ico" />*@
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 auth-left">
+                <div class="row auth-form mb-4">
+                    <div class="col-12 col-sm-12">
+
+                        <div class="auth-text-top mb-4" style="text-align: center">
+                            @*<img src="~/Content/images/logo.png" name="imgLogo" class="responsive-image" />*@
+                            <br />
+
+                            <small>Lütfen oturum bilgilerinizi girin veya <a target="_blank" href="#">İletişim'e geçin.</a></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Kullanıcı Adı</label>
+                            <div class="input-icon">
+                                <i class="mdi mdi-email"></i>
+                                <input type="text" class="form-control" id="Username" name="Username" placeholder="Kullanıcı Adınız" autofocus>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="password">Parola</label>
+                            <div class="input-icon">
+                                <i class="mdi mdi-lock"></i>
+                                <span class="passtoggle mdi mdi-eye toggle-password"></span>
+                                <input type="password" class="form-control" id="Password" name="Password" placeholder="Parola giriniz" maxlength="12">
+                            </div>
+                        </div>
+                        <div class="row">
+
+
+                            <div class="col-md-6" id="divError" style="text-align: left; color: orangered">
+                                <span id="spanhata" />
+                            </div>
+
+                        </div>
+                        <button type="button" class="btn btn-primary btn-block btn-c mt-4 mb-4" id="btnLogin"><span id="spanBtnLoginText">Oturum Aç</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 auth-right d-lg-flex d-none " id="particles">
+                <div class="logo">
+
+                </div>
+                <div class="heading">
+                    <h3>Mevsim Tazesi</h3>
+                </div>
+                <div class="shape" style="background-color: #FED15A;">
+                    <div style="margin-left: 130px; padding-top: 30px"><img src="~/Areas/Files/login/assets/img/1.gif.gif" style="display: block; margin-left: auto; margin-right: auto; width: 75%; margin-top: 20%; height:50%;" /></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/Areas/Files/login/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="/Areas/Files/login/assets/js/popper.min.js"></script>
+    <script src="/Areas/Files/login/assets/js/bootstrap.min.js"></script>
+    <script src="/Areas/Files/login/assets/js/particles.js"></script>
+    <script src="/Areas/Files/login/assets/js/custom.js"></script>
+
+</body>
+</html>
+
+<script>
+    $('#btnLogin').click(function () {
+
+        if ($('#Username').val().trim() == "" || $('#Password').val().trim() == "" ) {
+            var divError = $("#divError");
+            var span = $("#spanhata");
+            span.empty();
+            span.append("Boş alan bırakılamaz");
+            divError.show();
+            return false;
+        }
+        var span = $("#spanhata");
+        var divError = $("#divError");
+        $.ajax({
+            type: "POST",
+            url: "/panel/user-login",
+            dataType: "json",
+            data: { Username: $('#Username').val(), Password: $('#Password').val()  },
+            beforeSend: function () {
+                $("#btnLogin").prop('disabled', true);
+                $("#spanBtnLoginText").empty();
+                $("#spanBtnLoginText").append("Oturum Açılıyor");
+                $("#btnLogin").attr('class', 'btn btn-warning btn-block btn-c mt-4 mb-4');
+            },
+            success: function (response) {
+                if (response === 200) {
+                    window.location.href = '/panel/dashboard';
+                }
+                else {
+                    span.empty();
+                    span.append("Giriş bilgileri hatalı !");
+                    $("#btnLogin").prop('disabled', false);
+                    $("#spanBtnLoginText").empty().append("Oturum Aç");
+                    $("#btnLogin").attr('class', 'btn btn-success btn-block btn-c mt-4 mb-4');
+                    divError.show();
+                }
+             }
+        });
+
+    });
+    $('input').keypress(function (e) {
+        if (e.which == 13) {
+            $('#btnLogin').trigger("click");
+            return false;
+        }
+    });
+    $('body').keypress(function (e) {
+        if (e.which == 13) {
+            $('#btnLogin').trigger("click");
+            return false;
+        }
+    });
+</script>
