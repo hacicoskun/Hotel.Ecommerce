@@ -1,0 +1,231 @@
+﻿
+@{
+    ViewBag.Title = "CreateHotel";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@*<link href="~/Areas/Files/css/cblistcss.css" rel="stylesheet" />*@
+<style>
+    .cbgroup input, label {
+        cursor: pointer;
+    }
+</style>
+
+<div class="row" style="background-color: #fff; padding-top: 60px;">
+    <div class="col-xs-12">
+        <a class="btn btn-primary" href="javascript:void(0);" onclick="GaleriAc(id)">
+            <i class="fa fa-picture-o"></i>&nbsp Otel galerisi seçmek için tıklayınız
+        </a>
+        <hr />
+    </div>
+
+    <div class="col-xs-6 form-group">
+        <label>Otel Adı:</label>
+        <input class="form-control" maxlength="100" id="txtoteladi" placeholder="Örn:Sentido Turan Prince" type="text" />
+    </div>
+    <div class="col-xs-6 form-group">
+        <label>Otel Bölgesi</label>
+        <select class="form-control" id="dropotelbolgesi">
+            <option value="Yurt İçi Otelleri">Yurt İçi Otelleri</option>
+            <option value="Kıbrıs Otelleri">Kıbrıs Otelleri</option>
+            <option value="Yurt Dışı Otelleri">Yurt Dışı Otelleri</option>
+        </select>
+    </div>
+    <div class="col-xs-12">
+        <label>Otel Kısa Bilgi</label>
+        <input type="text" class="form-control" placeholder="Otel hakkında kısa bilgi giriniz." maxlength="150" id="txtotelkisabilgi" />
+    </div>
+    <div class="col-xs-6">
+        <div class="row">
+            &nbsp
+        </div>
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-6">
+                <label class="col-xs-12">Otel İl</label>
+                <input class="form-control" type="text" maxlength="50" id="txtotelil" placeholder="Örn:Antalya" />
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <label class="col-xs-12">Otel İlçe</label>
+                <input class="form-control" type="text" maxlength="50" id="txtotelilce" placeholder="Örn: Side-Merkez" />
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-6">
+        <div class="row">
+            &nbsp
+        </div>
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-6">
+                <label class="col-xs-12">Otel Div Bilgisi</label>
+                <input class="form-control" type="text" maxlength="250" placeholder="Örn: 0-6 Yaş Çocuk Ücretsiz" id="txtoteldivbilgi" />
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <label class="col-xs-12">Otel Önceliği</label>
+                <select class="form-control" id="dropoteloncelik">
+                    <option value="Öncelik Yok">Öncelik Yok</option>
+                    <option value="Öncelik Ver">Öncelik Ver</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-12">
+        <br />
+        <label>Otel Konumu:</label>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyA6awZ00Yc6KE06J_-Eo886uNuCraHP8lc"></script>
+
+        <a style="color: Blue; float: right; cursor: pointer" data-toggle="modal" data-target="#myModalkonum">Aradığım otel'i bulamıyorum</a>
+        <input class="form-control" id="txtkonum" maxlength="50" placeholder="Otel adı ile arayabilirsiniz." type="text" />
+        <asp:HiddenField ID="hiddengoogleadress" runat="server" />
+        <asp:HiddenField ID="hiddengooglemapx" runat="server" />
+        <asp:HiddenField ID="hiddengooglemapy" runat="server" />
+        <script type="text/javascript">
+                google.maps.event.addDomListener(window, 'load', function () {
+                    var places = new google.maps.places.Autocomplete(document.getElementById('txtkonum'));
+                    google.maps.event.addListener(places, 'place_changed', function () {
+                        var place = places.getPlace();
+                        var address = place.formatted_address;
+                        var latitude = place.geometry.location.lat();
+                        var longitude = place.geometry.location.lng();
+                        document.getElementById('<%= hiddengooglemapx.ClientID%>').value = latitude;
+                        document.getElementById('<%= hiddengooglemapy.ClientID%>').value = longitude;
+
+                    });
+                });
+        </script>
+        <hr />
+    </div>
+
+    <div class="col-xs-12 col-xs-4 cbgroup">
+        <label>Otel Konaklama Tip(ler)ini seçin:</label><br />
+            <input type="checkbox" id="cbkt1" name="OtelKonaklamaTipleri[]" /><label for="cbkt1">&nbsp Yalnız Oda</label><br />
+            <input type="checkbox" id="cbkt2" name="OtelKonaklamaTipleri[]" /><label for="cbkt2">&nbsp Oda kahvaltı</label><br />
+            <input type="checkbox" id="cbkt3" name="OtelKonaklamaTipleri[]" /><label for="cbkt3">&nbsp Yarım pansiyon</label><br />
+            <input type="checkbox" id="cbkt4" name="OtelKonaklamaTipleri[]" /><label for="cbkt4">&nbsp Yarım pansiyon plus</label><br />
+            <input type="checkbox" id="cbkt5" name="OtelKonaklamaTipleri[]" /><label for="cbkt5">&nbsp Tam pansiyon</label><br />
+            <input type="checkbox" id="cbkt6" name="OtelKonaklamaTipleri[]" /><label for="cbkt6">&nbsp Tam pansiyon plus</label><br />
+            <input type="checkbox" id="cbkt7" name="OtelKonaklamaTipleri[]" /><label for="cbkt7">&nbsp Her şey dahil</label><br />
+            <input type="checkbox" id="cbkt8" name="OtelKonaklamaTipleri[]" /><label for="cbkt8">&nbsp Her şey dahil plus</label><br />
+            <input type="checkbox" id="cbkt9" name="OtelKonaklamaTipleri[]" /><label for="cbkt9">&nbsp Ultra her şey dahil</label> 
+    </div>
+    <div class="col-xs-12 col-xs-3">
+        <label>Otel Sezonu ?</label><br />
+        <input type="checkbox" id="cbos1" name="OtelSezonu[]" /><label for="cbos1">&nbsp Yaz Sezonu</label><br />
+        <input type="checkbox" id="cbos2" name="OtelSezonu[]" /><label for="cbos2">&nbsp Kış Sezonu</label><br />
+         
+    </div>
+    <div class="col-xs-12 col-xs-5">
+        <label>Şehir Oteli mi ?</label>
+        <br />
+        <input type="checkbox" id="cbSehirOteliMi"/><label for="cbso1">&nbsp Evet</label><br /> 
+    </div>
+    <style>
+        td {
+            min-width: 230px;
+        }
+    </style>
+
+
+    <div class="col-xs-12">
+        <hr />
+        <label>Otel Özelliklerini Seçiniz:<span class="mandatory">*</span></label>
+        <div class="checkbox checkbox-primary">
+            <asp:CheckBoxList runat="server" ID="cbotelozellikleri" RepeatColumns="4"
+                              RepeatDirection="Horizontal" CssClass="styled">
+            </asp:CheckBoxList>
+        </div>
+
+    </div>
+
+
+
+    <div class="col-xs-12">
+        <hr />
+        <label>Oda Özelliklerini Seçiniz:<span class="mandatory">*</span></label>
+        <div>
+            <div class="checkbox checkbox-primary">
+                <asp:CheckBoxList runat="server" ID="cbodaozellikleri" RepeatColumns="3"
+                                  RepeatDirection="Horizontal" CssClass="styled">
+                </asp:CheckBoxList>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="col-xs-12">
+        <hr />
+        <label>Otel Programı</label>
+        <CKEditor:CKEditorControl runat="server" ID="ckotelprogrami" MaxLength="5000" Height="400" BasePath="/webpanel/ckeditor/"></CKEditor:CKEditorControl>
+    </div>
+    <div class="col-xs-12">
+        <hr />
+        <label>Oda Programı</label>
+        <CKEditor:CKEditorControl runat="server" ID="ckodaprogrami" MaxLength="5000" Height="400" BasePath="/webpanel/ckeditor/"></CKEditor:CKEditorControl>
+
+    </div>
+    <div class="col-xs-12">
+        <div style="float: right; margin-top: 20px;">
+            <input type="button" onclick="AjaxOtelEkle()" value="Devam et" class="btn btn-success" />
+
+        </div>
+    </div>
+</div>
+
+<div id="myModalAlert" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header" style="color: #fff;">
+
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">
+                    <asp:Label ID="lblmodalbaslik" runat="server" />
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-2">
+                    <img id="imgmodal" src="images/galery.png" />
+                </div>
+                <div class="col-md-6" style="margin-top: 20px">
+                    <asp:Label ID="lblonaydurumu" runat="server" />.
+                </div>
+            </div>
+            <div class="modal-footer" style="border: none !important">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="modal fade" id="myModalkonum" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Google Map Konum Nasıl Bulunur ?</h4>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>
+                        <a href="https://maps.google.com/" target="_blank">Buraya Tıklayarak Google Haritalara Gidin</a>
+                    </li>
+                    <li>
+                        Sol üst köşeden aramak istediğiniz otel bilgilerini girin ve aratın
+                    </li>
+                    <li>
+                        Konumunuza sağ tıkladıktan sonra "Burası Neresi" yazısına tıklayın ve alt kısımda çıkan koordinat kodlarını yanyana kopyalarayak bir önceki ekrandaki Otel Harita Bilgileri alanına  ekleyiniz.
+                    </li>
+                    <li>
+                        <a href="../images/harita.jpg" target="_blank">Resimli örnek için tıklayınız.</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">İşleme devam et</button>
+            </div>
+        </div>
+    </div>
+</div>
