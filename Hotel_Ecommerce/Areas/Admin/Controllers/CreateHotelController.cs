@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hotel_Ecommerce.Areas.Admin.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,13 +9,18 @@ namespace Hotel_Ecommerce.Areas.Admin.Controllers
 {
     [RouteArea("Admin", AreaPrefix = "panel")]
 
-    public class CreateHotelController : Controller
+    public class CreateHotelController : AdminBaseController
     {
         [Route("create-hotel")]
 
         public ActionResult CreateHotel()
         {
-            return View();
+            OtelEklemeveGuncelleme OtelEklemeveGuncelleme = new OtelEklemeveGuncelleme
+            {
+                OdaOzellikleri = _unitOfWork.OdaOzellikTablosu.ToList(),
+                OtelOzellikleri = _unitOfWork.OtelOzellikTablosu.ToList()
+            };
+            return View(OtelEklemeveGuncelleme);
         }
     }
 }
