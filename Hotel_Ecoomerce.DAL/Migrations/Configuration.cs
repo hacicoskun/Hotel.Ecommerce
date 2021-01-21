@@ -62,7 +62,8 @@
                 odaOzellikTablosu.Add(new OdaOzellikTablosu { OdaOzellikAdi = "Minibar" });
                 odaOzellikTablosu.Add(new OdaOzellikTablosu { OdaOzellikAdi = "Duş " });
                 odaOzellikTablosu.Add(new OdaOzellikTablosu { OdaOzellikAdi = "Telefon" });
-
+                context.OdaOzellikTablosu.AddRange(odaOzellikTablosu);
+                context.SaveChanges();
 
             }
             base.Seed(context);
