@@ -8,7 +8,7 @@ using System.Web.Mvc;
 namespace Hotel_Ecommerce.Areas.Admin.Controllers
 {
     [RouteArea("Admin", AreaPrefix = "panel")]
-    public class AdminLoginController : BaseController
+    public class AdminLoginController : Controller
     {
         [Route("login")]
         // GET: Admin/AdminLogin
@@ -19,10 +19,10 @@ namespace Hotel_Ecommerce.Areas.Admin.Controllers
         [Route("user-login")]
         public ActionResult LoginControl(string Username, string Password)
         {
-            
-           
 
-           
+
+            return View();
+
 
         }
     }
