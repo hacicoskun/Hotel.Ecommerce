@@ -22,11 +22,11 @@ namespace Hotel_Ecommerce.Areas.Admin.Controllers
         [Route("user-login")]
         public ActionResult LoginControl(string Username, string Password)
         {
-            string password = Password.ToMD5Hash();
-            if (_unitOfWork.LoginUsers.Any(x => x.KullaniciAdi == Username && x.Sifre == Password))
+            string password = Password.ToMD5Hash().ToLower();
+            if (_unitOfWork.LoginUsers.Any(x => x.KullaniciAdi == Username && x.Sifre == password))
             {
-                Session.Add("AdminUserID", _unitOfWork.LoginUsers.Find(x => x.KullaniciAdi == Username && x.Sifre == Password)._id);
-                Session.Add("AdminUserNameLastName", _unitOfWork.LoginUsers.Find(x => x.KullaniciAdi == Username && x.Sifre == Password));
+                Session.Add("AdminUserID", _unitOfWork.LoginUsers.Find(x => x.KullaniciAdi == Username && x.Sifre == password)._id);
+                Session.Add("AdminUserNameLastName", _unitOfWork.LoginUsers.Find(x => x.KullaniciAdi == Username && x.Sifre == password).AdSoyad);
                 return Json(HttpStatusCode.OK);
             }
 
