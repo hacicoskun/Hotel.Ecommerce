@@ -212,10 +212,7 @@
                 <td></td>
             </tr>
         </table>
-        @for (int i = 0; i < Model.OdaOzellikleri.Count(); i++)
-        {
-            <input type="checkbox" id="cboteloda_@i" name="OdaOzellikleri[]" /><label for="cboteloda_@i">&nbsp @Model.OdaOzellikleri[i].OdaOzellikAdi</label><br />
-        }
+       
     </div>
 
     <div class="col-xs-12">
