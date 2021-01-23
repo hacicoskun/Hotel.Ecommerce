@@ -11,7 +11,7 @@ namespace Hotel_Ecommerce.Areas.Admin.Controllers
 {
     [RouteArea("Admin", AreaPrefix = "panel")]
 
-    public class CreateHotelController : AdminBaseController
+    public class HotelController : AdminBaseController
     {
         [Route("create-hotel")]
 
@@ -23,6 +23,12 @@ namespace Hotel_Ecommerce.Areas.Admin.Controllers
                 OtelOzellikleri = _unitOfWork.OtelOzellikTablosu.ToList()
             };
             return View(OtelEklemeveGuncelleme);
+        }
+        [Route("hotel-list")]
+
+        public ActionResult HotelList()
+        {
+            return View(_unitOfWork.Oteller.ToList());
         }
 
  
@@ -146,6 +152,8 @@ namespace Hotel_Ecommerce.Areas.Admin.Controllers
 
             }
         }
+
+
         #region "Kod Oluştur"
         public static string LinkOlustur(string Text)
         {
