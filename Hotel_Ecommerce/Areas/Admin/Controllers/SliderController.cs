@@ -38,7 +38,7 @@ namespace Hotel_Ecommerce.Areas.Admin.Controllers
                 image.CreatedDate = DateTime.Now;
                 image.IsActive = true;
                 image.IsDeleted = false;
-                image.UserID = Session["AdminUserID"].ToString();
+                //image.UserID = Session["AdminUserID"].ToString();
                 image.Link = link;
                 image.Hedef = hedef;
                 image.Tip = tip;
