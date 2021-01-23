@@ -2,6 +2,8 @@
 @{
     ViewBag.Title = "CreateHotel";
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    string sessionID = Guid.NewGuid().ToString();
+
 }
 
 @*<link href="~/Areas/Files/css/cblistcss.css" rel="stylesheet" />*@
@@ -9,14 +11,19 @@
     .cbgroup input, label {
         cursor: pointer;
     }
+    .modal-dialog {
+        width: 75%;
+        margin: 0 auto;
+    }
 </style>
 
 <div class="row" style="background-color: #fff; padding-top: 60px;">
     <div class="col-xs-12">
-        <a class="btn btn-primary" href="javascript:void(0);" onclick="GaleriAc(id)">
-            <i class="fa fa-picture-o"></i>&nbsp Otel galerisi seçmek için tıklayınız
-        </a>
-        <hr />
+        <div class="form-group">
+            <div class="form-inline">
+                <input type="button" class="btn btn-danger" id="btnProductGallery" value="Otel Görseli Seç" data-toggle="modal" data-target="#galleryModal" />
+            </div>
+        </div>
     </div>
 
     <div class="col-xs-6 form-group">
@@ -74,27 +81,17 @@
     <div class="col-xs-12">
         <br />
         <label>Otel Konumu:</label>
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyA6awZ00Yc6KE06J_-Eo886uNuCraHP8lc"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUNeqnnpydeZHOAO4iEyH86CtXSh5JuAg&libraries=places"></script>
 
-        <a style="color: Blue; float: right; cursor: pointer" data-toggle="modal" data-target="#myModalkonum">Aradığım otel'i bulamıyorum</a>
-        <input class="form-control" id="txtkonum" maxlength="50" placeholder="Otel adı ile arayabilirsiniz." type="text" />
-        <asp:HiddenField ID="hiddengoogleadress" runat="server" />
-        <asp:HiddenField ID="hiddengooglemapx" runat="server" />
-        <asp:HiddenField ID="hiddengooglemapy" runat="server" />
-        <script type="text/javascript">
-            google.maps.event.addDomListener(window, 'load', function () {
-                var places = new google.maps.places.Autocomplete(document.getElementById('txtkonum'));
-                google.maps.event.addListener(places, 'place_changed', function () {
-                    var place = places.getPlace();
-                    var address = place.formatted_address;
-                    var latitude = place.geometry.location.lat();
-                    var longitude = place.geometry.location.lng();
-                    document.getElementById('<%= hiddengooglemapx.ClientID%>').value = latitude;
-                    document.getElementById('<%= hiddengooglemapy.ClientID%>').value = longitude;
+        <input type="text" id="autocomplete" class="form-control" />
 
-                });
-            });
+        <script>
+            var input = document.getElementById('autocomplete');
+            var autocomplete = new google.maps.places.Autocomplete(input);
         </script>
+        @*<a style="color: Blue; float: right; cursor: pointer" data-toggle="modal" data-target="#myModalkonum">Aradığım otel'i bulamıyorum</a>
+            <input class="form-control" id="txtkonum" maxlength="50" placeholder="Otel adı ile arayabilirsiniz." type="text" />*@
+
         <hr />
     </div>
 
@@ -206,13 +203,9 @@
                 <td><input type="checkbox" id="cboteloda_14" name="OdaOzellikleri[]" /><label for="cboteloda_14">&nbsp Jakuzi</label><br /></td>
                 <td><input type="checkbox" id="cboteloda_15" name="OdaOzellikleri[]" /><label for="cboteloda_15">&nbsp Minibar</label><br /></td>
             </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
+
         </table>
-       
+
     </div>
 
     <div class="col-xs-12">
@@ -233,61 +226,23 @@
         </div>
     </div>
 </div>
-
-<div id="myModalAlert" class="modal fade" role="dialog">
-    <div class="modal-dialog">
+<input type="hidden" id="hiddenGallerySession" value="@sessionID" />
+<!-- Modal -->
+<div id="galleryModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-xl">
 
         <!-- Modal content-->
         <div class="modal-content">
-            <div class="modal-header" style="color: #fff;">
 
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">
-                    <asp:Label ID="lblmodalbaslik" runat="server" />
-                </h4>
-            </div>
             <div class="modal-body">
-                <div class="col-md-2">
-                    <img id="imgmodal" src="images/galery.png" />
-                </div>
-                <div class="col-md-6" style="margin-top: 20px">
-                    <asp:Label ID="lblonaydurumu" runat="server" />.
-                </div>
-            </div>
-            <div class="modal-footer" style="border: none !important">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Kapat</button>
-            </div>
-        </div>
 
-    </div>
-</div>
-<div class="modal fade" id="myModalkonum" role="dialog">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Google Map Konum Nasıl Bulunur ?</h4>
-            </div>
-            <div class="modal-body">
-                <ul>
-                    <li>
-                        <a href="https://maps.google.com/" target="_blank">Buraya Tıklayarak Google Haritalara Gidin</a>
-                    </li>
-                    <li>
-                        Sol üst köşeden aramak istediğiniz otel bilgilerini girin ve aratın
-                    </li>
-                    <li>
-                        Konumunuza sağ tıkladıktan sonra "Burası Neresi" yazısına tıklayın ve alt kısımda çıkan koordinat kodlarını yanyana kopyalarayak bir önceki ekrandaki Otel Harita Bilgileri alanına  ekleyiniz.
-                    </li>
-                    <li>
-                        <a href="../images/harita.jpg" target="_blank">Resimli örnek için tıklayınız.</a>
-                    </li>
-                </ul>
+                <iframe width="100%" height="600px" src="/Filemanager/index.html?fileRoot=~/Content/gallery/uploads/&serverRoot=true&serverMode=false&useFileTable=false&langCode=tr&sessionID=@sessionID"></iframe>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">İşleme devam et</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Galeriyi Kapat</button>
             </div>
         </div>
+
     </div>
 </div>
 <script src="~/Areas/Files/ckeditor/ckeditor.js"></script>
@@ -295,4 +250,138 @@
     var ckeditorOtelProgrami = CKEDITOR.replace('ckeditorOtelProgrami');
     var ckeditorOdaProgrami = CKEDITOR.replace('ckeditorOdaProgrami');
 
+</script>
+<script type="text/javascript">
+    function AjaxOtelEkle() {
+        //var oteladi = $('#txtoteladi').val();
+        //var otelkisabilgi = $('#txtotelkisabilgi').val();
+        //var otelbolgesi = $('#dropotelbolgesi').val();
+        //var otelil = $('#txtotelil').val();
+        //var otelilce = $('#txtotelilce').val();
+        //var oteldivbilgi = $("#txtoteldivbilgi").val();
+        //var oteloncelik = $('#dropoteloncelik').val();
+        //var otelkonumu = document.getElementById('<%= hiddengooglemapx.ClientID%>').value + "," + document.getElementById('<%= hiddengooglemapy.ClientID%>').value;
+        //var konaklamatipleri = "";
+        //$(function () {
+
+        //    var cbsecilenkonaklamalar = $("[id*=ContentPlaceHolder1_cbkonaklamatipleri] input:checked");
+        //    cbsecilenkonaklamalar.each(function () {
+        //        var value = $(this).val();
+        //        var text = $(this).closest("td").find("label").html();
+        //        konaklamatipleri += text + ",";
+
+        //    });
+        //    return false;
+        //});
+        //var sezon = "";
+        //$(function () {
+        //    var cbsecilensezon = $("[id*=ContentPlaceHolder1_cbsezon] input:checked");
+        //    cbsecilensezon.each(function () {
+        //        var value = $(this).val();
+        //        var text = $(this).closest("td").find("label").html();
+        //        sezon += text + ",";
+
+        //    });
+        //    return false;
+        //});
+
+        //var sehirotelimi = "";
+        //$(function () {
+        //    var cbsehirotelimisecildi = $("[id*=ContentPlaceHolder1_cbsehiroteli] input:checked");
+        //    cbsehirotelimisecildi.each(function () {
+        //        var value = $(this).val();
+        //        var text = $(this).closest("td").find("label").html();
+        //        sehirotelimi += text + ",";
+
+        //    });
+        //    return false;
+        //});
+        //var otelsehirotelimi = "";
+        //if (sehirotelimi == "Şehir Oteli,") {
+        //    otelsehirotelimi = "Evet";
+        //}
+        //else {
+        //    otelsehirotelimi = "Hayır";
+        //}
+
+        var otelozellikleri = "";
+        $(function () {
+            var cbhangiozelliklersecili = $("[name*=OtelOzellikleri] input:checked");
+            cbhangiozelliklersecili.each(function () {
+                var value = $(this).val();
+                var text = $(this).closest("td").find("label").html();
+                otelozellikleri += text + ",";
+
+            });
+            return false;
+        });
+
+        var odaozellikleri = "";
+        $(function () {
+            var cbhangiodaozellikleri = $("[name*=OdaOzellikleri] input:checked");
+            cbhangiodaozellikleri.each(function () {
+                var value = $(this).val();
+                var text = $(this).closest("td").find("label").html();
+                odaozellikleri += text + ",";
+
+            });
+            return false;
+        });
+
+        var otelprogrami = CKEDITOR.instances['ckeditorOtelProgrami'].getData();
+        var odaprogrami = CKEDITOR.instances['ckeditorOdaProgrami'].getData();
+        console.log(otelozellikleri);
+        console.log(odaozellikleri);
+        console.log(otelprogrami);
+        console.log(odaprogrami);
+        //$.ajax({
+        //    type: "POST",
+        //    url: "/webpanel/Handler/OtelEkle.ashx",
+        //    data: { oteladi: oteladi, otelbolgesi: otelbolgesi, otelil: otelil, otelilce: otelilce, oteldivbilgi: oteldivbilgi, oteloncelik: oteloncelik, otelkonumu: otelkonumu, konaklamatipleri: konaklamatipleri, otelsehirotelimi: otelsehirotelimi, otelozellikleri: otelozellikleri, odaozellikleri: odaozellikleri, otelprogrami: otelprogrami, odaprogrami: odaprogrami, otelsezonu: sezon, otelkisabilgi: otelkisabilgi },
+        //    dataType: "json",
+        //    beforeSend: function () {
+        //    },
+        //    success: function (deger) {
+        //        if (deger.islem == "onaylandi") {
+        //            $("#imgmodal").attr("src", "/webpanel/images/basarili.png");
+        //            $('#<%=lblonaydurumu.ClientID%>').html("Otel ekleme işleminiz tamamlandı.");
+        //            $('#<%=lblmodalbaslik.ClientID%>').html("Otel ekleme işleminiz tamamlandı.");
+        //            $('.modal-header').css('background-color', '#008b8b');
+        //            $('#myModalAlert').modal('show');
+        //        }
+        //        else if (deger.islem == "boşkayit") {
+        //            $("#imgmodal").attr("src", "/webpanel/images/bosalan.png");
+        //            $('#<%=lblonaydurumu.ClientID%>').html("Tüm alanlar dolu olmalıdır.");
+        //            $('#<%=lblmodalbaslik.ClientID%>').html("Üzgünüz,işleminiz tamamlanamadı.");
+        //            $('.modal-header').css('background-color', '#d9534f');
+        //            $('#myModalAlert').modal('show');
+
+        //        }
+        //        else if (deger.islem == "ayniotel") {
+        //            $("#imgmodal").attr("src", "/webpanel/images/ayniotel.png");
+
+        //            $('#<%=lblonaydurumu.ClientID%>').html("Sistem de aynı otel mevcut");
+        //            $('#<%=lblmodalbaslik.ClientID%>').html("Üzgünüz,işleminiz tamamlanamadı.");
+        //            $('.modal-header').css('background-color', '#d9534f');
+        //            $('#myModalAlert').modal('show');
+
+        //        }
+        //        else if (deger.islem == "galeriyok") {
+        //            $("#imgmodal").attr("src", "/webpanel/images/galery.png");
+        //            $('#<%=lblonaydurumu.ClientID%>').html("Lütfen galeri seçimini tamamlayınız.");
+        //            $('#<%=lblmodalbaslik.ClientID%>').html("Üzgünüz,işleminiz tamamlanamadı.");
+        //            $('.modal-header').css('background-color', '#d9534f');
+        //            $('#myModalAlert').modal('show');
+
+        //        }
+        //        else {
+        //            $("#imgmodal").attr("src", "/webpanel/images/error.png");
+        //            $('#<%=lblonaydurumu.ClientID%>').html("Bilgi işlem ile irtibata geçiniz.");
+        //            $('#<%=lblmodalbaslik.ClientID%>').html("Sistem hatası !.");
+        //            $('.modal-header').css('background-color', '#d9534f');
+        //            $('#myModalAlert').modal('show');
+        //        }
+        //    }
+        //});
+    }
 </script>
