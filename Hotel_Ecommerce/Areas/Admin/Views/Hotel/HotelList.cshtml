@@ -1,0 +1,92 @@
+﻿@model List<Hotel_Ecoomerce.DAL.Concrete.Oteller>
+@{
+    ViewBag.Title = "HotelList";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<link href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+
+<table id="myTable" class="display">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Otel Adı</th>
+            <th>Otel Bölgesi</th>
+            <th>Otel Konum</th>
+            <th>Aktif Mi ?</th>
+            <th>İşlemler</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item._id</td>
+                <td>@item.OtelAdi</td>
+                <td>@item.OtelBolgesi</td>
+                <td>@item.Otelil,@item.Otelilce</td>
+                <td style="cursor:pointer !important">
+                    <input id="sb_@item._id" onchange="ChangeStatus('@item._id')" data-onstyle="success" data-offstyle="danger" class="toggle-one" @(item.IsActive == true ? "checked" : "") type="checkbox">
+
+                </td>
+                <td><a href="/panel/update-hotel/@item._id" class="btn btn-primary text-white">Güncelle</a>&nbsp;<input type="button" class="btn btn-danger" value="Sil" onclick="ShowConfirmModal('@item._id','İşlem Onayı','Lütfen '+'@item.OtelAktifMi'+' adlı oteli silme işlemi için onay veriniz.')" /></td>
+
+            </tr>
+        }
+
+    </tbody>
+</table>
+<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.2.5/js/dataTables.responsive.min.js"></script>
+<script type="text/javascript">
+    var $jq = $.noConflict(true);
+    $jq(document).ready(function () {
+        $jq('#myTable').DataTable({
+            responsive: true,
+            "language": {
+                "url": "/Content/vendors/datatables.net/js/turkish.json"
+            }
+        });
+
+    });
+    $jq(function () {
+        $jq('.toggle-one').bootstrapToggle({
+            on: 'Aktif',
+            off: 'Pasif'
+        });
+        $jq('.toggle-one').on('switchChange.bootstrapSwitch', function (e, data) {
+            $('#showModal').modal('show');
+        });
+    })
+    function ChangeStatus(ProductID) {
+        $jq.ajax({
+            type: "POST",
+            url: "/panel/ajax-change-product-status",
+            dataType: "json",
+            data: { ProductID: ProductID },
+            success: function (data) {
+                console.log("OK !");
+            }
+        });
+    }
+    function ShowConfirmModal(ProductID, Title, Msg) {
+        $("#hiddenProductID").val(ProductID);
+        $("#spanConfirmModalTitle").empty().append(Title);
+        $("#spanConfirmModalBody").empty().append(Msg);
+
+        $("#exampleModal").modal();
+    }
+    function DeleteConfirmOk() {
+        $jq.ajax({
+            type: "POST",
+            url: "/panel/ajax-delete-product",
+            dataType: "json",
+            data: { ProductID: $("#hiddenProductID").val() },
+            success: function () {
+                $("#tr_" + $("#hiddenProductID").val()).remove();
+            }
+        });
+    }
+</script>

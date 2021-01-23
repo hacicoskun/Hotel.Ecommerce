@@ -4004,6 +4004,7 @@
     <Content Include="Areas\Files\vendors\validator\index.html" />
     <Content Include="Areas\Files\vendors\validator\multifield.js" />
     <Content Include="Areas\Files\vendors\validator\validator.js" />
+    <Content Include="Areas\Files\images\harita.jpg" />
     <Content Include="Content\gallery\uploads\aci_cin\acı cin biber.jpg" />
     <Content Include="Content\gallery\uploads\adacayi\adacayi.jpeg" />
     <Content Include="Content\gallery\uploads\atbiber\aci_toz_biber.jpg" />
@@ -4611,7 +4612,7 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\AdminLoginController.cs" />
     <Compile Include="Areas\Admin\Controllers\AdminBaseController.cs" />
-    <Compile Include="Areas\Admin\Controllers\CreateHotelController.cs" />
+    <Compile Include="Areas\Admin\Controllers\HotelController.cs" />
     <Compile Include="Areas\Admin\Controllers\GalleryController.cs" />
     <Compile Include="Areas\Admin\Controllers\SliderController.cs" />
     <Compile Include="Areas\Admin\Model\HotelModel.cs" />
@@ -5481,6 +5482,7 @@
     <Content Include="Filemanager\utils\generate-lang.py" />
     <Content Include="Filemanager\utils\minify.py" />
     <Content Include="Areas\Admin\Views\Slider\SliderManagement.cshtml" />
+    <Content Include="Areas\Admin\Views\Hotel\HotelList.cshtml" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

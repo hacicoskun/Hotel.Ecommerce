@@ -79,20 +79,20 @@
         </div>
     </div>
 
-    <div class="col-xs-12">
-        <br />
-        <label>Otel Konumu:</label>
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUNeqnnpydeZHOAO4iEyH86CtXSh5JuAg&libraries=places"></script>
-        <a style="color: Blue; float: right; cursor: pointer" data-toggle="modal" data-target="#myModalkonum">Aradığım otel'i bulamıyorum</a>
-
-        <input type="text" id="autocomplete" class="form-control" />
-
-        <script>
-            var input = document.getElementById('autocomplete');
-            var autocomplete = new google.maps.places.Autocomplete(input);
-        </script>
-
-
+    <br /> 
+ 
+    <div class="col-xs-12"><br />
+        <a style="color: Blue; float: right; cursor: pointer" data-toggle="modal" data-target="#myModalkonum">Koordinat bilgileri nasıl eklenir ?</a>
+    </div>
+    <div class="col-xs-6">
+         
+        <label>Otel Konumu X:</label>
+        <input type="text"  oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" id="txtlat" class="form-control" placeholder="Otel konumu Koordinat 1" />
+    </div> 
+    <div class="col-xs-6">
+         
+        <label>Otel Konumu Y:</label>
+        <input type="text"  oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" id="txtlong" class="form-control" placeholder="Otel konumu Koordinat 2" />
     </div>
     <div class="col-xs-12">
         <br />
@@ -266,10 +266,10 @@
                         Sol üst köşeden aramak istediğiniz otel bilgilerini girin ve aratın
                     </li>
                     <li>
-                        Konumunuza sağ tıkladıktan sonra "Burası Neresi" yazısına tıklayın ve alt kısımda çıkan koordinat kodlarını yanyana kopyalarayak bir önceki ekrandaki Otel Harita Bilgileri alanına  ekleyiniz.
+                        Konumunuza sağ tıkladıktan sonra "Burası Neresi" yazısına tıklayın ve alt kısımda çıkan koordinat kodları "," ün solu X ve yağı Y şeklinde kopyalarayak bir önceki ekrandaki Otel Harita Bilgileri alanına  ekleyiniz.
                     </li>
                     <li>
-                        <a href="../images/harita.jpg" target="_blank">Resimli örnek için tıklayınız.</a>
+                        <a href="~/Areas/Files/images/harita.jpg" target="_blank">Resimli örnek için tıklayınız.</a>
                     </li>
                 </ul>
             </div>
