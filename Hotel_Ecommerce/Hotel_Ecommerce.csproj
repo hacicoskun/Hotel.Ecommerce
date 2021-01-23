@@ -4003,6 +4003,7 @@
     <Compile Include="Areas\Admin\Controllers\AdminLoginController.cs" />
     <Compile Include="Areas\Admin\Controllers\AdminBaseController.cs" />
     <Compile Include="Areas\Admin\Controllers\CreateHotelController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SliderController.cs" />
     <Compile Include="Areas\Admin\Model\HotelModel.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -4852,6 +4853,7 @@
     <Content Include="Areas\Files\ckeditor\samples\toolbarconfigurator\font\fontello.woff" />
     <Content Include="Areas\Files\ckeditor\samples\toolbarconfigurator\lib\codemirror\LICENSE" />
     <Content Include="Areas\Files\ckeditor\skins\moono-lisa\readme.md" />
+    <Content Include="Areas\Admin\Views\Slider\SliderManagement.cshtml" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -4863,6 +4865,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Views\AdminBase\" />
+    <Folder Include="Areas\Files\slider\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
