@@ -13,7 +13,7 @@ namespace Hotel_Ecommerce.Areas.Admin.Controllers
     {
         [Route("slider-list")]
         // GET: Admin/Slider
-        public ActionResult Index()
+        public ActionResult SliderManagement()
         {
             var images = _unitOfWork.AnasayfaSlider.ToList().OrderBy(x => x.Düzen).ToList();
             return View(images);
@@ -26,6 +26,7 @@ namespace Hotel_Ecommerce.Areas.Admin.Controllers
                 DateTime baslangicTarihi = Convert.ToDateTime(Request.Form["baslangicTarihi"].ToString());
                 DateTime bitisTarihi = Convert.ToDateTime(Request.Form["bitisTarihi"].ToString());
                 string link = Request.Form["link"].ToString();
+                string tip = Request.Form["tip"].ToString();
                 string hedef = Request.Form["hedef"].ToString();
                 string dosyaAdi = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
                 var path = Path.Combine(Server.MapPath("~/Areas/Files/slider"), dosyaAdi);
@@ -40,6 +41,7 @@ namespace Hotel_Ecommerce.Areas.Admin.Controllers
                 image.UserID = Session["AdminUserID"].ToString();
                 image.Link = link;
                 image.Hedef = hedef;
+                image.Tip = tip;
                 image.SliderBaslangicTarihi = baslangicTarihi;
                 image.SliderBitisTarihi = bitisTarihi;
 

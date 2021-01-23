@@ -76,6 +76,10 @@
     <Compile Include="Migrations\202101211826259_LoginUserFix.designer.cs">
       <DependentUpon>202101211826259_LoginUserFix.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101231132182_SliderUpdate.cs" />
+    <Compile Include="Migrations\202101231132182_SliderUpdate.designer.cs">
+      <DependentUpon>202101231132182_SliderUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -89,6 +93,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202101211826259_LoginUserFix.resx">
       <DependentUpon>202101211826259_LoginUserFix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101231132182_SliderUpdate.resx">
+      <DependentUpon>202101231132182_SliderUpdate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

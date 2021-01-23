@@ -4853,6 +4853,7 @@
     <Content Include="Areas\Files\ckeditor\samples\toolbarconfigurator\font\fontello.woff" />
     <Content Include="Areas\Files\ckeditor\samples\toolbarconfigurator\lib\codemirror\LICENSE" />
     <Content Include="Areas\Files\ckeditor\skins\moono-lisa\readme.md" />
+    <Content Include="Areas\Admin\Views\Slider\SliderManagement.cshtml" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -4864,7 +4865,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Views\AdminBase\" />
-    <Folder Include="Areas\Admin\Views\Slider\" />
     <Folder Include="Areas\Files\slider\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />

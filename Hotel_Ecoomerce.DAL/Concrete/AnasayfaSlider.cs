@@ -17,7 +17,7 @@ namespace Hotel_Ecoomerce.DAL.Concrete
         public string Hedef { get; set; }
         public DateTime SliderBaslangicTarihi { get; set; }
         public DateTime SliderBitisTarihi { get; set; }
-       
+        public string Tip { get; set; }
 
     }
 }
