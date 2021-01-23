@@ -1,4 +1,4 @@
-﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
@@ -53,6 +53,9 @@
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -511,6 +514,13 @@
     <Content Include="Areas\Files\ckeditor\styles.js" />
     <Content Include="Areas\Files\css\cblistcss.css" />
     <Content Include="Areas\Files\css\HoldOn.min.css" />
+    <Content Include="Areas\Files\images\ayniotel.png" />
+    <Content Include="Areas\Files\images\basarili.png" />
+    <Content Include="Areas\Files\images\bosalan.png" />
+    <Content Include="Areas\Files\images\error.png" />
+    <Content Include="Areas\Files\images\fav.ico" />
+    <Content Include="Areas\Files\images\galery.png" />
+    <Content Include="Areas\Files\images\info.png" />
     <Content Include="Areas\Files\login\assets\css\bootstrap.min.css" />
     <Content Include="Areas\Files\login\assets\css\galaxy-style.css" />
     <Content Include="Areas\Files\login\assets\img\2.gif" />
