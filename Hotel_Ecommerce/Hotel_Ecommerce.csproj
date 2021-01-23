@@ -108,6 +108,7 @@
     <Content Include="Areas\Files\build\images\loading.gif" />
     <Content Include="Areas\Files\build\js\custom.js" />
     <Content Include="Areas\Files\build\js\custom.min.js" />
+    <Content Include="Areas\Files\cjs\HoldOn.min.js" />
     <Content Include="Areas\Files\cjs\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Areas\Files\cjs\images\ui-bg_glass_75_dadada_1x400.png" />
     <Content Include="Areas\Files\cjs\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
@@ -509,6 +510,7 @@
     <Content Include="Areas\Files\ckeditor\skins\moono-lisa\images\spinner.gif" />
     <Content Include="Areas\Files\ckeditor\styles.js" />
     <Content Include="Areas\Files\css\cblistcss.css" />
+    <Content Include="Areas\Files\css\HoldOn.min.css" />
     <Content Include="Areas\Files\login\assets\css\bootstrap.min.css" />
     <Content Include="Areas\Files\login\assets\css\galaxy-style.css" />
     <Content Include="Areas\Files\login\assets\img\2.gif" />
@@ -572,6 +574,13 @@
     <Content Include="Areas\Files\select2\js\select2.full.min.js" />
     <Content Include="Areas\Files\select2\js\select2.js" />
     <Content Include="Areas\Files\select2\js\select2.min.js" />
+    <Content Include="Areas\Files\slider\2875a9cd-9717-49dd-818e-25dfc94494b1.jfif" />
+    <Content Include="Areas\Files\slider\7133778b-64b1-4085-9116-f1e70b31d20f.jfif" />
+    <Content Include="Areas\Files\slider\868c2263-7f56-4991-aed2-dd44373484f1.jfif" />
+    <Content Include="Areas\Files\slider\86cbab18-8bac-483e-b7b1-eec0ba843dcd.jfif" />
+    <Content Include="Areas\Files\slider\87282d4f-de13-4944-a7e7-fdc9201ca357.jfif" />
+    <Content Include="Areas\Files\slider\c001a4e9-441b-41bb-a36a-cb9976943853.jfif" />
+    <Content Include="Areas\Files\slider\e308c5e9-1260-4e18-b1ef-c66a53f3b767.jfif" />
     <Content Include="Areas\Files\Switch\bootstrap-switch.js" />
     <Content Include="Areas\Files\vendors\animate.css\animate.css" />
     <Content Include="Areas\Files\vendors\animate.css\animate.min.css" />
@@ -5482,7 +5491,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Views\AdminBase\" />
-    <Folder Include="Areas\Files\slider\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>

@@ -15,7 +15,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-
+    
+    <link href="/Areas/Files/css/HoldOn.min.css" rel="stylesheet" />
+    
     <!-- Bootstrap -->
     <link href="/Areas/Files/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Font Awesome -->
@@ -29,12 +31,12 @@
 
     <!-- Custom Theme Style -->
     <link href="/Areas/Files/build/css/custom.min.css" rel="stylesheet" />
-    <asp:ContentPlaceHolder ID="head" >
+    <asp:ContentPlaceHolder ID="head">
     </asp:ContentPlaceHolder>
 </head>
 <body class="nav-md">
 
-    <form id="form1" >
+    <form id="form1">
 
         <div class="container body">
             <div class="main_container">
@@ -55,7 +57,7 @@
                             <div class="profile_info">
                                 <span style="color: #fff">Kullanıcı Adınız</span>
                                 <h2>
-                                    <asp:Label ID="lblkadi"  />
+                                    <asp:Label ID="lblkadi" />
                                 </h2>
                             </div>
                         </div>
@@ -70,32 +72,20 @@
                                 <ul class="nav side-menu">
                                     <li><a target="_blank" href="/index.html"><i class="fa fa-arrow-right"></i>Siteyi Önizle</a></li>
                                     <li>
-                                        <a><i class="fa fa-home"></i>Anasayfa Yönet <span class="fa fa-chevron-down"></span></a>
-                                        <ul class="nav child_menu">
-                                            <li>
-
-                                                <a href="~/Areas/Files/SliderResimEkle" >Slider İşlemleri</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Areas/Files/SliderYanTaraf" >Slider Yanı İşlemleri</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
                                         <a><i class="fa fa-hospital-o"></i>Otelleri Yönet<span class="fa fa-chevron-down"></span></a>
                                         <ul class="nav child_menu">
                                             <li>
-                                                <a href="~/Areas/Files/OtelEkleyin" >Yeni Otel Ekle</a>
+                                                <a href="~/Areas/Files/OtelEkleyin">Yeni Otel Ekle</a>
                                             </li>
                                             <li>
-                                                 
-                                                <a href="~/Areas/Files/OtelleriGoruntule" >Otel Görüntüle/Düzelt</a>
+
+                                                <a href="~/Areas/Files/OtelleriGoruntule">Otel Görüntüle/Düzelt</a>
                                             </li>
                                             <li>
-                                                <a href="~/Areas/Files/OtelOzellikleriGoruntule" >Otel Özelliklerii</a>
+                                                <a href="~/Areas/Files/OtelOzellikleriGoruntule">Otel Özelliklerii</a>
                                             </li>
                                             <li>
-                                                <a href="~/Areas/Files/OdaOzellikleriGoruntule" >Oda Özellikleri</a>
+                                                <a href="~/Areas/Files/OdaOzellikleriGoruntule">Oda Özellikleri</a>
                                             </li>
 
 
@@ -104,16 +94,16 @@
 
 
                                     <li>
-                                        <a href="~/Areas/Files/OtelGaleriYonet" ><i class="fa fa-picture-o"></i>Galeri Yönet</a>
+                                        <a href="slider-list"><i class="fa fa-picture-o"></i>Slider Yönet</a>
                                     </li>
                                     <li>
-                                        <a href="~/Areas/Files/OtelFiyatTeklifleri" ><i class="fa fa-comment-o"></i>Fiyat Teklifleri</a>
+                                        <a href="~/Areas/Files/OtelFiyatTeklifleri"><i class="fa fa-comment-o"></i>Fiyat Teklifleri</a>
                                     </li>
                                     <li>
-                                        <a href="~/Areas/Files/OtelYorumlar" ><i class="fa fa-eye"></i>Yorumlar</a>
+                                        <a href="~/Areas/Files/OtelYorumlar"><i class="fa fa-eye"></i>Yorumlar</a>
                                     </li>
                                     <li>
-                                        <a href="/yonetim" ><i class="fa fa-close"></i>Sistem'den Çık</a>
+                                        <a href="/yonetim"><i class="fa fa-close"></i>Sistem'den Çık</a>
                                     </li>
 
 
@@ -160,7 +150,7 @@
                 <!-- /top navigation -->
                 <!-- page content -->
                 <div class="right_col" role="main">
-                   @RenderBody()
+                    @RenderBody()
                 </div>
                 <!-- /page content -->
                 <!-- footer content -->
@@ -176,6 +166,7 @@
 
         <!-- jQuery -->
         <script type="text/javascript" src="/Areas/Files/vendors/jquery/dist/jquery.min.js"></script>
+        <script src="/Areas/Files/cjs/HoldOn.min.js"></script>
         <!-- Bootstrap -->
         <script type="text/javascript" src="/Areas/Files/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
         <!-- FastClick -->

@@ -73,7 +73,7 @@
                     <div class="col-md-1"><input type="button" id="btnDelete" onclick="DeleteSliderImage('@item._id')" value="Sil" class="btn btn-danger" style="margin-left:40px"></div>
                 </div>
                 <div class="row">
-                    <img src="~/Content/images/Slider/@item.Isım" width="100%" height="100%" />
+                    <img src="~/Areas/Files/slider/@item.Isım" style="height:300px; width:100%;" />
                 </div>
 
             </li>
@@ -84,100 +84,101 @@
 
 </div>
 <script>
-        var $jq = $.noConflict(true);
-        $jq(function () {
-            $jq("#sortable").sortable({
-                update: function () { SaveOrder() }
-            });
-            $jq("#sortable").disableSelection();
+    var $jq = $.noConflict(true);
+    $jq(function () {
+        $jq("#sortable").sortable({
+            update: function () { SaveOrder() }
+        });
+        $jq("#sortable").disableSelection();
+    });
+
+    function SaveOrder() {
+        window.HoldOn.open({
+            theme: "sk-cube-grid",
+            message: "Lütfen Bekleyiniz."
+        });
+        var a = [];
+        $jq('#sortable').children().each(function (i) {
+            a.push($jq(this).attr('id') + ':' + i + 1);
         });
 
-        function SaveOrder() {
-            window.HoldOn.open({
-                theme: "sk-cube-grid",
-                message: "Lütfen Bekleyiniz."
-            });
-            var a = [];
-            $jq('#sortable').children().each(function (i) {
-                a.push($jq(this).attr('id') + ':' + i + 1);
-            });
+        $jq.ajax({
+            url: '/panel/update-slider-order',
+            type: 'POST',
+            data: JSON.stringify(a),
+            headers: {
+                'Content-Type': "application/json",
+                'Access-Control-Allow-Headers': "Content-Type",
 
-            $jq.ajax({
-                url: '/panel/update-slider-order',
-                type: 'POST',
-                data: JSON.stringify(a),
-                headers: {
-                    'Content-Type': "application/json",
-                    'Access-Control-Allow-Headers': "Content-Type",
-
-                }, // tell jQuery not to set contentType
-                success: function (data) {
-                    window.HoldOn.close();
-                },
-                error: function () {
-                    window.HoldOn.close();
-                }
-            });
-
-        }
-
-        function CreateSlider() {
-
-            //link ve resim dolumu kontrol edilecek
-            var file = $jq($("#slider_file"))[0].files[0];
-
-            var formData = new FormData();
-            formData.append('file', file);
-            formData.append('hedef', $("#SliderLinkTarget option:selected").val());
-            formData.append('link', $("#SliderLink").val());
-            formData.append('baslangicTarihi', $("#SliderStartingDate").val());
-            formData.append('bitisTarihi', $("#SliderDueDate").val());
-            formData.append('tip', $("#SliderType").val());
-            $jq.ajax({
-                url: '/panel/upload-slider-image',
-                type: 'POST',
-                data: formData,
-                processData: false,  // tell jQuery not to process the data
-                contentType: false,  // tell jQuery not to set contentType
-                success: function (data) {
-                    if (data !== "") {
-                        console.log(data);
-                        $jq("#sortable").append('<li class="ui-state-default" id="' + data._id + '"><img src="/Areas/Files/slider/' + data.Name + '" width="70%" height="100%"/>' +
-                            '<input type="button" id="btnDelete" onclick="DeleteSliderImage(\'' + data._id + '\')" value="Sil" class="btn btn-danger" style="margin-left:40px">' +
-                            '</li > ');
-                    }
-
-
-                }
-            });
-
-        }
-        $jq("#slider_file").on("change", function (e) {
-
-
+            }, // tell jQuery not to set contentType
+            success: function (data) {
+                window.HoldOn.close();
+            },
+            error: function () {
+                window.HoldOn.close();
+            }
         });
 
-        function DeleteSliderImage(ImageID) {
-            $jq.ajax({
-                url: '/panel/delete-slider-image',
-                type: 'POST',
-                dataType: "json",
-                data: { ImageID: ImageID },
-                beforeSend: function () {
-                    window.HoldOn.open({
-                        theme: "sk-cube-grid",
-                        message: "Lütfen Bekleyiniz."
-                    });
-                },
-                success: function (data) {
-                    if (data == true) {
-                        $jq("#" + ImageID).remove();
-                    }
-                    window.HoldOn.close();
+    }
 
+    function CreateSlider() {
+
+        //link ve resim dolumu kontrol edilecek
+        var file = $jq($("#slider_file"))[0].files[0];
+
+        var formData = new FormData();
+        formData.append('file', file);
+        formData.append('hedef', $("#SliderLinkTarget option:selected").val());
+        formData.append('link', $("#SliderLink").val());
+        formData.append('baslangicTarihi', $("#SliderStartingDate").val());
+        formData.append('bitisTarihi', $("#SliderDueDate").val());
+        formData.append('tip', $("#SliderType").val());
+        $jq.ajax({
+            url: '/panel/upload-slider-image',
+            type: 'POST',
+            data: formData,
+            processData: false,  // tell jQuery not to process the data
+            contentType: false,  // tell jQuery not to set contentType
+            success: function (data) {
+                if (data !== "") {
+                    console.log(data);
+                    debugger
+                    $jq("#sortable").append('<li class="ui-state-default" id="' + data._id + '"><img src="~/Areas/Files/slider/' + data.Isım + '" width="70%" height="100%"/>' +
+                        '<input type="button" id="btnDelete" onclick="DeleteSliderImage(\'' + data._id + '\')" value="Sil" class="btn btn-danger" style="margin-left:40px">' +
+                        '</li > ');
                 }
-            });
-        }
+
+
+            }
+        });
+
+    }
+    $jq("#slider_file").on("change", function (e) {
+
+
+    });
+
+    function DeleteSliderImage(ImageID) {
+        $jq.ajax({
+            url: '/panel/delete-slider-image',
+            type: 'POST',
+            dataType: "json",
+            data: { ImageID: ImageID },
+            beforeSend: function () {
+                window.HoldOn.open({
+                    theme: "sk-cube-grid",
+                    message: "Lütfen Bekleyiniz."
+                });
+            },
+            success: function (data) {
+                if (data == true) {
+                    $jq("#" + ImageID).remove();
+                }
+                window.HoldOn.close();
+
+            }
+        });
+    }
 
 </script>
 
