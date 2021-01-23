@@ -5481,6 +5481,7 @@
     <Content Include="Filemanager\utils\minify.py" />
     <Content Include="Areas\Admin\Views\Slider\SliderManagement.cshtml" />
     <None Include="packages.config" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
