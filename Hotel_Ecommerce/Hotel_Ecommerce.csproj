@@ -4603,6 +4603,7 @@
     <Compile Include="Areas\Admin\Controllers\AdminBaseController.cs" />
     <Compile Include="Areas\Admin\Controllers\CreateHotelController.cs" />
     <Compile Include="Areas\Admin\Controllers\GalleryController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SliderController.cs" />
     <Compile Include="Areas\Admin\Model\HotelModel.cs" />
     <Compile Include="Filemanager\connectors\ashx\filemanager.ashx.cs">
       <DependentUpon>filemanager.ashx</DependentUpon>
@@ -5469,6 +5470,7 @@
     <Content Include="Filemanager\scripts\CodeMirror\README.md" />
     <Content Include="Filemanager\utils\generate-lang.py" />
     <Content Include="Filemanager\utils\minify.py" />
+    <Content Include="Areas\Admin\Views\Slider\SliderManagement.cshtml" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -5480,6 +5482,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Views\AdminBase\" />
+    <Folder Include="Areas\Files\slider\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
