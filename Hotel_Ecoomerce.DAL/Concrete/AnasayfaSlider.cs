@@ -10,11 +10,14 @@ namespace Hotel_Ecoomerce.DAL.Concrete
     [Table("AnasayfaSlider")]
     public class AnasayfaSlider:BaseEntity
     {
-        public string SliderResim { get; set; }
-        public string SliderTarget { get; set; }
-        public string SliderLink { get; set; }
+        public string Isım { get; set; } //Path
+
+        public int Düzen { get; set; }
+        public string Link { get; set; } = "";
+        public string Hedef { get; set; }
         public DateTime SliderBaslangicTarihi { get; set; }
         public DateTime SliderBitisTarihi { get; set; }
-        public bool AktifMi { get; set; }
+       
+
     }
 }
