@@ -2,6 +2,8 @@
 @{
     ViewBag.Title = "CreateHotel";
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    string sessionID = Guid.NewGuid().ToString();
+
 }
 
 @*<link href="~/Areas/Files/css/cblistcss.css" rel="stylesheet" />*@
@@ -9,14 +11,20 @@
     .cbgroup input, label {
         cursor: pointer;
     }
+
+    .modal-dialog {
+        width: 75%;
+        margin: 0 auto;
+    }
 </style>
 
 <div class="row" style="background-color: #fff; padding-top: 60px;">
     <div class="col-xs-12">
-        <a class="btn btn-primary" href="javascript:void(0);" onclick="GaleriAc(id)">
-            <i class="fa fa-picture-o"></i>&nbsp Otel galerisi seçmek için tıklayınız
-        </a>
-        <hr />
+        <div class="form-group">
+            <div class="form-inline">
+                <input type="button" class="btn btn-danger" id="btnProductGallery" value="Otel Görseli Seç" data-toggle="modal" data-target="#galleryModal" />
+            </div>
+        </div>
     </div>
 
     <div class="col-xs-6 form-group">
@@ -74,27 +82,17 @@
     <div class="col-xs-12">
         <br />
         <label>Otel Konumu:</label>
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyA6awZ00Yc6KE06J_-Eo886uNuCraHP8lc"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUNeqnnpydeZHOAO4iEyH86CtXSh5JuAg&libraries=places"></script>
 
-        <a style="color: Blue; float: right; cursor: pointer" data-toggle="modal" data-target="#myModalkonum">Aradığım otel'i bulamıyorum</a>
-        <input class="form-control" id="txtkonum" maxlength="50" placeholder="Otel adı ile arayabilirsiniz." type="text" />
-        <asp:HiddenField ID="hiddengoogleadress" runat="server" />
-        <asp:HiddenField ID="hiddengooglemapx" runat="server" />
-        <asp:HiddenField ID="hiddengooglemapy" runat="server" />
-        <script type="text/javascript">
-            google.maps.event.addDomListener(window, 'load', function () {
-                var places = new google.maps.places.Autocomplete(document.getElementById('txtkonum'));
-                google.maps.event.addListener(places, 'place_changed', function () {
-                    var place = places.getPlace();
-                    var address = place.formatted_address;
-                    var latitude = place.geometry.location.lat();
-                    var longitude = place.geometry.location.lng();
-                    document.getElementById('<%= hiddengooglemapx.ClientID%>').value = latitude;
-                    document.getElementById('<%= hiddengooglemapy.ClientID%>').value = longitude;
+        <input type="text" id="autocomplete" class="form-control" />
 
-                });
-            });
+        <script>
+            var input = document.getElementById('autocomplete');
+            var autocomplete = new google.maps.places.Autocomplete(input);
         </script>
+        @*<a style="color: Blue; float: right; cursor: pointer" data-toggle="modal" data-target="#myModalkonum">Aradığım otel'i bulamıyorum</a>
+            <input class="form-control" id="txtkonum" maxlength="50" placeholder="Otel adı ile arayabilirsiniz." type="text" />*@
+
         <hr />
     </div>
 
@@ -134,35 +132,35 @@
 
         <table>
             <tr>
-                <td> <input type="checkbox" id="cbotel_1" name="OdaOzellikleri[]" /><label for="cbotel_1">&nbsp Aqua Park</label><br /></td>
-                <td> <input type="checkbox" id="cbotel_2" name="OdaOzellikleri[]" /><label for="cbotel_2">&nbsp Casino</label><br /></td>
-                <td> <input type="checkbox" id="cbotel_3" name="OdaOzellikleri[]" /><label for="cbotel_3">&nbsp Buhar Odası</label><br /></td>
-                <td> <input type="checkbox" id="cbotel_4" name="OdaOzellikleri[]" /><label for="cbotel_4">&nbsp Sauna</label><br /></td>
+                <td><label for="cbotel_1"> <input type="checkbox" id="cbotel_1" name="OtelOzellikleri[]" value="Aqua Park" />&nbsp Aqua Park</label><br /></td>
+                <td> <label for="cbotel_2"><input type="checkbox" id="cbotel_2" name="OtelOzellikleri[]" value="Casino" />&nbsp Casino</label><br /></td>
+                <td> <label for="cbotel_3"><input type="checkbox" id="cbotel_3" name="OtelOzellikleri[]" value="Buhar Odası" />&nbsp Buhar Odası</label><br /></td>
+                <td> <label for="cbotel_4"><input type="checkbox" id="cbotel_4" name="OtelOzellikleri[]" value="Sauna" />&nbsp Sauna</label><br /></td>
             </tr>
             <tr>
-                <td> <input type="checkbox" id="cbotel_5" name="OdaOzellikleri[]" /><label for="cbotel_5">&nbsp Otopark</label><br /></td>
-                <td> <input type="checkbox" id="cbotel_6" name="OdaOzellikleri[]" /><label for="cbotel_6">&nbsp Kablosuz İnternet</label><br /></td>
-                <td> <input type="checkbox" id="cbotel_7" name="OdaOzellikleri[]" /><label for="cbotel_7">&nbsp Hamam</label><br /></td>
-                <td> <input type="checkbox" id="cbotel_8" name="OdaOzellikleri[]" /><label for="cbotel_8">&nbsp Açık Havuz</label><br /></td>
+                <td><label for="cbotel_5"> <input type="checkbox" id="cbotel_5" name="OtelOzellikleri[]" value="Otopark" />&nbsp Otopark</label><br /></td>
+                <td><label for="cbotel_6"> <input type="checkbox" id="cbotel_6" name="OtelOzellikleri[]" value="Kablosuz İnternet" />&nbsp Kablosuz İnternet</label><br /></td>
+                <td><label for="cbotel_7"> <input type="checkbox" id="cbotel_7" name="OtelOzellikleri[]" value="Hamam" />&nbsp Hamam</label><br /></td>
+                <td><label for="cbotel_8"> <input type="checkbox" id="cbotel_8" name="OtelOzellikleri[]" value="Açık Havuz" />&nbsp Açık Havuz</label><br /></td>
             </tr>
             <tr>
-                <td> <input type="checkbox" id="cbotel_9" name="OdaOzellikleri[]" /><label for="cbotel_9">&nbsp Toplantı Salonu</label><br /></td>
-                <td> <input type="checkbox" id="cbotel_10" name="OdaOzellikleri[]" /><label for="cbotel_10">&nbsp Doktor</label><br /></td>
-                <td> <input type="checkbox" id="cbotel_11" name="OdaOzellikleri[]" /><label for="cbotel_11">&nbsp Emanet Kasa</label><br /></td>
-                <td> <input type="checkbox" id="cbotel_12" name="OdaOzellikleri[]" /><label for="cbotel_12">&nbsp Oyun Salonu</label><br /></td>
-            </tr>
-            <tr>
-
-                <td> <input type="checkbox" id="cbotel_13" name="OdaOzellikleri[]" /><label for="cbotel_13">&nbsp Animasyon</label><br /></td>
-                <td> <input type="checkbox" id="cbotel_14" name="OdaOzellikleri[]" /><label for="cbotel_14">&nbsp Kapalı Havuz</label><br /></td>
-                <td> <input type="checkbox" id="cbotel_15" name="OdaOzellikleri[]" /><label for="cbotel_15">&nbsp Fitness Center</label><br /></td>
-
+                <td><label for="cbotel_9">  <input type="checkbox" id="cbotel_9" name="OtelOzellikleri[]" value="Toplantı Salonu" /> &nbsp Toplantı Salonu</label><br /></td>
+                <td><label for="cbotel_10"> <input type="checkbox" id="cbotel_10" name="OtelOzellikleri[]" value="Doktor" />&nbsp Doktor</label><br /></td>
+                <td><label for="cbotel_11"> <input type="checkbox" id="cbotel_11" name="OtelOzellikleri[]" value="Emanet Kasa" />&nbsp Emanet Kasa</label><br /></td>
+                <td><label for="cbotel_12"> <input type="checkbox" id="cbotel_12" name="OtelOzellikleri[]" value="Oyun Salonu" />&nbsp Oyun Salonu</label><br /></td>
             </tr>
             <tr>
 
-                <td> <input type="checkbox" id="cbotel_16" name="OdaOzellikleri[]" /><label for="cbotel_16">&nbsp Motorlu Su Sporları</label><br /></td>
-                <td> <input type="checkbox" id="cbotel_17" name="OdaOzellikleri[]" /><label for="cbotel_17">&nbsp Şezlong</label><br /></td>
-                <td> <input type="checkbox" id="cbotel_18" name="OdaOzellikleri[]" /><label for="cbotel_18">&nbsp Masaj</label><br /></td>
+                <td><label for="cbotel_13">  <input type="checkbox" id="cbotel_13" name="OtelOzellikleri[]" value="Animasyon" />&nbsp Animasyon</label><br /></td>
+                <td><label for="cbotel_14">  <input type="checkbox" id="cbotel_14" name="OtelOzellikleri[]" value="Kapalı Havuz" />&nbsp Kapalı Havuz</label><br /></td>
+                <td><label for="cbotel_15">  <input type="checkbox" id="cbotel_15" name="OtelOzellikleri[]" value="Fitness Center" />&nbsp Fitness Center</label><br /></td>
+
+            </tr>
+            <tr>
+
+                <td> <label for="cbotel_16"> <input type="checkbox" id="cbotel_16" name="OtelOzellikleri[]" value="Motorlu Su Sporları" />&nbsp Motorlu Su Sporları</label><br /></td>
+                <td> <label for="cbotel_17"> <input type="checkbox" id="cbotel_17" name="OtelOzellikleri[]" value="Şezlong" />&nbsp Şezlong</label><br /></td>
+                <td> <label for="cbotel_18"> <input type="checkbox" id="cbotel_18" name="OtelOzellikleri[]" value="Masaj" />&nbsp Masaj</label><br /></td>
 
             </tr>
         </table>
@@ -179,40 +177,36 @@
                 <td><input type="checkbox" id="cboteloda_1" name="OdaOzellikleri[]" /><label for="cboteloda_1">&nbsp Açık Büfe Kahvaltı</label><br /></td>
                 <td><input type="checkbox" id="cboteloda_2" name="OdaOzellikleri[]" /><label for="cboteloda_2">&nbsp Odaya Servis</label><br /></td>
                 <td><input type="checkbox" id="cboteloda_3" name="OdaOzellikleri[]" /><label for="cboteloda_3">&nbsp LCD Smart TV & Uydu Yayını</label><br /></td>
-                <td><input type="checkbox" id="cboteloda_14" name="OdaOzellikleri[]" /><label for="cboteloda_14">&nbsp Duş </label><br /></td>
+                <td><input type="checkbox" id="cboteloda_4" name="OdaOzellikleri[]" /><label for="cboteloda_4">&nbsp Duş </label><br /></td>
 
 
             </tr>
             <tr>
-                <td><input type="checkbox" id="cboteloda_4" name="OdaOzellikleri[]" /><label for="cboteloda_4">&nbsp Otel genelinde ücretsiz WIFI</label><br /></td>
-                <td><input type="checkbox" id="cboteloda_5" name="OdaOzellikleri[]" /><label for="cboteloda_5">&nbsp Uyandırma Servisi</label><br /></td>
-                <td><input type="checkbox" id="cboteloda_6" name="OdaOzellikleri[]" /><label for="cboteloda_6">&nbsp Odaya ücretsiz kahvaltı servisi</label><br /></td>
-                <td><input type="checkbox" id="cboteloda_14" name="OdaOzellikleri[]" /><label for="cboteloda_14">&nbsp Telefon</label><br /></td>
+                <td><input type="checkbox" id="cboteloda_5" name="OdaOzellikleri[]" /><label for="cboteloda_5">&nbsp Otel genelinde ücretsiz WIFI</label><br /></td>
+                <td><input type="checkbox" id="cboteloda_6" name="OdaOzellikleri[]" /><label for="cboteloda_6">&nbsp Uyandırma Servisi</label><br /></td>
+                <td><input type="checkbox" id="cboteloda_7" name="OdaOzellikleri[]" /><label for="cboteloda_7">&nbsp Odaya ücretsiz kahvaltı servisi</label><br /></td>
+                <td><input type="checkbox" id="cboteloda_8" name="OdaOzellikleri[]" /><label for="cboteloda_8">&nbsp Telefon</label><br /></td>
 
 
             </tr>
             <tr>
-                <td><input type="checkbox" id="cboteloda_7" name="OdaOzellikleri[]" /><label for="cboteloda_7">&nbsp Günlük Oda Temizliği</label><br /></td>
-                <td><input type="checkbox" id="cboteloda_8" name="OdaOzellikleri[]" /><label for="cboteloda_8">&nbsp Saç kurutma makinası</label><br /></td>
-                <td><input type="checkbox" id="cboteloda_9" name="OdaOzellikleri[]" /><label for="cboteloda_9">&nbsp Havlu</label><br /></td>
+                <td><input type="checkbox" id="cboteloda_9" name="OdaOzellikleri[]" /><label for="cboteloda_9">&nbsp Günlük Oda Temizliği</label><br /></td>
+                <td><input type="checkbox" id="cboteloda_10" name="OdaOzellikleri[]" /><label for="cboteloda_10">&nbsp Saç kurutma makinası</label><br /></td>
+                <td><input type="checkbox" id="cboteloda_11" name="OdaOzellikleri[]" /><label for="cboteloda_11">&nbsp Havlu</label><br /></td>
             </tr>
             <tr>
-                <td><input type="checkbox" id="cboteloda_10" name="OdaOzellikleri[]" /><label for="cboteloda_10">&nbsp Tekstil ürünlerinin değişimi</label><br /></td>
-                <td><input type="checkbox" id="cboteloda_11" name="OdaOzellikleri[]" /><label for="cboteloda_11">&nbsp Klima</label><br /></td>
-                <td><input type="checkbox" id="cboteloda_12" name="OdaOzellikleri[]" /><label for="cboteloda_12">&nbsp Banyo</label><br /></td>
+                <td><input type="checkbox" id="cboteloda_12" name="OdaOzellikleri[]" /><label for="cboteloda_12">&nbsp Tekstil ürünlerinin değişimi</label><br /></td>
+                <td><input type="checkbox" id="cboteloda_13" name="OdaOzellikleri[]" /><label for="cboteloda_13">&nbsp Klima</label><br /></td>
+                <td><input type="checkbox" id="cboteloda_14" name="OdaOzellikleri[]" /><label for="cboteloda_14">&nbsp Banyo</label><br /></td>
             </tr>
             <tr>
-                <td><input type="checkbox" id="cboteloda_13" name="OdaOzellikleri[]" /><label for="cboteloda_13">&nbsp Odada kasa</label><br /></td>
-                <td><input type="checkbox" id="cboteloda_14" name="OdaOzellikleri[]" /><label for="cboteloda_14">&nbsp Jakuzi</label><br /></td>
-                <td><input type="checkbox" id="cboteloda_15" name="OdaOzellikleri[]" /><label for="cboteloda_15">&nbsp Minibar</label><br /></td>
+                <td><input type="checkbox" id="cboteloda_15" name="OdaOzellikleri[]" /><label for="cboteloda_15">&nbsp Odada kasa</label><br /></td>
+                <td><input type="checkbox" id="cboteloda_16" name="OdaOzellikleri[]" /><label for="cboteloda_16">&nbsp Jakuzi</label><br /></td>
+                <td><input type="checkbox" id="cboteloda_17" name="OdaOzellikleri[]" /><label for="cboteloda_17">&nbsp Minibar</label><br /></td>
             </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
+
         </table>
-       
+
     </div>
 
     <div class="col-xs-12">
@@ -233,61 +227,23 @@
         </div>
     </div>
 </div>
-
-<div id="myModalAlert" class="modal fade" role="dialog">
-    <div class="modal-dialog">
+<input type="hidden" id="hiddenGallerySession" value="@sessionID" />
+<!-- Modal -->
+<div id="galleryModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-xl">
 
         <!-- Modal content-->
         <div class="modal-content">
-            <div class="modal-header" style="color: #fff;">
 
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">
-                    <asp:Label ID="lblmodalbaslik" runat="server" />
-                </h4>
-            </div>
             <div class="modal-body">
-                <div class="col-md-2">
-                    <img id="imgmodal" src="images/galery.png" />
-                </div>
-                <div class="col-md-6" style="margin-top: 20px">
-                    <asp:Label ID="lblonaydurumu" runat="server" />.
-                </div>
-            </div>
-            <div class="modal-footer" style="border: none !important">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Kapat</button>
-            </div>
-        </div>
 
-    </div>
-</div>
-<div class="modal fade" id="myModalkonum" role="dialog">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Google Map Konum Nasıl Bulunur ?</h4>
-            </div>
-            <div class="modal-body">
-                <ul>
-                    <li>
-                        <a href="https://maps.google.com/" target="_blank">Buraya Tıklayarak Google Haritalara Gidin</a>
-                    </li>
-                    <li>
-                        Sol üst köşeden aramak istediğiniz otel bilgilerini girin ve aratın
-                    </li>
-                    <li>
-                        Konumunuza sağ tıkladıktan sonra "Burası Neresi" yazısına tıklayın ve alt kısımda çıkan koordinat kodlarını yanyana kopyalarayak bir önceki ekrandaki Otel Harita Bilgileri alanına  ekleyiniz.
-                    </li>
-                    <li>
-                        <a href="../images/harita.jpg" target="_blank">Resimli örnek için tıklayınız.</a>
-                    </li>
-                </ul>
+                <iframe width="100%" height="600px" src="/Filemanager/index.html?fileRoot=~/Content/gallery/uploads/&serverRoot=true&serverMode=false&useFileTable=false&langCode=tr&sessionID=@sessionID"></iframe>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">İşleme devam et</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Galeriyi Kapat</button>
             </div>
         </div>
+
     </div>
 </div>
 <script src="~/Areas/Files/ckeditor/ckeditor.js"></script>
@@ -295,4 +251,138 @@
     var ckeditorOtelProgrami = CKEDITOR.replace('ckeditorOtelProgrami');
     var ckeditorOdaProgrami = CKEDITOR.replace('ckeditorOdaProgrami');
 
+</script>
+<script type="text/javascript">
+    function AjaxOtelEkle() {
+        //var oteladi = $('#txtoteladi').val();
+        //var otelkisabilgi = $('#txtotelkisabilgi').val();
+        //var otelbolgesi = $('#dropotelbolgesi').val();
+        //var otelil = $('#txtotelil').val();
+        //var otelilce = $('#txtotelilce').val();
+        //var oteldivbilgi = $("#txtoteldivbilgi").val();
+        //var oteloncelik = $('#dropoteloncelik').val();
+        //var otelkonumu = document.getElementById('<%= hiddengooglemapx.ClientID%>').value + "," + document.getElementById('<%= hiddengooglemapy.ClientID%>').value;
+        //var konaklamatipleri = "";
+        //$(function () {
+
+        //    var cbsecilenkonaklamalar = $("[id*=ContentPlaceHolder1_cbkonaklamatipleri] input:checked");
+        //    cbsecilenkonaklamalar.each(function () {
+        //        var value = $(this).val();
+        //        var text = $(this).closest("td").find("label").html();
+        //        konaklamatipleri += text + ",";
+
+        //    });
+        //    return false;
+        //});
+        //var sezon = "";
+        //$(function () {
+        //    var cbsecilensezon = $("[id*=ContentPlaceHolder1_cbsezon] input:checked");
+        //    cbsecilensezon.each(function () {
+        //        var value = $(this).val();
+        //        var text = $(this).closest("td").find("label").html();
+        //        sezon += text + ",";
+
+        //    });
+        //    return false;
+        //});
+
+        //var sehirotelimi = "";
+        //$(function () {
+        //    var cbsehirotelimisecildi = $("[id*=ContentPlaceHolder1_cbsehiroteli] input:checked");
+        //    cbsehirotelimisecildi.each(function () {
+        //        var value = $(this).val();
+        //        var text = $(this).closest("td").find("label").html();
+        //        sehirotelimi += text + ",";
+
+        //    });
+        //    return false;
+        //});
+        //var otelsehirotelimi = "";
+        //if (sehirotelimi == "Şehir Oteli,") {
+        //    otelsehirotelimi = "Evet";
+        //}
+        //else {
+        //    otelsehirotelimi = "Hayır";
+        //}
+
+        var otelozellikleri = [];
+
+        $("input[name='OtelOzellikleri[]']").each(function () {
+            otelozellikleri += $(this).val() + ",";
+        });
+
+        console.log(otelozellikleri);
+
+        //var checked = [];
+
+        //$('#searchFilter [name="price[]"]:checked').each(function (i, e) {
+        //    checked.push($(this).val());
+        //});
+
+        //alert(checked.join(','));
+
+        //var odaozellikleri = [];
+
+        //$('[name="OdaOzellikleri[]"]:checked').each(function (checkbox) {
+        //    otelozellikleri += checkbox + ",";
+
+        //});
+
+
+        //var otelprogrami = CKEDITOR.instances['ckeditorOtelProgrami'].getData();
+        //var odaprogrami = CKEDITOR.instances['ckeditorOdaProgrami'].getData();
+        console.log(otelozellikleri);
+        console.log(odaozellikleri);
+        //console.log(otelprogrami);
+        //console.log(odaprogrami);
+        //$.ajax({
+        //    type: "POST",
+        //    url: "/webpanel/Handler/OtelEkle.ashx",
+        //    data: { oteladi: oteladi, otelbolgesi: otelbolgesi, otelil: otelil, otelilce: otelilce, oteldivbilgi: oteldivbilgi, oteloncelik: oteloncelik, otelkonumu: otelkonumu, konaklamatipleri: konaklamatipleri, otelsehirotelimi: otelsehirotelimi, otelozellikleri: otelozellikleri, odaozellikleri: odaozellikleri, otelprogrami: otelprogrami, odaprogrami: odaprogrami, otelsezonu: sezon, otelkisabilgi: otelkisabilgi },
+        //    dataType: "json",
+        //    beforeSend: function () {
+        //    },
+        //    success: function (deger) {
+        //        if (deger.islem == "onaylandi") {
+        //            $("#imgmodal").attr("src", "/webpanel/images/basarili.png");
+        //            $('#<%=lblonaydurumu.ClientID%>').html("Otel ekleme işleminiz tamamlandı.");
+        //            $('#<%=lblmodalbaslik.ClientID%>').html("Otel ekleme işleminiz tamamlandı.");
+        //            $('.modal-header').css('background-color', '#008b8b');
+        //            $('#myModalAlert').modal('show');
+        //        }
+        //        else if (deger.islem == "boşkayit") {
+        //            $("#imgmodal").attr("src", "/webpanel/images/bosalan.png");
+        //            $('#<%=lblonaydurumu.ClientID%>').html("Tüm alanlar dolu olmalıdır.");
+        //            $('#<%=lblmodalbaslik.ClientID%>').html("Üzgünüz,işleminiz tamamlanamadı.");
+        //            $('.modal-header').css('background-color', '#d9534f');
+        //            $('#myModalAlert').modal('show');
+
+        //        }
+        //        else if (deger.islem == "ayniotel") {
+        //            $("#imgmodal").attr("src", "/webpanel/images/ayniotel.png");
+
+        //            $('#<%=lblonaydurumu.ClientID%>').html("Sistem de aynı otel mevcut");
+        //            $('#<%=lblmodalbaslik.ClientID%>').html("Üzgünüz,işleminiz tamamlanamadı.");
+        //            $('.modal-header').css('background-color', '#d9534f');
+        //            $('#myModalAlert').modal('show');
+
+        //        }
+        //        else if (deger.islem == "galeriyok") {
+        //            $("#imgmodal").attr("src", "/webpanel/images/galery.png");
+        //            $('#<%=lblonaydurumu.ClientID%>').html("Lütfen galeri seçimini tamamlayınız.");
+        //            $('#<%=lblmodalbaslik.ClientID%>').html("Üzgünüz,işleminiz tamamlanamadı.");
+        //            $('.modal-header').css('background-color', '#d9534f');
+        //            $('#myModalAlert').modal('show');
+
+        //        }
+        //        else {
+        //            $("#imgmodal").attr("src", "/webpanel/images/error.png");
+        //            $('#<%=lblonaydurumu.ClientID%>').html("Bilgi işlem ile irtibata geçiniz.");
+        //            $('#<%=lblmodalbaslik.ClientID%>').html("Sistem hatası !.");
+        //            $('.modal-header').css('background-color', '#d9534f');
+        //            $('#myModalAlert').modal('show');
+        //        }
+        //    }
+        //});
+    }
 </script>
