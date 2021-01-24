@@ -1,4 +1,4 @@
-﻿using Hotel_Ecoomerce.DAL.Context;
+﻿using Hotel_Ecommerce.DAL.Context;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;

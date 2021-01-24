@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hotel_Ecoomerce.DAL.Concrete
+namespace Hotel_Ecommerce.DAL.Concrete
 {
     [Table("OtelOzellikleri")]
 

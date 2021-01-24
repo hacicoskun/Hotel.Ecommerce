@@ -1,6 +1,6 @@
 ﻿using Hotel_Ecommerce.Repository.Interfaces;
 using Hotel_Ecommerce.Repository.Repositories;
-using Hotel_Ecoomerce.DAL.Context;
+using Hotel_Ecommerce.DAL.Context;
 using System;
 
 namespace MevsimTazesi.Repository.UnitOfWork

@@ -14,5 +14,6 @@ namespace Hotel_Ecommerce
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
         }
+         
     }
 }

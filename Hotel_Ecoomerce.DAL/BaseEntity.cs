@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hotel_Ecoomerce.DAL
+namespace Hotel_Ecommerce.DAL
 {
     public class BaseEntity
     {
