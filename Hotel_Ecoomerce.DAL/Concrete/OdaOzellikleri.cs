@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Hotel_Ecoomerce.DAL.Concrete
+namespace Hotel_Ecommerce.DAL.Concrete
 {
     [Table("OdaOzellikleri")]
     public class OdaOzellikleri : BaseEntity

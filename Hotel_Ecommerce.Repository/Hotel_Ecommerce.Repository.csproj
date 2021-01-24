@@ -85,9 +85,9 @@
     <Compile Include="UnitOfWork\UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Hotel_Ecoomerce.DAL\Hotel_Ecoomerce.DAL.csproj">
+    <ProjectReference Include="..\Hotel_Ecoomerce.DAL\Hotel_Ecommerce.DAL.csproj">
       <Project>{9587a23f-a6d1-4cd7-bcd9-efea90a31238}</Project>
-      <Name>Hotel_Ecoomerce.DAL</Name>
+      <Name>Hotel_Ecommerce.DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

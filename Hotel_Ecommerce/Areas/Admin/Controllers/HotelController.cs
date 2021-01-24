@@ -1,5 +1,5 @@
 ﻿using Hotel_Ecommerce.Areas.Admin.Model;
-using Hotel_Ecoomerce.DAL.Concrete;
+using Hotel_Ecommerce.DAL.Concrete;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;

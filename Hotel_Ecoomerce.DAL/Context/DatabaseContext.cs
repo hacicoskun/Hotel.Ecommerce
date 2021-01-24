@@ -1,4 +1,4 @@
-﻿using Hotel_Ecoomerce.DAL.Concrete;
+﻿using Hotel_Ecommerce.DAL.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hotel_Ecoomerce.DAL.Context
+namespace Hotel_Ecommerce.DAL.Context
 {
     public class DatabaseContext : DbContext, IDisposable
     {

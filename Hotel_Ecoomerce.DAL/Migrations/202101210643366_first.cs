@@ -1,4 +1,4 @@
-﻿namespace Hotel_Ecoomerce.DAL.Migrations
+﻿namespace Hotel_Ecommerce.DAL.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;

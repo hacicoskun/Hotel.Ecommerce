@@ -1,6 +1,6 @@
 ﻿using Hotel_Ecommerce.Repository.Interfaces;
-using Hotel_Ecoomerce.DAL.Concrete;
-using Hotel_Ecoomerce.DAL.Context;
+using Hotel_Ecommerce.DAL.Concrete;
+using Hotel_Ecommerce.DAL.Context;
 
 namespace Hotel_Ecommerce.Repository.Repositories
 {

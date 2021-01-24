@@ -2,3 +2,16 @@
  * Title:   Custom Style File
  * Author:  http://themeforest.net/user/soaptheme 
  */
+.selectpicker, .selectpicker:focus, .selectpicker:active, .selectpicker:after {
+    background-color: transparent !important;
+    border: none !important;
+    color: #fff !important;
+    outline: none;
+}
+
+.ribbon .bootstrap-select .btn:focus {
+   outline:none !important;
+}
+.soap-popupbox{
+    text-transform:none !important;
+}

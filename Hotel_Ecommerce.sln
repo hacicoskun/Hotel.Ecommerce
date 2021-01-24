@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel_Ecommerce", "Hotel_Ecommerce\Hotel_Ecommerce.csproj", "{780F4859-EB83-4B27-BA6F-C0FAA1182486}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel_Ecoomerce.DAL", "Hotel_Ecoomerce.DAL\Hotel_Ecoomerce.DAL.csproj", "{9587A23F-A6D1-4CD7-BCD9-EFEA90A31238}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel_Ecommerce.DAL", "Hotel_Ecoomerce.DAL\Hotel_Ecommerce.DAL.csproj", "{9587A23F-A6D1-4CD7-BCD9-EFEA90A31238}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel_Ecommerce.Repository", "Hotel_Ecommerce.Repository\Hotel_Ecommerce.Repository.csproj", "{C58DC4FF-A1F5-4185-A239-FAE08E459466}"
 EndProject

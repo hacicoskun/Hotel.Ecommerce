@@ -1,4 +1,4 @@
-﻿using Hotel_Ecoomerce.DAL.Concrete;
+﻿using Hotel_Ecommerce.DAL.Concrete;
 
 namespace Hotel_Ecommerce.Repository.Interfaces
 {

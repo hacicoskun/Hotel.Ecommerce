@@ -4259,6 +4259,7 @@
     <Content Include="Content\assest\js\gmap3.infobox.js" />
     <Content Include="Content\assest\js\gmap3.js" />
     <Content Include="Content\assest\js\gmap3.min.js" />
+    <Content Include="Content\assest\js\googlemapapi.js" />
     <Content Include="Content\assest\js\ie8.js" />
     <Content Include="Content\assest\js\isotope.pkgd.js" />
     <Content Include="Content\assest\js\isotope.pkgd.min.js" />
@@ -4897,6 +4898,16 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\en-lang.Designer.cs">
+      <DependentUpon>en-lang.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\tr-lang.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tr-lang.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -5811,6 +5822,7 @@
     <None Include="packages.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\MainMenu.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -5833,9 +5845,9 @@
       <Project>{c58dc4ff-a1f5-4185-a239-fae08e459466}</Project>
       <Name>Hotel_Ecommerce.Repository</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Hotel_Ecoomerce.DAL\Hotel_Ecoomerce.DAL.csproj">
+    <ProjectReference Include="..\Hotel_Ecoomerce.DAL\Hotel_Ecommerce.DAL.csproj">
       <Project>{9587a23f-a6d1-4cd7-bcd9-efea90a31238}</Project>
-      <Name>Hotel_Ecoomerce.DAL</Name>
+      <Name>Hotel_Ecommerce.DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -5844,6 +5856,16 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\en-lang.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>en-lang.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\tr-lang.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>tr-lang.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

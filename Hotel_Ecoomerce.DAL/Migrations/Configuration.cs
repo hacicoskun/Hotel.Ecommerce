@@ -1,13 +1,13 @@
-﻿namespace Hotel_Ecoomerce.DAL.Migrations
+﻿namespace Hotel_Ecommerce.DAL.Migrations
 {
-    using Hotel_Ecoomerce.DAL.Concrete;
+    using Hotel_Ecommerce.DAL.Concrete;
     using System;
     using System.Collections.Generic;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Hotel_Ecoomerce.DAL.Context.DatabaseContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<Hotel_Ecommerce.DAL.Context.DatabaseContext>
     {
         public Configuration()
         {
@@ -16,7 +16,7 @@
 
         }
 
-        protected override void Seed(Hotel_Ecoomerce.DAL.Context.DatabaseContext context)
+        protected override void Seed(Hotel_Ecommerce.DAL.Context.DatabaseContext context)
         {
             if (!context.OtelOzellikTablosu.Any())
             {
