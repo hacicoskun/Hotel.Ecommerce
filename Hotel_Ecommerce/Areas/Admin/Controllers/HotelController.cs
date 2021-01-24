@@ -1,10 +1,6 @@
 ﻿using Hotel_Ecommerce.Areas.Admin.Model;
 using Hotel_Ecommerce.DAL.Concrete;
-using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace Hotel_Ecommerce.Areas.Admin.Controllers

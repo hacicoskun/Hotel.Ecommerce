@@ -5733,7 +5733,7 @@
     <Content Include="Areas\Files\vendors\validator\README.md" />
     <Content Include="Areas\Files\vendors\validator\validator.jquery.json" />
     <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
-    <Content Include="Areas\Admin\Views\CreateHotel\CreateHotel.cshtml" />
+    <Content Include="Areas\Admin\Views\Hotel\CreateHotel.cshtml" />
     <Content Include="Areas\Admin\Views\web.config" />
     <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
     <Content Include="Areas\Admin\Views\AdminLogin\Index.cshtml" />
