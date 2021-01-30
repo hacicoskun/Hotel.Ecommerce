@@ -5,10 +5,10 @@ using Hotel_Ecommerce.DAL.Context;
 namespace Hotel_Ecommerce.Repository.Repositories
 {
 
-    public class OdaOzellikTablosuRepository : Repository<OdaOzellikTablosu>, IOdaOzellikTablosu
+    public class OdaOzellikListesiRepository : Repository<OdaOzellikListesi>, IOdaOzellikListesi
     {
         DatabaseContext _context;
-        public OdaOzellikTablosuRepository(DatabaseContext db) : base(db)
+        public OdaOzellikListesiRepository(DatabaseContext db) : base(db)
         {
             _context = db;
         }

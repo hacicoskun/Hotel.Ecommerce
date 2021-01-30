@@ -13,12 +13,8 @@ namespace Hotel_Ecommerce.Areas.Admin.Controllers
 
         public ActionResult CreateHotel()
         {
-            OtelEklemeveGuncelleme OtelEklemeveGuncelleme = new OtelEklemeveGuncelleme
-            {
-                OdaOzellikleri = _unitOfWork.OdaOzellikTablosu.ToList(),
-                OtelOzellikleri = _unitOfWork.OtelOzellikTablosu.ToList()
-            };
-            return View(OtelEklemeveGuncelleme);
+             
+            return View();
         }
         [Route("hotel-list")]
 
@@ -70,16 +66,18 @@ namespace Hotel_Ecommerce.Areas.Admin.Controllers
                 }
                 string otelkonumu = Request.Form["otelkonumu"];
                 string konaklamatipleri = Request.Form["konaklamatipleri"];
+                string oteltemalari = Request.Form["oteltemalari"];
+
                 string otelozellikleri = Request.Form["otelozellikleri"];
                 string odaozellikleri = Request.Form["odaozellikleri"];
              
-                 string otelkisabilgi = Request.Form["otelkisabilgi"];
+                string otelkisabilgi = Request.Form["otelkisabilgi"];
                 string otellink = LinkOlustur(otelbolgesi) + "/" + LinkOlustur(otelil) + "-" + LinkOlustur(otelilce) + "-otelleri/" + LinkOlustur(oteladi);
 
                 bool otelvarmi = _unitOfWork.Oteller.Any(x => x.OtelLink == otellink);
                 Random rnd = new Random();
 
-                if (oteladi.Trim() != string.Empty && otelbolgesi.Trim() != string.Empty && otelil.Trim() != string.Empty && otelilce.Trim() != string.Empty && otelsezonu.Trim() != string.Empty && oteldivbilgi.Trim() != string.Empty && oteloncelik.Trim() != string.Empty && otelkonumu.Trim() != string.Empty && konaklamatipleri.Trim() != string.Empty && otelsehirotelimi.Trim() != string.Empty && otelozellikleri.Trim() != string.Empty && odaozellikleri.Trim() != string.Empty && otelprogrami.Trim() != string.Empty && odaprogrami.Trim() != string.Empty)
+                if (oteladi.Trim() != string.Empty && otelbolgesi.Trim() != string.Empty && otelil.Trim() != string.Empty && otelilce.Trim() != string.Empty && otelsezonu.Trim() != string.Empty && oteldivbilgi.Trim() != string.Empty && oteloncelik.Trim() != string.Empty && otelkonumu.Trim() != string.Empty && konaklamatipleri.Trim() != string.Empty && otelsehirotelimi.Trim() != string.Empty && otelozellikleri.Trim() != string.Empty && odaozellikleri.Trim() != string.Empty && otelprogrami.Trim() != string.Empty && odaprogrami.Trim() != string.Empty && oteltemalari.Trim() != string.Empty)
                 {
                     if (otelvarmi == false)
                     {
@@ -110,6 +108,19 @@ namespace Hotel_Ecommerce.Areas.Admin.Controllers
                                 _unitOfWork.Save();
                             }
                         }
+
+                        string[] OtelTemaList = oteltemalari.Split(',');
+                        foreach (var item in OtelTemaList)
+                        {
+                            if (item != "")
+                            {
+
+                                OtelTemalari otelTema = new OtelTemalari { OtelTemaAdi = item.ToString(), OtelSubID = id };
+                                _unitOfWork.OtelTemalari.Insert(otelTema);
+                                _unitOfWork.Save();
+                            }
+                        }
+
 
                         Session.Remove("secilengaleri");
                         Session.Remove("secilenanasayfaresmi");

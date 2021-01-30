@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace Hotel_Ecommerce.DAL.Concrete
 {
-    [Table("OdaOzellikTablosu")]
-    public class OdaOzellikTablosu 
+    [Table("OtelTemalariListesi")]
+    public class OtelTemalariListesi
     {
         [Key]
         public string _id { get; set; } = ObjectId.GenerateNewId().ToString();
-        public string OdaOzellikAdi { get; set; }
+        public string TemaAdi { get; set; }
     }
 }

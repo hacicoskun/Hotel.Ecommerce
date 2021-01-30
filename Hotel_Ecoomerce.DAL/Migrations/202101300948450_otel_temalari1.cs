@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class first : DbMigration
+    public partial class otel_temalari1 : DbMigration
     {
         public override void Up()
         {
@@ -12,12 +12,13 @@
                 c => new
                     {
                         _id = c.String(nullable: false, maxLength: 128),
-                        SliderResim = c.String(),
-                        SliderTarget = c.String(),
-                        SliderLink = c.String(),
+                        Isım = c.String(),
+                        Düzen = c.Int(nullable: false),
+                        Link = c.String(),
+                        Hedef = c.String(),
                         SliderBaslangicTarihi = c.DateTime(nullable: false),
                         SliderBitisTarihi = c.DateTime(nullable: false),
-                        AktifMi = c.Boolean(nullable: false),
+                        Tip = c.String(),
                         IsDeleted = c.Boolean(nullable: false),
                         IsActive = c.Boolean(nullable: false),
                         CreatedDate = c.DateTime(nullable: false),
@@ -51,7 +52,7 @@
                         _id = c.String(nullable: false, maxLength: 128),
                         KullaniciAdi = c.String(),
                         Sifre = c.String(),
-                        AktifMi = c.Boolean(nullable: false),
+                        AdSoyad = c.String(),
                         IsDeleted = c.Boolean(nullable: false),
                         IsActive = c.Boolean(nullable: false),
                         CreatedDate = c.DateTime(nullable: false),
@@ -74,7 +75,7 @@
                 .PrimaryKey(t => t._id);
             
             CreateTable(
-                "dbo.OdaOzellikTablosu",
+                "dbo.OdaOzellikListesi",
                 c => new
                     {
                         _id = c.String(nullable: false, maxLength: 128),
@@ -130,7 +131,7 @@
                 .PrimaryKey(t => t._id);
             
             CreateTable(
-                "dbo.OtelOzellikTablosu",
+                "dbo.OtelOzellikListesi",
                 c => new
                     {
                         _id = c.String(nullable: false, maxLength: 128),
@@ -158,6 +159,29 @@
                         IsActive = c.Boolean(nullable: false),
                         CreatedDate = c.DateTime(nullable: false),
                         UserID = c.String(),
+                    })
+                .PrimaryKey(t => t._id);
+            
+            CreateTable(
+                "dbo.OtelTemalari",
+                c => new
+                    {
+                        _id = c.String(nullable: false, maxLength: 128),
+                        OtelSubID = c.String(),
+                        OtelTemaAdi = c.String(),
+                        IsDeleted = c.Boolean(nullable: false),
+                        IsActive = c.Boolean(nullable: false),
+                        CreatedDate = c.DateTime(nullable: false),
+                        UserID = c.String(),
+                    })
+                .PrimaryKey(t => t._id);
+            
+            CreateTable(
+                "dbo.OtelTemalariListesi",
+                c => new
+                    {
+                        _id = c.String(nullable: false, maxLength: 128),
+                        TemaAdi = c.String(),
                     })
                 .PrimaryKey(t => t._id);
             
@@ -229,11 +253,13 @@
             DropTable("dbo.Yorumlar");
             DropTable("dbo.SiziArayalim");
             DropTable("dbo.BiziTakipEdin");
+            DropTable("dbo.OtelTemalariListesi");
+            DropTable("dbo.OtelTemalari");
             DropTable("dbo.OtelTeklifleri");
-            DropTable("dbo.OtelOzellikTablosu");
+            DropTable("dbo.OtelOzellikListesi");
             DropTable("dbo.OtelOzellikleri");
             DropTable("dbo.Oteller");
-            DropTable("dbo.OdaOzellikTablosu");
+            DropTable("dbo.OdaOzellikListesi");
             DropTable("dbo.OdaOzellikleri");
             DropTable("dbo.LoginUsers");
             DropTable("dbo.Iletisim");
