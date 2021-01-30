@@ -11,6 +11,15 @@ namespace Hotel_Ecommerce.Areas.Admin.Model
         public List<OdaOzellikListesi> OdaOzellikleri { get; set; }
         public List<OtelOzellikListesi> OtelOzellikleri { get; set; }
         public List<OtelTemalariListesi> OtelTemalariListesi { get; set; }
+        public HotelEdit Data { get; set; }
 
+        public class HotelEdit
+        {
+            public List<OdaOzellikleri> SeciliOdaOzellikleri { get; set; } = new List<OdaOzellikleri>();
+            public List<OtelOzellikleri> SeciliOtelOzellikleri { get; set; } = new List<OtelOzellikleri>();
+            public List<OtelTemalari> SeciliOtelTemalariListesi { get; set; } = new List<OtelTemalari>();
+            public Oteller Otel { get; set; }
+        }
     }
+
 }
