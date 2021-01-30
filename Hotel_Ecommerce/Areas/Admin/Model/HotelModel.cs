@@ -8,8 +8,8 @@ namespace Hotel_Ecommerce.Areas.Admin.Model
 {
     public class OtelEklemeveGuncelleme
     {
-        public List<OdaOzellikTablosu> OdaOzellikleri { get; set; }
-        public List<OtelOzellikTablosu> OtelOzellikleri { get; set; }
+        public List<OdaOzellikListesi> OdaOzellikleri { get; set; }
+        public List<OtelOzellikListesi> OtelOzellikleri { get; set; }
 
     }
 }

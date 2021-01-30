@@ -16,11 +16,12 @@ namespace Hotel_Ecommerce.DAL.Context
         public DbSet<Iletisim> Iletisim { get; set; }
         public DbSet<LoginUsers> LoginUsers { get; set; }
         public DbSet<OdaOzellikleri> OdaOzellikleri { get; set; }
-        public DbSet<OdaOzellikTablosu> OdaOzellikTablosu { get; set; }
+        public DbSet<OdaOzellikListesi> OdaOzellikListesi { get; set; }
         public DbSet<Oteller> Oteller { get; set; }
-        public DbSet<OtelOzellikleri> OtelOzellikleri { get; set; }
- 
-        public DbSet<OtelOzellikTablosu> OtelOzellikTablosu { get; set; }
+        public DbSet<OtelOzellikleri> OtelOzellikleri { get; set; } 
+        public DbSet<OtelOzellikListesi> OtelOzellikListesi { get; set; }
+        public DbSet<OtelTemalari> OtelTemalari { get; set; }
+        public DbSet<OtelTemalariListesi> OtelTemalariListesi { get; set; }
         public DbSet<OtelTeklifleri> OtelTeklifleri { get; set; }
         public DbSet<SiziArayalim> SiziArayalim { get; set; } 
         public DbSet<Yorumlar> Yorumlar { get; set; }

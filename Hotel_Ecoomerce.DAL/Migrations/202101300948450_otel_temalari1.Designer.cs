@@ -7,13 +7,13 @@ namespace Hotel_Ecommerce.DAL.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class first : IMigrationMetadata
+    public sealed partial class otel_temalari1 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(first));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(otel_temalari1));
         
         string IMigrationMetadata.Id
         {
-            get { return "202101210643366_first"; }
+            get { return "202101300948450_otel_temalari1"; }
         }
         
         string IMigrationMetadata.Source

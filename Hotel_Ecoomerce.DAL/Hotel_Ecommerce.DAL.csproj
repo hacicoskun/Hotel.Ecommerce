@@ -60,25 +60,19 @@
     <Compile Include="Concrete\BiziTakipEdin.cs" />
     <Compile Include="Concrete\LoginUsers.cs" />
     <Compile Include="Concrete\OdaOzellikleri.cs" />
-    <Compile Include="Concrete\OdaOzellikTablosu.cs" />
+    <Compile Include="Concrete\OtelTemalari.cs" />
+    <Compile Include="Concrete\OtelTemalariListesi.cs" />
+    <Compile Include="Concrete\OdaOzellikListesi.cs" />
     <Compile Include="Concrete\Oteller.cs" />
-    <Compile Include="Concrete\OtelOzellikTablosu.cs" />
+    <Compile Include="Concrete\OtelOzellikListesi.cs" />
     <Compile Include="Concrete\OtelOzellikleri.cs" />
     <Compile Include="Concrete\OtelTeklifleri.cs" />
     <Compile Include="Concrete\SiziArayalim.cs" />
     <Compile Include="Concrete\Yorumlar.cs" />
     <Compile Include="Context\DatabaseContext.cs" />
-    <Compile Include="Migrations\202101210643366_first.cs" />
-    <Compile Include="Migrations\202101210643366_first.designer.cs">
-      <DependentUpon>202101210643366_first.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202101211826259_LoginUserFix.cs" />
-    <Compile Include="Migrations\202101211826259_LoginUserFix.designer.cs">
-      <DependentUpon>202101211826259_LoginUserFix.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202101231132182_SliderUpdate.cs" />
-    <Compile Include="Migrations\202101231132182_SliderUpdate.designer.cs">
-      <DependentUpon>202101231132182_SliderUpdate.cs</DependentUpon>
+    <Compile Include="Migrations\202101300948450_otel_temalari1.cs" />
+    <Compile Include="Migrations\202101300948450_otel_temalari1.designer.cs">
+      <DependentUpon>202101300948450_otel_temalari1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -88,14 +82,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202101210643366_first.resx">
-      <DependentUpon>202101210643366_first.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202101211826259_LoginUserFix.resx">
-      <DependentUpon>202101211826259_LoginUserFix.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202101231132182_SliderUpdate.resx">
-      <DependentUpon>202101231132182_SliderUpdate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202101300948450_otel_temalari1.resx">
+      <DependentUpon>202101300948450_otel_temalari1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

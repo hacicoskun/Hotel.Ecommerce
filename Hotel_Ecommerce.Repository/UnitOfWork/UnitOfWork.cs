@@ -13,13 +13,15 @@ namespace MevsimTazesi.Repository.UnitOfWork
         public IIletisim Iletisim { get; }
         public ILoginUsers LoginUsers { get; }
         public IOdaOzellikleri OdaOzellikleri { get; }
-        public IOdaOzellikTablosu OdaOzellikTablosu { get; }
+        public IOdaOzellikListesi OdaOzellikTablosu { get; }
         public IOteller Oteller  { get; }
         public IOtelOzellikleri OtelOzellikleri { get; }
-        public IOtelOzellikTablosu OtelOzellikTablosu  { get; }
+        public IOtelOzellikListesi OtelOzellikListesi { get; }
         public IOtelTeklifleri OtelTeklifleri  { get; }
         public ISiziArayalim SiziArayalim  { get; }
-        public IYorumlar Yorumlar  { get; }
+        public IYorumlar Yorumlar  { get; } 
+        public IOtelTemalari OtelTemalari { get; }
+        public IOtelTemalariListesi OtelTemalariListesi { get; }
 
         private readonly DatabaseContext _context;
 
@@ -31,14 +33,16 @@ namespace MevsimTazesi.Repository.UnitOfWork
             Iletisim = new IletisimRepository(_context);
             LoginUsers = new LoginUsersRepository(_context);
             OdaOzellikleri = new OdaOzellikleriRepository(_context);
-            OdaOzellikTablosu = new OdaOzellikTablosuRepository(_context);
+            OdaOzellikTablosu = new OdaOzellikListesiRepository(_context);
             Oteller = new OtellerRepository(_context);
             OtelOzellikleri = new OtelOzellikleriRepository(_context);
-            OtelOzellikTablosu = new OtelOzellikTablosuRepository(_context);
+            OtelOzellikListesi = new OtelOzellikListesiRepository(_context);
             OtelTeklifleri = new OtelTeklifleriRepository(_context);
             SiziArayalim = new SiziArayalimRepository(_context);
             Yorumlar = new YorumlarRepository(_context);
-            
+            OtelTemalari = new OtelTemalariRepository(_context);
+            OtelTemalariListesi = new OtelTemalariListesiRepository(_context);
+
         }
         public void Dispose()
         {
