@@ -1,6 +1,7 @@
 ﻿using Hotel_Ecommerce.Areas.Admin.Model;
 using Hotel_Ecommerce.DAL.Concrete;
 using System;
+using System.Linq;
 using System.Web.Mvc;
 
 namespace Hotel_Ecommerce.Areas.Admin.Controllers
@@ -13,8 +14,14 @@ namespace Hotel_Ecommerce.Areas.Admin.Controllers
 
         public ActionResult CreateHotel()
         {
-             
-            return View();
+
+            OtelEklemeveGuncelleme OtelEklemeveGuncelleme = new OtelEklemeveGuncelleme
+            {
+                OdaOzellikleri = _unitOfWork.OdaOzellikTablosu.ToList(),
+                OtelOzellikleri = _unitOfWork.OtelOzellikListesi.ToList().OrderBy(x => x.OtelOzellik).ToList(),
+                OtelTemalariListesi=_unitOfWork.OtelTemalariListesi.ToList()
+            };
+            return View(OtelEklemeveGuncelleme);
         }
         [Route("hotel-list")]
 
