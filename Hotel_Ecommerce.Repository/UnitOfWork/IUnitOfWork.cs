@@ -10,7 +10,7 @@ namespace MevsimTazesi.Repository.UnitOfWork
         IIletisim Iletisim { get; }
         ILoginUsers LoginUsers { get; }
         IOdaOzellikleri OdaOzellikleri { get; }
-        IOdaOzellikListesi OdaOzellikTablosu { get; }
+        IOdaOzellikListesi OdaOzellikListesi { get; }
         IOteller Oteller { get; }
         IOtelOzellikleri OtelOzellikleri { get; }
         IOtelOzellikListesi OtelOzellikListesi { get; }

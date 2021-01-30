@@ -6677,6 +6677,7 @@
     <Content Include="Content\assest\sass\_mixin.scss" />
     <Content Include="Content\assest\sass\_variables.scss" />
     <Content Include="Areas\Admin\Views\Menu\Menu.cshtml" />
+    <Content Include="Areas\Admin\Views\Hotel\UpdateHotel.cshtml" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
