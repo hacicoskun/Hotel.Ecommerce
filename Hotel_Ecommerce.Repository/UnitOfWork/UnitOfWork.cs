@@ -13,7 +13,7 @@ namespace MevsimTazesi.Repository.UnitOfWork
         public IIletisim Iletisim { get; }
         public ILoginUsers LoginUsers { get; }
         public IOdaOzellikleri OdaOzellikleri { get; }
-        public IOdaOzellikListesi OdaOzellikTablosu { get; }
+        public IOdaOzellikListesi OdaOzellikListesi { get; }
         public IOteller Oteller  { get; }
         public IOtelOzellikleri OtelOzellikleri { get; }
         public IOtelOzellikListesi OtelOzellikListesi { get; }
@@ -34,7 +34,7 @@ namespace MevsimTazesi.Repository.UnitOfWork
             Iletisim = new IletisimRepository(_context);
             LoginUsers = new LoginUsersRepository(_context);
             OdaOzellikleri = new OdaOzellikleriRepository(_context);
-            OdaOzellikTablosu = new OdaOzellikListesiRepository(_context);
+            OdaOzellikListesi = new OdaOzellikListesiRepository(_context);
             Oteller = new OtellerRepository(_context);
             OtelOzellikleri = new OtelOzellikleriRepository(_context);
             OtelOzellikListesi = new OtelOzellikListesiRepository(_context);

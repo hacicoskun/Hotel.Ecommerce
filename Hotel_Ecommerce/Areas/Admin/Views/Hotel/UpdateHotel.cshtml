@@ -1,0 +1,459 @@
+﻿@model Hotel_Ecommerce.Areas.Admin.Model.OtelEklemeveGuncelleme
+@{
+    ViewBag.Title = "CreateHotel";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    string sessionID = Guid.NewGuid().ToString();
+    var otel = Model.Data.Otel;
+}
+
+@*<link href="~/Areas/Files/css/cblistcss.css" rel="stylesheet" />*@
+<style>
+    .cbgroup input, label {
+        cursor: pointer;
+    }
+
+    .gallery_modal .modal-dialog {
+        width: 75%;
+        margin: 0 auto;
+    }
+</style>
+
+<div class="row" style="background-color: #fff; padding-top: 60px;">
+    <div class="col-xs-12">
+        <div class="form-group">
+            <div class="form-inline">
+                <input type="button" class="btn btn-danger" id="btnProductGallery" value="Otel Görseli Değiştir" data-toggle="modal" data-target="#galleryModal" />
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-6 form-group">
+        <label>Otel Adı:</label>
+        <input value="@otel.OtelAdi" class="form-control" maxlength="100" id="txtoteladi" placeholder="Örn:Sentido Turan Prince" type="text" />
+    </div>
+    <div class="col-xs-6 form-group">
+        <label>Otel Bölgesi</label>
+        <select class="form-control" id="dropotelbolgesi">
+            <option @(otel.OtelBolgesi == "Yurt İçi Otelleri" ? " selected" : "") value="Yurt İçi Otelleri">Yurt İçi Otelleri</option>
+            <option @(otel.OtelBolgesi == "Kıbrıs Otelleri" ? " selected" : "") value="Kıbrıs Otelleri">Kıbrıs Otelleri</option>
+            <option @(otel.OtelBolgesi == "Yurt Dışı Otelleri" ? " selected" : "") value="Yurt Dışı Otelleri">Yurt Dışı Otelleri</option>
+        </select>
+    </div>
+    <div class="col-xs-12">
+        <label>Otel Kısa Bilgi</label>
+        <input type="text" class="form-control" value="@otel.OtelKisaBilgi" placeholder="Otel hakkında kısa bilgi giriniz." maxlength="150" id="txtotelkisabilgi" />
+    </div>
+    <div class="col-xs-6">
+        <div class="row">
+            &nbsp
+        </div>
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-6">
+                <label class="col-xs-12">Otel İl</label>
+                <input class="form-control" value="@otel.Otelil" type="text" maxlength="50" id="txtotelil" placeholder="Örn:Antalya" />
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <label class="col-xs-12">Otel İlçe</label>
+                <input class="form-control" value="@otel.Otelilce" type="text" maxlength="50" id="txtotelilce" placeholder="Örn: Side-Merkez" />
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-6">
+        <div class="row">
+            &nbsp
+        </div>
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-6">
+                <label class="col-xs-12">Otel Div Bilgisi</label>
+                <input class="form-control" type="text" maxlength="250" value="@otel.OtelDivBilgi" placeholder="Örn: 0-6 Yaş Çocuk Ücretsiz" id="txtoteldivbilgi" />
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <label class="col-xs-12">Otel Önceliği</label>
+                <select class="form-control" id="dropoteloncelik">
+                    <option @(!otel.OtelOncelik ? " selected" : "") value="Öncelik Yok">Öncelik Yok</option>
+                    <option @(otel.OtelOncelik ? " selected" : "") value="Öncelik Ver">Öncelik Ver</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <br />
+
+    <div class="col-xs-12">
+        <br />
+        <a style="color: Blue; float: right; cursor: pointer" data-toggle="modal" data-target="#myModalkonum">Koordinat bilgileri nasıl eklenir ?</a>
+    </div>
+    <div class="col-xs-6">
+
+        <label>Otel Konumu X:</label>
+        <input type="text" value="@otel.OtelXYKoordinat.Split(',')[0]" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" id="txtlat" class="form-control" placeholder="Otel konumu Koordinat 1" />
+    </div>
+    <div class="col-xs-6">
+
+        <label>Otel Konumu Y:</label>
+        <input type="text" value="@otel.OtelXYKoordinat.Split(',')[1]" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" id="txtlong" class="form-control" placeholder="Otel konumu Koordinat 2" />
+    </div>
+    <div class="col-xs-12">
+        <br />
+        <label>Şehir Oteli mi ?</label>
+        <select class="form-control" id="dropSehirOteliMi">
+            <option @(!otel.SehirOteli ? " selected" : "") value="Hayır">Hayır</option>
+            <option @(otel.SehirOteli ? " selected" : "") value="Evet">Evet</option>
+        </select> <br />
+    </div>
+    <div class="col-xs-12 col-xs-2 cbgroup">
+        <label>Otel Temaları:</label><br />
+        @foreach (var item in Model.OtelTemalariListesi)
+        {
+            Guid id = @Guid.NewGuid();
+
+            <label for="cbot1_@id"> <input @(Model.Data.SeciliOtelTemalariListesi.Any(x => x.OtelTemaAdi == item.TemaAdi) ? " checked" : "") type="checkbox" id="cbot1_@id" name="OtelTemalari[]" value="@item.TemaAdi" />&nbsp @item.TemaAdi</label><br />
+
+        }
+
+    </div><br />
+    <div class="col-xs-12 col-xs-2 cbgroup">
+        <label>Otel Konaklama Tip(ler)ini seçin:</label><br />
+        @{var konaklamaTipleri = otel.KonaklamaTipi.Split(','); }
+        <label for="cbkt1"> <input @(Array.IndexOf(konaklamaTipleri, "Yalnız Oda") >= 0 ? " checked" : "")  type="checkbox" id="cbkt1" name="OtelKonaklamaTipleri[]" value="Yalnız Oda" />&nbsp Yalnız Oda</label><br />
+        <label for="cbkt2"> <input @(Array.IndexOf(konaklamaTipleri, "Oda kahvaltı") >= 0 ? " checked" : "") type="checkbox" id="cbkt2" name="OtelKonaklamaTipleri[]" value="Oda kahvaltı" />&nbsp Oda kahvaltı</label><br />
+        <label for="cbkt3"> <input @(Array.IndexOf(konaklamaTipleri, "Yarım pansiyon") >= 0 ? " checked" : "") type="checkbox" id="cbkt3" name="OtelKonaklamaTipleri[]" value="Yarım pansiyon" />&nbsp Yarım pansiyon</label><br />
+        <label for="cbkt4"> <input @(Array.IndexOf(konaklamaTipleri, "Yarım pansiyon plus") >= 0 ? " checked" : "") type="checkbox" id="cbkt4" name="OtelKonaklamaTipleri[]" value="Yarım pansiyon plus" />&nbsp Yarım pansiyon plus</label><br />
+        <label for="cbkt5"> <input @(Array.IndexOf(konaklamaTipleri, "Tam pansiyon") >= 0 ? " checked" : "") type="checkbox" id="cbkt5" name="OtelKonaklamaTipleri[]" value="Tam pansiyon" />&nbsp Tam pansiyon</label><br />                      
+        <label for="cbkt6"> <input @(Array.IndexOf(konaklamaTipleri, "Tam pansiyon plus") >= 0 ? " checked" : "") type="checkbox" id="cbkt6" name="OtelKonaklamaTipleri[]" value="Tam pansiyon plus" />&nbsp Tam pansiyon plus</label><br />           
+        <label for="cbkt7"> <input @(Array.IndexOf(konaklamaTipleri, "Her şey dahil") >= 0 ? " checked" : "") type="checkbox" id="cbkt7" name="OtelKonaklamaTipleri[]" value="Her şey dahil" />&nbsp Her şey dahil</label><br />                        
+        <label for="cbkt8"> <input @(Array.IndexOf(konaklamaTipleri, "Her şey dahil plus") >= 0 ? " checked" : "") type="checkbox" id="cbkt8" name="OtelKonaklamaTipleri[]" value="Her şey dahil plus" />&nbsp Her şey dahil plus</label><br />             
+        <label for="cbkt9"> <input @(Array.IndexOf(konaklamaTipleri, "Ultra her şey dahil") >= 0 ? " checked" : "") type="checkbox" id="cbkt9" name="OtelKonaklamaTipleri[]" value="Ultra her şey dahil" />&nbsp Ultra her şey dahil</label>
+    </div>
+    <div class="col-xs-12 col-xs-3">
+        <label>Otel Sezonu ?</label><br />
+        @{var otelsezonlari = otel.OtelSezonu.Split(','); }
+        <label for="cbos1"> <input @(Array.IndexOf(otelsezonlari, "Yaz Sezonu") >= 0 ? " checked" : "") type="checkbox" id="cbos1" name="OtelSezonu[]" value="Yaz Sezonu" />&nbsp Yaz Sezonu</label><br />
+        <label for="cbos2"> <input @(Array.IndexOf(otelsezonlari, "Kış Sezonu") >= 0 ? " checked" : "") type="checkbox" id="cbos2" name="OtelSezonu[]" value="Kış Sezonu" />&nbsp Kış Sezonu</label><br />
+
+    </div>
+
+    <style>
+        td {
+            min-width: 230px;
+        }
+    </style>
+
+
+    <div class="col-xs-12">
+        <hr />
+        <label>Otel Özelliklerini Seçiniz:<span class="mandatory">*</span></label><br />
+        <table>
+            @{
+                var otelOzellikListe = Model.OtelOzellikleri;
+                for (int i = 0; i < otelOzellikListe.Count; i++)
+                {
+
+                    if (otelOzellikListe.Count >= 4)
+                    {
+                        <tr>
+                            @for (int j = 0; j < 4; j++)
+                            {
+
+
+                                Guid id = @Guid.NewGuid();
+                                <td>
+                                    <label for="cbotelozellik_@id"><input  @(Model.Data.SeciliOtelOzellikleri.Any(x => x.OlanakAdi == otelOzellikListe.FirstOrDefault().OtelOzellik) ? " checked" : "") type="checkbox" id="cbotelozellik_@id" name="OtelOzellikleri[]" value="@otelOzellikListe.FirstOrDefault().OtelOzellik" /> &nbsp; @otelOzellikListe.FirstOrDefault().OtelOzellik</label>
+
+                                </td>
+                                { otelOzellikListe.Remove(otelOzellikListe.FirstOrDefault()); }
+
+
+                            }
+                        </tr>
+                        if (otelOzellikListe.Count <= 3)
+                        {
+                            <tr>
+                                @for (int j = 0; j < otelOzellikListe.Count; j++)
+                                {
+
+
+                                    Guid id = @Guid.NewGuid();
+                                    <td>
+                                        <label for="cbotelozellik_@id"><input  @(Model.Data.SeciliOtelOzellikleri.Any(x => x.OlanakAdi == otelOzellikListe.FirstOrDefault().OtelOzellik) ? " checked" : "") type="checkbox" id="cbotelozellik_@id" name="OtelOzellikleri[]" value="@otelOzellikListe[j].OtelOzellik" /> &nbsp; @otelOzellikListe[j].OtelOzellik</label>
+
+                                    </td>
+                                }
+                            </tr>
+                        }
+                    }
+                }
+            }
+        </table>
+
+    </div>
+
+
+
+    <div class="col-xs-12">
+        <hr />
+        <label>Oda Özelliklerini Seçiniz:<span class="mandatory">*</span></label><br />
+        <table>
+            @{
+                var odaOzellikListe = Model.OdaOzellikleri;
+
+                for (int i = 0; i < odaOzellikListe.Count; i++)
+                {
+
+                    if (odaOzellikListe.Count >= 4)
+                    {
+                        <tr>
+                            @for (int j = 0; j < 4; j++)
+                            {
+
+
+                                Guid id = @Guid.NewGuid();
+                                <td>
+                                    <label for="cboteloda_@id"><input  @(Model.Data.SeciliOdaOzellikleri.Any(x => x.OdaOzellikAdi == odaOzellikListe.FirstOrDefault().OdaOzellikAdi) ? " checked" : "") type="checkbox" id="cboteloda_@id" name="OdaOzellikleri[]" value="@odaOzellikListe.FirstOrDefault().OdaOzellikAdi" /> &nbsp; @odaOzellikListe.FirstOrDefault().OdaOzellikAdi</label>
+
+                                </td>
+                                { odaOzellikListe.Remove(odaOzellikListe.FirstOrDefault()); }
+
+
+                            }
+                        </tr>
+                        if (odaOzellikListe.Count <= 3)
+                        {
+                            <tr>
+                                @for (int j = 0; j < odaOzellikListe.Count; j++)
+                                {
+
+
+                                    Guid id = @Guid.NewGuid();
+                                    <td>
+                                        <label for="cboteloda_@id"><input @(Model.Data.SeciliOdaOzellikleri.Any(x => x.OdaOzellikAdi == odaOzellikListe.FirstOrDefault().OdaOzellikAdi) ? " checked" : "") type="checkbox" id="cboteloda_@id" name="OdaOzellikleri[]" value="@odaOzellikListe[j].OdaOzellikAdi" /> &nbsp; @odaOzellikListe[j].OdaOzellikAdi</label>
+
+                                    </td>
+
+                                }
+                            </tr>
+                        }
+                    }
+                }
+            }
+        </table>
+
+
+
+    </div>
+
+    <div class="col-xs-12">
+        <hr />
+        <label>Otel Programı</label>
+         @{string OtelAciklama = otel.OtelAciklama;}
+
+        @Html.TextAreaFor(model => OtelAciklama, new { name = "ckeditorOtelProgrami", @class = "ckeditor" })
+
+    </div>
+    <div class="col-xs-12">
+        <hr />
+        <label>Oda Programı</label>
+         @{string OdaAciklama = otel.OdaAciklama;}
+
+        @Html.TextAreaFor(model => OdaAciklama, new { name = "ckeditorOdaProgrami", @class = "ckeditor" })
+    </div>
+    <div class="col-xs-12">
+        <div style="float: right; margin-top: 20px;">
+            <input type="button" onclick="AjaxOtelGüncelle()" value="Devam et" class="btn btn-success" id="btnSave" />
+
+        </div>
+    </div>
+</div>
+<input type="hidden" id="hiddenGallerySession" value="@sessionID" />
+<!-- Modal -->
+<div class="gallery_modal">
+    <div id="galleryModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-xl">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+                <div class="modal-body">
+
+                    <iframe width="100%" height="600px" src="/Filemanager/index.html?fileRoot=~/Content/gallery/uploads/&serverRoot=true&serverMode=false&useFileTable=false&langCode=tr&sessionID=@sessionID"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Galeriyi Kapat</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="myModalkonum" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Google Map Konum Nasıl Bulunur ?</h4>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>
+                        <a href="https://maps.google.com/" target="_blank">Buraya Tıklayarak Google Haritalara Gidin</a>
+                    </li>
+                    <li>
+                        Sol üst köşeden aramak istediğiniz otel bilgilerini girin ve aratın
+                    </li>
+                    <li>
+                        Konumunuza sağ tıkladıktan sonra "Burası Neresi" yazısına tıklayın ve alt kısımda çıkan koordinat kodları "," ün solu X ve yağı Y şeklinde kopyalarayak bir önceki ekrandaki Otel Harita Bilgileri alanına  ekleyiniz.
+                    </li>
+                    <li>
+                        <a href="~/Areas/Files/images/harita.jpg" target="_blank">Resimli örnek için tıklayınız.</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">İşleme devam et</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="myModalAlert" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header" style="color: #fff;">
+
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">
+                    <label ID="lblmodalbaslik" runat="server" />
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-2">
+                    <img id="imgmodal" src="images/galery.png" />
+                </div>
+                <div class="col-md-6" style="margin-top: 20px">
+                    <label ID="lblonaydurumu" runat="server" />.
+                </div>
+            </div>
+            <div class="modal-footer" style="border: none !important">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="~/Areas/Files/ckeditor/ckeditor.js"></script>
+
+<script type="text/javascript">
+    var ckeditorOtelProgrami = CKEDITOR.replace('OtelAciklama');
+    var ckeditorOdaProgrami = CKEDITOR.replace('OdaAciklama');
+    function AjaxOtelGüncelle() {
+        var oteladi = $('#txtoteladi').val();
+        var otelkisabilgi = $('#txtotelkisabilgi').val();
+        var otelbolgesi = $('#dropotelbolgesi').val();
+        var otelil = $('#txtotelil').val();
+        var otelilce = $('#txtotelilce').val();
+        var oteldivbilgi = $("#txtoteldivbilgi").val();
+        var oteloncelik = $('#dropoteloncelik').val();
+
+        var otelkonumu = $("#txtlat").val() + "," + $("#txtlong").val();//Google map ayarlanacak
+
+        var konaklamatipleri = [];
+        var checkboxesOtelKonaklamaTipleri = $('input[name="OtelKonaklamaTipleri[]"]');
+        checkboxesOtelKonaklamaTipleri.filter(":checked").map(function () {
+            konaklamatipleri += $(this).val() + ",";
+
+        }).get();
+
+
+        var oteltemalari = [];
+        var checkboxesOtelTemalari = $('input[name="OtelTemalari[]"]');
+        checkboxesOtelTemalari.filter(":checked").map(function () {
+            oteltemalari += $(this).val() + ",";
+
+        }).get();
+
+
+
+        var sezon = "";
+        var checkboxesOtelSezon = $('input[name="OtelSezonu[]"]');
+        checkboxesOtelSezon.filter(":checked").map(function () {
+            sezon += $(this).val() + ",";
+        }).get();
+
+
+        var otelsehirotelimi = $("#dropSehirOteliMi option:selected").val();
+
+
+        var otelozellikleri = [];
+
+        var checkboxesOtelozellikleri = $('input[name="OtelOzellikleri[]"]');
+        checkboxesOtelozellikleri.filter(":checked").map(function () {
+            otelozellikleri += $(this).val() + ",";
+
+        }).get();
+        var odaozellikleri = [];
+        var checkboxesOdaozellikleri = $('input[name="OdaOzellikleri[]"]');
+        checkboxesOdaozellikleri.filter(":checked").map(function () {
+            odaozellikleri += $(this).val() + ",";
+        }).get();
+
+        var otelprogrami = ckeditorOtelProgrami.getData();
+        var odaprogrami = ckeditorOdaProgrami.getData();
+        var GallerySessionID = $("#hiddenGallerySession").val()
+
+        $.ajax({
+            type: "POST",
+            url: "/panel/update-hotel-post",
+            data: { GallerySessionID: GallerySessionID, oteladi: oteladi, otelbolgesi: otelbolgesi, otelil: otelil, otelilce: otelilce, oteldivbilgi: oteldivbilgi, oteloncelik: oteloncelik, otelkonumu: otelkonumu, konaklamatipleri: konaklamatipleri, otelsehirotelimi: otelsehirotelimi, otelozellikleri: otelozellikleri, odaozellikleri: odaozellikleri, otelprogrami: otelprogrami, odaprogrami: odaprogrami, otelsezonu: sezon, otelkisabilgi: otelkisabilgi, oteltemalari: oteltemalari, HotelID: '@otel._id' },
+            dataType: "json",
+            beforeSend: function () {
+                $("#btnSave").prop('disabled', true).attr("class", "btn btn-warning").val("Lütfen bekleyiniz..");
+            },
+            success: function (deger) {
+                $("#btnSave").prop('disabled', false).attr("class", "btn btn-success").val("Devam Et");
+
+                if (deger.islem == "onaylandi") {
+                    $("#imgmodal").attr("src", "/Areas/Files/images/basarili.png");
+                    $('#lblonaydurumu').html("Otel güncelleme işleminiz tamamlandı.");
+                    $('#lblmodalbaslik').html("Otel güncelleme işleminiz tamamlandı.");
+                    $('.modal-header').css('background-color', '#008b8b');
+                    $('#myModalAlert').modal('show');
+                }
+                else if (deger.islem == "boşkayit") {
+                    $("#imgmodal").attr("src", "/Areas/Files/images/bosalan.png");
+                    $('#lblonaydurumu').html("Tüm alanlar dolu olmalıdır.");
+                    $('#lblmodalbaslik').html("Üzgünüz,işleminiz tamamlanamadı.");
+                    $('.modal-header').css('background-color', '#d9534f');
+                    $('#myModalAlert').modal('show');
+
+                }
+                else if (deger.islem == "ayniotel") {
+                    $("#imgmodal").attr("src", "/Areas/Files/images/ayniotel.png");
+
+                    $('#lblonaydurumu').html("Sistem de aynı otel mevcut");
+                    $('#lblmodalbaslik').html("Üzgünüz,işleminiz tamamlanamadı.");
+                    $('.modal-header').css('background-color', '#d9534f');
+                    $('#myModalAlert').modal('show');
+
+                }
+                else if (deger.islem == "galeriyok") {
+                    $("#imgmodal").attr("src", "/Areas/Files/images/galery.png");
+                    $('#lblonaydurumu').html("Lütfen galeri seçimini tamamlayınız.");
+                    $('#lblmodalbaslik').html("Üzgünüz,işleminiz tamamlanamadı.");
+                    $('.modal-header').css('background-color', '#d9534f');
+                    $('#myModalAlert').modal('show');
+
+                }
+                else {
+                    $("#imgmodal").attr("src", "/Areas/Files/images/error.png");
+                    $('#lblonaydurumu').html("Bilgi işlem ile irtibata geçiniz.");
+                    $('#lblmodalbaslik').html("Sistem hatası !.");
+                    $('.modal-header').css('background-color', '#d9534f');
+                    $('#myModalAlert').modal('show');
+                }
+            }
+        });
+    }
+</script>

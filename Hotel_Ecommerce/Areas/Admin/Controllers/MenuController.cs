@@ -1,5 +1,4 @@
-﻿using Hotel_Ecoomerce.DAL.Concrete;
-using Newtonsoft.Json;
+﻿using Hotel_Ecommerce.DAL.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
