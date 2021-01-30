@@ -5754,6 +5754,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Homepage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\en-lang.Designer.cs">
       <DependentUpon>en-lang.resx</DependentUpon>
@@ -5765,6 +5766,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>tr-lang.resx</DependentUpon>
     </Compile>
+    <Compile Include="Utils\BaseController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -6702,7 +6704,7 @@
     <Folder Include="Content\assest\images\themes\header\style06\" />
     <Folder Include="Content\assest\images\themes\header\style07\" />
     <Folder Include="Content\images\" />
-    <Folder Include="Models\" />
+    <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Hotel_Ecommerce.Helper\Hotel_Ecommerce.Helper.csproj">
