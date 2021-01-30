@@ -56,17 +56,14 @@ namespace Hotel_Ecommerce.Areas.Admin.Controllers
         }
 
         [Route("get-tur-menusu-icerik")]
-        [ValidateInput(false)]
         public ActionResult GetTurMenu(string Baslik)
-        {         
-            var Liste = _unitOfWork.TurMenusu.ToList();
-            var İcerik = Liste.Find(x => x.Baslik == Baslik);
-            var deger = İcerik.İcerik;
-            return Json(İcerik);
+        {
+            var deger = _unitOfWork.TurMenusu.FirstOrDefault(x => x.Baslik.ToLower() == Baslik.ToLower()).İcerik;
+            return Json(deger);
             //return Content(JsonConvert.SerializeObject(deger), "application/json");
 
         }
-        [Route("get-tur-menusu-icerik")]
+        [Route("update-tur-menusu-icerik")]
         [ValidateInput(false)]
         public ActionResult UpdateTurMenu(string Baslik,string İcerik)
         {

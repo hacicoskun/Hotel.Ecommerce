@@ -1,4 +1,4 @@
-﻿@Model 
+﻿
 @{
     ViewBag.Title = "Menu";
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
@@ -64,6 +64,7 @@
 <script>
     var ckeditorMenuİcerik = CKEDITOR.replace('ckeditorMenuİcerik');
     
+    
     function AjaxTurMenüİcerik() {
         var Baslik = document.getElementById("dropTurType").value;
         var İcerik = ckeditorMenuİcerik.getData();
@@ -110,13 +111,11 @@
             data: { Baslik: Baslik },
             success: function (deger) {
 
-                alert("deneme");
+                CKEDITOR.instances.ckeditorMenuİcerik.setData(deger);
 
 
-            },
-            error: function (deger) {
-                alert(deger);
             }
+           
 
         });
     }
