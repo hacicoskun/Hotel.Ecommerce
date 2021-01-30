@@ -5744,6 +5744,7 @@
     <Compile Include="Areas\Admin\Controllers\AdminBaseController.cs" />
     <Compile Include="Areas\Admin\Controllers\HotelController.cs" />
     <Compile Include="Areas\Admin\Controllers\GalleryController.cs" />
+    <Compile Include="Areas\Admin\Controllers\MenuController.cs" />
     <Compile Include="Areas\Admin\Controllers\SliderController.cs" />
     <Compile Include="Areas\Admin\Model\HotelModel.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -6675,6 +6676,7 @@
     <Content Include="Content\assest\sass\_base.scss" />
     <Content Include="Content\assest\sass\_mixin.scss" />
     <Content Include="Content\assest\sass\_variables.scss" />
+    <Content Include="Areas\Admin\Views\Menu\Menu.cshtml" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
