@@ -105,14 +105,14 @@
     </div>
     <div class="col-xs-12 col-xs-2 cbgroup">
         <label>Otel Temaları:</label><br />
-        <label for="cbot1"> <input type="checkbox" id="cbot1" name="OtelTemalari[]" value="Becoming Öneriyor" />&nbsp Becoming Öneriyor</label><br />
-        <label for="cbot2"> <input type="checkbox" id="cbot2" name="OtelTemalari[]" value="Balayı Otelleri" />&nbsp Balayı Oteli</label><br />
-        <label for="cbot3"> <input type="checkbox" id="cbot3" name="OtelTemalari[]" value="Aquapark Otelleri" />&nbsp Aquapark Oteli</label><br />
-        <label for="cbot4"> <input type="checkbox" id="cbot4" name="OtelTemalari[]" value="Yarım pansiyon plus" />&nbsp Bebek & Çocuk Dostu Otel</label><br />
-        <label for="cbot5"> <input type="checkbox" id="cbot5" name="OtelTemalari[]" value="Tam pansiyon" />&nbsp Kayak Oteli</label><br />
-        <label for="cbot6"> <input type="checkbox" id="cbot6" name="OtelTemalari[]" value="Tam pansiyon plus" />&nbsp Termal Otel</label><br />
-        <label for="cbot7"> <input type="checkbox" id="cbot7" name="OtelTemalari[]" value="Her şey dahil" />&nbsp İş Oteli</label><br />
-        <label for="cbot8"> <input type="checkbox" id="cbot8" name="OtelTemalari[]" value="Her şey dahil plus" />&nbsp Erken Rezerbasyon</label><br />
+        @foreach (var item in Model.OtelTemalariListesi)
+        {
+            Guid id = @Guid.NewGuid();
+
+            <label for="cbot1_@id"> <input type="checkbox" id="cbot1_@id" name="OtelTemalari[]" value="@item.TemaAdi" />&nbsp @item.TemaAdi</label><br />
+
+        }
+
     </div><br />
     <div class="col-xs-12 col-xs-2 cbgroup">
         <label>Otel Konaklama Tip(ler)ini seçin:</label><br />
@@ -148,22 +148,40 @@
                 var otelOzellikListe = Model.OtelOzellikleri;
                 for (int i = 0; i < otelOzellikListe.Count; i++)
                 {
-                    <tr>
-                        @for (int j = 0; j < 4; j++)
-                        {
 
-                            if (otelOzellikListe.Count > j)
+                    if (otelOzellikListe.Count >= 4)
+                    {
+                        <tr>
+                            @for (int j = 0; j < 4; j++)
                             {
+
+
                                 Guid id = @Guid.NewGuid();
                                 <td>
-                                    <label for="cbotel_@id"><input type="checkbox" id="cbotel_@id" name="OtelOzellikleri[]" value="@otelOzellikListe[j].OtelOzellik" /> &nbsp; @otelOzellikListe[j].OtelOzellik</label>
+                                    <label for="cbotelozellik_@id"><input type="checkbox" id="cbotelozellik_@id" name="OtelOzellikleri[]" value="@otelOzellikListe.FirstOrDefault().OtelOzellik" /> &nbsp; @otelOzellikListe.FirstOrDefault().OtelOzellik</label>
 
                                 </td>
-                                { otelOzellikListe.Remove(otelOzellikListe[j]); }
+                                { otelOzellikListe.Remove(otelOzellikListe.FirstOrDefault()); }
+
+
                             }
+                        </tr>
+                        if (otelOzellikListe.Count <= 3)
+                        {
+                            <tr>
+                                @for (int j = 0; j < otelOzellikListe.Count; j++)
+                                {
+
+
+                                    Guid id = @Guid.NewGuid();
+                                    <td>
+                                        <label for="cbotelozellik_@id"><input type="checkbox" id="cbotelozellik_@id" name="OtelOzellikleri[]" value="@otelOzellikListe[j].OtelOzellik" /> &nbsp; @otelOzellikListe[j].OtelOzellik</label>
+
+                                    </td>
+                                }
+                            </tr>
                         }
-                    </tr>
-                    i = -1;
+                    }
                 }
             }
         </table>
@@ -178,12 +196,11 @@
         <table>
             @{
                 var odaOzellikListe = Model.OdaOzellikleri;
-                bool lastRow = false;
-                bool lastLoop = false;
+
                 for (int i = 0; i < odaOzellikListe.Count; i++)
                 {
 
-                    if (!lastRow)
+                    if (odaOzellikListe.Count >= 4)
                     {
                         <tr>
                             @for (int j = 0; j < 4; j++)
@@ -192,43 +209,31 @@
 
                                 Guid id = @Guid.NewGuid();
                                 <td>
-                                    <label for="cboteloda_@id"><input type="checkbox" id="cboteloda_@id" name="OtelOzellikleri[]" value="@odaOzellikListe[j].OdaOzellikAdi" /> &nbsp; @odaOzellikListe[j].OdaOzellikAdi</label>
+                                    <label for="cboteloda_@id"><input type="checkbox" id="cboteloda_@id" name="OdaOzellikleri[]" value="@odaOzellikListe.FirstOrDefault().OdaOzellikAdi" /> &nbsp; @odaOzellikListe.FirstOrDefault().OdaOzellikAdi</label>
 
                                 </td>
-                                { odaOzellikListe.Remove(odaOzellikListe[j]); }
-                                if (odaOzellikListe.Count < 4)
-                                {
+                                { odaOzellikListe.Remove(odaOzellikListe.FirstOrDefault()); }
 
-                                    lastRow = true;
-                                    break;
-                                }
 
                             }
                         </tr>
-                        i = -1;
-                    }
-                    else
-                    {
-                        <tr>
-                            @{
-                                if (!lastLoop)
+                        if (odaOzellikListe.Count <= 3)
+                        {
+                            <tr>
+                                @for (int j = 0; j < odaOzellikListe.Count; j++)
                                 {
-                                    for (int j = 0; j < odaOzellikListe.Count; j++)
-                                    {
 
 
-                                        Guid id = @Guid.NewGuid();
-                                        <td>
-                                            <label for="cboteloda_@id"><input type="checkbox" id="cboteloda_@id" name="OtelOzellikleri[]" value="@odaOzellikListe[j].OdaOzellikAdi" /> &nbsp; @odaOzellikListe[j].OdaOzellikAdi</label>
+                                    Guid id = @Guid.NewGuid();
+                                    <td>
+                                        <label for="cboteloda_@id"><input type="checkbox" id="cboteloda_@id" name="OdaOzellikleri[]" value="@odaOzellikListe[j].OdaOzellikAdi" /> &nbsp; @odaOzellikListe[j].OdaOzellikAdi</label>
 
-                                        </td>
-                                        lastLoop = true;
-                                    }
+                                    </td>
+
                                 }
-                            }
-                        </tr>
+                            </tr>
+                        }
                     }
-
                 }
             }
         </table>
@@ -250,7 +255,7 @@
     </div>
     <div class="col-xs-12">
         <div style="float: right; margin-top: 20px;">
-            <input type="button" onclick="AjaxOtelEkle()" value="Devam et" class="btn btn-success" />
+            <input type="button" onclick="AjaxOtelEkle()" value="Devam et" class="btn btn-success" id="btnSave"/>
 
         </div>
     </div>
@@ -398,8 +403,11 @@
             data: { GallerySessionID: GallerySessionID, oteladi: oteladi, otelbolgesi: otelbolgesi, otelil: otelil, otelilce: otelilce, oteldivbilgi: oteldivbilgi, oteloncelik: oteloncelik, otelkonumu: otelkonumu, konaklamatipleri: konaklamatipleri, otelsehirotelimi: otelsehirotelimi, otelozellikleri: otelozellikleri, odaozellikleri: odaozellikleri, otelprogrami: otelprogrami, odaprogrami: odaprogrami, otelsezonu: sezon, otelkisabilgi: otelkisabilgi, oteltemalari: oteltemalari },
             dataType: "json",
             beforeSend: function () {
+                $("#btnSave").prop('disabled', true).attr("class", "btn btn-warning").val("Lütfen bekleyiniz.."); 
             },
             success: function (deger) {
+                $("#btnSave").prop('disabled', false).attr("class", "btn btn-success").val("Devam Et");
+
                 if (deger.islem == "onaylandi") {
                     $("#imgmodal").attr("src", "/Areas/Files/images/basarili.png");
                     $('#lblonaydurumu').html("Otel ekleme işleminiz tamamlandı.");

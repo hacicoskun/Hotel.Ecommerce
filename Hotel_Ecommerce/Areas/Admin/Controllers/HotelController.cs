@@ -19,7 +19,7 @@ namespace Hotel_Ecommerce.Areas.Admin.Controllers
             {
                 OdaOzellikleri = _unitOfWork.OdaOzellikTablosu.ToList(),
                 OtelOzellikleri = _unitOfWork.OtelOzellikListesi.ToList().OrderBy(x => x.OtelOzellik).ToList(),
-                OtelTemalariListesi=_unitOfWork.OtelTemalariListesi.ToList()
+                OtelTemalariListesi = _unitOfWork.OtelTemalariListesi.ToList()
             };
             return View(OtelEklemeveGuncelleme);
         }
@@ -30,10 +30,10 @@ namespace Hotel_Ecommerce.Areas.Admin.Controllers
             return View(_unitOfWork.Oteller.ToList());
         }
 
- 
-        [Route("create-hotel-post")] 
-        [ValidateInput(false)] 
-        public ActionResult CreateHotelPost(string otelprogrami,string odaprogrami)
+
+        [Route("create-hotel-post")]
+        [ValidateInput(false)]
+        public ActionResult CreateHotelPost(string otelprogrami, string odaprogrami)
         {
             string sliderPath = "";
             string screenImage = "";
@@ -41,9 +41,9 @@ namespace Hotel_Ecommerce.Areas.Admin.Controllers
             {
                 string GallerySessionID = Request.Form["GallerySessionID"];
 
-                  sliderPath = Session["gallery_SliderPath_" + GallerySessionID].ToString();
-                  screenImage = Session["gallery_ScreenImage_" + GallerySessionID].ToString();
-        
+                sliderPath = Session["gallery_SliderPath_" + GallerySessionID].ToString();
+                screenImage = Session["gallery_ScreenImage_" + GallerySessionID].ToString();
+
                 string oteladi = Request.Form["oteladi"];
                 string otelbolgesi = Request.Form["otelbolgesi"];
                 string otelil = Request.Form["otelil"];
@@ -77,7 +77,7 @@ namespace Hotel_Ecommerce.Areas.Admin.Controllers
 
                 string otelozellikleri = Request.Form["otelozellikleri"];
                 string odaozellikleri = Request.Form["odaozellikleri"];
-             
+
                 string otelkisabilgi = Request.Form["otelkisabilgi"];
                 string otellink = LinkOlustur(otelbolgesi) + "/" + LinkOlustur(otelil) + "-" + LinkOlustur(otelilce) + "-otelleri/" + LinkOlustur(oteladi);
 
