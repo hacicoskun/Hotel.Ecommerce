@@ -10,14 +10,15 @@ namespace MevsimTazesi.Repository.UnitOfWork
         IIletisim Iletisim { get; }
         ILoginUsers LoginUsers { get; }
         IOdaOzellikleri OdaOzellikleri { get; }
-        IOdaOzellikTablosu OdaOzellikTablosu { get; }
+        IOdaOzellikListesi OdaOzellikTablosu { get; }
         IOteller Oteller { get; }
         IOtelOzellikleri OtelOzellikleri { get; }
-        IOtelOzellikTablosu OtelOzellikTablosu { get; }
+        IOtelOzellikListesi OtelOzellikListesi { get; }
         IOtelTeklifleri OtelTeklifleri { get; }
         ISiziArayalim SiziArayalim { get; }
         IYorumlar Yorumlar { get; }
-
+        IOtelTemalari OtelTemalari { get; }
+        IOtelTemalariListesi OtelTemalariListesi { get; }
 
         int Save();
     }

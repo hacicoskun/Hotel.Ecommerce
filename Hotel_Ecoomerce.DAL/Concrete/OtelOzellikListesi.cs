@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 
 namespace Hotel_Ecommerce.DAL.Concrete
 {
-    [Table("OtelOzellikTablosu")] 
-    public class OtelOzellikTablosu
+    [Table("OtelOzellikListesi")] 
+    public class OtelOzellikListesi
     {
         [Key]
         public string _id { get; set; } = ObjectId.GenerateNewId().ToString();

@@ -2,7 +2,7 @@
 
 namespace Hotel_Ecommerce.Repository.Interfaces
 {
-    public interface IOtelOzellikTablosu : IRepository<OtelOzellikTablosu>
+    public interface IOdaOzellikListesi : IRepository<OdaOzellikListesi>
     {
     }
 }
