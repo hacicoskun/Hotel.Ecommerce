@@ -17,9 +17,9 @@ namespace Hotel_Ecommerce.Areas.Admin.Controllers
 
             OtelEklemeveGuncelleme OtelEklemeveGuncelleme = new OtelEklemeveGuncelleme
             {
-                OdaOzellikleri = _unitOfWork.OdaOzellikTablosu.ToList(),
+                OdaOzellikleri = _unitOfWork.OdaOzellikTablosu.ToList().ToList().OrderBy(x => x.OdaOzellikAdi).ToList(),
                 OtelOzellikleri = _unitOfWork.OtelOzellikListesi.ToList().OrderBy(x => x.OtelOzellik).ToList(),
-                OtelTemalariListesi = _unitOfWork.OtelTemalariListesi.ToList()
+                OtelTemalariListesi = _unitOfWork.OtelTemalariListesi.ToList().OrderBy(x => x.TemaAdi).ToList()
             };
             return View(OtelEklemeveGuncelleme);
         }
