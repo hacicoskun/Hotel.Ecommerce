@@ -1,4 +1,4 @@
-﻿
+﻿@model Hotel_Ecommerce.Models.Homepage
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -166,28 +166,28 @@
                         <figure><a href="#" title=""><img width="63" height="59" src="~/Content/assest/images/dashboard/booking1.png" alt=""></a></figure>
                         <div class="details">
                             <h5 class="box-title" style="font-weight:bold;text-transform:none;font-family:Arial"><a href="#">Kıbrıs otelleri</a></h5>
-                            @*<label class="price-wrapper" style="font-weight:bold;text-transform:none;font-family:Arial">%35'e varan indirimleri kaçırmayın !</label>*@
+                            <label class="price-wrapper" style="font-weight:bold;text-transform:none;font-family:Arial">%35'e varan indirimleri kaçırmayın !</label>
                         </div>
                     </article>
                     <article class="box">
                         <figure><a href="#" title=""><img width="63" height="59" style="height:59px !important" src="https://i4.hurimg.com/i/hurriyet/75/750x422/55eaf8e1f018fbb8f8a29f05.jpg" alt=""></a></figure>
                         <div class="details">
                             <h5 style="font-weight:bold;text-transform:none;font-family:Arial" class="box-title"><a href="#">Erken Rezervasyon Fırsatları</a></h5>
-                            @*<label class="price-wrapper" style="font-weight:bold;text-transform:none;font-family:Arial"> Popüler kış otellerini inceleyin</label>*@
+                            <label class="price-wrapper" style="font-weight:bold;text-transform:none;font-family:Arial"> %10'a varan indirimler ile şehir otellerini inceleyin</label>
                         </div>
                     </article>
                     <article class="box">
                         <figure><a href="#" title=""><img width="63" height="59" style="height:59px !important" src="https://tatilsepeti.cubecdn.net/images/Balayi-Otelleri.jpg" alt=""></a></figure>
                         <div class="details">
                             <h5 style="font-weight:bold;text-transform:none;font-family:Arial" class="box-title"><a href="#">Akdeniz otelleri</a></h5>
-                            @*<label class="price-wrapper" style="font-weight:bold;text-transform:none;font-family:Arial">Sizin için seçtiğimiz huzur dolu otelleri kaçırmayın</label>*@
+                            <label class="price-wrapper" style="font-weight:bold;text-transform:none;font-family:Arial">Sizin için seçtiğimiz huzur dolu otelleri kaçırmayın</label>
                         </div>
                     </article>
                     <article class="box">
                         <figure><a href="#" title=""><img width="63" height="59" style="height:59px !important" src="~/Content/assest/images/shortcodes/image-box/style05/1.png" alt=""></a></figure>
                         <div class="details">
                             <h5 style="font-weight:bold;text-transform:none;font-family:Arial" class="box-title"><a href="#">Ege otelleri</a></h5>
-                            @*<label style="font-weight:bold;text-transform:none;font-family:Arial" class="price-wrapper">%10'a varan indirimler ile şehir otellerini inceleyin</label>*@
+                            <label style="font-weight:bold;text-transform:none;font-family:Arial" class="price-wrapper">Ege otellerini incelemek için doğru yerdesiniz.</label>
                         </div>
                     </article>
                 </div>
@@ -198,3 +198,187 @@
         </div>
     </div>
 </div>
+<section id="content">
+    <div class="container">
+        <div id="main">
+            <div class="row">
+                 
+                <div class="col-sm-12">
+                    
+                    <div class="hotel-list">
+                        <div class="row image-box hotel listing-style1">
+                            @foreach (var item in Model.OncelikliOteller)
+                            {
+                                <div class="col-sm-6 col-md-3">
+                                    <article class="box">
+                                        <figure>
+                                            <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img width="270" height="161" alt="" style="height:161px !important" src="@item.Resim"></a>
+                                        </figure>
+                                        <div class="details" style="height:275px">
+                                            
+                                            <h4 class="box-title" style="height:50px">@item.Adi</h4>
+                                            <div class="feedback">
+                                                <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title=""  ><span style="width: 80%;" class="five-stars"></span></div>
+                                                <span class="review" style="font-weight:bold;color:#000000;text-transform:none;font-size:12px">@item.Konumu.Split(',')[item.Konumu.Split(',').Length-1]</span>
+                                            </div>
+                                            <p class="description" style="height:100px">@item.KisaAciklama</p>
+                                            <div class="action">
+                                                <a class="button btn-small yellow" href="hotel-detailed.html">Oteli İncele</a>
+                                             </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            }
+
+                            @*<div class="col-sm-6 col-md-3">
+            <article class="box">
+                <figure>
+                    <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img width="270" height="161" alt="" src="images/hotels/2.png"></a>
+                </figure>
+                <div class="details">
+                    <span class="price"><small>avg/night</small>$120</span>
+                    <h4 class="box-title">Forte Do Vale<small>Albufeira</small></h4>
+                    <div class="feedback">
+                        <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title="" data-original-title="4 stars"><span style="width: 80%;" class="five-stars"></span></div>
+                        <span class="review">170 reviews</span>
+                    </div>
+                    <p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
+                    <div class="action">
+                        <a class="button btn-small" href="hotel-detailed.html">SELECT</a>
+                        <a class="button btn-small yellow popup-map" href="#" data-box="37.089072, -8.247880">VIEW ON MAP</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <article class="box">
+                <figure>
+                    <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img width="270" height="161" alt="" src="images/hotels/3.png"></a>
+                </figure>
+                <div class="details">
+                    <span class="price"><small>avg/night</small>$322</span>
+                    <h4 class="box-title">Gran Canaria<small>spain</small></h4>
+                    <div class="feedback">
+                        <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title="" data-original-title="4 stars"><span style="width: 80%;" class="five-stars"></span></div>
+                        <span class="review">485 reviews</span>
+                    </div>
+                    <p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
+                    <div class="action">
+                        <a class="button btn-small" href="hotel-detailed.html">SELECT</a>
+                        <a class="button btn-small yellow popup-map" href="#" data-box="40.463667, -3.749220">VIEW ON MAP</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <article class="box">
+                <figure>
+                    <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img width="270" height="161" alt="" src="images/hotels/4.png"></a>
+                </figure>
+                <div class="details">
+                    <span class="price"><small>avg/night</small>$170</span>
+                    <h4 class="box-title">Roosevelt Hotel<small>New york</small></h4>
+                    <div class="feedback">
+                        <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title="" data-original-title="4 stars"><span style="width: 80%;" class="five-stars"></span></div>
+                        <span class="review">75 reviews</span>
+                    </div>
+                    <p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
+                    <div class="action">
+                        <a class="button btn-small" href="hotel-detailed.html">SELECT</a>
+                        <a class="button btn-small yellow popup-map" href="#" data-box="40.705631, -73.978003">VIEW ON MAP</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <article class="box">
+                <figure>
+                    <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img width="270" height="161" alt="" src="images/hotels/5.png"></a>
+                </figure>
+                <div class="details">
+                    <span class="price">
+                        <small>avg/night</small>
+                        $620
+                    </span>
+                    <h4 class="box-title">Costa Brava<small>Spain</small></h4>
+                    <div class="feedback">
+                        <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title="" data-original-title="4 stars"><span style="width: 80%;" class="five-stars"></span></div>
+                        <span class="review">423 reviews</span>
+                    </div>
+                    <p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
+                    <div class="action">
+                        <a class="button btn-small" href="hotel-detailed.html">SELECT</a>
+                        <a class="button btn-small yellow popup-map" href="#" data-box="40.463667, -3.749220">VIEW ON MAP</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <article class="box">
+                <figure>
+                    <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img width="270" height="161" alt="" src="images/hotels/6.png"></a>
+                </figure>
+                <div class="details">
+                    <span class="price"><small>avg/night</small>$322</span>
+                    <h4 class="box-title">Ruzzini Palace<small>Venice</small></h4>
+                    <div class="feedback">
+                        <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title="" data-original-title="4 stars"><span style="width: 80%;" class="five-stars"></span></div>
+                        <span class="review">199 reviews</span>
+                    </div>
+                    <p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
+                    <div class="action">
+                        <a class="button btn-small" href="hotel-detailed.html">SELECT</a>
+                        <a class="button btn-small yellow popup-map" href="#" data-box="40.463667, -3.749220">VIEW ON MAP</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <article class="box">
+                <figure>
+                    <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img width="270" height="161" alt="" src="images/hotels/7.png"></a>
+                </figure>
+                <div class="details">
+                    <span class="price"><small>avg/night</small>$170</span>
+                    <h4 class="box-title">Plaza Tour Eiffel<small>Paris</small></h4>
+                    <div class="feedback">
+                        <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title="" data-original-title="4 stars"><span style="width: 80%;" class="five-stars"></span></div>
+                        <span class="review">112 reviews</span>
+                    </div>
+                    <p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
+                    <div class="action">
+                        <a class="button btn-small" href="hotel-detailed.html">SELECT</a>
+                        <a class="button btn-small yellow popup-map" href="#" data-box="48.856614, 2.352222">VIEW ON MAP</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <article class="box">
+                <figure>
+                    <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img width="270" height="161" alt="" src="images/hotels/8.png"></a>
+                </figure>
+                <div class="details">
+                    <span class="price"><small>avg/night</small>$620</span>
+                    <h4 class="box-title">Le Ville Del Lido<small>Venice Lido</small></h4>
+                    <div class="feedback">
+                        <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title="" data-original-title="4 stars"><span style="width: 80%;" class="five-stars"></span></div>
+                        <span class="review">269 reviews</span>
+                    </div>
+                    <p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
+                    <div class="action">
+                        <a class="button btn-small" href="hotel-detailed.html">SELECT</a>
+                        <a class="button btn-small yellow popup-map" href="#" data-box="48.856614, 2.352222">VIEW ON MAP</a>
+                    </div>
+                </div>
+            </article>
+        </div>*@
+
+
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+</section>
