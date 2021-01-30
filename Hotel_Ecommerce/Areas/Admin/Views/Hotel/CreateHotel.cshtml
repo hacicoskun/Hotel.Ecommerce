@@ -79,20 +79,21 @@
         </div>
     </div>
 
-    <br /> 
- 
-    <div class="col-xs-12"><br />
+    <br />
+
+    <div class="col-xs-12">
+        <br />
         <a style="color: Blue; float: right; cursor: pointer" data-toggle="modal" data-target="#myModalkonum">Koordinat bilgileri nasıl eklenir ?</a>
     </div>
     <div class="col-xs-6">
-         
+
         <label>Otel Konumu X:</label>
-        <input type="text"  oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" id="txtlat" class="form-control" placeholder="Otel konumu Koordinat 1" />
-    </div> 
+        <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" id="txtlat" class="form-control" placeholder="Otel konumu Koordinat 1" />
+    </div>
     <div class="col-xs-6">
-         
+
         <label>Otel Konumu Y:</label>
-        <input type="text"  oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" id="txtlong" class="form-control" placeholder="Otel konumu Koordinat 2" />
+        <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" id="txtlong" class="form-control" placeholder="Otel konumu Koordinat 2" />
     </div>
     <div class="col-xs-12">
         <br />
@@ -102,7 +103,18 @@
             <option value="Evet">Evet</option>
         </select> <br />
     </div>
-    <div class="col-xs-12 col-xs-4 cbgroup">
+    <div class="col-xs-12 col-xs-2 cbgroup">
+        <label>Otel Temaları:</label><br />
+        <label for="cbkt1"> <input type="checkbox" id="cbkt1" name="OtelTemalari[]" value="Becoming Öneriyor" />&nbsp Becoming Öneriyor</label><br />
+        <label for="cbkt2"> <input type="checkbox" id="cbkt2" name="OtelTemalari[]" value="Balayı Otelleri" />&nbsp Balayı Oteli</label><br />
+        <label for="cbkt3"> <input type="checkbox" id="cbkt3" name="OtelTemalari[]" value="Aquapark Otelleri" />&nbsp Aquapark Oteli</label><br />
+        <label for="cbkt4"> <input type="checkbox" id="cbkt4" name="OtelTemalari[]" value="Yarım pansiyon plus" />&nbsp Bebek & Çocuk Dostu Otel</label><br />
+        <label for="cbkt5"> <input type="checkbox" id="cbkt5" name="OtelTemalari[]" value="Tam pansiyon" />&nbsp Kayak Oteli</label><br />
+        <label for="cbkt6"> <input type="checkbox" id="cbkt6" name="OtelTemalari[]" value="Tam pansiyon plus" />&nbsp Termal Otel</label><br />
+        <label for="cbkt7"> <input type="checkbox" id="cbkt7" name="OtelTemalari[]" value="Her şey dahil" />&nbsp İş Oteli</label><br />
+        <label for="cbkt8"> <input type="checkbox" id="cbkt8" name="OtelTemalari[]" value="Her şey dahil plus" />&nbsp Erken Rezerbasyon</label><br />
+     </div><br />
+    <div class="col-xs-12 col-xs-2 cbgroup">
         <label>Otel Konaklama Tip(ler)ini seçin:</label><br />
         <label for="cbkt1"> <input type="checkbox" id="cbkt1" name="OtelKonaklamaTipleri[]" value="Yalnız Oda" />&nbsp Yalnız Oda</label><br />
         <label for="cbkt2"> <input type="checkbox" id="cbkt2" name="OtelKonaklamaTipleri[]" value="Oda kahvaltı" />&nbsp Oda kahvaltı</label><br />
@@ -322,22 +334,19 @@
 
         var otelkonumu = "39.80470101458735,33.47066461979225";//Google map ayarlanacak
 
-        var konaklamatipleri = [];
-
+        var konaklamatipleri = []; 
         var checkboxesOtelKonaklamaTipleri = $('input[name="OtelKonaklamaTipleri[]"]');
         checkboxesOtelKonaklamaTipleri.filter(":checked").map(function () {
             konaklamatipleri += $(this).val() + ",";
 
         }).get();
-        console.log(konaklamatipleri);
-
+ 
         var sezon = "";
         var checkboxesOtelSezon = $('input[name="OtelSezonu[]"]');
         checkboxesOtelSezon.filter(":checked").map(function () {
             sezon += $(this).val() + ",";
         }).get();
-        console.log(konaklamatipleri);
-
+ 
 
         var otelsehirotelimi = $("#dropSehirOteliMi option:selected").val();
 

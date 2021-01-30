@@ -5,7 +5,7 @@
 <html>
 <head>
     <!-- Page Title -->
-    <title>Travelo - Travel, Tour Booking HTML5 Template</title>
+    <title>Becoming tour & service</title>
 
     <!-- Meta Tags -->
     <meta charset="utf-8">
@@ -14,7 +14,7 @@
     <meta name="author" content="SoapTheme">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="~/Content/assest/images/logo.png" type="image/x-icon">
 
     <!-- Theme Styles -->
     <link href="~/Content/assest/css/bootstrap.min.css" rel="stylesheet" />
@@ -53,7 +53,7 @@
         <header id="header" class="navbar-static-top">
             <div class="topnav hidden-xs">
                 <div class="container">
-                    <ul class="quick-menu pull-left" >
+                    <ul class="quick-menu pull-left">
 
                         <li class="ribbon">
                             <select class="selectpicker" data-width="fit">
@@ -80,7 +80,7 @@
                 </a>
 
                 <div class="container">
- 
+
                     <literal class="navbar-brand">
                         <a href="">
                             <img src="~/Content/assest/images/logo.png" height="100" />
@@ -90,19 +90,28 @@
                     <nav id="main-menu" role="navigation">
                         <ul class="menu">
                             <li class="menu-item-has-children">
-                                <a href="index.html">Anasayfa</a>
+                                <a href="index.html">ANASAYFA</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="index.html">TUR</a>
                             </li>
                             <li class="menu-item-has-children">
                                 <a href="index.html">BİLET</a>
                             </li>
                             <li class="menu-item-has-children">
-                                <a href="index.html">SİGORTA</a>
+                                <a href="index.html">ÖZEL VİLLA</a>
                             </li>
                             <li class="menu-item-has-children">
                                 <a href="index.html">VİZE</a>
                             </li>
                             <li class="menu-item-has-children">
-                                <a href="index.html">HAKKIMIZDA</a>
+                                <a href="index.html">TRANSFER</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="index.html">M.I.C.E</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="index.html">KURUMSAL</a>
                             </li>
                             <li class="menu-item-has-children">
                                 <a href="index.html">İLETİŞİM</a>
@@ -114,19 +123,25 @@
                 <nav id="mobile-menu-01" class="mobile-menu collapse">
                     <ul id="mobile-primary-menu" class="menu">
                         <li class="menu-item-has-children">
-                            <a href="index.html">Anasayfa</a>
+                            <a href="index.html">ANASAYFA</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="index.html">TUR</a>
                         </li>
                         <li class="menu-item-has-children">
                             <a href="index.html">BİLET</a>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="index.html">SİGORTA</a>
+                            <a href="index.html">ÖZEL VİLLA</a>
                         </li>
                         <li class="menu-item-has-children">
                             <a href="index.html">VİZE</a>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="index.html">HAKKIMIZDA</a>
+                            <a href="index.html">TRANSFER</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="index.html">KURUMSAL</a>
                         </li>
                         <li class="menu-item-has-children">
                             <a href="index.html">İLETİŞİM</a>
@@ -140,882 +155,348 @@
 
 
         </header>
+        <style>
+            .navbar-brand {
+                margin-top: 10px;
+                margin-left: -121px;
+            }
+
+            .search-box {
+                background-color: rgba(0,0,0,.6);
+                border-radius: 5px;
+                padding: 2px;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+
+            .search-category {
+                width: 105px !important;
+                padding: 10px 10px 10px 10px;
+            }
+
+                .search-category literal i {
+                }
+
+            #amazingslider-wrapper-1 {
+                margin: 20px auto 0px !important;
+            }
+           
+            @@media (max-width:468px) {
+                .revolution-slider {
+                    height: auto !important;
+                }
+
+                .navbar-brand {
+                    margin: auto;
+                }
+
+                    .navbar-brand img {
+                        margin: auto;
+                        height: 75px;
+                    }
+
+                .category_bg, .ul-revolution {
+                    display: none !important;
+                }
+
+                .mobile_bg {
+                    display: block !important;
+                    position: absolute !important;
+                }
+                 
+
+                .tab-product-slider-contain a:hover {
+                    color: #000 !important;
+                }
+                .amazingslider_css{
+                    margin:auto !important;
+                    padding:0;
+                }
+                #popular-posts .box-title{
+                    margin-top:-10px;
+                }
+            }
+        </style>
         <div id="slideshow">
             <div class="fullwidthbanner-container">
-                <div class="revolution-slider rev_slider" style="height: 0; overflow: hidden;">
-                    <ul>
-                        <!-- SLIDE  -->
-                        <!-- Slide1 -->
-                        <li data-transition="zoomin" data-slotamount="7" data-masterspeed="1500">
-                            <!-- MAIN IMAGE -->
+                <div>
+                    <div class="revolution-slider rev_slider" style="height: 0; overflow: hidden;">
+                        <ul class="ul-revolution">
+                            <!-- SLIDE  -->
+                            <!-- Slide1 -->
+                            <li data-transition="zoomin" data-slotamount="7" data-masterspeed="1500">
+                                <!-- MAIN IMAGE -->
+                                <img src="https://www.dcrstrategies.com/wp-content/uploads/2015/11/travel-banner-full-width.png" alt="">
+
+
+                            </li>
+
+
+                        </ul>
+                        <div class="mobile_bg" style="display:none">
                             <img src="https://www.dcrstrategies.com/wp-content/uploads/2015/11/travel-banner-full-width.png" alt="">
+                        </div>
+
+
+                        <div class="section">
+                            <div class="container">
+                                <div class="category_bg"><br /><br /><br /><br /><br /></div>
+                                <div style="color: #fff;position:absolute ">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <div class="col-sm-2 search-box search-category ">
+                                                    <div class="inner-form" style="border-radius:4px" align="center">
+                                                        <literal>
+                                                            <i class="fa fa-hotel fa-2x"> </i><br /><span style="font-size: 16px;margin-top:-10px">OTEL</span>
+                                                        </literal>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="col-sm-2 search-box  search-category" style="margin-left:10px">
+                                                    <div class="inner-form" style="border-radius:4px" align="center">
+                                                        <literal>
+                                                            <i class="fa fa-suitcase fa-2x"> </i><br /><span style="font-size:16px">TUR</span>
+                                                        </literal>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="col-sm-2 search-box  search-category" style="margin-left:10px;">
+                                                    <div class="inner-form" style="border-radius:4px" align="center">
+                                                        <literal>
+                                                            <i class="fa fa-plane fa-2x"> </i><br /><span style="font-size:16px">BİLET</span>
+                                                        </literal>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="search-box-wrapper" style="margin-top:10px">
+                            <div class="search-box container">
+
+                                <div class="s002">
+
+                                    <literal>
+
+
+                                        <div class="inner-form" style="border-radius:4px">
+                                            <div class="input-field first-wrap">
+                                                <div class="icon-wrap">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
+                                                    </svg>
+                                                </div>
+                                                <input id="search" type="text" placeholder="Ülke, Şehir, Bölge ya da Otel Adı" style=" border-top-left-radius: 5px; border-bottom-left-radius: 7px;" />
+                                            </div>
+                                            <div class="input-field second-wrap">
+                                                <div class="icon-wrap">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                                        <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"></path>
+                                                    </svg>
+                                                </div>
+                                                <input class="datepicker" id="depart" type="text" placeholder="Giriş Tarihi" />
+                                            </div>
+                                            <div class="input-field third-wrap">
+                                                <div class="icon-wrap">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                                        <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"></path>
+                                                    </svg>
+                                                </div>
+                                                <input class="datepicker" id="return" type="text" placeholder="Çıkış Tarihi" />
+                                            </div>
+                                            <div class="input-field fouth-wrap">
+                                                <div class="icon-wrap">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
+                                                    </svg>
+                                                </div>
+                                                <select data-trigger="" name="choices-single-defaul">
+                                                    <option selected>2 KİŞİ</option>
+                                                    <option>3 Adults</option>
+                                                    <option>4 Adults</option>
+                                                    <option>5 Adults</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="input-field fifth-wrap">
+                                                <button class="btn-search" type="button" style="background-color: #5eb82f;border-radius:4px;font-size:27px">ARA <i class="fa fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                    </literal>
+                                </div>
+                            </div>
+                            <script src="~/Content/assest/search_bar/js/extention/choices.js"></script>
+                            <script src="~/Content/assest/search_bar/js/extention/flatpickr.js"></script>
+                            <script>
+                                flatpickr(".datepicker",
+                                    {});
+
+                            </script>
+                            <script>
+                                const choices = new Choices('[data-trigger]',
+                                    {
+                                        searchEnabled: false,
+                                        itemSelectText: '',
+                                    });
+
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @RenderBody()
+
+    <div class="container amazingslider_css" align="center">
+        <div class="col-md-8">
+        <div class="amazingslider-wrapper " id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:760px;margin:80px auto 0px;">
+                 <div class="amazingslider" id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+                    <ul class="amazingslider-slides" style="display:none;">
+                        <li>
+                            <img src="https://images.etstur.com/files/images/site//images/cmsRoot/slide/eb-3-donem-760x400-20012020-2.jpg" alt="eb-3-donem-760x400-20012020-2" title="eb-3-donem-760x400-20012020-2" />
                         </li>
-
-
                     </ul>
+                </div>
+          </div></div>
+        <div class="col-md-4">
+            <div class="tab-content">
+           <br /><br /><br />
+                <div id="popular-posts" class="tab-pane fade active in">
+                    <div class="image-box style14">
+                        <article class="box">
+                            <figure><a href="#" title=""><img width="63" height="59" src="~/Content/assest/images/dashboard/booking1.png" alt=""></a></figure>
+                            <div class="details">
+                                <h5 class="box-title" style="font-weight:bold;text-transform:none;font-family:Arial"><a href="#">Erken Rezervasyon Fırsatları</a></h5>
+                                <label class="price-wrapper" style="font-weight:bold;text-transform:none;font-family:Arial">%35'e varan indirimleri kaçırmayın !</label>
+                            </div>
+                        </article>
+                        <article class="box">
+                            <figure><a href="#" title=""><img width="63" height="59" style="height:59px !important" src="https://i4.hurimg.com/i/hurriyet/75/750x422/55eaf8e1f018fbb8f8a29f05.jpg" alt=""></a></figure>
+                            <div class="details">
+                                <h5 style="font-weight:bold;text-transform:none;font-family:Arial" class="box-title"><a href="#">Kayak Otelleri</a></h5>
+                                <label class="price-wrapper" style="font-weight:bold;text-transform:none;font-family:Arial"> Popüler kış otellerini inceleyin</label>
+                            </div>
+                        </article>
+                        <article class="box">
+                            <figure><a href="#" title=""><img width="63" height="59" style="height:59px !important" src="https://tatilsepeti.cubecdn.net/images/Balayi-Otelleri.jpg" alt=""></a></figure>
+                            <div class="details">
+                                <h5 style="font-weight:bold;text-transform:none;font-family:Arial" class="box-title"><a href="#">Balayı Otelleri</a></h5>
+                                <label class="price-wrapper" style="font-weight:bold;text-transform:none;font-family:Arial">Sizin için seçtiğimiz huzur dolu otelleri kaçırmayın</label>
+                            </div>
+                        </article>
+                        <article class="box">
+                            <figure><a href="#" title=""><img width="63" height="59" style="height:59px !important" src="~/Content/assest/images/shortcodes/image-box/style05/1.png" alt=""></a></figure>
+                            <div class="details">
+                                <h5 style="font-weight:bold;text-transform:none;font-family:Arial" class="box-title"><a href="#">Şehir Otelleri</a></h5>
+                                <label style="font-weight:bold;text-transform:none;font-family:Arial" class="price-wrapper">%10'a varan indirimler ile şehir otellerini inceleyin</label>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div id="new-posts" class="tab-pane fade">
+
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    </div>
+      <br />
+
+        <div class="global-map-area parallax" data-stellar-background-ratio="0.5" style="background-position: 50% 151.5px;">
+            <div class="container">
+                <div class="description text-center">
+                    <h1>Otel Temalarımız</h1>
+                    <p>Birbirinden farklı otel,tur,bilet,transfer vb. gibi hizmetler için buraya tıklayın sizi arayalım.</p>
+                </div>
+                <div class="row image-box style4">
+                    <div class="col-sm-4">
+                        <article class="box animated fadeInLeft" data-animation-type="fadeInLeft" data-animation-delay="0" style="animation-duration: 1s; visibility: visible;">
+                            <figure>
+                                <a title="" href="#" class="hover-effect"><img width="370" height="172" alt="" src="~/Content/assest/images/shortcodes/image-box/style04/1.png"></a>
+                            </figure>
+                            <div class="details">
+                                <h4 class="box-title">Erken Rezervasyon</h4>
+                                <a class="goto-detail" href="#"><span class="glyphicon glyphicon-arrow-right"></span></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-4">
+                        <article class="box animated fadeInLeft" data-animation-type="fadeInLeft" data-animation-delay="0.3" style="animation-duration: 1s; animation-delay: 0.3s; visibility: visible;">
+                            <figure>
+                                <a title="" href="#" class="hover-effect"><img width="370" height="172" alt="" src="~/Content/assest/images/shortcodes/image-box/style04/3.png"></a>
+                            </figure>
+                            <div class="details">
+                                <h4 class="box-title">Denize Sıfır</h4>
+                                <a class="goto-detail" href="#"><span class="glyphicon glyphicon-arrow-right"></span></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-4">
+                        <article class="box animated fadeInLeft" data-animation-type="fadeInLeft" data-animation-delay="0.6" style="animation-duration: 1s; animation-delay: 0.6s; visibility: visible;">
+                            <figure>
+                                <a title="" href="#" class="hover-effect"><img width="370" height="172" alt="" style="height:172px !important" src="~/Content/assest/images/shortcodes/image-box/style05/1.png"></a>
+                            </figure>
+                            <div class="details">
+                                <h4 class="box-title">Şehir Otelleri</h4>
+                                <a class="goto-detail" href="#"><span class="glyphicon glyphicon-arrow-right"></span></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="row image-box style4">
+                    <div class="col-sm-4">
+                        <article class="box animated fadeInLeft" data-animation-type="fadeInLeft" data-animation-delay="0" style="animation-duration: 1s; visibility: visible;">
+                            <figure>
+                                <a title="" href="#" class="hover-effect"><img width="370" height="172" alt="" src="~/Content/assest/images/shortcodes/image-box/style04/1.png"></a>
+                            </figure>
+                            <div class="details">
+                                <h4 class="box-title">Erken Rezervasyon</h4>
+                                <a class="goto-detail" href="#"><span class="glyphicon glyphicon-arrow-right"></span></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-4">
+                        <article class="box animated fadeInLeft" data-animation-type="fadeInLeft" data-animation-delay="0.3" style="animation-duration: 1s; animation-delay: 0.3s; visibility: visible;">
+                            <figure>
+                                <a title="" href="#" class="hover-effect"><img width="370" height="172" alt="" src="~/Content/assest/images/shortcodes/image-box/style04/3.png"></a>
+                            </figure>
+                            <div class="details">
+                                <h4 class="box-title">Denize Sıfır</h4>
+                                <a class="goto-detail" href="#"><span class="glyphicon glyphicon-arrow-right"></span></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-4">
+                        <article class="box animated fadeInLeft" data-animation-type="fadeInLeft" data-animation-delay="0.6" style="animation-duration: 1s; animation-delay: 0.6s; visibility: visible;">
+                            <figure>
+                                <a title="" href="#" class="hover-effect"><img width="370" height="172" alt="" style="height:172px !important" src="~/Content/assest/images/shortcodes/image-box/style05/1.png"></a>
+                            </figure>
+                            <div class="details">
+                                <h4 class="box-title">Şehir Otelleri</h4>
+                                <a class="goto-detail" href="#"><span class="glyphicon glyphicon-arrow-right"></span></a>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
         </div>
 
-        @RenderBody()
-        <section id="content">
-            <div class="search-box-wrapper">
-                <div class="search-box container">
-                    <ul class="search-tabs clearfix">
-                        <li class="active"><a href="#hotels-tab" data-toggle="tab"><i style="color: #15a918" class="fa fa-search bar-icon"></i> OTEL ARA</a></li>
-                        <li><a href="#flights-tab" data-toggle="tab"><i style="color: #155ca9" class="fa fa-hotel bar-icon"></i> YURT İÇİ OTELLER</a></li>
-                        <li><a href="#flight-and-hotel-tab" data-toggle="tab"><i style="color: #E86431" class="fa fa-plane bar-icon"></i> KIBRIS OTELLERİ</a></li>
-                        <li><a href="#cars-tab" data-toggle="tab"><i style="color: #935cca" class="fa fa-hospital-o bar-icon"></i> ŞEHİR OTELLERİ</a></li>
-                    </ul>
-                    <div class="visible-mobile">
-                        <ul id="mobile-search-tabs" class="search-tabs clearfix">
-                            <li class="active"><a href="#hotels-tab" data-toggle="tab"><i style="color: #15a918" class="fa fa-search bar-icon"></i> OTEL ARA</a></li>
-                            <li><a href="#flights-tab" data-toggle="tab"><i style="color: #155ca9" class="fa fa-hotel bar-icon"></i> YURT İÇİ OTELLER</a></li>
-                            <li><a href="#flight-and-hotel-tab" data-toggle="tab"><i style="color: #E86431" class="fa fa-plane bar-icon"></i> KIBRIS OTELLERİ</a></li>
-                            <li><a href="#cars-tab" data-toggle="tab"><i style="color: #935cca" class="fa fa-hospital-o bar-icon"></i> ŞEHİR OTELLERİ</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="search-tab-content">
-                        <div class="tab-pane fade active in" id="hotels-tab">
-                            <form action="hotel-list-view.html" method="post">
-                                <div class="row">
-                                    <div class="form-group col-sm-6 col-md-3 ">
-                                         <input type="text"  class="input-text full-width" placeholder="Otel,konum veya tema yazın." />
-                                    </div>
-
-                                    <div class="form-group col-sm-6 col-md-4">
-                                         <div class="row">
-                                            <div class="col-xs-12">
-                                                 <div class="datepicker-wrap">
-                                                    <input type="text" name="date_from" class="input-text full-width" placeholder="Giriş-Çıkış Tarihi" />
-                                                </div>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group col-sm-6 col-md-3">
-                                         <div class="row">
-                                       
-                                            <div class="col-xs-6">
-                                                 <div class="selector">
-                                                    <select class="full-width">
-                                                        <option value="1">1 Yetişkin</option>
-                                                        <option value="2">02</option>
-                                                        <option value="3">03</option>
-                                                        <option value="4">04</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                 <div class="selector">
-                                                    <select class="full-width">
-                                                        <option value="1">Çocuk Yok</option>
-                                                        <option value="2">02</option>
-                                                        <option value="3">03</option>
-                                                        <option value="4">04</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group col-sm-6 col-md-2">
-                                         <button type="button" class="full-width icon-check animated" data-animation-type="bounce" data-animation-duration="1">ARA</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="tab-pane fade" id="flights-tab">
-                            <form action="flight-list-view.html" method="post">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <h4 class="title">Where</h4>
-                                        <div class="form-group">
-                                            <label>Leaving From</label>
-                                            <input type="text" class="input-text full-width" placeholder="city, distirct or specific airpot" />
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Going To</label>
-                                            <input type="text" class="input-text full-width" placeholder="city, distirct or specific airpot" />
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <h4 class="title">When</h4>
-                                        <label>Departing On</label>
-                                        <div class="form-group row">
-                                            <div class="col-xs-6">
-                                                <div class="datepicker-wrap">
-                                                    <input type="text" name="date_from" class="input-text full-width" placeholder="mm/dd/yy" />
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <div class="selector">
-                                                    <select class="full-width">
-                                                        <option value="1">anytime</option>
-                                                        <option value="2">morning</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <label>Arriving On</label>
-                                        <div class="form-group row">
-                                            <div class="col-xs-6">
-                                                <div class="datepicker-wrap">
-                                                    <input type="text" name="date_to" class="input-text full-width" placeholder="mm/dd/yy" />
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <div class="selector">
-                                                    <select class="full-width">
-                                                        <option value="1">anytime</option>
-                                                        <option value="2">morning</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <h4 class="title">Who</h4>
-                                        <div class="form-group row">
-                                            <div class="col-xs-3">
-                                                <label>Adults</label>
-                                                <div class="selector">
-                                                    <select class="full-width">
-                                                        <option value="1">01</option>
-                                                        <option value="2">02</option>
-                                                        <option value="3">03</option>
-                                                        <option value="4">04</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-3">
-                                                <label>Kids</label>
-                                                <div class="selector">
-                                                    <select class="full-width">
-                                                        <option value="1">01</option>
-                                                        <option value="2">02</option>
-                                                        <option value="3">03</option>
-                                                        <option value="4">04</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <label>Promo Code</label>
-                                                <input type="text" class="input-text full-width" placeholder="type here" />
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <div class="col-xs-3">
-                                                <label>Infants</label>
-                                                <div class="selector">
-                                                    <select class="full-width">
-                                                        <option value="1">01</option>
-                                                        <option value="2">02</option>
-                                                        <option value="3">03</option>
-                                                        <option value="4">04</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6 pull-right">
-                                                <label>&nbsp;</label>
-                                                <button class="full-width icon-check">SERACH NOW</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-
-                        <div class="tab-pane fade" id="flight-and-hotel-tab">
-                            <form action="flight-list-view.html" method="post">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <h4 class="title">Where</h4>
-                                        <div class="form-group">
-                                            <label>Leaving From</label>
-                                            <input type="text" class="input-text full-width" placeholder="city, distirct or specific airpot" />
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Going To</label>
-                                            <input type="text" class="input-text full-width" placeholder="city, distirct or specific airpot" />
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <h4 class="title">When</h4>
-                                        <label>Departing On</label>
-                                        <div class="form-group row">
-                                            <div class="col-xs-6">
-                                                <div class="datepicker-wrap">
-                                                    <input type="text" name="date_from" class="input-text full-width" placeholder="mm/dd/yy" />
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <div class="selector">
-                                                    <select class="full-width">
-                                                        <option value="1">anytime</option>
-                                                        <option value="2">morning</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <label>Arriving On</label>
-                                        <div class="form-group row">
-                                            <div class="col-xs-6">
-                                                <div class="datepicker-wrap">
-                                                    <input type="text" name="date_to" class="input-text full-width" placeholder="mm/dd/yy" />
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <div class="selector">
-                                                    <select class="full-width">
-                                                        <option value="1">anytime</option>
-                                                        <option value="2">morning</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <h4 class="title">Who</h4>
-                                        <div class="form-group row">
-                                            <div class="col-xs-3">
-                                                <label>Adults</label>
-                                                <div class="selector">
-                                                    <select class="full-width">
-                                                        <option value="1">01</option>
-                                                        <option value="2">02</option>
-                                                        <option value="3">03</option>
-                                                        <option value="4">04</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-3">
-                                                <label>Kids</label>
-                                                <div class="selector">
-                                                    <select class="full-width">
-                                                        <option value="1">01</option>
-                                                        <option value="2">02</option>
-                                                        <option value="3">03</option>
-                                                        <option value="4">04</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <label>Promo Code</label>
-                                                <input type="text" class="input-text full-width" placeholder="type here" />
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <div class="col-xs-3">
-                                                <label>Rooms</label>
-                                                <div class="selector">
-                                                    <select class="full-width">
-                                                        <option value="1">01</option>
-                                                        <option value="2">02</option>
-                                                        <option value="3">03</option>
-                                                        <option value="4">04</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6 pull-right">
-                                                <label>&nbsp;</label>
-                                                <button class="full-width icon-check">SERACH NOW</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-
-                        <div class="tab-pane fade" id="cars-tab">
-                            <form action="car-list-view.html" method="post">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <h4 class="title">Where</h4>
-                                        <div class="form-group">
-                                            <label>Pick Up</label>
-                                            <input type="text" class="input-text full-width" placeholder="city, distirct or specific airpot" />
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Drop Off</label>
-                                            <input type="text" class="input-text full-width" placeholder="city, distirct or specific airpot" />
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <h4 class="title">When</h4>
-                                        <div class="form-group">
-                                            <label>Pick-Up Date / Time</label>
-                                            <div class="row">
-                                                <div class="col-xs-6">
-                                                    <div class="datepicker-wrap">
-                                                        <input type="text" name="date_from" class="input-text full-width" placeholder="mm/dd/yy" />
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6">
-                                                    <div class="selector">
-                                                        <select class="full-width">
-                                                            <option value="1">anytime</option>
-                                                            <option value="2">morning</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Drop-Off Date / Time</label>
-                                            <div class="row">
-                                                <div class="col-xs-6">
-                                                    <div class="datepicker-wrap">
-                                                        <input type="text" name="date_to" class="input-text full-width" placeholder="mm/dd/yy" />
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6">
-                                                    <div class="selector">
-                                                        <select class="full-width">
-                                                            <option value="1">anytime</option>
-                                                            <option value="2">morning</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <h4 class="title">Who</h4>
-                                        <div class="form-group row">
-                                            <div class="col-xs-3">
-                                                <label>Adults</label>
-                                                <div class="selector">
-                                                    <select class="full-width">
-                                                        <option value="1">01</option>
-                                                        <option value="2">02</option>
-                                                        <option value="3">03</option>
-                                                        <option value="4">04</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-3">
-                                                <label>Kids</label>
-                                                <div class="selector">
-                                                    <select class="full-width">
-                                                        <option value="1">01</option>
-                                                        <option value="2">02</option>
-                                                        <option value="3">03</option>
-                                                        <option value="4">04</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <label>Promo Code</label>
-                                                <input type="text" class="input-text full-width" placeholder="type here" />
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <div class="col-xs-6">
-                                                <label>Car Type</label>
-                                                <div class="selector">
-                                                    <select class="full-width">
-                                                        <option value="">select a car type</option>
-                                                        <option value="economy">Economy</option>
-                                                        <option value="compact">Compact</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <label>&nbsp;</label>
-                                                <button class="full-width icon-check">SERACH NOW</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-
-                        <div class="tab-pane fade" id="cruises-tab">
-                            <form action="cruise-list-view.html" method="post">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <h4 class="title">Where</h4>
-                                        <div class="form-group">
-                                            <label>Your Destination</label>
-                                            <input type="text" class="input-text full-width" placeholder="enter a destination or hotel name" />
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <h4 class="title">When</h4>
-                                        <div class="form-group row">
-                                            <div class="col-xs-6">
-                                                <label>Departure Date</label>
-                                                <div class="datepicker-wrap">
-                                                    <input type="text" class="input-text full-width" placeholder="mm/dd/yy" />
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <label>Cruise Length</label>
-                                                <div class="selector">
-                                                    <select class="full-width">
-                                                        <option value="">select length</option>
-                                                        <option value="1">1-2 Nights</option>
-                                                        <option value="2">3-4 Nights</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <h4 class="title">Who</h4>
-                                        <div class="form-group row">
-                                            <div class="col-xs-6">
-                                                <label>Cruise Line</label>
-                                                <div class="selector">
-                                                    <select class="full-width">
-                                                        <option value="">select cruise line</option>
-                                                        <option>Azamara Club Cruises</option>
-                                                        <option>Carnival Cruise Lines</option>
-                                                        <option>Celebrity Cruises</option>
-                                                        <option>Costa Cruise Lines</option>
-                                                        <option>Cruise &amp; Maritime Voyages</option>
-                                                        <option>Crystal Cruises</option>
-                                                        <option>Cunard Line Ltd.</option>
-                                                        <option>Disney Cruise Line</option>
-                                                        <option>Holland America Line</option>
-                                                        <option>Hurtigruten Cruise Line</option>
-                                                        <option>MSC Cruises</option>
-                                                        <option>Norwegian Cruise Line</option>
-                                                        <option>Oceania Cruises</option>
-                                                        <option>Orion Expedition Cruises</option>
-                                                        <option>P&amp;O Cruises</option>
-                                                        <option>Paul Gauguin Cruises</option>
-                                                        <option>Peter Deilmann Cruises</option>
-                                                        <option>Princess Cruises</option>
-                                                        <option>Regent Seven Seas Cruises</option>
-                                                        <option>Royal Caribbean International</option>
-                                                        <option>Seabourn Cruise Line</option>
-                                                        <option>Silversea Cruises</option>
-                                                        <option>Star Clippers</option>
-                                                        <option>Swan Hellenic Cruises</option>
-                                                        <option>Thomson Cruises</option>
-                                                        <option>Viking River Cruises</option>
-                                                        <option>Windstar Cruises</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <label>&nbsp;</label>
-                                                <button class="icon-check full-width">SEARCH NOW</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-
-                        <div class="tab-pane fade" id="flight-status-tab">
-                            <form action="flight-list-view.html" method="post">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <h4 class="title">Where</h4>
-                                        <div class="form-group row">
-                                            <div class="col-xs-6">
-                                                <label>Leaving From</label>
-                                                <input type="text" class="input-text full-width" placeholder="enter a city or place name" />
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <label>Going To</label>
-                                                <input type="text" class="input-text full-width" placeholder="enter a city or place name" />
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xs-6 col-md-2">
-                                        <h4 class="title">When</h4>
-                                        <div class="form-group">
-                                            <label>Departure Date</label>
-                                            <div class="datepicker-wrap">
-                                                <input type="text" class="input-text full-width" placeholder="mm/dd/yy" />
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xs-6 col-md-2">
-                                        <h4 class="title">Who</h4>
-                                        <div class="form-group">
-                                            <label>Flight Number</label>
-                                            <input type="text" class="input-text full-width" placeholder="enter flight number" />
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-md-2 fixheight">
-                                        <label class="hidden-xs">&nbsp;</label>
-                                        <button class="icon-check full-width">SEARCH NOW</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-
-                        <div class="tab-pane fade" id="online-checkin-tab">
-                            <form>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <h4 class="title">Where</h4>
-                                        <div class="form-group row">
-                                            <div class="col-xs-6">
-                                                <label>Leaving From</label>
-                                                <input type="text" class="input-text full-width" placeholder="enter a city or place name" />
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <label>Going To</label>
-                                                <input type="text" class="input-text full-width" placeholder="enter a city or place name" />
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xs-6 col-md-2">
-                                        <h4 class="title">When</h4>
-                                        <div class="form-group">
-                                            <label>Departure Date</label>
-                                            <div class="datepicker-wrap">
-                                                <input type="text" class="input-text full-width" placeholder="mm/dd/yy" />
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xs-6 col-md-2">
-                                        <h4 class="title">Who</h4>
-                                        <div class="form-group">
-                                            <label>Full Name</label>
-                                            <input type="text" class="input-text full-width" placeholder="enter your full name" />
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-md-2 fixheight">
-                                        <label class="hidden-xs">&nbsp;</label>
-                                        <button class="icon-check full-width">SEARCH NOW</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
 
-            <div class="section">
-                <div class="container">
-                    <h2>Recommended Hotels</h2>
-                    <div class="block image-carousel style2 flexslider" data-animation="slide" data-item-width="270" data-item-margin="30">
-                        <ul class="slides image-box listing-style2">
-                            <li>
-                                <article class="box">
-                                    <figure>
-                                        <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img src="http://placehold.it/270x160" alt="" width="270" height="160" /></a>
-                                    </figure>
-                                    <div class="details">
-                                        <a title="View all" href="hotel-detailed.html" class="pull-right button uppercase">select</a>
-                                        <h4 class="box-title">Gran Canaria</h4>
-                                        <label class="price-wrapper">
-                                            <span class="price-per-unit">$322</span>avg/night
-                                        </label>
-                                    </div>
-                                </article>
-                            </li>
-                            <li>
-                                <article class="box">
-                                    <figure>
-                                        <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img src="http://placehold.it/270x160" alt="" width="270" height="160" /></a>
-                                    </figure>
-                                    <div class="details">
-                                        <a title="View all" href="hotel-detailed.html" class="pull-right button uppercase">select</a>
-                                        <h4 class="box-title">Hotel Hilton</h4>
-                                        <label class="price-wrapper">
-                                            <span class="price-per-unit">$620</span>avg/night
-                                        </label>
-                                    </div>
-                                </article>
-                            </li>
-                            <li>
-                                <article class="box">
-                                    <figure>
-                                        <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img src="http://placehold.it/270x160" alt="" width="270" height="160" /></a>
-                                    </figure>
-                                    <div class="details">
-                                        <a title="View all" href="hotel-detailed.html" class="pull-right button uppercase">select</a>
-                                        <h4 class="box-title">Roosevelt Hotel</h4>
-                                        <label class="price-wrapper">
-                                            <span class="price-per-unit">$170</span>avg/night
-                                        </label>
-                                    </div>
-                                </article>
-                            </li>
-                            <li>
-                                <article class="box">
-                                    <figure>
-                                        <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img src="http://placehold.it/270x160" alt="" width="270" height="160" /></a>
-                                    </figure>
-                                    <div class="details">
-                                        <a title="View all" href="hotel-detailed.html" class="pull-right button uppercase">select</a>
-                                        <h4 class="box-title">Forte Do Vale</h4>
-                                        <label class="price-wrapper">
-                                            <span class="price-per-unit">$120</span>avg/night
-                                        </label>
-                                    </div>
-                                </article>
-                            </li>
-                            <li>
-                                <article class="box">
-                                    <figure>
-                                        <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img src="http://placehold.it/270x160" alt="" width="270" height="160" /></a>
-                                    </figure>
-                                    <div class="details">
-                                        <a title="View all" href="hotel-detailed.html" class="pull-right button uppercase">select</a>
-                                        <h4 class="box-title">Gran Canaria</h4>
-                                        <label class="price-wrapper">
-                                            <span class="price-per-unit">$322</span>avg/night
-                                        </label>
-                                    </div>
-                                </article>
-                            </li>
-                        </ul>
-                    </div>
 
-                    <div class="block row">
-                        <div class="col-md-6">
-                            <h2>Hot Hotel Details</h2>
-                            <div class="tab-container style1 box">
-                                <ul class="tabs">
-                                    <li class="active"><a href="#hot-hotel-popular" data-toggle="tab">Popular</a></li>
-                                    <li><a href="#hot-hotel-lasvegas" data-toggle="tab">Las Vegas</a></li>
-                                    <li><a href="#hot-hotel-miami" data-toggle="tab">Miami</a></li>
-                                    <li><a href="#hot-hotel-sanfrancisco" data-toggle="tab">San Francisco</a></li>
-                                    <li><a href="#hot-hotel-hongkong" data-toggle="tab">Hong Kong</a></li>
-                                </ul>
-                                <div class="tab-content">
-                                    <div class="tab-pane fade in active" id="hot-hotel-popular">
-                                        <div class="row">
-                                            <div class="col-xs-2">
-                                                <a href="#" class="badge-container"><span class="badge-content">save 23%</span><img class="full-width" src="http://placehold.it/63x63" alt="" width="63" height="63" /></a>
-                                            </div>
-                                            <div class="col-xs-8">
-                                                <h5 class="box-title">Warwick Hotel<small>New york, usa</small></h5>
-                                                <p class="no-margin">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
-                                            </div>
-                                            <div class="col-xs-2">
-                                                <span class="price"><small>avg/night</small>$115</span>
-                                                <br /><br />
-                                                <a class="button green-bg pull-right" href="hotel-detailed.html">SELECT</a>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-2">
-                                                <a href="#" class="badge-container"><span class="badge-content">save 23%</span><img class="full-width" src="http://placehold.it/63x63" alt="" width="63" height="63" /></a>
-                                            </div>
-                                            <div class="col-xs-8">
-                                                <h5 class="box-title">Warwick Hotel<small>New york, usa</small></h5>
-                                                <p class="no-margin">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
-                                            </div>
-                                            <div class="col-xs-2">
-                                                <span class="price"><small>avg/night</small>$115</span>
-                                                <br /><br />
-                                                <a class="button green-bg pull-right" href="hotel-detailed.html">SELECT</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="hot-hotel-lasvegas">
-
-                                    </div>
-                                    <div class="tab-pane fade" id="hot-hotel-miami">
-
-                                    </div>
-                                    <div class="tab-pane fade" id="hot-hotel-sanfrancisco">
-
-                                    </div>
-                                    <div class="tab-pane fade" id="hot-hotel-hongkong">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <h2>What Travelers Say?</h2>
-                            <div class="testimonial style1 box">
-                                <ul class="slides ">
-                                    <li>
-                                        <p class="description">This is the 3rd time I’ve used Travelo website and telling you the truth their services are always realiable and it only takes few minutes to plan and finalize your entire trip using their extremely fast website and up to date listings. I’m super excited about my next trip to Paris.</p>
-                                        <div class="author clearfix">
-                                            <a href="#"><img src="http://placehold.it/270x270" alt="" width="74" height="74" /></a>
-                                            <h5 class="name">Jessica Brown<small>guest</small></h5>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <p class="description">This is the 3rd time I’ve used Travelo website and telling you the truth their services are always realiable and it only takes few minutes to plan and finalize your entire trip using their extremely fast website and up to date listings. I’m super excited about my next trip to Paris.</p>
-                                        <div class="author clearfix">
-                                            <a href="#"><img src="http://placehold.it/270x270" alt="" width="74" height="74" /></a>
-                                            <h5 class="name">Lisa Kimberly<small>guest</small></h5>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <p class="description">This is the 3rd time I’ve used Travelo website and telling you the truth their services are always realiable and it only takes few minutes to plan and finalize your entire trip using their extremely fast website and up to date listings. I’m super excited about my next trip to Paris.</p>
-                                        <div class="author clearfix">
-                                            <a href="#"><img src="http://placehold.it/270x270" alt="" width="74" height="74" /></a>
-                                            <h5 class="name">Jessica Brown<small>guest</small></h5>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h2>Travelers Choice of Hotels</h2>
-                    <div class="image-carousel style2 flexslider" data-animation="slide" data-item-width="270" data-item-margin="30">
-                        <ul class="slides image-box hotel listing-style1">
-                            <li>
-                                <article class="box">
-                                    <figure>
-                                        <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img width="270" height="160" alt="" src="http://placehold.it/270x160"></a>
-                                    </figure>
-                                    <div class="details">
-                                        <span class="price">
-                                            <small>avg/night</small>
-                                            $360
-                                        </span>
-                                        <h4 class="box-title">Hotel Hilton<small>Paris france</small></h4>
-                                        <div class="feedback">
-                                            <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title="4 stars"><span style="width: 80%;" class="five-stars"></span></div>
-                                            <span class="review">270 reviews</span>
-                                        </div>
-                                        <p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
-                                        <div class="action">
-                                            <a class="button btn-small" href="hotel-detailed.html">SELECT</a>
-                                            <a class="button btn-small yellow popup-map" href="#" data-box="48.856614, 2.352222">VIEW ON MAP</a>
-                                        </div>
-                                    </div>
-                                </article>
-                            </li>
-                            <li>
-                                <article class="box">
-                                    <figure>
-                                        <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img width="270" height="160" alt="" src="http://placehold.it/270x160"></a>
-                                    </figure>
-                                    <div class="details">
-                                        <span class="price"><small>avg/night</small>$188</span>
-                                        <h4 class="box-title">Forte Do Vale<small>Albufeira</small></h4>
-                                        <div class="feedback">
-                                            <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title="4 stars"><span style="width: 80%;" class="five-stars"></span></div>
-                                            <span class="review">170 reviews</span>
-                                        </div>
-                                        <p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
-                                        <div class="action">
-                                            <a class="button btn-small" href="hotel-detailed.html">SELECT</a>
-                                            <a class="button btn-small yellow popup-map" href="#" data-box="37.089072, -8.247880">VIEW ON MAP</a>
-                                        </div>
-                                    </div>
-                                </article>
-                            </li>
-                            <li>
-                                <article class="box">
-                                    <figure>
-                                        <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img width="270" height="160" alt="" src="http://placehold.it/270x160"></a>
-                                    </figure>
-                                    <div class="details">
-                                        <span class="price"><small>avg/night</small>$322</span>
-                                        <h4 class="box-title">Gran Canaria<small>spain</small></h4>
-                                        <div class="feedback">
-                                            <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title="4 stars"><span style="width: 80%;" class="five-stars"></span></div>
-                                            <span class="review">485 reviews</span>
-                                        </div>
-                                        <p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
-                                        <div class="action">
-                                            <a class="button btn-small" href="hotel-detailed.html">SELECT</a>
-                                            <a class="button btn-small yellow popup-map" href="#" data-box="40.463667, -3.749220">VIEW ON MAP</a>
-                                        </div>
-                                    </div>
-                                </article>
-                            </li>
-                            <li>
-                                <article class="box">
-                                    <figure>
-                                        <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img width="270" height="160" alt="" src="http://placehold.it/270x160"></a>
-                                    </figure>
-                                    <div class="details">
-                                        <span class="price"><small>avg/night</small>$170</span>
-                                        <h4 class="box-title">Roosevelt Hotel<small>New york</small></h4>
-                                        <div class="feedback">
-                                            <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title="4 stars"><span style="width: 80%;" class="five-stars"></span></div>
-                                            <span class="review">75 reviews</span>
-                                        </div>
-                                        <p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
-                                        <div class="action">
-                                            <a class="button btn-small" href="hotel-detailed.html">SELECT</a>
-                                            <a class="button btn-small yellow popup-map" href="#" data-box="40.705631, -73.978003">VIEW ON MAP</a>
-                                        </div>
-                                    </div>
-                                </article>
-                            </li>
-                            <li>
-                                <article class="box">
-                                    <figure>
-                                        <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img width="270" height="160" alt="" src="http://placehold.it/270x160"></a>
-                                    </figure>
-                                    <div class="details">
-                                        <span class="price">
-                                            <small>avg/night</small>
-                                            $360
-                                        </span>
-                                        <h4 class="box-title">Hotel Hilton<small>Paris france</small></h4>
-                                        <div class="feedback">
-                                            <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title="4 stars"><span style="width: 80%;" class="five-stars"></span></div>
-                                            <span class="review">270 reviews</span>
-                                        </div>
-                                        <p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
-                                        <div class="action">
-                                            <a class="button btn-small" href="hotel-detailed.html">SELECT</a>
-                                            <a class="button btn-small yellow popup-map" href="#" data-box="48.856614, 2.352222">VIEW ON MAP</a>
-                                        </div>
-                                    </div>
-                                </article>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="global-map-area promo-box no-margin parallax" data-stellar-background-ratio="0.5">
-                <div class="container">
-                    <div class="content-section description pull-right col-sm-9">
-                        <div class="table-wrapper hidden-table-sm">
-                            <div class="table-cell">
-                                <h2 class="m-title animated" data-animation-type="fadeInDown">
-                                    Tell us where you would like to go.<br /><em>12,000+ Hotel and Resorts Available!</em>
-                                </h2>
-                            </div>
-                            <div class="table-cell action-section col-md-4 no-float">
-                                <form action="hotel-list-view.html" method="post">
-                                    <div class="row">
-                                        <div class="col-xs-6 col-md-12">
-                                            <input type="text" class="input-text input-large full-width" value="" placeholder="Enter destination or hotel name" />
-                                        </div>
-                                        <div class="col-xs-6 col-md-12">
-                                            <button class="full-width btn-large animated" data-animation-type="fadeInUp" data-animation-delay="1">search hotels</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="image-container col-sm-4">
-                        <img src="http://placehold.it/342x258" alt="" width="342" height="258" class="animated" data-animation-type="fadeInUp" data-animation-duration="2" />
-                    </div>
-                </div>
-            </div>
-        </section>
+        <link href="~/Content/assest/search_bar/css/main.css" rel="stylesheet" />
+        
 
         <footer id="footer">
             <div class="footer-wrapper">
@@ -1115,10 +596,9 @@
                 </div>
             </div>
         </footer>
+
+
     </div>
-
-
-
     <!-- Javascript -->
 
     <script src="~/Content/assest/js/jquery-1.11.1.min.js"></script>
@@ -1155,12 +635,12 @@
     <script src="~/Content/assest/js/scripts.js"></script>
     <!-- Latest compiled and minified CSS -->
 
-     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css'>
 
- 
-     <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js'></script>
- 
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js'></script>
+
     <!-- (Optional) Latest compiled and minified JavaScript translation files -->
     <script type="text/javascript">
         tjq(document).ready(function () {
@@ -1229,6 +709,11 @@
             tjq('.selectpicker').selectpicker();
         });
     </script>
-    
+
+    <script src="~/Content/assest/image-gallery/sliderengine/amazingslider.js"></script>
+    <link href="~/Content/assest/image-gallery/sliderengine/amazingslider-1.css" rel="stylesheet" />
+    <script src="~/Content/assest/image-gallery/sliderengine/initslider-1.js"></script>
+     
+
 </body>
 </html>
