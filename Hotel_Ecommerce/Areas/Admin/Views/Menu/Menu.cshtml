@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "Menu";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    string sessionID = Guid.NewGuid().ToString();
+}
+
+<br />
+<div class="row">
+    <div class="col-md-12">
+        <select class="form-control" id="dropTurType" onchange="funcGetTur()">
+            <option value="YurticiTurları">Yurtiçi Turlar</option>
+            <option value="YurtdisiTurları">Yurtdışı Turlar</option>
+            <option value="GemiTurları">Gemi Turları</option>
+            <option value="MaviTekneTurları">Mavi Tekne Turları</option>
+        </select>
+    </div>
+</div>
+<div class="row" id="rowYurtici">
+    <div class="col-xs-12">
+        <hr />
+        <label>Tur Menü İçeriği</label>
+        <input id="ckeditorMenuİcerik" type="hidden" class="ckeditor" name="ckeditorMenuİcerik">
+    </div>
+</div>
+
+<div class="col-xs-12">
+    <div style="float: right; margin-top: 20px;">
+        <input type="button" onclick="AjaxTurMenüİcerik()" value="Gönder" class="btn btn-success" />
+
+    </div>
+</div>
+
+<script src="~/Areas/Files/ckeditor/ckeditor.js"></script>
+<script>
+    var ckeditorYurtici = CKEDITOR.replace('ckeditorMenuİcerik');
+  
+    function AjaxTurMenüİcerik() {
+        var Baslik = document.getElementById("dropTurType").value;
+        var İcerik = document.getElementById("ckeditorMenuİcerik").val;
+        $.ajax({
+            type: "POST",
+            url: "/panel/create-turmenusu",
+            dataType: "json",
+            data: { Baslik: Baslik, İcerik: İcerik },
+            success: function () {
+
+
+            }
+        });
+    }
+   
+  
+</script>
+
+

@@ -1,4 +1,5 @@
 ﻿using Hotel_Ecommerce.DAL.Concrete;
+using Hotel_Ecoomerce.DAL.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -25,6 +26,8 @@ namespace Hotel_Ecommerce.DAL.Context
         public DbSet<OtelTeklifleri> OtelTeklifleri { get; set; }
         public DbSet<SiziArayalim> SiziArayalim { get; set; } 
         public DbSet<Yorumlar> Yorumlar { get; set; }
+        public DbSet<TurMenusu> TurMenusu { get; set; }
+       
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
