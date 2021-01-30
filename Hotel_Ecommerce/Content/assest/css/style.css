@@ -7859,7 +7859,7 @@ ul.check-circle li:before {
         }
 
         #main-menu ul.menu > li:hover > a, .chaser ul.menu > li:hover > a {
-            color: #01b7f2;
+            color: #AD0C33;
         }
 
         #main-menu ul.menu > li > ul.left, .chaser ul.menu > li > ul.left {
@@ -7875,7 +7875,7 @@ ul.check-circle li:before {
             z-index: -1;
             width: 180px;
             padding: 0;
-            background: #01b7f2;
+            background: #ad0c33;
         }
 
             #main-menu ul.menu > li ul li, .chaser ul.menu > li ul li {
@@ -7900,12 +7900,12 @@ ul.check-circle li:before {
                 }
 
                 #main-menu ul.menu > li ul li > a, .chaser ul.menu > li ul li > a {
-                    border-top: 1px solid #04afe7;
+                    border-top: 1px solid #ad0c33;
                     white-space: nowrap;
                     color: #fff;
                     padding: 12px 20px 12px 18px;
                     display: block;
-                    font-size: 0.9167em;
+                    font-size: 1em;
                     filter: alpha(opacity=70);
                     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
                     -moz-opacity: 0.7;
@@ -7914,7 +7914,7 @@ ul.check-circle li:before {
                 }
 
                 #main-menu ul.menu > li ul li:hover > a, #main-menu ul.menu > li ul li.active > a, .chaser ul.menu > li ul li:hover > a, .chaser ul.menu > li ul li.active > a {
-                    background: #04afe7;
+                    background: #ad0c33;
                     filter: alpha(opacity=100);
                     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
                     -moz-opacity: 1;

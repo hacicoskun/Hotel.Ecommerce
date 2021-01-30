@@ -22,6 +22,7 @@ namespace MevsimTazesi.Repository.UnitOfWork
         public IYorumlar Yorumlar  { get; } 
         public IOtelTemalari OtelTemalari { get; }
         public IOtelTemalariListesi OtelTemalariListesi { get; }
+        public ITurMenusu TurMenusu { get; }
 
         private readonly DatabaseContext _context;
 
@@ -42,7 +43,7 @@ namespace MevsimTazesi.Repository.UnitOfWork
             Yorumlar = new YorumlarRepository(_context);
             OtelTemalari = new OtelTemalariRepository(_context);
             OtelTemalariListesi = new OtelTemalariListesiRepository(_context);
-
+            TurMenusu = new TurMenusuRepository(_context);
         }
         public void Dispose()
         {

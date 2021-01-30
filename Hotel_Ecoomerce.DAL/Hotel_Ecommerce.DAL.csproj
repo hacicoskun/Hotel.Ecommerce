@@ -68,11 +68,16 @@
     <Compile Include="Concrete\OtelOzellikleri.cs" />
     <Compile Include="Concrete\OtelTeklifleri.cs" />
     <Compile Include="Concrete\SiziArayalim.cs" />
+    <Compile Include="Concrete\TurMenusu.cs" />
     <Compile Include="Concrete\Yorumlar.cs" />
     <Compile Include="Context\DatabaseContext.cs" />
     <Compile Include="Migrations\202101300948450_otel_temalari1.cs" />
     <Compile Include="Migrations\202101300948450_otel_temalari1.designer.cs">
       <DependentUpon>202101300948450_otel_temalari1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101301119463_TurMenusu.cs" />
+    <Compile Include="Migrations\202101301119463_TurMenusu.designer.cs">
+      <DependentUpon>202101301119463_TurMenusu.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,6 +89,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202101300948450_otel_temalari1.resx">
       <DependentUpon>202101300948450_otel_temalari1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101301119463_TurMenusu.resx">
+      <DependentUpon>202101301119463_TurMenusu.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
