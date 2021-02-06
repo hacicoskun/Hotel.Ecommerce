@@ -5747,7 +5747,11 @@
     <Compile Include="Areas\Admin\Controllers\MenuController.cs" />
     <Compile Include="Areas\Admin\Controllers\SliderController.cs" />
     <Compile Include="Areas\Admin\Model\HotelModel.cs" />
+    <Compile Include="Controllers\CookieController.cs" />
+    <Compile Include="Controllers\GizlilikController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KisiselVerileriKorumaController.cs" />
+    <Compile Include="Controllers\KullaniciSözlesmesiController.cs" />
     <Compile Include="Filemanager\connectors\ashx\filemanager.ashx.cs">
       <DependentUpon>filemanager.ashx</DependentUpon>
     </Compile>
@@ -6684,6 +6688,10 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\MainMenu.cshtml" />
+    <Content Include="Views\KullaniciSözlesmesi\KullaniciSözlesmesi.cshtml" />
+    <Content Include="Views\Cookie\Cookie.cshtml" />
+    <Content Include="Views\KisiselVerileriKoruma\KisiselVerileriKoruma.cshtml" />
+    <Content Include="Views\Gizlilik\Gizlilik.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

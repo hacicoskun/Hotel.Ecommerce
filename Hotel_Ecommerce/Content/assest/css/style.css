@@ -126,6 +126,12 @@
 /* 1.1. Basic Styles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* 1) Reset */
+#footerContact > span > i{
+    margin-right:7px;
+}
+#footerContact > span {
+    line-height:50px;
+}
 * {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -134,7 +140,7 @@
     padding: 0;
     -webkit-tap-highlight-color: transparent;
     zoom: 1;
- }
+}
 
 html {
     font-size: 16px;
@@ -3069,7 +3075,7 @@ blockquote {
     }
 
         .contact-details .contact-phone i {
-            color: #01b7f2;
+            color: #E3000F;
         }
 
     .contact-details .contact-email {
