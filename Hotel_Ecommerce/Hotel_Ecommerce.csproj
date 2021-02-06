@@ -100,6 +100,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="aramasonuclari.xml" />
     <Content Include="Areas\Files\build\css\custom.css" />
     <Content Include="Areas\Files\build\css\custom.min.css" />
     <Content Include="Areas\Files\build\images\back_disabled.png" />
@@ -4016,6 +4017,15 @@
     <Content Include="Areas\Files\images\harita.jpg" />
     <Content Include="Content\assest\ajax\cruise-slideshow-popup.html" />
     <Content Include="Content\assest\ajax\slideshow-popup.html" />
+    <Content Include="Content\assest\autocompsearch\content\styles.css" />
+    <Content Include="Content\assest\autocompsearch\content\styles1.css" />
+    <Content Include="Content\assest\autocompsearch\scripts\countries.js" />
+    <Content Include="Content\assest\autocompsearch\scripts\demo.js" />
+    <Content Include="Content\assest\autocompsearch\scripts\jquery-1.8.2.min.js" />
+    <Content Include="Content\assest\autocompsearch\scripts\jquery-2.1.1.js" />
+    <Content Include="Content\assest\autocompsearch\scripts\jquery.mockjax.js" />
+    <Content Include="Content\assest\autocompsearch\scripts\test.txt" />
+    <Content Include="Content\assest\autocompsearch\src\jquery.autocomplete.js" />
     <Content Include="Content\assest\components\flexslider\flexslider-rtl.css" />
     <Content Include="Content\assest\components\flexslider\flexslider.css" />
     <Content Include="Content\assest\components\flexslider\flexslider2.css" />
@@ -4214,6 +4224,55 @@
     <Content Include="Content\assest\css\style-sky-blue.css" />
     <Content Include="Content\assest\css\style.css" />
     <Content Include="Content\assest\css\updates.css" />
+    <Content Include="Content\assest\flatpickr\confirmDate\confirmDate.css" />
+    <Content Include="Content\assest\flatpickr\confirmDate\confirmDate.js" />
+    <Content Include="Content\assest\flatpickr\confirmDate\index.html" />
+    <Content Include="Content\assest\flatpickr\confirmDate\index30b5.html" />
+    <Content Include="Content\assest\flatpickr\confirmDate\index5851.html" />
+    <Content Include="Content\assest\flatpickr\confirmDate\index72c9.html" />
+    <Content Include="Content\assest\flatpickr\confirmDate\indexad3f.html" />
+    <Content Include="Content\assest\flatpickr\confirmDate\indexb70a.html" />
+    <Content Include="Content\assest\flatpickr\confirmDate\indexbfec.html" />
+    <Content Include="Content\assest\flatpickr\confirmDate\indexc052.html" />
+    <Content Include="Content\assest\flatpickr\confirmDate\indexf8a0.html" />
+    <Content Include="Content\assest\flatpickr\flatpickr.css" />
+    <Content Include="Content\assest\flatpickr\flatpickr.js" />
+    <Content Include="Content\assest\flatpickr\flatpickr.min.css" />
+    <Content Include="Content\assest\flatpickr\flatpickr.min.js" />
+    <Content Include="Content\assest\flatpickr\labelPlugin\index.html" />
+    <Content Include="Content\assest\flatpickr\labelPlugin\index30b5.html" />
+    <Content Include="Content\assest\flatpickr\labelPlugin\index5851.html" />
+    <Content Include="Content\assest\flatpickr\labelPlugin\index72c9.html" />
+    <Content Include="Content\assest\flatpickr\labelPlugin\indexad3f.html" />
+    <Content Include="Content\assest\flatpickr\labelPlugin\indexb70a.html" />
+    <Content Include="Content\assest\flatpickr\labelPlugin\indexbfec.html" />
+    <Content Include="Content\assest\flatpickr\labelPlugin\indexc052.html" />
+    <Content Include="Content\assest\flatpickr\labelPlugin\indexf8a0.html" />
+    <Content Include="Content\assest\flatpickr\labelPlugin\labelPlugin.js" />
+    <Content Include="Content\assest\flatpickr\minMaxTimePlugin.js" />
+    <Content Include="Content\assest\flatpickr\monthSelect\index.html" />
+    <Content Include="Content\assest\flatpickr\monthSelect\index30b5.html" />
+    <Content Include="Content\assest\flatpickr\monthSelect\index5851.html" />
+    <Content Include="Content\assest\flatpickr\monthSelect\index72c9.html" />
+    <Content Include="Content\assest\flatpickr\monthSelect\indexad3f.html" />
+    <Content Include="Content\assest\flatpickr\monthSelect\indexb70a.html" />
+    <Content Include="Content\assest\flatpickr\monthSelect\indexbfec.html" />
+    <Content Include="Content\assest\flatpickr\monthSelect\indexc052.html" />
+    <Content Include="Content\assest\flatpickr\monthSelect\indexf8a0.html" />
+    <Content Include="Content\assest\flatpickr\monthSelect\monthSelect.css" />
+    <Content Include="Content\assest\flatpickr\monthSelect\monthSelect.js" />
+    <Content Include="Content\assest\flatpickr\rangePlugin.js" />
+    <Content Include="Content\assest\flatpickr\scrollPlugin.js" />
+    <Content Include="Content\assest\flatpickr\weekSelect\index.html" />
+    <Content Include="Content\assest\flatpickr\weekSelect\index30b5.html" />
+    <Content Include="Content\assest\flatpickr\weekSelect\index5851.html" />
+    <Content Include="Content\assest\flatpickr\weekSelect\index72c9.html" />
+    <Content Include="Content\assest\flatpickr\weekSelect\indexad3f.html" />
+    <Content Include="Content\assest\flatpickr\weekSelect\indexb70a.html" />
+    <Content Include="Content\assest\flatpickr\weekSelect\indexbfec.html" />
+    <Content Include="Content\assest\flatpickr\weekSelect\indexc052.html" />
+    <Content Include="Content\assest\flatpickr\weekSelect\indexf8a0.html" />
+    <Content Include="Content\assest\flatpickr\weekSelect\weekSelect.js" />
     <Content Include="Content\assest\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\assest\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\assest\fonts\NexaBlack.svg" />
@@ -5748,6 +5807,7 @@
     <Compile Include="Areas\Admin\Controllers\SliderController.cs" />
     <Compile Include="Areas\Admin\Model\HotelModel.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Services\SearchAutoCompleteController.cs" />
     <Compile Include="Filemanager\connectors\ashx\filemanager.ashx.cs">
       <DependentUpon>filemanager.ashx</DependentUpon>
     </Compile>
@@ -6680,6 +6740,14 @@
     <Content Include="Content\assest\sass\_variables.scss" />
     <Content Include="Areas\Admin\Views\Menu\Menu.cshtml" />
     <Content Include="Areas\Admin\Views\Hotel\UpdateHotel.cshtml" />
+    <Content Include="Content\assest\flatpickr\confirmDate\confirmDate.js.map" />
+    <Content Include="Content\assest\flatpickr\labelPlugin\labelPlugin.js.map" />
+    <Content Include="Content\assest\flatpickr\minMaxTimePlugin.js.map" />
+    <Content Include="Content\assest\flatpickr\monthSelect\monthSelect.js.map" />
+    <Content Include="Content\assest\flatpickr\rangePlugin.js.map" />
+    <Content Include="Content\assest\flatpickr\scrollPlugin.js.map" />
+    <Content Include="Content\assest\flatpickr\weekSelect\weekSelect.js.map" />
+    <Content Include="Content\assest\autocompsearch\scripts\data.json" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -6694,6 +6762,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Views\AdminBase\" />
+    <Folder Include="Content\assest\flatpckr\" />
     <Folder Include="Content\assest\images\shortcodes\listings\style02\cruise\" />
     <Folder Include="Content\assest\images\sliders\flex_slider\" />
     <Folder Include="Content\assest\images\themes\color\" />
@@ -6705,6 +6774,7 @@
     <Folder Include="Content\assest\images\themes\header\style07\" />
     <Folder Include="Content\images\" />
     <Folder Include="Views\Base\" />
+    <Folder Include="Views\SearchAutoComplete\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Hotel_Ecommerce.Helper\Hotel_Ecommerce.Helper.csproj">
