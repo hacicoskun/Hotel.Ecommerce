@@ -57,10 +57,9 @@ namespace Hotel_Ecommerce.Areas.Admin.Controllers
 
         [Route("get-tur-menusu-icerik")]
         public ActionResult GetTurMenu(string Baslik)
-        {
+          {
             var deger = _unitOfWork.TurMenusu.FirstOrDefault(x => x.Baslik.ToLower() == Baslik.ToLower()).İcerik;
             return Json(deger);
-            //return Content(JsonConvert.SerializeObject(deger), "application/json");
 
         }
         [Route("update-tur-menusu-icerik")]
