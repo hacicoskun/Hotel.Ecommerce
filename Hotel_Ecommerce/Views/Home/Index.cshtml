@@ -4,8 +4,8 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <style type="text/css">
-    .autocomplete-suggestions{
-        margin-left:0px!important;
+    .autocomplete-suggestions {
+        margin-left: 0px !important;
     }
 </style>
 
@@ -79,8 +79,6 @@
                         <div class="s002">
 
                             <literal>
-
-
                                 <div class="inner-form" style="border-radius:4px">
                                     <div class="input-field first-wrap">
                                         <div class="icon-wrap">
@@ -88,7 +86,7 @@
                                                 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
                                             </svg>
                                         </div>
-                                        <input  name="autocomplete" id="autocomplete" type="text" placeholder="Ülke, Şehir, Bölge ya da Otel Adı" style=" border-top-left-radius: 5px; border-bottom-left-radius: 7px;" />
+                                        <input name="autocomplete" id="autocomplete" type="text" placeholder="Ülke, Şehir, Bölge ya da Otel Adı" style=" border-top-left-radius: 5px; border-bottom-left-radius: 7px;" />
                                     </div>
                                     <div class="input-field second-wrap">
                                         <div class="icon-wrap">
@@ -113,6 +111,82 @@
                                             </svg>
                                         </div>
                                         <input type="text" disabled value="2 KİŞİ" style="font-family:'Open Sans';font-weight:bold;cursor:pointer" />
+                                        <div id="csecim" class="col-md-2" style="background-color: rgb(255, 255, 255); display: block;">
+                                            <style type="text/css">
+                                                #csecim {
+                                                    border-radius: 2px;
+                                                    margin-top: 10px;
+                                                    height: 80px;
+                                                    width: 170px;
+                                                }
+
+                                                    #csecim select {
+                                                        float: left;
+                                                        width: 60px;
+                                                        margin-right: 5px;
+                                                        font-weight: 700;
+                                                        padding: 0px;
+                                                        border: 1px solid !important;
+                                                        border-color: #ebebeb !important;
+                                                        border-radius: 3px;
+                                                    }
+
+                                                    #csecim span {
+                                                        font-weight: bold;
+                                                        font-size: 13px;
+                                                    }
+
+                                                .divcocukposition {
+                                                    margin-top: -20px;
+                                                    margin-left: 10px;
+                                                }
+
+                                                #divcocukbg {
+                                                    background-color: transparent !important;
+                                                    margin-top: -30px;
+                                                    width: 40px;
+                                                    height: 40px;
+                                                }
+                                            </style>
+                                            <div id="divcocukbg">
+                                                <i class="fa fa-caret-up fa-4x" style="color: #fff"></i>
+                                            </div>
+                                            <div class="divcocukposition" style="color: #555;">
+                                                <br>
+                                                Çocuk yaşı
+                                                <select class="form-control" id="selectcocuk1" name="selectcocuk1" style="display: block;">
+                                                    <option value="0">0</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+
+                                                </select>
+                                                <select class="form-control" id="selectcocuk2" name="selectcocuk2" style="display: block;">
+                                                    <option selected="selected" value="0">0</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+
+                                                </select>
+
+                                            </div>
+                                        </div>
                                     </div>
 
                                     <div class="input-field fifth-wrap">
