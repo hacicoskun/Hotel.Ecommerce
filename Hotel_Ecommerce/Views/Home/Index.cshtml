@@ -105,19 +105,33 @@
                                         <input class="datepicker" id="return" type="text" placeholder="Çıkış Tarihi" style="cursor:pointer" />
                                     </div>
                                     <div class="input-field fouth-wrap">
-                                        <div class="icon-wrap">
-                                            <svg width="24" height="24" viewBox="0 0 24 24">
-                                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
-                                            </svg>
+                                        <div onclick="YetiskinCocukSec()">
+                                            <div class="icon-wrap">
+                                                <svg width="24" height="24" viewBox="0 0 24 24">
+                                                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
+                                                </svg>
+                                            </div>
+                                            <input type="text" disabled value="2 KİŞİ" style="font-family:'Open Sans';font-weight:bold;cursor:pointer;" />
                                         </div>
-                                        <input type="text" disabled value="2 KİŞİ" style="font-family:'Open Sans';font-weight:bold;cursor:pointer" />
-                                        <div id="csecim" class="col-md-2" style="background-color: rgb(255, 255, 255); display: block;">
+                                        <div id="csecim" class="col-md-3 csecim-wrapper" style="background-color: rgb(255, 255, 255);display: none;position: absolute;z-index:9;">
                                             <style type="text/css">
+                                                @@media only screen and (max-width : 468px) {
+                                                    #csecim {
+                                                        width: 100% !important;
+                                                    }
+                                                    #btn-arama-yap:focus{
+                                                        margin-top:100px;
+                                                    }
+                                                    .revolution-slider{
+                                                        height:635px !important;
+                                                    }
+                                                }
+ 
                                                 #csecim {
                                                     border-radius: 2px;
                                                     margin-top: 10px;
-                                                    height: 80px;
-                                                    width: 170px;
+                                                    padding-bottom: 15px;
+                                                    width: 325px;
                                                 }
 
                                                     #csecim select {
@@ -147,50 +161,44 @@
                                                     width: 40px;
                                                     height: 40px;
                                                 }
+
                                             </style>
+
                                             <div id="divcocukbg">
                                                 <i class="fa fa-caret-up fa-4x" style="color: #fff"></i>
                                             </div>
-                                            <div class="divcocukposition" style="color: #555;">
-                                                <br>
-                                                Çocuk yaşı
-                                                <select class="form-control" id="selectcocuk1" name="selectcocuk1" style="display: block;">
-                                                    <option value="0">0</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                    <option value="6">6</option>
-                                                    <option value="7">7</option>
-                                                    <option value="8">8</option>
-                                                    <option value="9">9</option>
-                                                    <option value="10">10</option>
-                                                    <option value="11">11</option>
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <div align="center">Yetişkin Sayısı</div>
+                                                        <input placeholder="2" height="35" id="dropYetiskinSayisi" required class="bsnumber" type="number" value="2" min="1" max="8" />
+                                                        @*_MP_cBdLN29i2*@
+                                                    </td>
+                                                    <td style="padding-left:20px">
 
-                                                </select>
-                                                <select class="form-control" id="selectcocuk2" name="selectcocuk2" style="display: block;">
-                                                    <option selected="selected" value="0">0</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                    <option value="6">6</option>
-                                                    <option value="7">7</option>
-                                                    <option value="8">8</option>
-                                                    <option value="9">9</option>
-                                                    <option value="10">10</option>
-                                                    <option value="11">11</option>
+                                                        <div align="center">Çocuk Sayısı</div>
+                                                        <input placeholder="2" height="35" id="dropCocukSayisi" required class="bsnumber" type="number" value="0" min="0" max="2" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="td_cocukYas1" style="display:none">
+                                                        <div align="center" style="padding:2px">Çocuk 1 Yaş</div>
+                                                        <input placeholder="2" height="35" id="dropCocukYas1" required class="bsnumber" type="number" value="2" min="0" max="12" />
+                                                    </td>
+                                                    <td id="td_cocukYas2" style="padding-left:20px;display:none;padding-top:5px">
+                                                        <div align="center">Çocuk 2 Yaş</div>
+                                                        <input placeholder="2" height="35" id="dropCocukYas2" required class="bsnumber" type="number" value="0" min="0" max="12" />
+                                                    </td>
+                                                </tr>
+                                            </table>
 
-                                                </select>
 
-                                            </div>
+
                                         </div>
                                     </div>
 
                                     <div class="input-field fifth-wrap">
-                                        <button class="btn-search" type="button" style="background-color: #5eb82f;border-radius:4px;font-size:27px">ARA <i class="fa fa-chevron-right"></i></button>
+                                        <button id="btn-arama-yap" class="btn-search" type="button" style="background-color: #5eb82f;border-radius:4px;font-size:27px">ARA <i class="fa fa-chevron-right"></i></button>
                                     </div>
                                 </div>
                             </literal>
@@ -201,22 +209,22 @@
                     <script src="~/Content/assest/flatpickr/flatpickr.min.js"></script>
                     <script src="~/Content/assest/flatpickr/rangePlugin.js"></script>
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.9/l10n/tr.min.js"></script>
-
                     <script type="text/javascript">
                         const config = {
                             "plugins": [new rangePlugin({ input: "#return" })],
                             "locale": "tr",
                             dateFormat: "d/m/yy",
-                            minDate: new Date()
+                            minDate: new Date(),
+                            disableMobile:"true"
                         };
                         flatpickr('#depart', config);
-                    </script>
-                    <script>
+
                         const choices = new Choices('[data-trigger]',
                             {
                                 searchEnabled: false,
                                 itemSelectText: ''
                             });
+
                     </script>
                 </div>
             </div>
