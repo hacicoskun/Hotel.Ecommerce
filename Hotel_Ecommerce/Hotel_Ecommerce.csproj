@@ -56,6 +56,9 @@
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="System.Linq.Dynamic, Version=1.0.6132.35681, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.Dynamic.1.0.8\lib\net40\System.Linq.Dynamic.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -5871,6 +5874,7 @@
     <Compile Include="Areas\Admin\Controllers\SliderController.cs" />
     <Compile Include="Areas\Admin\Model\HotelModel.cs" />
     <Compile Include="Controllers\CookieController.cs" />
+    <Compile Include="Controllers\FilterController.cs" />
     <Compile Include="Controllers\GizlilikController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Services\SearchAutoCompleteController.cs" />
@@ -5882,6 +5886,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Filtre.cs" />
     <Compile Include="Models\Homepage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\en-lang.Designer.cs">
@@ -6824,6 +6829,7 @@
     <Content Include="Views\Cookie\Cookie.cshtml" />
     <Content Include="Views\KisiselVerileriKoruma\KisiselVerileriKoruma.cshtml" />
     <Content Include="Views\Gizlilik\Gizlilik.cshtml" />
+    <Content Include="Views\Filter\Filter.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

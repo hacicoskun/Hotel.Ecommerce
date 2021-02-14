@@ -119,14 +119,16 @@
                                                     #csecim {
                                                         width: 100% !important;
                                                     }
-                                                    #btn-arama-yap:focus{
-                                                        margin-top:100px;
+
+                                                    #btn-arama-yap:focus {
+                                                        margin-top: 100px;
                                                     }
-                                                    .revolution-slider{
-                                                        height:635px !important;
+
+                                                    .revolution-slider {
+                                                        height: 635px !important;
                                                     }
                                                 }
- 
+
                                                 #csecim {
                                                     border-radius: 2px;
                                                     margin-top: 10px;
@@ -134,15 +136,9 @@
                                                     width: 325px;
                                                 }
 
+
                                                     #csecim select {
-                                                        float: left;
-                                                        width: 60px;
-                                                        margin-right: 5px;
-                                                        font-weight: 700;
-                                                        padding: 0px;
-                                                        border: 1px solid !important;
-                                                        border-color: #ebebeb !important;
-                                                        border-radius: 3px;
+                                                        height: 33px !important;
                                                     }
 
                                                     #csecim span {
@@ -161,7 +157,6 @@
                                                     width: 40px;
                                                     height: 40px;
                                                 }
-
                                             </style>
 
                                             <div id="divcocukbg">
@@ -170,24 +165,34 @@
                                             <table>
                                                 <tr>
                                                     <td>
-                                                        <div align="center">Yetişkin Sayısı</div>
-                                                        <input placeholder="2" height="35" id="dropYetiskinSayisi" required class="bsnumber" type="number" value="2" min="1" max="8" />
+                                                        <div align="center" style="margin-top: -5px;padding-bottom: 5px;">Yetişkin Sayısı</div>                                                        <input placeholder="2" height="35" id="dropYetiskinSayisi" required class="bsnumber" type="number" value="2" min="1" max="8" />
                                                         @*_MP_cBdLN29i2*@
                                                     </td>
                                                     <td style="padding-left:20px">
 
-                                                        <div align="center">Çocuk Sayısı</div>
-                                                        <input placeholder="2" height="35" id="dropCocukSayisi" required class="bsnumber" type="number" value="0" min="0" max="2" />
+                                                        <div align="center" style="margin-top: -5px;padding-bottom: 5px;">Çocuk Sayısı</div>                                                        <input placeholder="2" height="35" id="dropCocukSayisi" required class="bsnumber" type="number" value="0" min="0" max="2" />
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td id="td_cocukYas1" style="display:none">
                                                         <div align="center" style="padding:2px">Çocuk 1 Yaş</div>
-                                                        <input placeholder="2" height="35" id="dropCocukYas1" required class="bsnumber" type="number" value="2" min="0" max="12" />
+                                                        <select class="form-control" id="dropCocukYas1">
+                                                            @for (int i = 1; i < 16; i++)
+                                                            {
+                                                                <option value="@i">@i</option>
+                                                            }
+                                                        </select>
+                                                        @*<input placeholder="2" height="35" id="dropCocukYas1" required class="bsnumber" type="number" value="2" min="0" max="12" />*@
                                                     </td>
-                                                    <td id="td_cocukYas2" style="padding-left:20px;display:none;padding-top:5px">
+                                                    <td id="td_cocukYas2" style="padding-left:20px;display:none;padding-top:3px">
                                                         <div align="center">Çocuk 2 Yaş</div>
-                                                        <input placeholder="2" height="35" id="dropCocukYas2" required class="bsnumber" type="number" value="0" min="0" max="12" />
+                                                        <select class="form-control" id="dropCocukYas2">
+                                                            @for (int i = 1; i < 16; i++)
+                                                            {
+                                                                <option value="@i">@i</option>
+                                                            }
+                                                        </select>
+                                                        @*<input placeholder="2" height="35" id="dropCocukYas2" required class="bsnumber" type="number" value="0" min="0" max="12" />*@
                                                     </td>
                                                 </tr>
                                             </table>
@@ -198,7 +203,7 @@
                                     </div>
 
                                     <div class="input-field fifth-wrap">
-                                        <button id="btn-arama-yap" class="btn-search" type="button" style="background-color: #5eb82f;border-radius:4px;font-size:27px">ARA <i class="fa fa-chevron-right"></i></button>
+                                        <button id="btn-arama-yap" onclick="OtelAra()" class="btn-search" type="button" style="background-color: #5eb82f;border-radius:4px;font-size:27px">ARA <i class="fa fa-chevron-right"></i></button>
                                     </div>
                                 </div>
                             </literal>
@@ -215,7 +220,7 @@
                             "locale": "tr",
                             dateFormat: "d/m/yy",
                             minDate: new Date(),
-                            disableMobile:"true"
+                            disableMobile: "true"
                         };
                         flatpickr('#depart', config);
 
@@ -225,6 +230,7 @@
                                 itemSelectText: ''
                             });
 
+                 
                     </script>
                 </div>
             </div>
@@ -318,149 +324,7 @@
                                 </div>
                             }
 
-                            @*<div class="col-sm-6 col-md-3">
-                                    <article class="box">
-                                        <figure>
-                                            <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img width="270" height="161" alt="" src="images/hotels/2.png"></a>
-                                        </figure>
-                                        <div class="details">
-                                            <span class="price"><small>avg/night</small>$120</span>
-                                            <h4 class="box-title">Forte Do Vale<small>Albufeira</small></h4>
-                                            <div class="feedback">
-                                                <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title="" data-original-title="4 stars"><span style="width: 80%;" class="five-stars"></span></div>
-                                                <span class="review">170 reviews</span>
-                                            </div>
-                                            <p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
-                                            <div class="action">
-                                                <a class="button btn-small" href="hotel-detailed.html">SELECT</a>
-                                                <a class="button btn-small yellow popup-map" href="#" data-box="37.089072, -8.247880">VIEW ON MAP</a>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="col-sm-6 col-md-3">
-                                    <article class="box">
-                                        <figure>
-                                            <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img width="270" height="161" alt="" src="images/hotels/3.png"></a>
-                                        </figure>
-                                        <div class="details">
-                                            <span class="price"><small>avg/night</small>$322</span>
-                                            <h4 class="box-title">Gran Canaria<small>spain</small></h4>
-                                            <div class="feedback">
-                                                <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title="" data-original-title="4 stars"><span style="width: 80%;" class="five-stars"></span></div>
-                                                <span class="review">485 reviews</span>
-                                            </div>
-                                            <p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
-                                            <div class="action">
-                                                <a class="button btn-small" href="hotel-detailed.html">SELECT</a>
-                                                <a class="button btn-small yellow popup-map" href="#" data-box="40.463667, -3.749220">VIEW ON MAP</a>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="col-sm-6 col-md-3">
-                                    <article class="box">
-                                        <figure>
-                                            <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img width="270" height="161" alt="" src="images/hotels/4.png"></a>
-                                        </figure>
-                                        <div class="details">
-                                            <span class="price"><small>avg/night</small>$170</span>
-                                            <h4 class="box-title">Roosevelt Hotel<small>New york</small></h4>
-                                            <div class="feedback">
-                                                <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title="" data-original-title="4 stars"><span style="width: 80%;" class="five-stars"></span></div>
-                                                <span class="review">75 reviews</span>
-                                            </div>
-                                            <p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
-                                            <div class="action">
-                                                <a class="button btn-small" href="hotel-detailed.html">SELECT</a>
-                                                <a class="button btn-small yellow popup-map" href="#" data-box="40.705631, -73.978003">VIEW ON MAP</a>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="col-sm-6 col-md-3">
-                                    <article class="box">
-                                        <figure>
-                                            <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img width="270" height="161" alt="" src="images/hotels/5.png"></a>
-                                        </figure>
-                                        <div class="details">
-                                            <span class="price">
-                                                <small>avg/night</small>
-                                                $620
-                                            </span>
-                                            <h4 class="box-title">Costa Brava<small>Spain</small></h4>
-                                            <div class="feedback">
-                                                <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title="" data-original-title="4 stars"><span style="width: 80%;" class="five-stars"></span></div>
-                                                <span class="review">423 reviews</span>
-                                            </div>
-                                            <p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
-                                            <div class="action">
-                                                <a class="button btn-small" href="hotel-detailed.html">SELECT</a>
-                                                <a class="button btn-small yellow popup-map" href="#" data-box="40.463667, -3.749220">VIEW ON MAP</a>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="col-sm-6 col-md-3">
-                                    <article class="box">
-                                        <figure>
-                                            <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img width="270" height="161" alt="" src="images/hotels/6.png"></a>
-                                        </figure>
-                                        <div class="details">
-                                            <span class="price"><small>avg/night</small>$322</span>
-                                            <h4 class="box-title">Ruzzini Palace<small>Venice</small></h4>
-                                            <div class="feedback">
-                                                <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title="" data-original-title="4 stars"><span style="width: 80%;" class="five-stars"></span></div>
-                                                <span class="review">199 reviews</span>
-                                            </div>
-                                            <p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
-                                            <div class="action">
-                                                <a class="button btn-small" href="hotel-detailed.html">SELECT</a>
-                                                <a class="button btn-small yellow popup-map" href="#" data-box="40.463667, -3.749220">VIEW ON MAP</a>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="col-sm-6 col-md-3">
-                                    <article class="box">
-                                        <figure>
-                                            <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img width="270" height="161" alt="" src="images/hotels/7.png"></a>
-                                        </figure>
-                                        <div class="details">
-                                            <span class="price"><small>avg/night</small>$170</span>
-                                            <h4 class="box-title">Plaza Tour Eiffel<small>Paris</small></h4>
-                                            <div class="feedback">
-                                                <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title="" data-original-title="4 stars"><span style="width: 80%;" class="five-stars"></span></div>
-                                                <span class="review">112 reviews</span>
-                                            </div>
-                                            <p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
-                                            <div class="action">
-                                                <a class="button btn-small" href="hotel-detailed.html">SELECT</a>
-                                                <a class="button btn-small yellow popup-map" href="#" data-box="48.856614, 2.352222">VIEW ON MAP</a>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="col-sm-6 col-md-3">
-                                    <article class="box">
-                                        <figure>
-                                            <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img width="270" height="161" alt="" src="images/hotels/8.png"></a>
-                                        </figure>
-                                        <div class="details">
-                                            <span class="price"><small>avg/night</small>$620</span>
-                                            <h4 class="box-title">Le Ville Del Lido<small>Venice Lido</small></h4>
-                                            <div class="feedback">
-                                                <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title="" data-original-title="4 stars"><span style="width: 80%;" class="five-stars"></span></div>
-                                                <span class="review">269 reviews</span>
-                                            </div>
-                                            <p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
-                                            <div class="action">
-                                                <a class="button btn-small" href="hotel-detailed.html">SELECT</a>
-                                                <a class="button btn-small yellow popup-map" href="#" data-box="48.856614, 2.352222">VIEW ON MAP</a>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>*@
+
 
 
                         </div>
