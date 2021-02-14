@@ -56,6 +56,9 @@
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="System.Linq.Dynamic, Version=1.0.6132.35681, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.Dynamic.1.0.8\lib\net40\System.Linq.Dynamic.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -100,6 +103,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="aramasonuclari.xml" />
     <Content Include="Areas\Files\build\css\custom.css" />
     <Content Include="Areas\Files\build\css\custom.min.css" />
     <Content Include="Areas\Files\build\images\back_disabled.png" />
@@ -4016,6 +4020,15 @@
     <Content Include="Areas\Files\images\harita.jpg" />
     <Content Include="Content\assest\ajax\cruise-slideshow-popup.html" />
     <Content Include="Content\assest\ajax\slideshow-popup.html" />
+    <Content Include="Content\assest\autocompsearch\content\styles.css" />
+    <Content Include="Content\assest\autocompsearch\content\styles1.css" />
+    <Content Include="Content\assest\autocompsearch\scripts\countries.js" />
+    <Content Include="Content\assest\autocompsearch\scripts\demo.js" />
+    <Content Include="Content\assest\autocompsearch\scripts\jquery-1.8.2.min.js" />
+    <Content Include="Content\assest\autocompsearch\scripts\jquery-2.1.1.js" />
+    <Content Include="Content\assest\autocompsearch\scripts\jquery.mockjax.js" />
+    <Content Include="Content\assest\autocompsearch\scripts\test.txt" />
+    <Content Include="Content\assest\autocompsearch\src\jquery.autocomplete.js" />
     <Content Include="Content\assest\components\flexslider\flexslider-rtl.css" />
     <Content Include="Content\assest\components\flexslider\flexslider.css" />
     <Content Include="Content\assest\components\flexslider\flexslider2.css" />
@@ -4214,6 +4227,55 @@
     <Content Include="Content\assest\css\style-sky-blue.css" />
     <Content Include="Content\assest\css\style.css" />
     <Content Include="Content\assest\css\updates.css" />
+    <Content Include="Content\assest\flatpickr\confirmDate\confirmDate.css" />
+    <Content Include="Content\assest\flatpickr\confirmDate\confirmDate.js" />
+    <Content Include="Content\assest\flatpickr\confirmDate\index.html" />
+    <Content Include="Content\assest\flatpickr\confirmDate\index30b5.html" />
+    <Content Include="Content\assest\flatpickr\confirmDate\index5851.html" />
+    <Content Include="Content\assest\flatpickr\confirmDate\index72c9.html" />
+    <Content Include="Content\assest\flatpickr\confirmDate\indexad3f.html" />
+    <Content Include="Content\assest\flatpickr\confirmDate\indexb70a.html" />
+    <Content Include="Content\assest\flatpickr\confirmDate\indexbfec.html" />
+    <Content Include="Content\assest\flatpickr\confirmDate\indexc052.html" />
+    <Content Include="Content\assest\flatpickr\confirmDate\indexf8a0.html" />
+    <Content Include="Content\assest\flatpickr\flatpickr.css" />
+    <Content Include="Content\assest\flatpickr\flatpickr.js" />
+    <Content Include="Content\assest\flatpickr\flatpickr.min.css" />
+    <Content Include="Content\assest\flatpickr\flatpickr.min.js" />
+    <Content Include="Content\assest\flatpickr\labelPlugin\index.html" />
+    <Content Include="Content\assest\flatpickr\labelPlugin\index30b5.html" />
+    <Content Include="Content\assest\flatpickr\labelPlugin\index5851.html" />
+    <Content Include="Content\assest\flatpickr\labelPlugin\index72c9.html" />
+    <Content Include="Content\assest\flatpickr\labelPlugin\indexad3f.html" />
+    <Content Include="Content\assest\flatpickr\labelPlugin\indexb70a.html" />
+    <Content Include="Content\assest\flatpickr\labelPlugin\indexbfec.html" />
+    <Content Include="Content\assest\flatpickr\labelPlugin\indexc052.html" />
+    <Content Include="Content\assest\flatpickr\labelPlugin\indexf8a0.html" />
+    <Content Include="Content\assest\flatpickr\labelPlugin\labelPlugin.js" />
+    <Content Include="Content\assest\flatpickr\minMaxTimePlugin.js" />
+    <Content Include="Content\assest\flatpickr\monthSelect\index.html" />
+    <Content Include="Content\assest\flatpickr\monthSelect\index30b5.html" />
+    <Content Include="Content\assest\flatpickr\monthSelect\index5851.html" />
+    <Content Include="Content\assest\flatpickr\monthSelect\index72c9.html" />
+    <Content Include="Content\assest\flatpickr\monthSelect\indexad3f.html" />
+    <Content Include="Content\assest\flatpickr\monthSelect\indexb70a.html" />
+    <Content Include="Content\assest\flatpickr\monthSelect\indexbfec.html" />
+    <Content Include="Content\assest\flatpickr\monthSelect\indexc052.html" />
+    <Content Include="Content\assest\flatpickr\monthSelect\indexf8a0.html" />
+    <Content Include="Content\assest\flatpickr\monthSelect\monthSelect.css" />
+    <Content Include="Content\assest\flatpickr\monthSelect\monthSelect.js" />
+    <Content Include="Content\assest\flatpickr\rangePlugin.js" />
+    <Content Include="Content\assest\flatpickr\scrollPlugin.js" />
+    <Content Include="Content\assest\flatpickr\weekSelect\index.html" />
+    <Content Include="Content\assest\flatpickr\weekSelect\index30b5.html" />
+    <Content Include="Content\assest\flatpickr\weekSelect\index5851.html" />
+    <Content Include="Content\assest\flatpickr\weekSelect\index72c9.html" />
+    <Content Include="Content\assest\flatpickr\weekSelect\indexad3f.html" />
+    <Content Include="Content\assest\flatpickr\weekSelect\indexb70a.html" />
+    <Content Include="Content\assest\flatpickr\weekSelect\indexbfec.html" />
+    <Content Include="Content\assest\flatpickr\weekSelect\indexc052.html" />
+    <Content Include="Content\assest\flatpickr\weekSelect\indexf8a0.html" />
+    <Content Include="Content\assest\flatpickr\weekSelect\weekSelect.js" />
     <Content Include="Content\assest\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\assest\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\assest\fonts\NexaBlack.svg" />
@@ -5101,6 +5163,7 @@
     <Content Include="Content\assest\images\tour\thumbnail\1.jpg" />
     <Content Include="Content\assest\images\travelo_process.png" />
     <Content Include="Content\assest\images\travelo_site.png" />
+    <Content Include="Content\assest\input-spinner\bootstrap-input-spinner.js" />
     <Content Include="Content\assest\js\booking.js" />
     <Content Include="Content\assest\js\bootstrap.js" />
     <Content Include="Content\assest\js\bootstrap.min.js" />
@@ -5135,9 +5198,72 @@
     <Content Include="Content\assest\search_bar\js\extention\custom-materialize.js" />
     <Content Include="Content\assest\search_bar\js\extention\flatpickr.js" />
     <Content Include="Content\assest\search_bar\js\main.js" />
-    <Content Include="Content\gallery\uploads\aci_cin\acı cin biber.jpg" />
-    <Content Include="Content\gallery\uploads\adacayi\adacayi.jpeg" />
-    <Content Include="Content\gallery\uploads\atbiber\aci_toz_biber.jpg" />
+    <Content Include="Content\gallery\uploads\AcapulcoResortConventionSpaHotel\1.jpg" />
+    <Content Include="Content\gallery\uploads\AcapulcoResortConventionSpaHotel\1213213.jpg" />
+    <Content Include="Content\gallery\uploads\AcapulcoResortConventionSpaHotel\1a.jpg" />
+    <Content Include="Content\gallery\uploads\AcapulcoResortConventionSpaHotel\2.jpg" />
+    <Content Include="Content\gallery\uploads\AcapulcoResortConventionSpaHotel\3.jpg" />
+    <Content Include="Content\gallery\uploads\AcapulcoResortConventionSpaHotel\4.jpg" />
+    <Content Include="Content\gallery\uploads\AcapulcoResortConventionSpaHotel\5.jpg" />
+    <Content Include="Content\gallery\uploads\AcapulcoResortConventionSpaHotel\51.jpg" />
+    <Content Include="Content\gallery\uploads\AcapulcoResortConventionSpaHotel\Acapulco-Sun-Set-Restaurant3.jpg" />
+    <Content Include="Content\gallery\uploads\AcapulcoResortConventionSpaHotel\Acapulco-Villa3.JPG" />
+    <Content Include="Content\gallery\uploads\AcapulcoResortConventionSpaHotel\ag.jpg" />
+    <Content Include="Content\gallery\uploads\AcapulcoResortConventionSpaHotel\bx.jpg" />
+    <Content Include="Content\gallery\uploads\AcapulcoResortConventionSpaHotel\fdggd.jpg" />
+    <Content Include="Content\gallery\uploads\AcapulcoResortConventionSpaHotel\hfd.jpg" />
+    <Content Include="Content\gallery\uploads\AcapulcoResortConventionSpaHotel\Img054_71147.jpg" />
+    <Content Include="Content\gallery\uploads\AcapulcoResortConventionSpaHotel\jha.jpg" />
+    <Content Include="Content\gallery\uploads\AcapulcoResortConventionSpaHotel\jss.jpg" />
+    <Content Include="Content\gallery\uploads\AcapulcoResortConventionSpaHotel\sddasd.jpg" />
+    <Content Include="Content\gallery\uploads\AkkaAntedonHotel\028556a_hb_ba_001.jpg" />
+    <Content Include="Content\gallery\uploads\AkkaAntedonHotel\11.jpg" />
+    <Content Include="Content\gallery\uploads\AkkaAntedonHotel\Akka-Antedon-Hotel-photos-Exterior.JPEG" />
+    <Content Include="Content\gallery\uploads\AkkaAntedonHotel\getimage %281%29.jpg" />
+    <Content Include="Content\gallery\uploads\AkkaAntedonHotel\getimage.jpg" />
+    <Content Include="Content\gallery\uploads\egehan_hotel\1.jpg" />
+    <Content Include="Content\gallery\uploads\egehan_hotel\2.jpg" />
+    <Content Include="Content\gallery\uploads\egehan_hotel\5497331.jpg" />
+    <Content Include="Content\gallery\uploads\egehan_hotel\5529619.jpg" />
+    <Content Include="Content\gallery\uploads\egehan_hotel\9273753.jpg" />
+    <Content Include="Content\gallery\uploads\KayaPalazzoGolfResort_\2.jpg" />
+    <Content Include="Content\gallery\uploads\KayaPalazzoGolfResort_\3.jpg" />
+    <Content Include="Content\gallery\uploads\KayaPalazzoGolfResort_\4.jpg" />
+    <Content Include="Content\gallery\uploads\KayaPalazzoGolfResort_\5.jpg" />
+    <Content Include="Content\gallery\uploads\KayaPalazzoGolfResort_\6.jpg" />
+    <Content Include="Content\gallery\uploads\KayaPalazzoGolfResort_\7.jpg" />
+    <Content Include="Content\gallery\uploads\KayaPalazzoGolfResort_\8.jpg" />
+    <Content Include="Content\gallery\uploads\KayaPalazzoGolfResort_\9.jpg" />
+    <Content Include="Content\gallery\uploads\KayaPalazzoGolfResort_\Kaya-Palazzo-Golf-Resort.2-800x600.jpg" />
+    <Content Include="Content\gallery\uploads\kaya_belek\213_465161.jpg" />
+    <Content Include="Content\gallery\uploads\kaya_belek\23374_b.jpg" />
+    <Content Include="Content\gallery\uploads\kaya_belek\325328415b98df3.jpg" />
+    <Content Include="Content\gallery\uploads\kaya_belek\Hotel-Riu-Kaya-Belek.2-800x600.jpg" />
+    <Content Include="Content\gallery\uploads\kaya_belek\il122958.jpg" />
+    <Content Include="Content\gallery\uploads\kaya_belek\K2.jpg" />
+    <Content Include="Content\gallery\uploads\MayGardenClubHotel\3622570.jpg" />
+    <Content Include="Content\gallery\uploads\MayGardenClubHotel\3641789.jpg" />
+    <Content Include="Content\gallery\uploads\MayGardenClubHotel\4136095.jpg" />
+    <Content Include="Content\gallery\uploads\MayGardenClubHotel\5425663.jpg" />
+    <Content Include="Content\gallery\uploads\MayGardenClubHotel\8972010.jpg" />
+    <Content Include="Content\gallery\uploads\MayGardenClubHotel\9707802.jpg" />
+    <Content Include="Content\gallery\uploads\SalmakisResortSpa_\1.JPG" />
+    <Content Include="Content\gallery\uploads\SalmakisResortSpa_\2.jpg" />
+    <Content Include="Content\gallery\uploads\SalmakisResortSpa_\3.jpg" />
+    <Content Include="Content\gallery\uploads\SalmakisResortSpa_\4.jpg" />
+    <Content Include="Content\gallery\uploads\SalmakisResortSpa_\5.jpg" />
+    <Content Include="Content\gallery\uploads\SalmakisResortSpa_\akt--12-.jpg" />
+    <Content Include="Content\gallery\uploads\SalmakisResortSpa_\gen--3-.jpg" />
+    <Content Include="Content\gallery\uploads\SalmakisResortSpa_\gen--5-.jpg" />
+    <Content Include="Content\gallery\uploads\SalmakisResortSpa_\oda--13-.jpg" />
+    <Content Include="Content\gallery\uploads\sentido_turan_price\DSC07001.jpg" />
+    <Content Include="Content\gallery\uploads\sentido_turan_price\_MG_0903.jpg" />
+    <Content Include="Content\gallery\uploads\sentido_turan_price\_MG_1927.jpg" />
+    <Content Include="Content\gallery\uploads\sentido_turan_price\_MG_1997-HDR.jpg" />
+    <Content Include="Content\gallery\uploads\sentido_turan_price\_MG_2253-HDR.jpg" />
+    <Content Include="Content\gallery\uploads\sentido_turan_price\_MG_2508-HDR.jpg" />
+    <Content Include="Content\gallery\uploads\sentido_turan_price\_MG_2700-HDR.jpg" />
+    <Content Include="Content\gallery\uploads\sentido_turan_price\_MG_9044-HDR.jpg" />
     <Content Include="Filemanager\images\accept.png" />
     <Content Include="Filemanager\images\ajax-loader.gif" />
     <Content Include="Filemanager\images\application_view_icons.png" />
@@ -5748,8 +5874,10 @@
     <Compile Include="Areas\Admin\Controllers\SliderController.cs" />
     <Compile Include="Areas\Admin\Model\HotelModel.cs" />
     <Compile Include="Controllers\CookieController.cs" />
+    <Compile Include="Controllers\FilterController.cs" />
     <Compile Include="Controllers\GizlilikController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Services\SearchAutoCompleteController.cs" />
     <Compile Include="Controllers\KisiselVerileriKorumaController.cs" />
     <Compile Include="Controllers\KullaniciSözlesmesiController.cs" />
     <Compile Include="Filemanager\connectors\ashx\filemanager.ashx.cs">
@@ -5758,6 +5886,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Filtre.cs" />
     <Compile Include="Models\Homepage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\en-lang.Designer.cs">
@@ -6684,6 +6813,14 @@
     <Content Include="Content\assest\sass\_variables.scss" />
     <Content Include="Areas\Admin\Views\Menu\Menu.cshtml" />
     <Content Include="Areas\Admin\Views\Hotel\UpdateHotel.cshtml" />
+    <Content Include="Content\assest\flatpickr\confirmDate\confirmDate.js.map" />
+    <Content Include="Content\assest\flatpickr\labelPlugin\labelPlugin.js.map" />
+    <Content Include="Content\assest\flatpickr\minMaxTimePlugin.js.map" />
+    <Content Include="Content\assest\flatpickr\monthSelect\monthSelect.js.map" />
+    <Content Include="Content\assest\flatpickr\rangePlugin.js.map" />
+    <Content Include="Content\assest\flatpickr\scrollPlugin.js.map" />
+    <Content Include="Content\assest\flatpickr\weekSelect\weekSelect.js.map" />
+    <Content Include="Content\assest\autocompsearch\scripts\data.json" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -6692,6 +6829,7 @@
     <Content Include="Views\Cookie\Cookie.cshtml" />
     <Content Include="Views\KisiselVerileriKoruma\KisiselVerileriKoruma.cshtml" />
     <Content Include="Views\Gizlilik\Gizlilik.cshtml" />
+    <Content Include="Views\Filter\Filter.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -6702,6 +6840,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Views\AdminBase\" />
+    <Folder Include="Content\assest\flatpckr\" />
     <Folder Include="Content\assest\images\shortcodes\listings\style02\cruise\" />
     <Folder Include="Content\assest\images\sliders\flex_slider\" />
     <Folder Include="Content\assest\images\themes\color\" />
@@ -6713,6 +6852,7 @@
     <Folder Include="Content\assest\images\themes\header\style07\" />
     <Folder Include="Content\images\" />
     <Folder Include="Views\Base\" />
+    <Folder Include="Views\SearchAutoComplete\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Hotel_Ecommerce.Helper\Hotel_Ecommerce.Helper.csproj">

@@ -3,7 +3,11 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+<style type="text/css">
+    .autocomplete-suggestions {
+        margin-left: 0px !important;
+    }
+</style>
 
 <div id="slideshow">
     <div class="fullwidthbanner-container">
@@ -75,8 +79,6 @@
                         <div class="s002">
 
                             <literal>
-
-
                                 <div class="inner-form" style="border-radius:4px">
                                     <div class="input-field first-wrap">
                                         <div class="icon-wrap">
@@ -84,7 +86,7 @@
                                                 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
                                             </svg>
                                         </div>
-                                        <input id="search" type="text" placeholder="Ülke, Şehir, Bölge ya da Otel Adı" style=" border-top-left-radius: 5px; border-bottom-left-radius: 7px;" />
+                                        <input name="autocomplete" id="autocomplete" type="text" placeholder="Ülke, Şehir, Bölge ya da Otel Adı" style=" border-top-left-radius: 5px; border-bottom-left-radius: 7px;" />
                                     </div>
                                     <div class="input-field second-wrap">
                                         <div class="icon-wrap">
@@ -100,43 +102,135 @@
                                                 <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"></path>
                                             </svg>
                                         </div>
-                                        <input class="datepicker" id="return" type="text" placeholder="Çıkış Tarihi" />
+                                        <input class="datepicker" id="return" type="text" placeholder="Çıkış Tarihi" style="cursor:pointer" />
                                     </div>
                                     <div class="input-field fouth-wrap">
-                                        <div class="icon-wrap">
-                                            <svg width="24" height="24" viewBox="0 0 24 24">
-                                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
-                                            </svg>
+                                        <div onclick="YetiskinCocukSec()">
+                                            <div class="icon-wrap">
+                                                <svg width="24" height="24" viewBox="0 0 24 24">
+                                                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
+                                                </svg>
+                                            </div>
+                                            <input type="text" disabled value="2 KİŞİ" style="font-family:'Open Sans';font-weight:bold;cursor:pointer;" />
                                         </div>
-                                        <select data-trigger="" name="choices-single-defaul">
-                                            <option selected>2 KİŞİ</option>
-                                            <option>3 Adults</option>
-                                            <option>4 Adults</option>
-                                            <option>5 Adults</option>
-                                        </select>
+                                        <div id="csecim" class="col-md-3 csecim-wrapper" style="background-color: rgb(255, 255, 255);display: none;position: absolute;z-index:9;">
+                                            <style type="text/css">
+                                                @@media only screen and (max-width : 468px) {
+                                                    #csecim {
+                                                        width: 100% !important;
+                                                    }
+
+                                                    #btn-arama-yap:focus {
+                                                        margin-top: 100px;
+                                                    }
+
+                                                    .revolution-slider {
+                                                        height: 635px !important;
+                                                    }
+                                                }
+
+                                                #csecim {
+                                                    border-radius: 2px;
+                                                    margin-top: 10px;
+                                                    padding-bottom: 15px;
+                                                    width: 325px;
+                                                }
+
+
+                                                    #csecim select {
+                                                        height: 33px !important;
+                                                    }
+
+                                                    #csecim span {
+                                                        font-weight: bold;
+                                                        font-size: 13px;
+                                                    }
+
+                                                .divcocukposition {
+                                                    margin-top: -20px;
+                                                    margin-left: 10px;
+                                                }
+
+                                                #divcocukbg {
+                                                    background-color: transparent !important;
+                                                    margin-top: -30px;
+                                                    width: 40px;
+                                                    height: 40px;
+                                                }
+                                            </style>
+
+                                            <div id="divcocukbg">
+                                                <i class="fa fa-caret-up fa-4x" style="color: #fff"></i>
+                                            </div>
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <div align="center" style="margin-top: -5px;padding-bottom: 5px;">Yetişkin Sayısı</div>                                                        <input placeholder="2" height="35" id="dropYetiskinSayisi" required class="bsnumber" type="number" value="2" min="1" max="8" />
+                                                        @*_MP_cBdLN29i2*@
+                                                    </td>
+                                                    <td style="padding-left:20px">
+
+                                                        <div align="center" style="margin-top: -5px;padding-bottom: 5px;">Çocuk Sayısı</div>                                                        <input placeholder="2" height="35" id="dropCocukSayisi" required class="bsnumber" type="number" value="0" min="0" max="2" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="td_cocukYas1" style="display:none">
+                                                        <div align="center" style="padding:2px">Çocuk 1 Yaş</div>
+                                                        <select class="form-control" id="dropCocukYas1">
+                                                            @for (int i = 1; i < 16; i++)
+                                                            {
+                                                                <option value="@i">@i</option>
+                                                            }
+                                                        </select>
+                                                        @*<input placeholder="2" height="35" id="dropCocukYas1" required class="bsnumber" type="number" value="2" min="0" max="12" />*@
+                                                    </td>
+                                                    <td id="td_cocukYas2" style="padding-left:20px;display:none;padding-top:3px">
+                                                        <div align="center">Çocuk 2 Yaş</div>
+                                                        <select class="form-control" id="dropCocukYas2">
+                                                            @for (int i = 1; i < 16; i++)
+                                                            {
+                                                                <option value="@i">@i</option>
+                                                            }
+                                                        </select>
+                                                        @*<input placeholder="2" height="35" id="dropCocukYas2" required class="bsnumber" type="number" value="0" min="0" max="12" />*@
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+
+
+                                        </div>
                                     </div>
 
                                     <div class="input-field fifth-wrap">
-                                        <button class="btn-search" type="button" style="background-color: #5eb82f;border-radius:4px;font-size:27px">ARA <i class="fa fa-chevron-right"></i></button>
+                                        <button id="btn-arama-yap" onclick="OtelAra()" class="btn-search" type="button" style="background-color: #5eb82f;border-radius:4px;font-size:27px">ARA <i class="fa fa-chevron-right"></i></button>
                                     </div>
                                 </div>
                             </literal>
                         </div>
                     </div>
                     <script src="~/Content/assest/search_bar/js/extention/choices.js"></script>
-                    <script src="~/Content/assest/search_bar/js/extention/flatpickr.js"></script>
-                    <script>
-                                flatpickr(".datepicker",
-                                    {});
+                    <link href="~/Content/assest/flatpickr/flatpickr.min.css" rel="stylesheet" />
+                    <script src="~/Content/assest/flatpickr/flatpickr.min.js"></script>
+                    <script src="~/Content/assest/flatpickr/rangePlugin.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.9/l10n/tr.min.js"></script>
+                    <script type="text/javascript">
+                        const config = {
+                            "plugins": [new rangePlugin({ input: "#return" })],
+                            "locale": "tr",
+                            dateFormat: "d/m/yy",
+                            minDate: new Date(),
+                            disableMobile: "true"
+                        };
+                        flatpickr('#depart', config);
 
-                    </script>
-                    <script>
-                                const choices = new Choices('[data-trigger]',
-                                    {
-                                        searchEnabled: false,
-                                        itemSelectText: '',
-                                    });
+                        const choices = new Choices('[data-trigger]',
+                            {
+                                searchEnabled: false,
+                                itemSelectText: ''
+                            });
 
+                 
                     </script>
                 </div>
             </div>
@@ -202,9 +296,9 @@
     <div class="container">
         <div id="main">
             <div class="row">
-                 
+
                 <div class="col-sm-12">
-                    
+
                     <div class="hotel-list">
                         <div class="row image-box hotel listing-style1">
                             @foreach (var item in Model.OncelikliOteller)
@@ -215,169 +309,27 @@
                                             <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img width="270" height="161" alt="" style="height:161px !important" src="@item.Resim"></a>
                                         </figure>
                                         <div class="details" style="height:275px">
-                                            
+
                                             <h4 class="box-title" style="height:50px">@item.Adi</h4>
                                             <div class="feedback">
-                                                <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title=""  ><span style="width: 80%;" class="five-stars"></span></div>
-                                                <span class="review" style="font-weight:bold;color:#000000;text-transform:none;font-size:12px">@item.Konumu.Split(',')[item.Konumu.Split(',').Length-1]</span>
+                                                <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title=""><span style="width: 80%;" class="five-stars"></span></div>
+                                                <span class="review" style="font-weight:bold;color:#000000;text-transform:none;font-size:12px">@item.Konumu.Split(',')[item.Konumu.Split(',').Length - 1]</span>
                                             </div>
                                             <p class="description" style="height:100px">@item.KisaAciklama</p>
                                             <div class="action">
                                                 <a class="button btn-small yellow" href="hotel-detailed.html">Oteli İncele</a>
-                                             </div>
+                                            </div>
                                         </div>
                                     </article>
                                 </div>
                             }
 
-                            @*<div class="col-sm-6 col-md-3">
-            <article class="box">
-                <figure>
-                    <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img width="270" height="161" alt="" src="images/hotels/2.png"></a>
-                </figure>
-                <div class="details">
-                    <span class="price"><small>avg/night</small>$120</span>
-                    <h4 class="box-title">Forte Do Vale<small>Albufeira</small></h4>
-                    <div class="feedback">
-                        <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title="" data-original-title="4 stars"><span style="width: 80%;" class="five-stars"></span></div>
-                        <span class="review">170 reviews</span>
-                    </div>
-                    <p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
-                    <div class="action">
-                        <a class="button btn-small" href="hotel-detailed.html">SELECT</a>
-                        <a class="button btn-small yellow popup-map" href="#" data-box="37.089072, -8.247880">VIEW ON MAP</a>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <div class="col-sm-6 col-md-3">
-            <article class="box">
-                <figure>
-                    <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img width="270" height="161" alt="" src="images/hotels/3.png"></a>
-                </figure>
-                <div class="details">
-                    <span class="price"><small>avg/night</small>$322</span>
-                    <h4 class="box-title">Gran Canaria<small>spain</small></h4>
-                    <div class="feedback">
-                        <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title="" data-original-title="4 stars"><span style="width: 80%;" class="five-stars"></span></div>
-                        <span class="review">485 reviews</span>
-                    </div>
-                    <p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
-                    <div class="action">
-                        <a class="button btn-small" href="hotel-detailed.html">SELECT</a>
-                        <a class="button btn-small yellow popup-map" href="#" data-box="40.463667, -3.749220">VIEW ON MAP</a>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <div class="col-sm-6 col-md-3">
-            <article class="box">
-                <figure>
-                    <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img width="270" height="161" alt="" src="images/hotels/4.png"></a>
-                </figure>
-                <div class="details">
-                    <span class="price"><small>avg/night</small>$170</span>
-                    <h4 class="box-title">Roosevelt Hotel<small>New york</small></h4>
-                    <div class="feedback">
-                        <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title="" data-original-title="4 stars"><span style="width: 80%;" class="five-stars"></span></div>
-                        <span class="review">75 reviews</span>
-                    </div>
-                    <p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
-                    <div class="action">
-                        <a class="button btn-small" href="hotel-detailed.html">SELECT</a>
-                        <a class="button btn-small yellow popup-map" href="#" data-box="40.705631, -73.978003">VIEW ON MAP</a>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <div class="col-sm-6 col-md-3">
-            <article class="box">
-                <figure>
-                    <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img width="270" height="161" alt="" src="images/hotels/5.png"></a>
-                </figure>
-                <div class="details">
-                    <span class="price">
-                        <small>avg/night</small>
-                        $620
-                    </span>
-                    <h4 class="box-title">Costa Brava<small>Spain</small></h4>
-                    <div class="feedback">
-                        <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title="" data-original-title="4 stars"><span style="width: 80%;" class="five-stars"></span></div>
-                        <span class="review">423 reviews</span>
-                    </div>
-                    <p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
-                    <div class="action">
-                        <a class="button btn-small" href="hotel-detailed.html">SELECT</a>
-                        <a class="button btn-small yellow popup-map" href="#" data-box="40.463667, -3.749220">VIEW ON MAP</a>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <div class="col-sm-6 col-md-3">
-            <article class="box">
-                <figure>
-                    <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img width="270" height="161" alt="" src="images/hotels/6.png"></a>
-                </figure>
-                <div class="details">
-                    <span class="price"><small>avg/night</small>$322</span>
-                    <h4 class="box-title">Ruzzini Palace<small>Venice</small></h4>
-                    <div class="feedback">
-                        <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title="" data-original-title="4 stars"><span style="width: 80%;" class="five-stars"></span></div>
-                        <span class="review">199 reviews</span>
-                    </div>
-                    <p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
-                    <div class="action">
-                        <a class="button btn-small" href="hotel-detailed.html">SELECT</a>
-                        <a class="button btn-small yellow popup-map" href="#" data-box="40.463667, -3.749220">VIEW ON MAP</a>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <div class="col-sm-6 col-md-3">
-            <article class="box">
-                <figure>
-                    <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img width="270" height="161" alt="" src="images/hotels/7.png"></a>
-                </figure>
-                <div class="details">
-                    <span class="price"><small>avg/night</small>$170</span>
-                    <h4 class="box-title">Plaza Tour Eiffel<small>Paris</small></h4>
-                    <div class="feedback">
-                        <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title="" data-original-title="4 stars"><span style="width: 80%;" class="five-stars"></span></div>
-                        <span class="review">112 reviews</span>
-                    </div>
-                    <p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
-                    <div class="action">
-                        <a class="button btn-small" href="hotel-detailed.html">SELECT</a>
-                        <a class="button btn-small yellow popup-map" href="#" data-box="48.856614, 2.352222">VIEW ON MAP</a>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <div class="col-sm-6 col-md-3">
-            <article class="box">
-                <figure>
-                    <a href="ajax/slideshow-popup.html" class="hover-effect popup-gallery"><img width="270" height="161" alt="" src="images/hotels/8.png"></a>
-                </figure>
-                <div class="details">
-                    <span class="price"><small>avg/night</small>$620</span>
-                    <h4 class="box-title">Le Ville Del Lido<small>Venice Lido</small></h4>
-                    <div class="feedback">
-                        <div data-placement="bottom" data-toggle="tooltip" class="five-stars-container" title="" data-original-title="4 stars"><span style="width: 80%;" class="five-stars"></span></div>
-                        <span class="review">269 reviews</span>
-                    </div>
-                    <p class="description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
-                    <div class="action">
-                        <a class="button btn-small" href="hotel-detailed.html">SELECT</a>
-                        <a class="button btn-small yellow popup-map" href="#" data-box="48.856614, 2.352222">VIEW ON MAP</a>
-                    </div>
-                </div>
-            </article>
-        </div>*@
+
 
 
                         </div>
                     </div>
-                 </div>
+                </div>
             </div>
         </div>
     </div>
