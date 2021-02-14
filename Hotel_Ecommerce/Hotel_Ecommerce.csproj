@@ -5874,6 +5874,7 @@
     <Compile Include="Areas\Admin\Controllers\SliderController.cs" />
     <Compile Include="Areas\Admin\Model\HotelModel.cs" />
     <Compile Include="Controllers\CookieController.cs" />
+    <Compile Include="Controllers\DetailController.cs" />
     <Compile Include="Controllers\FilterController.cs" />
     <Compile Include="Controllers\GizlilikController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -6830,6 +6831,7 @@
     <Content Include="Views\KisiselVerileriKoruma\KisiselVerileriKoruma.cshtml" />
     <Content Include="Views\Gizlilik\Gizlilik.cshtml" />
     <Content Include="Views\Filter\Filter.cshtml" />
+    <Content Include="Views\Detail\Detail.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
