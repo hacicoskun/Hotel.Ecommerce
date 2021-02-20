@@ -1925,7 +1925,7 @@ button, input[type="button"].button, a.button {
         }
 
     button.yellow, input[type="button"].button.yellow, a.button.yellow {
-        background: #ad0c33;
+        background: #E3000F;
     }
 
         button.yellow:hover, input[type="button"].button.yellow:hover, a.button.yellow:hover {
@@ -2735,7 +2735,7 @@ blockquote {
 
         .five-stars-container .five-stars:before, .five-stars-container.editable-rating .ui-slider-range:before {
             content: "\e006\e006\e006\e006\e006";
-            color: #ad0c33;
+            color: #E3000F;
         }
 
         .five-stars-container .five-stars.transparent-bg, .five-stars-container.editable-rating .ui-slider-range.transparent-bg {
@@ -7107,7 +7107,7 @@ ul.check-circle li:before {
     #header .topnav {
         height: 40px;
         font-size: 19px;
-        background: #ad0c33;
+        background: #E3000F;
         width: 100%;
         padding: 3px;
     }

@@ -121,6 +121,7 @@
     <Content Include="Areas\Files\cjs\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
     <Content Include="Areas\Files\cjs\images\ui-icons_222222_256x240.png" />
     <Content Include="Areas\Files\cjs\images\ui-icons_454545_256x240.png" />
+    <Content Include="Areas\Files\cjs\SiziArayalim.js" />
     <Content Include="Areas\Files\cjs\jget.js" />
     <Content Include="Areas\Files\cjs\takvim.css" />
     <Content Include="Areas\Files\cjs\takvim.js" />
@@ -525,6 +526,34 @@
     <Content Include="Areas\Files\images\fav.ico" />
     <Content Include="Areas\Files\images\galery.png" />
     <Content Include="Areas\Files\images\info.png" />
+    <Content Include="Areas\Files\images\referanslar\1552645796167.png" />
+    <Content Include="Areas\Files\images\referanslar\afyoncimento.png" />
+    <Content Include="Areas\Files\images\referanslar\aile.png" />
+    <Content Include="Areas\Files\images\referanslar\alarko.png" />
+    <Content Include="Areas\Files\images\referanslar\aselsan.png" />
+    <Content Include="Areas\Files\images\referanslar\avrupa birligi.png" />
+    <Content Include="Areas\Files\images\referanslar\basoz.png" />
+    <Content Include="Areas\Files\images\referanslar\Borusan.png" />
+    <Content Include="Areas\Files\images\referanslar\caudalie-logo.png" />
+    <Content Include="Areas\Files\images\referanslar\dyo.png" />
+    <Content Include="Areas\Files\images\referanslar\ege.jpg" />
+    <Content Include="Areas\Files\images\referanslar\emniyet-genel-mudurlugu-logo-1441D42C90-seeklogo.com.png" />
+    <Content Include="Areas\Files\images\referanslar\enerji.png" />
+    <Content Include="Areas\Files\images\referanslar\havelsan-logo-2606D75C51-seeklogo.com.png" />
+    <Content Include="Areas\Files\images\referanslar\havelsan.png" />
+    <Content Include="Areas\Files\images\referanslar\karel_logo-01.png" />
+    <Content Include="Areas\Files\images\referanslar\katar.png" />
+    <Content Include="Areas\Files\images\referanslar\kiler-gayrimenkul-yatirim-ortakligi-a-s-klgyo.png" />
+    <Content Include="Areas\Files\images\referanslar\komurisletmeciligi.png" />
+    <Content Include="Areas\Files\images\referanslar\kutahya.jpg" />
+    <Content Include="Areas\Files\images\referanslar\limak.png" />
+    <Content Include="Areas\Files\images\referanslar\milliegitim.png" />
+    <Content Include="Areas\Files\images\referanslar\petkim-logo.png" />
+    <Content Include="Areas\Files\images\referanslar\saglik.png" />
+    <Content Include="Areas\Files\images\referanslar\socar.png" />
+    <Content Include="Areas\Files\images\referanslar\tarim.png" />
+    <Content Include="Areas\Files\images\referanslar\trabzon-liman-isletmeciligi-a-s-tlman.png" />
+    <Content Include="Areas\Files\images\referanslar\yesilholding.png" />
     <Content Include="Areas\Files\login\assets\css\bootstrap.min.css" />
     <Content Include="Areas\Files\login\assets\css\galaxy-style.css" />
     <Content Include="Areas\Files\login\assets\img\2.gif" />
@@ -5873,14 +5902,18 @@
     <Compile Include="Areas\Admin\Controllers\MenuController.cs" />
     <Compile Include="Areas\Admin\Controllers\SliderController.cs" />
     <Compile Include="Areas\Admin\Model\HotelModel.cs" />
+    <Compile Include="Controllers\BecomingTeknikController.cs" />
     <Compile Include="Controllers\CookieController.cs" />
     <Compile Include="Controllers\DetailController.cs" />
     <Compile Include="Controllers\FilterController.cs" />
     <Compile Include="Controllers\GizlilikController.cs" />
+    <Compile Include="Controllers\HakkimizdaController.cs" />
+    <Compile Include="Controllers\HizmetlerimizController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Services\SearchAutoCompleteController.cs" />
     <Compile Include="Controllers\KisiselVerileriKorumaController.cs" />
     <Compile Include="Controllers\KullaniciSözlesmesiController.cs" />
+    <Compile Include="Controllers\ServiceSiziArayalimController.cs" />
     <Compile Include="Filemanager\connectors\ashx\filemanager.ashx.cs">
       <DependentUpon>filemanager.ashx</DependentUpon>
     </Compile>
@@ -6831,6 +6864,9 @@
     <Content Include="Views\Cookie\Cookie.cshtml" />
     <Content Include="Views\KisiselVerileriKoruma\KisiselVerileriKoruma.cshtml" />
     <Content Include="Views\Gizlilik\Gizlilik.cshtml" />
+    <Content Include="Views\Hakkimizda\Hakkimizda.cshtml" />
+    <Content Include="Views\Hizmetlerimiz\Hizmetlerimiz.cshtml" />
+    <Content Include="Views\BecomingTeknik\BecomingTeknik.cshtml" />
     <Content Include="Views\Filter\Filter.cshtml" />
     <Content Include="Views\Detail\Detail.cshtml" />
     <None Include="Web.Debug.config">
@@ -6855,6 +6891,7 @@
     <Folder Include="Content\assest\images\themes\header\style07\" />
     <Folder Include="Content\images\" />
     <Folder Include="Views\Base\" />
+    <Folder Include="Views\ServiceSiziArayallim\" />
     <Folder Include="Views\SearchAutoComplete\" />
   </ItemGroup>
   <ItemGroup>
