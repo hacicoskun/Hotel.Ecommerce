@@ -1,0 +1,166 @@
+﻿@model Hotel_Ecommerce.Models.FiltreOtel
+@{
+    ViewBag.Title = "Filter";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+
+    .panel-content label {
+        cursor: pointer;
+    }
+
+    .box-title {
+        text-transform: none;
+    }
+
+    #content small {
+        color: black;
+        text-transform: none;
+        font-size: 12px;
+        font-family: Arial;
+    }
+</style>
+
+<div class="page-title-container" style="margin-top:90px">
+    <div class="container">
+        <div class="page-title pull-left">
+            <h2 class="entry-title">Arama sonuçları</h2>
+        </div>
+
+    </div>
+</div>
+<section id="content">
+    <div class="container">
+        <div id="main">
+            <div class="row">
+                <div class="col-sm-4 col-md-3">
+                    <h4 class="search-results-title"><i class="soap-icon-search"></i><b>@Model.Otels.Count</b> sonuç bulundu.</h4>
+                    <div class="toggle-container filters-container">
+                        <div class="panel style1 arrow-right">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#otel-ozellik-filter" class="collapsed">Otel Özellikleri</a>
+                            </h4>
+                            <div id="otel-ozellik-filter" class="panel-collapse collapse">
+                                <div class="panel-content">
+                                    <div class="panel style1 arrow-right">
+                                        @foreach (var item in Model.Checkboxs.KonaklamaTipleri)
+                                        {
+                                            <label><input type="checkbox" name="KonaklamaTipleri[]" value="@item.KonaklamaAdiValue" /> @item.KonaklamaAdi</label><br />
+
+                                        }
+                                    </div>
+                                    <div class="clearer"></div>
+                                </div><!-- end content -->
+                            </div>
+                        </div>
+
+                        <div class="panel style1 arrow-right">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#oda-ozellik-filter" class="collapsed">Otel Özellikleri</a>
+                            </h4>
+                            <div id="oda-ozellik-filter" class="panel-collapse collapse">
+                                <div class="panel-content">
+                                    <div class="panel style1 arrow-right">
+                                        @{
+                                            var liste = new List<Hotel_Ecommerce.Models.FiltreOtelOzellikleri>();
+                                            foreach (var item in Model.Checkboxs.OtelOzellikleri)
+                                            {
+                                                if (!liste.Any(x => x.OlanakAdi == item.OlanakAdi))
+                                                {
+                                                    <label><input type="checkbox" name="OdaOzellikleri[]" value="@item.OlanakAdi" /> @item.OlanakAdi</label><br />
+                                                    liste.Add(item);
+                                                }
+                                            }
+                                        }
+                                    </div>
+                                    <div class="clearer"></div>
+                                </div><!-- end content -->
+                            </div>
+
+                        </div>
+                        <div class="panel style1">
+                            <input type="button" value="Arama Yap" onclick="Filtre()" class="btn btn-success" style="width:100%;height:50px" />
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-md-9">
+
+                    <div class="hotel-list listing-style3 hotel" id="divOtelList">
+                        @foreach (var otel in Model.Otels)
+                        {
+                            <article class="box">
+                                <figure class="col-sm-5 col-md-4">
+                                    <a title="" href="@otel.OtelLink" class="hover-effect "><img style="width:270px;height:220px" width="270" height="160" alt="" src="@otel.OtelAnasayfaResmi"></a>
+                                </figure>
+                                <div class="details col-sm-7 col-md-8">
+                                    <div>
+                                        <div>
+                                            <h4 class="box-title">@otel.OtelAdi<small><i class="soap-icon-departure yellow-color"></i> @otel.Otelil,@otel.Otelilce,@otel.OtelBolgesi</small></h4>
+
+                                        </div>
+                                        <div>
+                                            <span style="color:darkred">@otel.KonaklamaTipi.Replace(",", "")</span>
+
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>@Html.Raw(otel.OtelKisaBilgi.Length >= 100 ? otel.OtelKisaBilgi.Substring(0, 99) : otel.OtelKisaBilgi).. </p>
+                                        <div>
+                                            <a class="button btn-small full-width text-center" title="" href="@otel.OtelLink">Detay</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        }
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+
+    function Filtre() {
+        debugger
+
+        var secilenKonaklamalar = [];
+        var checkboxesKonaklamaTipleri = tjq('input[name="KonaklamaTipleri[]"]');
+        checkboxesKonaklamaTipleri.filter(":checked").map(function () {
+            secilenKonaklamalar.push(tjq(this).val());
+        }).get();
+
+        var secilenOlanaklar = [];
+        var checkboxesOdaozellikleri = tjq('input[name="OdaOzellikleri[]"]');
+        checkboxesOdaozellikleri.filter(":checked").map(function () {
+
+            secilenOlanaklar.push(tjq(this).val());
+
+        }).get();
+
+
+        tjq.ajax({
+            type: "POST",
+            url: "/otel-ara-filtre",
+            data: { secilenKonaklamalar: secilenKonaklamalar, secilenOlanaklar: secilenOlanaklar, otelbolgesi: '@Html.Raw(Model.Bolge)', otelil: '@Html.Raw(Model.Il)', otelilce:'@Html.Raw(Model.Ilce)'},
+            dataType: "json",
+            success: function (deger) {
+                console.log(deger);
+                tjq("#divOtelList").empty();
+                var div = "";
+                for (var i = 0; i < deger.otellistesi.length; i++) {
+                    div += '<article class="box"><figure class="col-sm-5 col-md-4"><a title="" href="' + deger.otellistesi[i].OtelLink + '" class="hover-effect "><img tyle="width:270px;height:220px" width="270" height="160" alt="" src="' + deger.otellistesi[i].OtelAnasayfaResmi+'"></a></figure><div class="details col-sm-7 col-md-8"><div><div><h4 class="box-title">' + deger.otellistesi[i].OtelAdi + '<small><i class="soap-icon-departure yellow-color"></i>' + deger.otellistesi[i].otelil + ',' + deger.otellistesi[i].otelilce + ',' + '@Html.Raw(Model.Bolge)' + '</small></h4></div><div><span style="color:darkred">' + deger.otellistesi[i].KonaklamaTipi+'</span></div></div><div><p>' + deger.otellistesi[i].OtelDivBilgi+'.. </p><div><a class="button btn-small full-width text-center" title="" href="' + deger.otellistesi[i].OtelLink + '">Detay</a></div></div></div></article>';
+                }
+                tjq("#divOtelList").empty().append(div);
+                tjq(".search-results-title").empty().append("<b>"+deger.otellistesi.length+"</b> sonuç bulundu.")
+            },
+            error: function (item) {
+                console.log(item);
+            }
+        });
+    }
+
+</script>

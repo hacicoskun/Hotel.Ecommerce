@@ -1,0 +1,1620 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--otelmarket.com.tr-->
+<CHANNEL>
+  <OtelBilgileri item="e065d975-4163-4f9c-aa49-7feb9385ff2d">
+    <OtelLink><a href="yurt-ici-otelleri">Yurt İçi Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+ 
+  <OtelBilgileri item="4324ed9e-f20d-403d-8d52-0a2569f3333f">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-otelleri">Antalya Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="6b98e05c-7652-47af-9529-7da6547e60e2">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-otelleri">Muğla Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="15e7e47e-2fa6-4b2a-950e-f99c09aee493">
+    <OtelLink><a href="kibris-otelleri/girne-otelleri">Girne Otelleri</a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="2a4e17dc-29fa-47a4-b8ab-1ac355f9d2b1">
+    <OtelLink><a href="kibris-otelleri/bafra-otelleri">Bafra  Otelleri</a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="526d19fd-658f-4e95-bcfb-9defc1d7c3a5">
+    <OtelLink><a href="yurt-ici-otelleri/izmir-otelleri">İzmir Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="3ed9e85c-6647-4452-8865-5589d4a9a86d">
+    <OtelLink><a href="yurt-ici-otelleri/aydin-otelleri">Aydın Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="74239997-2a61-4d46-9121-d7a1c25549e7">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-otelleri">Muğla  Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="4b500a40-b1f9-44e4-bdef-31be976bda47">
+    <OtelLink><a href="kibris-otelleri">Kıbrıs Otelleri</a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="f67f73da-c271-41dd-8ccc-e03f6f49e99a">
+    <OtelLink><a href="kibris-otelleri/bafra-otelleri">Bafra Otelleri</a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="395a6971-efb7-40a5-8e82-405b8a8abb8a">
+    <OtelLink><a href="kibris-otelleri/magosa-otelleri">Magosa Otelleri</a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="76e51250-3b14-40ff-bf01-000baca9afac">
+    <OtelLink><a href="yurt-ici-otelleri/aydin-otelleri">Aydın  Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="554c1560-2f55-4ba5-ad59-6eb2141c6904">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-otelleri">Antalya  Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="c0a830cc-ea49-480d-af90-b8bdcae277d5">
+    <OtelLink><a href="yurt-ici-otelleri/balikesir-otelleri">Balıkesir Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="cd221320-74f2-4f90-9e27-a12d255247e7">
+    <OtelLink><a href="yurt-ici-otelleri/canakkale-otelleri">Çanakkale Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="043ee87a-2e49-4573-a7e9-23e3f210ef65">
+    <OtelLink><a href="yurt-ici-otelleri/mersin-otelleri">Mersin Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="d41d3fa4-3c08-4097-baa6-9ed09c919640">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/side-otelleri">Antalya,Side Otelleri </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="8a09c6a4-a6cf-4fcc-a2b6-ef0981abf889">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/belek-otelleri">Antalya,Belek Otelleri </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="3af43437-6b17-48be-b109-12bdbd853d2e">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/bodrum-otelleri">Muğla,Bodrum Otelleri </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="3f298bc6-a919-40b5-989a-b76e188200ad">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/marmaris-otelleri">Muğla,Marmaris Otelleri </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="82fd0ca6-c829-4e9c-8a6f-f6c067d6861a">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/merkez-otelleri">Antalya,Merkez Otelleri </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="312a6d59-e49c-40c1-b6bc-3fe9d95f5e30">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/lara-otelleri">Antalya,Lara Otelleri </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="255cd83b-3d11-4f30-a88f-2326351fef4b">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/kemer-otelleri">Antalya,Kemer Otelleri </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="12eb22d6-e126-4f24-a168-4f02e610c483">
+    <OtelLink><a href="kibris-otelleri/girne/merkez-otelleri">Girne,Merkez Otelleri </a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="77d739b7-4304-4fcb-aecb-4e93e3452e80">
+    <OtelLink><a href="kibris-otelleri/bafra/merkez-otelleri">Bafra ,Merkez Otelleri </a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="6a59136f-a869-4d31-b3e8-cefba9709d57">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/belek-otelleri">Antalya,Belek  Otelleri </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="d54394e0-d165-49a4-8d99-33dfbf61011b">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/alanya-otelleri">Antalya,Alanya Otelleri </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="1b6117b9-2f34-42ce-8b9f-6fddd31c2316">
+    <OtelLink><a href="yurt-ici-otelleri/izmir/cesme-otelleri">İzmir,Çeşme Otelleri </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="e6b1dc74-4679-4308-a340-1edafbf04de2">
+    <OtelLink><a href="yurt-ici-otelleri/aydin/kusadasi-otelleri">Aydın,Kuşadası Otelleri </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="88b32700-f48c-45c6-91ea-b053f32df65a">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/marmaris-otelleri">Muğla ,Marmaris Otelleri </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="43e359a2-8629-47bd-8d09-180d8a6f75ca">
+    <OtelLink><a href="kibris-otelleri/kibris/girne-otelleri">Kıbrıs,Girne Otelleri </a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="f10dcef6-49eb-4206-96e8-266a6e5a80e4">
+    <OtelLink><a href="kibris-otelleri/bafra/merkez-otelleri">Bafra,Merkez Otelleri </a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="ac420418-c2c8-4502-beeb-fcf68b2ad32b">
+    <OtelLink><a href="kibris-otelleri/magosa/merkez-otelleri">Magosa,Merkez Otelleri </a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="5123aa59-ab9d-4fbb-b997-5a925a8f5941">
+    <OtelLink><a href="yurt-ici-otelleri/aydin/kusadasi-otelleri">Aydın ,Kuşadası Otelleri </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="15b53db0-e992-4e74-b1a5-d46bc20bd719">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/fethiye-otelleri">Muğla,Fethiye Otelleri </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="4e612fc6-d514-4a78-b805-a4d8d2f9e166">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/kas-otelleri">Antalya,Kaş Otelleri </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="dbf938cf-4914-485c-88d4-0503b2465f7b">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/kas-otelleri">Antalya ,Kaş Otelleri </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="d5856b74-4b6d-4465-a152-9324481aed47">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/dalaman-otelleri">Muğla,Dalaman Otelleri </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="f9836b44-f037-4198-8bcb-d783739914e9">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/datca-otelleri">Muğla,Datça Otelleri </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="3d8ebad6-a315-4371-b441-152c732c2e2e">
+    <OtelLink><a href="yurt-ici-otelleri/balikesir/ayvalik-otelleri">Balıkesir,Ayvalık Otelleri </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="357d57cf-b36c-4d4f-a001-0074b618aaa3">
+    <OtelLink><a href="yurt-ici-otelleri/balikesir/edremit-otelleri">Balıkesir,Edremit Otelleri </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="39dee9a3-878f-4dde-a34e-3edb701d63a1">
+    <OtelLink><a href="yurt-ici-otelleri/canakkale/assos-otelleri">Çanakkale,Assos Otelleri </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="db0a67e0-b93d-4746-809c-8595b20bbbbc">
+    <OtelLink><a href="yurt-ici-otelleri/mersin/gulhar-otelleri">Mersin,Gülhar Otelleri </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="d32f4631-be66-4a07-bf01-a22babcc6ec2">
+    <OtelLink><a href="yurt-ici-otelleri/mersin/akdeniz-otelleri">Mersin,Akdeniz Otelleri </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="04fdcf9a-91c6-4155-87ed-a2fd806eb922">
+    <OtelLink><a href="yurt-ici-otelleri/mersin/silifke-otelleri">Mersin,Silifke Otelleri </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="fa70f4d9-7df5-42a9-a148-70f17c80f267">
+    <OtelLink><a href="yurt-ici-otelleri/mersin/erdemli-otelleri">Mersin,Erdemli Otelleri </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="dae6ad30-0f38-4701-a8cc-81dec0f66ff1">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/manavgat-otelleri">Antalya,Manavgat Otelleri </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="59e9fe40-b037-4b7c-a9e0-9886eed2f3ca">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/serik-otelleri">Antalya,Serik Otelleri </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="45d837df-cdc0-404e-b462-a35985d78489">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/501-sokak-otelleri">Antalya,501. Sokak Otelleri </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="4419e227-5401-4a12-a51b-dcc406164ee3">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/gundogan-mevkii-otelleri">Antalya,Side,Gündoğan Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="67d8d933-6848-4bdf-b454-618bb842b558">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/kizilagac-mahallesi-otelleri">Antalya,Side,Kızılağaç Mahallesi Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="d958450e-948c-4d37-baee-13a21abd29ea">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/uc-kum-tepesi-mevkii-otelleri">Antalya,Belek,Üç Kum Tepesi Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="32edfb13-33ff-4501-ade5-d0045ea36892">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/merkez-otelleri">Muğla,Bodrum,Merkez Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="b473a877-a658-47b1-918e-6e0ef0aeb09e">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/turunc-mevkii-otelleri">Muğla,Marmaris,Turunç Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="b661dc1a-8699-46e7-adb3-e190aa25c477">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/siteler-mevkii-otelleri">Muğla,Marmaris,Siteler Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="c3a9be3e-4f05-456c-a48b-d46af40a0c72">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/bardakci-koyu-otelleri">Muğla,Bodrum,Bardakçı Koyu Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="dfc3b3a0-1354-4913-a4ab-b97dbd00c6dc">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/konya-alti-mevkii-otelleri">Antalya,Merkez,Konya Altı Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="4d527f74-f036-43ca-8df2-41afb19eef5f">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/murat-pasa-otelleri">Antalya,Lara,Murat Paşa Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="dd115bc1-156d-4536-a410-832b248115ea">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/beldibi-mevkii-otelleri">Antalya,Kemer,Beldibi Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="dcf2843a-8d80-48ff-afa0-533f53ac48e1">
+    <OtelLink><a href="kibris-otelleri/girne/catalkoy-mevkii-otelleri">Girne,Merkez,Çatalköy Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="abbac319-22cf-4386-9d52-baa40e1b00a7">
+    <OtelLink><a href="kibris-otelleri/girne/cennet-mevkii-otelleri">Girne,Merkez,Cennet Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="e7a12d25-4010-4680-bd53-7cb700dd6b60">
+    <OtelLink><a href="kibris-otelleri/bafra/iskele-mevkii-otelleri">Bafra ,Merkez,İskele Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="706d3bb7-4a4b-456f-875e-c2e4f9429cf0">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/uc-kum-tepesi-mevkii-otelleri">Antalya,Belek , Üç Kum Tepesi Mevkii  Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="8bef38cd-9c17-4246-a9ac-80dc1b1e9c52">
+    <OtelLink><a href="kibris-otelleri/girne/alsancak-mevkii-otelleri">Girne,Merkez,Alsancak Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="ed75ac8c-1fb6-4f9f-a5b3-c5936a326e3a">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/iskele-mevkii-otelleri">Antalya,Belek,İskele Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="bd04c2de-5d90-4527-a51a-9095e4812e0a">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/bogazkent-otelleri">Antalya,Belek,Boğazkent Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="9d64e51f-c4da-4ea0-a081-ed5ef8ab92d5">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/akyarlar-mevkii-otelleri">Muğla,Bodrum,Akyarlar Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="6b881779-a010-41ed-a618-e169c5bf02dc">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/yenimahalle-mevkii-otelleri">Antalya,Kemer,Yenimahalle Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="ca782a28-7635-4281-9934-0821ad2e2ce7">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/titreyengol-mevkii-otelleri">Antalya,Side,Titreyengöl Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="06afa678-e7f8-473f-8bc5-a97cb2da549a">
+    <OtelLink><a href="kibris-otelleri/girne/kervansaray-mevkii-otelleri">Girne,Merkez,Kervansaray Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="e5143cda-8e6a-4ee9-b94d-71ede87f009d">
+    <OtelLink><a href="kibris-otelleri/girne/ecevit-mevkii-otelleri">Girne,Merkez,Ecevit Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="09fbb94d-0c03-41d5-91d4-cdd49f755b6e">
+    <OtelLink><a href="kibris-otelleri/girne/kordonboyu-mevii-otelleri">Girne,Merkez,Kordonboyu Mevii Otelleri</a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="7aa7c715-a881-4710-bb44-ba774467c979">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/mahmutlar-mevkii-otelleri">Antalya,Alanya,Mahmutlar Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="c92b19a0-0a28-4d79-a06d-d74b306bb7e3">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/turkler-mevkii-otelleri">Antalya,Alanya,Türkler Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="1b6046b4-5544-4e8d-8160-56474f4cb966">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/incekum-mevkii-otelleri">Antalya,Alanya,İncekum Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="5154b4da-28bc-4902-a509-697accdb5f38">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/okurcalar-mevkii-otelleri">Antalya,Alanya,Okurcalar Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="576ea57e-43da-4e5c-b5d8-5a54059787d8">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/konakli-mevkii-otelleri">Antalya,Alanya,Konaklı Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="8fae1e5e-e7a9-45e5-a874-18d37c427acf">
+    <OtelLink><a href="yurt-ici-otelleri/izmir/ilica-mevkii-otelleri">İzmir,Çeşme,Ilıca Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="b9cc7252-7b13-4af6-908e-abbec5c94645">
+    <OtelLink><a href="yurt-ici-otelleri/izmir/dalyan-mevkii-otelleri">İzmir,Çeşme,Dalyan Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="0df86a4a-8ab1-47d8-874e-3c69e360daa1">
+    <OtelLink><a href="yurt-ici-otelleri/izmir/alacati-mevkii-otelleri">İzmir,Çeşme,Alaçatı Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="9a86c338-51ee-4293-b69a-426e49cc8830">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/turgutreis-mevkii-otelleri">Muğla,Bodrum,Turgutreis Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="74545f5d-4bca-441a-a09d-aed32ee069e1">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/guvercinlik-mevkii-otelleri">Muğla,Bodrum,Güvercinlik Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="6d9167c7-355c-4f95-9729-3e7cc20d5331">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/yalikavak-mevkii-otelleri">Muğla,Bodrum,Yalıkavak Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="b540efe0-5d86-436a-be8c-01cde3b40c53">
+    <OtelLink><a href="yurt-ici-otelleri/izmir/sakarya-mevkii-otelleri">İzmir,Çeşme,Sakarya Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="b0df9921-3088-45ac-bdf9-5ff5b32f99d1">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/turkbuku-mevkii-otelleri">Muğla,Bodrum,Türkbükü Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="14f2aa20-23ee-43b7-ad70-d8176a9d04c2">
+    <OtelLink><a href="yurt-ici-otelleri/izmir/ilicamevkii-otelleri">İzmir,Çeşme,Ilıcamevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="5c4040cf-3556-45ac-81a9-e4d7ffb87f18">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/gumbet-mevkii-otelleri">Muğla,Bodrum,Gümbet Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="a6cf8a78-c3c0-40cd-be93-b54ed9d4f3f4">
+    <OtelLink><a href="yurt-ici-otelleri/izmir/ciftlik-mevkii-otelleri">İzmir,Çeşme,Çiftlik Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="b4813957-13a0-4641-a5ad-324d82418af4">
+    <OtelLink><a href="yurt-ici-otelleri/izmir/ovacik-mevkii-otelleri">İzmir,Çeşme,Ovacık Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="4b0b54ee-eea5-4861-9976-4fd2417e6b9a">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/torba-mevkii-otelleri">Muğla,Bodrum,Torba Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="3e4e7d33-5f88-4c29-9ca6-8fb62f8d7581">
+    <OtelLink><a href="yurt-ici-otelleri/izmir/boyalik-mevkii-otelleri">İzmir,Çeşme,Boyalık Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="0ceb848c-7372-490d-8e73-12fe2e38e5b9">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/kaynar-mevkii-otelleri">Muğla,Bodrum,Kaynar Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="b54114f7-3244-40ba-b306-f448a0e185b6">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/gundogan-mevkii-otelleri">Muğla,Bodrum,Gündoğan Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="0c8b9589-27bb-40bd-9403-1eca85fcb787">
+    <OtelLink><a href="yurt-ici-otelleri/aydin/pamucak-mevkii-otelleri">Aydın,Kuşadası,Pamucak Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="2decdc5f-cbb8-4bbb-805e-bab2ae42fb07">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/kiris-mevkii-otelleri">Antalya,Kemer,Kiriş Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="d36d931d-10ec-40c5-9551-75b6b38cd142">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/bardakci-mevkii-otelleri">Muğla,Bodrum,Bardakçı Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="85f5fe17-efe8-460b-a3fd-e64a1baa908e">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/turgutresi-mevkii-otelleri">Muğla,Bodrum,Turgutresi Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="bda1c3c4-2c09-475d-8b21-b6d794aa8bd3">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/icmeler-mevkii-otelleri">Muğla,Marmaris,İçmeler Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="a789c8cb-2511-4c8f-8485-f7b1e21f8619">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/burunucu-mevkii-otelleri">Muğla,Marmaris,Burunucu Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="8a5d81c4-eb2b-4cd7-8bd3-f14f72265ea2">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/hisaronu-mevkii-otelleri">Muğla,Marmaris,Hisarönü Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="aa42a562-71eb-4876-b553-11422df51ef4">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/icmeler-mevkii-otelleri">Muğla ,Marmaris,İçmeler Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="b477ec43-19b5-421e-a4a4-dbfdac077dde">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/armutalan-mevkii-otelleri">Muğla,Marmaris,Armutalan Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="5e62017e-249e-4c82-8300-9c93351fa9a8">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/uzunyali-mevkii-otelleri">Muğla,Marmaris,Uzunyalı Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="ca8d56d2-65d5-45e7-91de-e670ccae7546">
+    <OtelLink><a href="kibris-otelleri/girne/girne-mevkii-otelleri">Girne,Merkez,Girne Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="469fb12b-6dba-44db-b8a1-21a502f54eb4">
+    <OtelLink><a href="kibris-otelleri/kibris/reyhanli-mevkii-otelleri">Kıbrıs,Girne,Reyhanlı Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="4fef3504-ac3e-4528-a963-5a1f0e68a691">
+    <OtelLink><a href="kibris-otelleri/bafra/iskele-mevkii-otelleri">Bafra,Merkez,İskele Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="173cf67c-828b-4959-b5eb-e5ca222fbcfc">
+    <OtelLink><a href="kibris-otelleri/magosa/gazimagusa-mevkii-otelleri">Magosa,Merkez,Gazimağusa Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="03308d73-b3f2-468f-977c-d0303030c424">
+    <OtelLink><a href="kibris-otelleri/magosa/iskele-mevkii-otelleri">Magosa,Merkez,İskele Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="4ca10e0a-d3ac-4a32-a8e9-c3c3202c9332">
+    <OtelLink><a href="kibris-otelleri/magosa/nadiryolu-mevkii-otelleri">Magosa,Merkez,Nadiryolu Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="a856a302-2fef-4d65-9a98-2ec0e84cf783">
+    <OtelLink><a href="kibris-otelleri/girne/lefkosa-mevkii-otelleri">Girne,Merkez,Lefkoşa Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="8765a220-784c-499d-86bb-74b61c3f156c">
+    <OtelLink><a href="kibris-otelleri/girne/ziya-rizki-cd-mevkii-otelleri">Girne,Merkez,Ziya Rızkı Cd. Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="a462d63b-69bc-4ef2-8623-429aa8321d23">
+    <OtelLink><a href="kibris-otelleri/girne/kordonboyu-mevkii-otelleri">Girne,Merkez,Kordonboyu Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="5dda6a91-568e-453e-940e-ca6f6ca9cfe7">
+    <OtelLink><a href="kibris-otelleri/girne/mete-adanir-mevkii-otelleri">Girne,Merkez,Mete Adanır Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="f901e64e-56ae-4840-83e0-34eedef2417a">
+    <OtelLink><a href="yurt-ici-otelleri/aydin/bayraklidede-mevkii-otelleri">Aydın,Kuşadası,Bayraklıdede Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="bb7222e8-7503-4f4f-925a-7e05bcda4316">
+    <OtelLink><a href="yurt-ici-otelleri/aydin/kiranta-mevkii-otelleri">Aydın,Kuşadası, Kıranta Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="fcc9faa3-6b8f-41f2-9b77-2055dbfb02dd">
+    <OtelLink><a href="yurt-ici-otelleri/aydin/davutlar-mevkii-otelleri">Aydın,Kuşadası,Davutlar Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="4aa382b5-790c-45f7-b116-d7263318c5c4">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/kundu-mevkii-otelleri">Antalya,Lara,Kundu Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="3db13594-73c7-469c-9ae6-09b0a5f5f760">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/kundu-otelleri">Antalya,Lara,Kundu Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="4a012277-b355-4522-a74b-8cb3e794eab2">
+    <OtelLink><a href="yurt-ici-otelleri/aydin/ataturk-bulvari-mevkii-otelleri">Aydın,Kuşadası,Ataturk Bulvari Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="a1ce6d28-41ad-4ff0-9983-f6d457b47e38">
+    <OtelLink><a href="yurt-ici-otelleri/aydin/ilica-mevkii-otelleri">Aydın ,Kuşadası,Ilıca Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="3176b8a1-77bd-485e-9556-88a67049ed7c">
+    <OtelLink><a href="yurt-ici-otelleri/aydin/alacay-mevkii-otelleri">Aydın,Kuşadası,Alaçay Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="99a71449-1704-4fec-a56c-d7ac2f5a4228">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/ovacik-mevkii-otelleri">Muğla,Fethiye,Ovacik Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="d1699c8e-2dbc-4617-887a-f9bd8f4931eb">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/yaniklar-mevkii-otelleri">Muğla,Fethiye,Yanıklar Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="776ae411-a970-44f8-9606-5341a841830f">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/oludeniz-mevkii-otelleri">Muğla,Fethiye,Ölüdeniz Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="51eb2333-7466-4dd1-8ee6-681c26f973e2">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/guzgulu-mevkii-otelleri">Muğla,Fethiye,Güzgülü Mevkii  Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="cb9ac5e7-059e-4e57-adb7-1c9ed637cf6f">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/oludeniz--mevkii-otelleri">Muğla,Fethiye,Ölüdeniz  Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="217890db-86dc-401d-9747-c1e9e5ea2fd5">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/gocek-mevkii-otelleri">Muğla,Fethiye,Göcek Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="d1562fa4-81fa-4749-8a84-197876e7fc97">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/andifli-mevkii-otelleri">Antalya,Kaş,Andifli Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="fb8a9d1b-4e92-45a7-93bf-9c1de6d97d78">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/arisan-mevkii-otelleri">Antalya,Kaş,Arısan Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="18a3411b-6ae2-4e22-a6a9-a1ba351b51af">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/andifli-mevkii-otelleri">Antalya ,Kaş,Andifli Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="24b7632a-001a-4955-83ed-2ff958c99d19">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/sarigerme-mevkii-otelleri">Muğla,Dalaman,Sarıgerme Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="d9bbd9d3-755c-49e8-b5c3-2b0d54c4f6aa">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/anafartalar-mevkii-otelleri">Muğla,Dalaman,Anafartalar Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="9d3327c9-eaeb-4dc8-9ee1-e3254585bcef">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/iskele-mevkii-otelleri">Muğla,Datça,İskele Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="79289c1a-932c-4c68-a986-6c7e38514366">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/emecik-mevkii-otelleri">Muğla,Datça,Emecik Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="e60185d6-e112-479b-bcf4-bf1c19fb0348">
+    <OtelLink><a href="yurt-ici-otelleri/balikesir/kucukkoy-mevkii-otelleri">Balıkesir,Ayvalık,Küçükköy Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="6b3add9c-ef0b-458b-a97f-7df09e26c16c">
+    <OtelLink><a href="yurt-ici-otelleri/balikesir/sefa-camlik-mevkii-otelleri">Balıkesir,Ayvalık,Sefa Çamlık Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="e53b3c21-d1f7-4fe5-b0c6-be630ae91ef7">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/datca-mevkii-otelleri">Muğla,Marmaris,Datça Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="365d48cf-8f02-40b9-844c-d45a42783755">
+    <OtelLink><a href="yurt-ici-otelleri/balikesir/ali-cetinkaya-mevkii-otelleri">Balıkesir,Ayvalık,Ali Çetinkaya Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="b8cef031-7571-4c48-8e7c-db47a85d274c">
+    <OtelLink><a href="yurt-ici-otelleri/balikesir/gure-mevkii-otelleri">Balıkesir,Edremit,Güre Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="60c80b2f-c2b7-4c19-b973-4a4d82710ce7">
+    <OtelLink><a href="yurt-ici-otelleri/canakkale/ayvaciik-otelleri">Çanakkale,Assos,Ayvacıık Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="a591e5c8-236d-4f7a-b4cb-a0bf96533c85">
+    <OtelLink><a href="yurt-ici-otelleri/canakkale/ayvacik-otelleri">Çanakkale,Assos,Ayvacık Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="e170be42-f6ff-4b0c-a5c2-9ca9fadbcbe9">
+    <OtelLink><a href="yurt-ici-otelleri/balikesir/tuzla-mevkii-otelleri">Balıkesir,Ayvalık,Tuzla Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="043d0279-fb53-444a-b062-6de98e8566b8">
+    <OtelLink><a href="yurt-ici-otelleri/mersin/yanisli-mevkii-otelleri">Mersin,Gülhar,Yanışlı Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="6304b08a-f36c-4da0-a3e0-ab9bf0ea8987">
+    <OtelLink><a href="yurt-ici-otelleri/mersin/camili-mevkii-otelleri">Mersin,Akdeniz,Camili Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="10262852-8f0f-4726-86c8-208b99e0747e">
+    <OtelLink><a href="yurt-ici-otelleri/mersin/kurucay-mevkii-otelleri">Mersin,Silifke,Kuruçay Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="01338b4c-5c6a-40e5-bf20-ce127ea0a441">
+    <OtelLink><a href="yurt-ici-otelleri/mersin/ayas-mevkii-otelleri">Mersin,Erdemli,Ayaş Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="e7f32b7e-1db8-42a4-8fe2-2bce36bbcd4d">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/kizilot-mevkii-otelleri">Antalya,Manavgat,Kızılot Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="7dc974c6-5c32-42b8-a1df-f7ab282797f0">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/bogazkent-mevkii-otelleri">Antalya,Belek,Boğazkent Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="5b0fcd32-f131-4b7a-808c-ad4a7c78436e">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/side-mevkii-otelleri">Antalya,Manavgat,Side Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="d1aa24cd-75cf-4e25-8547-1ff3f6c3f067">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/bogzkent-mevkii-otelleri">Antalya,Serik,Boğzkent Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="7255138f-d3d7-4621-98c2-575b78ea23d1">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/ataturk-mevkii-otelleri">Antalya,Kemer,Atatürk Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="34bca4b8-74b0-4327-ada2-b7666f9e0916">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/goynuk-mevkii-otelleri">Antalya,Kemer,Göynük Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="c4efd994-8925-4f72-b634-6ca4e16fd69f">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/yeni-mevkii-otelleri">Antalya,501. Sokak, Yeni Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="4a55fd77-18e0-413f-a6c8-d18a04395231">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/bogazkent-mevkii-otelleri">Antalya,Serik,Boğazkent Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="21cb39e3-38e2-4ae3-8680-c411261c1e18">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/cenger-mevkii-otelleri">Antalya,Manavgat,Çenger Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="cc73fe0a-0456-4219-a28f-10e239e0e6d0">
+    <OtelLink><a href="yurt-ici-otelleri/mugla/meselik-mevkii-otelleri">Muğla,Bodrum,Meşelik Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="4600e240-b5fe-46af-86ca-fc49cc8e139b">
+    <OtelLink><a href="yurt-ici-otelleri/antalya/kadriye-mevkii-otelleri">Antalya,Belek,Kadriye Mevkii Otelleri</a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>0</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="b3a19b98-ae28-4491-aa05-460bc3dcd55e">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-side-gundogan-mevkii-otelleri/sentido-turan-prince">Sentido Turan Prince </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="2cafd404-2996-494a-93b9-3712b14f29be">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-side-kizilagac-mahallesi-otelleri/club-hotel-turan-prince-world">Club Hotel Turan Prince World </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="01e6ba56-3d65-44ec-b93f-cbb2571cf78a">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-belek-uc-kum-tepesi-mevkii-otelleri/kaya-palazzo-golf-resort">Kaya Palazzo Golf Resort  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="268ef53a-ce05-4898-814a-fdda3a0dee04">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-bodrum-merkez-otelleri/egehan-hotel">Egehan Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="680cf6ad-5821-4dc3-a6c8-5e8192d90def">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-bodrum-merkez-otelleri/petek-hotel">Petek Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="2527f2fd-a0c0-41af-bb64-f494b337b065">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-marmaris-turunc-mevkii-otelleri/turunc-otel">Turunç Otel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="87af6fb3-a5c8-4a36-b11e-f094796aba54">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-marmaris-siteler-mevkii-otelleri/elegance-hotels-international">Elegance Hotels International  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="af6acf77-9c37-411e-a810-9f1ab4099e43">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-bodrum-bardakci-koyu-otelleri/salmakis-resort--spa">Salmakis Resort  Spa  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="0499f765-3463-4967-9721-ad68e4e6e21d">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-merkez-konya-alti-mevkii-otelleri/crowne-plaza">Crowne Plaza </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="13aa6f55-34ce-4e26-a35d-06cf97a8e89c">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-lara-murat-pasa-kundu-mevkii-otelleri/akra-barut">Akra Barut </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="3c2fb68d-6a62-4277-81a5-832cce0a5fad">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-kemer-beldibi-mevkii-otelleri/akka-antedon-hotel">Akka Antedon Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="bcabaf6a-4f8c-462c-bbfa-1bc14829e434">
+    <OtelLink><a href="kibris-otelleri/girne-merkez-catalkoy-mevkii-otelleri/acapulco-resort-convention-spa-hotel">Acapulco Resort Convention Spa Hotel </a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="3dbe6fe1-04d6-4f6e-8876-95c091616d98">
+    <OtelLink><a href="kibris-otelleri/girne-merkez-cennet-mevkii-otelleri/cratos-premium-hotel-casino-port-spa">Cratos Premium Hotel Casino Port Spa </a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="93db99dc-849b-4105-9bc3-0728eeb0295f">
+    <OtelLink><a href="kibris-otelleri/bafra-merkez-iskele-mevkii-otelleri/kaya-artemis-resort-casino">Kaya Artemis Resort Casino </a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="e047dbcb-5544-47ef-bb86-a822bd22a1a0">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-belek---uc-kum-tepesi-mevkii-otelleri/kaya-belek">Kaya Belek </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="ce5f428a-19c6-4804-bb0e-427a98bbb9a1">
+    <OtelLink><a href="kibris-otelleri/girne-merkez-alsancak-mevkii-otelleri/merit-royal-hotel--casino">Merit Royal Hotel  Casino </a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="8a67e7bd-8194-4bb1-8fa3-0418a0f49e64">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-belek-uc-kum-tepesi-mevkii-otelleri/titanic-deluxe-belek">Titanic Deluxe Belek </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="62b90ca1-a034-44a9-847f-9ada460dcc9a">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-belek-uc-kum-tepesi-mevkii-otelleri/regnum-carya-golf--spa-resort">Regnum Carya Golf  Spa Resort </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="0d8f0032-9be6-4a6c-ade2-d01ce6530186">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-belek-iskele-mevkii-otelleri/adam--eve--16">Adam  Eve +16 </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="cb4fdfd5-a906-43b6-8b31-9f4014a75ce1">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-belek-bogazkent-otelleri/crystal-waterworld-resort-spa">Crystal Waterworld Resort Spa </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="0776acfa-f805-44eb-8fab-2e8ab5b2391e">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-belek-bogazkent-otelleri/crystal-family-resort-spa">Crystal Family Resort Spa </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="f0b8bda2-977c-49a4-8ddc-1d95993d8240">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-belek-iskele-mevkii-otelleri/susesi-luxury-resort-otel">Susesi Luxury Resort Otel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="3863d863-2e74-42ec-98ca-44442bdf8beb">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-belek-uc-kum-tepesi-mevkii-otelleri/crystal-tat-beach-golf-resort--spa">Crystal Tat Beach Golf Resort  Spa  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="e8434f67-e76b-4c57-8a02-e28b62ffe931">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-belek-uc-kum-tepesi-mevkii-otelleri/adora-resort-hotel">Adora Resort Hotel  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="4f406333-60a4-4162-a105-21692f73b03b">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-belek-iskele-mevkii-otelleri/spice-hotel--spa">Spice Hotel  Spa </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="4a9f4623-295a-49b8-820e-71459440bbea">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-bodrum-akyarlar-mevkii-otelleri/kefaluka-resort">Kefaluka Resort  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="a363c8f7-5808-4a7a-8b9f-3069d499d503">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-kemer-yenimahalle-mevkii-otelleri/orange-county-resort">Orange County Resort </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="3aeb9e46-9644-42b3-9cb2-a61b9134633b">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-side-titreyengol-mevkii-otelleri/kaya-side-hotel">Kaya Side Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="9a4ce9d6-875d-46bc-b312-1b65f55ea0a9">
+    <OtelLink><a href="kibris-otelleri/girne-merkez-kervansaray-mevkii-otelleri/merit-park-hotel--casino">Merit Park Hotel  Casino  </a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="f7f87352-0305-473b-a911-37db53d1f01d">
+    <OtelLink><a href="kibris-otelleri/girne-merkez-ecevit-mevkii-otelleri/the-arkin-colony-hotel--casino">The Arkın Colony Hotel  Casino  </a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="3d3282c2-1e07-475c-b05b-268846c3f33b">
+    <OtelLink><a href="kibris-otelleri/girne-merkez-alsancak-mevkii-otelleri/merit-crystal-cove-casino">Merit Crystal Cove Casino </a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="f5263567-a430-4aef-8db7-a38f663cb7e0">
+    <OtelLink><a href="kibris-otelleri/girne-merkez-kordonboyu-mevii-otelleri/dome-hotel">Dome Hotel </a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="87e16396-4172-41e0-9ff1-811c7ca35152">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-alanya-mahmutlar-mevkii-otelleri/senza-grand-santana">Senza Grand Santana  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="67e6d57c-30af-4a55-bf64-85244a1c1d60">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-alanya-turkler-mevkii-otelleri/senza-the-inn-resort--spa">Senza The İnn Resort  Spa  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="7db46fd4-f1a3-4876-b1e0-2f2bcd4715db">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-alanya-incekum-mevkii-otelleri/incekum-beach-resort">İncekum Beach Resort </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="1ffb0431-bbb4-4746-b335-523a37161841">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-alanya-okurcalar-mevkii-otelleri/stella-beach-hotel">Stella Beach Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="d174e1b5-0602-477d-8ab1-90c9cb7f01ad">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-alanya-konakli-mevkii-otelleri/insula-resort-hotel">İnsula Resort Hotel  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="1a334219-1929-4052-8450-be4464353664">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-alanya-turkler-mevkii-otelleri/alan-xafira-deluxe-resort--spa">Alan Xafira Deluxe Resort  Spa </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="4e7e5094-5ba6-42e5-b73e-cb1525813a85">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-alanya-mahmutlar-mevkii-otelleri/galaxy-beach-hotel">Galaxy Beach Hotel  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="2b920444-c2bd-40b7-aa62-283d85107fcf">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-alanya-mahmutlar-mevkii-otelleri/may-garden-club-hotel">May Garden Club Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="1475319a-3a40-4ba6-81e3-394bb4313a70">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-alanya-okurcalar-mevkii-otelleri/delphin-deluxe-resort">Delphin Deluxe Resort </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="db7b9e2c-87f9-4342-ba96-e364c62791f2">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-alanya-okurcalar-mevkii-otelleri/justiniano-club-park-conti-hotel">Justiniano Club Park Conti Hotel  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="20eaa3cc-a1cb-4c54-a488-ba47a9ea05ef">
+    <OtelLink><a href="yurt-ici-otelleri/izmir-cesme-ilica-mevkii-otelleri/ilica-hotel-spa--wellness-resort">Ilıca Hotel Spa  Wellness Resort </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="65aeb4bd-a83e-43b7-85cb-85b2ff94262a">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-alanya-okurcalar-mevkii-otelleri/orange-county-resort-hotel">Orange County Resort Hotel  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="6b2d785f-2e4e-4e68-9aa3-659020507eaa">
+    <OtelLink><a href="yurt-ici-otelleri/izmir-cesme-dalyan-mevkii-otelleri/grand-ontur-hotel">Grand Ontur Hotel  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="811db136-9dff-4c2f-a51f-6f19e23d101a">
+    <OtelLink><a href="yurt-ici-otelleri/izmir-cesme-ilica-mevkii-otelleri/radisson-blu-resort--spa">Radisson Blu Resort  Spa  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="7c9ce1e4-a3b4-4a3a-9530-a09d3d3c0e8c">
+    <OtelLink><a href="yurt-ici-otelleri/izmir-cesme-alacati-mevkii-otelleri/premier-solto-hotel-by-corendon">Premier Solto Hotel By Corendon </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="746b03c3-2c12-48b7-9e73-c319c1009326">
+    <OtelLink><a href="yurt-ici-otelleri/izmir-cesme-ilica-mevkii-otelleri/sheraton-cesme-hotel-resort--spa">Sheraton Çeşme Hotel Resort  Spa  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="5a8271fc-4a33-41d0-a483-84a58efd316c">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-bodrum-turgutreis-mevkii-otelleri/sianji-well-being-resort">Sianji Well Being Resort </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="98dd791a-468a-422f-b4a4-7eceaa25a13f">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-bodrum-guvercinlik-mevkii-otelleri/titanic-deluxe-bodrum">Titanic Deluxe Bodrum </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="093af02f-e715-4e57-94f4-936594312fb6">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-bodrum-yalikavak-mevkii-otelleri/delta-beach-resort">Delta Beach Resort  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="e433c839-2fb8-4e15-9685-42ba0021d534">
+    <OtelLink><a href="yurt-ici-otelleri/izmir-cesme-sakarya-mevkii-otelleri/cesme-love-you-hotel">Çeşme Love You Hotel  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="4be91536-67ff-4e6a-b35e-65d8dd22d0f3">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-bodrum-turkbuku-mevkii-otelleri/hilton-bodrum-turkbuku-resort--spa">Hilton Bodrum Turkbuku Resort  Spa  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="a733d6f5-e7f4-4005-b482-be8a1448882e">
+    <OtelLink><a href="yurt-ici-otelleri/izmir-cesme-ilicamevkii-otelleri/ceshme-plus-hotel">Ceshme Plus Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="f912b9b1-cb6e-4dfc-9224-6bf3a095f345">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-bodrum-turgutreis-mevkii-otelleri/labranda-bodrum-princess--spa">Labranda Bodrum Princess  Spa </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="8a026058-5e98-4612-a522-f05c0f8d365f">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-bodrum-gumbet-mevkii-otelleri/royal-asarlik-beach-hotel">Royal Asarlık Beach Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="9686a149-a2d0-4e73-a776-c8b2562d85a2">
+    <OtelLink><a href="yurt-ici-otelleri/izmir-cesme-ciftlik-mevkii-otelleri/babaylon-hotel">Babaylon Hotel  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="6c427bc1-f81f-4ee5-b43a-120c2ae94c66">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-bodrum-akyarlar-mevkii-otelleri/xanadu-island">Xanadu Island  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="d4fe775d-1ba9-4484-9c5e-526537f9b0aa">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-bodrum-turgutreis-mevkii-otelleri/grand-park-bodrum-hotel">Grand Park Bodrum Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="2baa4c80-35d8-4d44-8bcd-82716d23ba04">
+    <OtelLink><a href="yurt-ici-otelleri/izmir-cesme-ovacik-mevkii-otelleri/best-western-plus-cesme-hotel">Best Western Plus Çeşme Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="2d7f7818-e3de-4b3c-a3cb-daf2a2ef3c03">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-bodrum-guvercinlik-mevkii-otelleri/crystal-green-bay-resort--spa">Crystal Green Bay Resort  Spa  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="3b764f90-43e3-427e-905c-35492008fdde">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-bodrum-torba-mevkii-otelleri/vogue-hotel-bodrum">Vogue Hotel Bodrum </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="7883d6be-354e-4478-9f06-1152a40e622b">
+    <OtelLink><a href="yurt-ici-otelleri/izmir-cesme-boyalik-mevkii-otelleri/boyalik-beach-hotel--spa">Boyalık Beach Hotel  Spa  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="55a963ad-16ca-4108-bda1-d5fc40862e60">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-bodrum-kaynar-mevkii-otelleri/the-bodrum-by-paramount-hotel--resorts">The Bodrum By Paramount Hotel  Resorts  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="34996df8-25c0-4810-b6bb-721d17f05b84">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-bodrum-gundogan-mevkii-otelleri/mivara-luxury-resort--spa">Mivara Luxury Resort  Spa  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="cd95670b-f9a8-4cdc-8b64-5df9025f975b">
+    <OtelLink><a href="yurt-ici-otelleri/izmir-cesme-ilica-mevkii-otelleri/altin-yunus-resort--thermal-hotel">Altın Yunus Resort  Thermal Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="527d06cb-160a-47e1-82c4-ef850599f10f">
+    <OtelLink><a href="yurt-ici-otelleri/aydin-kusadasi-pamucak-mevkii-otelleri/richmond-ephesus-hotel">Richmond Ephesus Hotel  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="387e27f0-613c-4d0e-9888-5e606e480516">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-bodrum-guvercinlik-mevkii-otelleri/club-aquarium-hotel">Club Aquarium Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="3f9a526f-3b63-4f09-90f2-0d7157cabfd9">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-kemer-kiris-mevkii-otelleri/akka-alinda-hotel">Akka Alinda Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="60ea34aa-704c-45d1-a9f6-9dc6a894acf8">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-bodrum-gumbet-mevkii-otelleri/royal-arena-resort--spa">Royal Arena Resort  Spa  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="05c4312c-9108-47d0-ab4c-39846648067b">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-bodrum-bardakci-mevkii-otelleri/hotel-mavi-kumsal">Hotel Mavi Kumsal  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="b48656a8-fc04-40a1-acea-eba89d9dbee4">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-bodrum-turgutresi-mevkii-otelleri/club-blue-white">Club Blue White  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="b1cf11e2-a2a1-4c60-87ff-ef1aa4169eeb">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-bodrum-gumbet-mevkii-otelleri/sunhill-hotel">Sunhill Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="6019f4fb-bc82-465d-8038-fb85eef20079">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-bodrum-gumbet-mevkii-otelleri/sunhill-centro">Sunhill Centro  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="71fa420a-5b94-4d43-a25f-3de780290d7c">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-bodrum-turgutreis-mevkii-otelleri/kadikale-resort--spa">Kadıkale Resort Spa  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="9f71bbc6-861b-49a0-8c1f-fa410bfbca10">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-marmaris-icmeler-mevkii-otelleri/sentido-orka-lotus-beach-hotel">Sentido Orka Lotus Beach Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="841ae630-dcdf-4df9-9ed5-5bda152e0869">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-marmaris-icmeler-mevkii-otelleri/aqua-hotel-marmaris">Aqua Hotel Marmaris </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="509a2072-f0a1-4520-a61b-8d5b4de71210">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-marmaris-siteler-mevkii-otelleri/d-resort-grand-azur-marmaris">D-Resort Grand Azur Marmaris </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="99b5507e-d9a2-4cc9-b4e9-d842d6cd83da">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-marmaris-icmeler-mevkii-otelleri/elite-world-marmaris">Elite World Marmaris </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="253c56ca-bcdf-4bae-8973-e0cf8782398a">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-marmaris-burunucu-mevkii-otelleri/angels-marmaris">Angel's Marmaris  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="377e03d9-3dd7-4edb-b39d-a10f1186b72c">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-marmaris-hisaronu-mevkii-otelleri/d-hotel-maris-bay">D Hotel Maris Bay </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="ef0f2f58-785b-4d61-9472-f14aca167aad">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-marmaris-icmeler-mevkii-otelleri/grand-yazici-club-marmaris-palace">Grand Yazıcı Club Marmaris Palace  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="9858040b-a011-49e4-a26a-b662cf4b0941">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-marmaris-siteler-mevkii-otelleri/grand-yazici-club-turban">Grand Yazıcı Club Turban </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="2da03819-516b-4223-8260-2ce923aaf9ee">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-marmaris-turunc-mevkii-otelleri/turunc-premium-otel">Turunç Premium Otel  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="2bff9e46-e49d-401a-a387-62453ca98b9e">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-marmaris-siteler-mevkii-otelleri/cihanturk-hotel">Cihantürk Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="8e6add07-1cf7-452a-b8f9-9ee04864715b">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-marmaris-armutalan-mevkii-otelleri/kervansaray-marmaris-hotel">Kervansaray Marmaris Hotel  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="6440ff3c-c1e8-40c4-848b-16b26886d097">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-marmaris-uzunyali-mevkii-otelleri/mehtap-beach-hotel">Mehtap Beach Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="02280f4c-5632-4934-944f-cfada8c94644">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-marmaris-icmeler-mevkii-otelleri/mirage-world-hotel">Mirage World Hotel  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="8b86266a-c54b-4fba-b2bd-0dea32f17f75">
+    <OtelLink><a href="kibris-otelleri/girne-merkez-girne-mevkii-otelleri/lords-palace-hotel--spa--casino">Lords Palace Hotel  Spa  Casino  </a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="35c65c43-fd12-44ba-b08b-be3260d4613b">
+    <OtelLink><a href="kibris-otelleri/kibris-girne-reyhanli-mevkii-otelleri/vuni-palace-hotel--casino">Vuni Palace Hotel  Casino  </a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="57e72cdd-413e-4d6e-920c-0cbf567a0e8e">
+    <OtelLink><a href="kibris-otelleri/bafra-merkez-iskele-mevkii-otelleri/nuhun-gemisi-deluxe-hotel--spa">Nuhun Gemisi Deluxe Hotel  Spa </a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="8523145d-032b-4365-be7e-5e5927ce717b">
+    <OtelLink><a href="kibris-otelleri/magosa-merkez-gazimagusa-mevkii-otelleri/salamis-bay-conti">Salamis Bay Conti  </a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="5c46a0e9-8bf9-4dcc-8797-95f3eb4dc363">
+    <OtelLink><a href="kibris-otelleri/girne-merkez-catalkoy-mevkii-otelleri/malpas-hotel-casino">Malpas Hotel Casino </a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="95b47501-ff82-4354-9626-aa506a7570c5">
+    <OtelLink><a href="kibris-otelleri/magosa-merkez-iskele-mevkii-otelleri/merit-cyprus-gardens-holiday-village--casino">Merit Cyprus Gardens Holiday Village  Casino  </a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="47ba1179-be10-4288-9056-e5d54c1b593b">
+    <OtelLink><a href="kibris-otelleri/magosa-merkez-nadiryolu-mevkii-otelleri/arkin-palm-beach-hotel">Arkin Palm Beach Hotel  </a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="65ae470c-2622-4b98-a077-e6b1b991fef9">
+    <OtelLink><a href="kibris-otelleri/girne-merkez-alsancak-mevkii-otelleri/grand-pasha-hotel--casino--spa">Grand Pasha Hotel  Casıno  Spa  </a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="9e11fe58-6f5f-4149-82ae-9d34c18aad17">
+    <OtelLink><a href="kibris-otelleri/girne-merkez-lefkosa-mevkii-otelleri/golden-tulip-nicosia-hotel-casino">Golden Tulip Nicosia Hotel Casino </a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="828227d1-0ff5-41fd-ba0c-7fb8dba3fa62">
+    <OtelLink><a href="kibris-otelleri/girne-merkez-lefkosa-mevkii-otelleri/merit-lefkosa-hotel--casino">Merit Lefkoşa Hotel  Casino  </a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="82770403-cdd0-4b32-a106-0007dea1df59">
+    <OtelLink><a href="kibris-otelleri/girne-merkez-alsancak-mevkii-otelleri/deniz-kizi-hotel">Deniz Kızı Hotel </a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="abc4bab3-e4f4-4185-99aa-ca31f0c1783c">
+    <OtelLink><a href="kibris-otelleri/girne-merkez-alsancak-mevkii-otelleri/deniz-kizi-royal">Deniz Kızı Royal  </a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="4c03829a-3835-40b6-b317-923cac315f07">
+    <OtelLink><a href="kibris-otelleri/girne-merkez-ziya-rizki-cd-mevkii-otelleri/the-savoy-ottoman-palace-hotel">The Savoy Ottoman Palace Hotel  </a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="5c1921df-2ff9-4d7d-9950-fd7cd0f0bf78">
+    <OtelLink><a href="kibris-otelleri/girne-merkez-kordonboyu-mevkii-otelleri/rocks-hotelcasino">Rocks Hotel Casino  </a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="6f6f5508-42db-4831-8e97-b21f1797c5e7">
+    <OtelLink><a href="kibris-otelleri/girne-merkez-mete-adanir-mevkii-otelleri/life-hotel-girne">Life Hotel Girne  </a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="dbf705ba-b5dc-40ca-8c30-6bbe9fa37b2c">
+    <OtelLink><a href="kibris-otelleri/magosa-merkez-iskele-mevkii-otelleri/exotic-hotel">Exotic Hotel  </a></OtelLink>
+    <OtelBolgesi>Kıbrıs Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="3ccb2efd-f0ac-4384-ac7e-6cebe6f31c7d">
+    <OtelLink><a href="yurt-ici-otelleri/aydin-kusadasi-bayraklidede-mevkii-otelleri/kustur-club-holiday-village">Kuştur Club Holiday Village  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="d083c344-554b-42d8-a3d1-d60667cc4317">
+    <OtelLink><a href="yurt-ici-otelleri/aydin-kusadasi--kiranta-mevkii-otelleri/kusadasi-golf--spa-resort">Kuşadası Golf  Spa Resort  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="990fbc1d-b392-4ceb-8c9f-f6a60058bcfe">
+    <OtelLink><a href="yurt-ici-otelleri/aydin-kusadasi-davutlar-mevkii-otelleri/flora-garden-ephesus">Flora Garden Ephesus  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="d0a2b95b-28f8-4fda-9a9b-119ac4c68fc3">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-lara-kundu-mevkii-otelleri/grand-park-lara-hotel">Grand Park Lara Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="ffa6ba0f-492f-44d4-be6b-c9634f5f00f0">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-kemer-beldibi-mevkii-otelleri/grand-park-kemer-hotel">Grand Park Kemer Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="58783024-0c37-4f5d-8f0a-7390f480ed19">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-lara-kundu-otelleri/delphin-palace-de-luxe-collection-hotel">Delphin Palace De Luxe Collection Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="e619b48c-fd8d-4fb2-abfd-9d8451adb216">
+    <OtelLink><a href="yurt-ici-otelleri/aydin-kusadasi-ataturk-bulvari-mevkii-otelleri/doubletree-by-hilton-hotel-kusadasi">Doubletree By Hilton Hotel Kuşadası </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="8133a58e-8a45-4b77-bf28-320e30f6d918">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-lara-kundu-mevkii-otelleri/royal-wings-hotel">Royal Wings Hotel  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="47b9e9d3-7165-43be-9ea8-251c06fffa35">
+    <OtelLink><a href="yurt-ici-otelleri/aydin-kusadasi-ilica-mevkii-otelleri/ephesia-hotel">Ephesia Hotel  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="d541a784-ee94-4901-89ac-48dc41da6c94">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-lara-kundu-mevkii-otelleri/delphin-imperial-lara">Delphin İmperial Lara </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="3a2128be-ff33-4828-bd90-1e1bf33b588a">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-lara-kundu-mevkii-otelleri/venezia-palace-deluxe-resort-hotel">Venezia Palace Deluxe Resort Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="328e1574-cae6-48f2-bad7-63eefd6fb3cf">
+    <OtelLink><a href="yurt-ici-otelleri/aydin-kusadasi-alacay-mevkii-otelleri/palm-wings-kusadasi-beach-resort">Palm Wings Kuşadası Beach Resort </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="eea3ab8e-ffec-4e2b-9f33-aef14272b7b5">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-lara-kundu-mevkii-otelleri/holiday-inn-antalya-lara">Holiday Inn Antalya Lara </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="a8b1b73c-731d-4315-846c-110761f6bb7b">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-fethiye-ovacik-mevkii-otelleri/aes-club">Aes Club  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="88abf476-62f7-407a-98f0-de4ff70b0b49">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-fethiye-yaniklar-mevkii-otelleri/lykia-botanika-beach--fun-club">Lykia Botanika Beach  Fun Club </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="823b2111-1e69-410f-b496-2a301d018a47">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-fethiye-oludeniz-mevkii-otelleri/marcan-resort-hotel">Marcan Resort Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="aa82b0a6-c5ad-4f03-aa49-f6b160b18c0d">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-fethiye-guzgulu-mevkii-otelleri/orka-sunlife-resort--spa">Orka Sunlife Resort  Spa </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="a27acb33-6c0d-4f4d-9baf-3fe09d60accd">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-fethiye-oludeniz-mevkii-otelleri/marcan-beach-hotel">Marcan Beach Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="6299ca50-3c50-4daf-8e5f-1116df5eba09">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-fethiye-oludeniz-mevkii-otelleri/liberty-hotels-lykia">Liberty Hotels Lykia </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="ab9ecdcd-eff2-499b-86ae-c4d2f1a5f7ff">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-fethiye-oludeniz--mevkii-otelleri/turquoise-hotel">Turquoise Hotel  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="2f8fc586-3aca-46d8-9dbf-8455cfaf5ba8">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-fethiye-oludeniz-mevkii-otelleri/club-belcekiz-beach-hotel">Club Belcekız Beach Hotel  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="992e66bc-04f5-4b9c-902c-6759dc9e5d3f">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-fethiye-gocek-mevkii-otelleri/d-resort-gocek">D-Resort Göcek  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="152c3867-0092-4df6-a836-bedbdec1f785">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-fethiye-oludeniz-mevkii-otelleri/garcia-resort--spa">Garcia Resort  Spa  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="8bcc0a81-57d7-483a-815c-0bddaf4c80a9">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-kas-andifli-mevkii-otelleri/sea-view-otel-kas">Sea View Otel Kaş </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="721f36f7-2422-4149-bcd5-86fca7f48625">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-kas-arisan-mevkii-otelleri/ekici-hotel">Ekici Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="ca9d8bd4-0826-49e8-84d3-c917d93283c5">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-kas-andifli-mevkii-otelleri/doria-hotel-yacht-club">Doria Hotel Yacht Club </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="65f1d49e-7c8a-4589-925c-79273132f72a">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-kas-andifli-mevkii-otelleri/hera-hotel">Hera Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="08283e04-fd67-49bd-a0f1-cf1501b143c7">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-kas-andifli-mevkii-otelleri/villa-tamara-hotel">Villa Tamara Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="bbbe6fae-c80c-46b2-afdc-daab2a802d26">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-kas-andifli-mevkii-otelleri/club-hotel-barbarossa">Club Hotel Barbarossa </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="fa0439c8-4ce2-4643-9660-eefaef594280">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-kas-andifli-mevkii-otelleri/habesos-hotel">Habesos Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="9f6ee3a8-c78d-43c5-90c2-a3c7568a3a7c">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-kas-andifli-mevkii-otelleri/la-kumsal-boutique-hotel">La Kumsal Boutique Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="395319ca-8559-45a5-93cc-ead39a6ad211">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-dalaman-sarigerme-mevkii-otelleri/hilton-dalaman-sarigerme-resort--spa">Hilton Dalaman Sarıgerme Resort  Spa </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="1839e013-0a0f-46f9-b847-fde7ffa061ee">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-dalaman-anafartalar-mevkii-otelleri/dalaman-lykia-resort--spa-hotel">Dalaman Lykia Resort  Spa Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="4e923bd4-80b6-44d2-9323-b3ff9a61174f">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-datca-iskele-mevkii-otelleri/club-datca-tatil-koyu">Club Datça Tatil Köyü  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="23cdd2bc-c482-44ec-ad4a-61d3ffbcd4d9">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-datca-emecik-mevkii-otelleri/palm-bay-beach-hotel">Palm Bay Beach Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="3462e277-d02b-41a6-bfdd-c0466b170d0f">
+    <OtelLink><a href="yurt-ici-otelleri/balikesir-ayvalik-kucukkoy-mevkii-otelleri/murat-reis-otel-ayvalik">Murat Reis Otel Ayvalık </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="59217211-3af7-4a9f-8403-80929a57dcf1">
+    <OtelLink><a href="yurt-ici-otelleri/balikesir-ayvalik-sefa-camlik-mevkii-otelleri/grand-temizel-hotel">Grand Temizel Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="d2780ff4-98e9-496a-9285-afebea0d77ca">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-marmaris-datca-mevkii-otelleri/flow-datca-surfbeach-hotel">Flow Datça Surf&amp;Beach Hotel  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="b0bd7c04-6887-4262-85eb-8e0fa400b45f">
+    <OtelLink><a href="yurt-ici-otelleri/balikesir-ayvalik-ali-cetinkaya-mevkii-otelleri/halic-park-hotel">Haliç Park Hotel  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="b3c64c8e-dbe2-4f9d-b39d-79f4f03cccd9">
+    <OtelLink><a href="yurt-ici-otelleri/balikesir-ayvalik-kucukkoy-mevkii-otelleri/olivera-resort-hotel">Olivera Resort Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="73d0fffb-89ec-457e-b840-e6307295c014">
+    <OtelLink><a href="yurt-ici-otelleri/balikesir-edremit-gure-mevkii-otelleri/ramada-resort-kazdaglari-thermal--spa">Ramada Resort Kazdağları Thermal  Spa  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="b7e02ead-9126-4d57-bf57-5cc786b81231">
+    <OtelLink><a href="yurt-ici-otelleri/canakkale-assos-ayvaciik-behram-mevkii-otelleri/assos-dove-hotel-resort--spa">Assos Dove Hotel Resort  Spa </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="0b913d9e-a2c6-4c3d-b107-0c65cb26c2ab">
+    <OtelLink><a href="yurt-ici-otelleri/canakkale-assos-ayvacik-behram-mevkii-otelleri/assos-eden-beach-hotel">Assos Eden Beach Hotel  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="d612fd11-992b-4627-9b65-7d74674069b5">
+    <OtelLink><a href="yurt-ici-otelleri/canakkale-assos-ayvacik-kozlu-mevkii-otelleri/assos-eden-gardens-hotel">Assos Eden Gardens Hotel  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="45acab4b-5767-468e-b139-054d6754af25">
+    <OtelLink><a href="yurt-ici-otelleri/balikesir-ayvalik-tuzla-mevkii-otelleri/etap-altinel-ayvalik-otel">Etap Altınel Ayvalık Otel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="cee83a9a-0b07-490d-8e63-9886aa70b613">
+    <OtelLink><a href="yurt-ici-otelleri/mersin-gulhar-yanisli-mevkii-otelleri/ulu-resort-hotel">Ulu Resort Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="9fa1b2eb-7fe4-4b93-8cf6-2283251127dc">
+    <OtelLink><a href="yurt-ici-otelleri/mersin-akdeniz-camili-mevkii-otelleri/wonasis-resort--aqua-tatil-koyu">Wonasis Resort  Aqua Tatil Köyü  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="33290615-86f1-4634-b5c6-aa7c59c30163">
+    <OtelLink><a href="yurt-ici-otelleri/mersin-silifke-kurucay-mevkii-otelleri/altinorfoz-hotel">Altınorfoz Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="8e174d8d-ad3a-4c3e-922f-1350518d1465">
+    <OtelLink><a href="yurt-ici-otelleri/mersin-erdemli-ayas-mevkii-otelleri/liparis-resort-hotel--spa">Liparis Resort Hotel  Spa </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="b50ce1e1-6283-41cd-aece-0c507ff2b1fe">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-manavgat-kizilot-mevkii-otelleri/sentido-flora-garden-hotel">Sentido Flora Garden Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="6b5a7019-95b3-45fb-8742-07cd85c9cc74">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-belek-bogazkent-mevkii-otelleri/crystal-waterworld-resort--spa">Crystal Waterworld Resort  Spa  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="02e73ca7-1be5-4b4d-98ee-ff5da061904b">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-manavgat-side-mevkii-otelleri/crystal-sunrise-queen-luxury-resort--spa">Crystal Sunrise Queen Luxury Resort  Spa  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="d60eeaf2-9d89-4098-8c9c-c502313d1234">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-serik-bogzkent-mevkii-otelleri/crystal-family-resort">Crystal Family Resort  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="893aeb88-7788-402b-acc2-938dd981a8a9">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-manavgat-side-mevkii-otelleri/crystal-sunset-luxury-resort">Crystal Sunset Luxury Resort  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="2e02230b-542d-435b-8b0c-3cf0de7d676b">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-kemer-ataturk-mevkii-otelleri/crystal-aura-beach-resort--spa">Crystal Aura Beach Resort  Spa  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="d0388f27-9061-489f-8109-7dac42ab6046">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-kemer-goynuk-mevkii-otelleri/crystal-flora-beach-resort">Crystal Flora Beach Resort </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="b8584acd-57ce-40d9-8167-b82c9f6bb0b4">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-501-sokak--yeni-mevkii-otelleri/crystal-de-luxe-resort-spa-hotel">Crystal De Luxe Resort Spa Hotel </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="6859834c-91d6-4c09-8a36-9a8ecb4bf717">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-serik-bogazkent-mevkii-otelleri/crystal-paraiso-verde-resort">Crystal Paraiso Verde Resort  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="d1c21e1f-5fb6-4023-9e17-294f9e0bddb0">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-manavgat-cenger-mevkii-otelleri/crystal-hotels-admiral-resort">Crystal Hotels Admiral Resort  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="75db2187-14b5-4790-8e92-dab25bc6ce56">
+    <OtelLink><a href="yurt-ici-otelleri/mugla-bodrum-meselik-mevkii-otelleri/crystal-green-bay-resort--spa">Crystal Green Bay Resort  Spa  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="72807b28-2e78-4b98-badd-52648ebb69cb">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-manavgat-side-mevkii-otelleri/crystal-palace-luxury-resort--spa">Crystal Palace Luxury Resort  Spa  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+  <OtelBilgileri item="a2f72efb-4bca-4fde-8bc4-ef95084cbb15">
+    <OtelLink><a href="yurt-ici-otelleri/antalya-belek-kadriye-mevkii-otelleri/crystal-tat-beach-golf-resort--spa">Crystal Tat Beach Golf Resort  Spa  </a></OtelLink>
+    <OtelBolgesi>Yurt İçi Otelleri</OtelBolgesi>
+    <OtelMi>1</OtelMi>
+  </OtelBilgileri>
+</CHANNEL>
