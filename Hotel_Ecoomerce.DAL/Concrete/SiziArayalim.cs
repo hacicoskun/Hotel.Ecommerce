@@ -10,6 +10,7 @@ namespace Hotel_Ecommerce.DAL.Concrete
     [Table("SiziArayalim")]
     public class SiziArayalim:BaseEntity
     {
+
         public string Adsoyad { get; set; }
         public string Telefon { get; set; }
         public string Email { get; set; }
