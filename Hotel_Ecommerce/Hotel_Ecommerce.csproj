@@ -5887,6 +5887,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\OtelDetail.cs" />
     <Compile Include="Models\Filtre.cs" />
     <Compile Include="Models\Homepage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

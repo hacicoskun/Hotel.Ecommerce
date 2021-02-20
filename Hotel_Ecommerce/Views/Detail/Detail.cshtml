@@ -1,7 +1,169 @@
-﻿
+﻿@model Hotel_Ecommerce.Models.OtelDetail
 @{
     ViewBag.Title = "Detail";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    string dd = Server.MapPath(Model.Otel.OtelGaleriKlasor);
+    DirectoryInfo d = new DirectoryInfo(dd);
+
+    FileInfo[] Files = d.GetFiles();
 }
 
- 
+<style>
+    .navbar-brand img{
+        margin-top:-23px;
+    }
+</style>
+<link href="~/Content/assest/components/revolution_slider/css/settings.css" rel="stylesheet" />
+<link href="~/Content/assest/components/revolution_slider/css/style.css" rel="stylesheet" />
+<link href="~/Content/assest/components/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+<link href="~/Content/assest/components/flexslider/flexslider.css" rel="stylesheet" />
+<section id="content">
+    <div class="container">
+        <div class="row">
+            <div id="main" class="col-md-9">
+                <div class="tab-container style1" id="hotel-main-content">
+
+                    <div class="tab-content">
+                        <div id="photos-tab" class="tab-pane fade in active">
+                            <div class="photo-gallery style1" data-animation="slide" data-sync="#photos-tab .image-carousel">
+                                <ul class="slides">
+                                    @for (int i = 0; i < Files.Length; i++)
+                                    {
+                                        string imagePath = Model.Otel.OtelGaleriKlasor + Files[i];
+                                        <li>
+                                            <img src="@imagePath" />
+
+                                        </li>
+                                    }
+                                </ul>
+                            </div>
+                            <div class="image-carousel style1" data-animation="slide" data-item-width="70" data-item-margin="10" data-sync="#photos-tab .photo-gallery">
+                                <ul class="slides">
+                                    @for (int i = 0; i < Files.Length; i++)
+                                    {
+                                        string imagePath = Model.Otel.OtelGaleriKlasor + Files[i];
+                                        <li>
+                                            <img src="@imagePath" />
+
+                                        </li>
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div id="hotel-features" class="tab-container">
+                    <ul class="tabs">
+                        <li class="active"><a href="#hotel-description" data-toggle="tab">DETAY</a></li>
+                        <li><a href="#hotel-room-availability" data-toggle="tab">ODALAR</a></li>
+                        <li><a href="#hotel-availability" data-toggle="tab">OTEL OLANAKLARI</a></li>
+                        <li><a href="#hotel-room-detail" data-toggle="tab">ODA OLANAKLARI</a></li>
+                        <li><a href="#hotel-map" data-toggle="tab">KONUM</a></li>
+                        <li><a onclick="AjaxProgramiYazdir()" data-toggle="tab">PROGRAMI YAZDIR</a></li>
+
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="hotel-description">
+                            @Html.Raw(Model.Otel.OtelAciklama)
+                        </div>
+                        <div class="tab-pane fade" id="hotel-room-availability">
+                            @Html.Raw(Model.Otel.OdaAciklama)
+                        </div>
+                        <div class="tab-pane fade" id="hotel-availability">
+                          
+                            <ul class="amenities clearfix style1">
+                                @foreach (var item in Model.OtelOzellikleri)
+                                {
+                                    <li class="col-md-4 col-sm-6">
+                                        <div class="icon-box style1"><i class="soap-icon-chevron-right"></i>@item.OlanakAdi</div>
+                                    </li>
+                                }
+
+
+                            </ul>
+                           
+                        </div>
+                        <div class="tab-pane fade" id="hotel-room-detail">
+                            <ul class="amenities clearfix style1">
+
+                                @foreach (var item in Model.OdaOzellikleri)
+                                {
+                                    <li class="col-md-4 col-sm-6">
+                                        <div class="icon-box style1"><i class="soap-icon-chevron-right"></i>@item.OdaOzellikAdi</div>
+                                    </li>
+                                }
+                            </ul>
+                        
+
+                        </div>
+                        <div class="tab-pane fade" id="hotel-map">
+                         <iframe width="100%" height="400px" src="@Html.Raw(Model.iframeMap)"></iframe>
+
+                        </div>
+                    
+                    </div>
+
+                </div>
+            </div>
+            <div class="sidebar col-md-3">
+                <article class="detailed-logo">
+                    @*<figure>
+                        <img width="114" height="85" src="@Model.Otel.OtelAnasayfaResmi" alt="">
+                    </figure>*@
+                    <div class="details">
+                        <h2 class="box-title">@Model.Otel.OtelAdi<small><i class="soap-icon-departure yellow-color"></i><span style="text-transform:none;font-family:Arial;color:black;font-weight:bold" class="fourty-space"> @Model.Otel.Otelil,@Model.Otel.OtelBolgesi</span></small></h2>
+                        <span class="price clearfix">
+                            <small class="pull-left" style="text-transform:none;color:darkred;font-weight:bold">@Model.Otel.KonaklamaTipi.Substring(0, Model.Otel.KonaklamaTipi.Length - 1) </small><br />
+                            <small class="pull-left" style="text-transform:none;color:darkred;font-weight:bold">@Model.Otel.OtelDivBilgi </small>
+                        </span>
+                       
+                    </div>
+                </article>
+                <div class="travelo-box contact-box" align="center">
+                    <p>Otellerimiz ile ilgili detayları ücretsiz olarak öğrenebilirsiniz </p>
+                    <address class="contact-details">
+                        <span class="contact-phone"  style="font-size:17px"><i class="soap-icon-phone"></i> 05xx 000 00 00</span>
+                        <br>
+                        <a class="contact-phone" href="#" style="font-size:16px"><i class="soap-icon-calendar"></i> info@@company.com</a><br />
+                    </address><br />
+                    <button style="width:100%" class="btn btn-success">Fiyat Teklifi Al</button>
+
+                </div>
+                 
+                <div class="travelo-box book-with-us-box">
+                    <h4>Neden biz?</h4>
+                    <ul>
+                        <li>
+                            <i class="soap-icon-hotel-1 circle"></i>
+                            <h5 class="title"><a href="#">Çoklu Seçenekler</a></h5>
+                            <p>İstediğiniz kriterlere uygun otelleri bulabilirsiniz..</p>
+                        </li>
+                        <li>
+                            <i class="soap-icon-savings circle"></i>
+                            <h5 class="title"><a href="#">Uygun Fiyat </a></h5>
+                            <p>Fiyatlarımız en uygun şekilde hesaplanır.</p>
+                        </li>
+                        <li>
+                            <i class="soap-icon-support circle"></i>
+                            <h5 class="title"><a href="#">Müşteri Desteği</a></h5>
+                            <p>İstediğiniz zaman bize ulaşabilirsiniz..</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+    function AjaxProgramiYazdir() {
+        var cikti = "<style>h1{color:black !important}body{color:black !important}</style>" + tjq('#hotel-description').html() + "<br/>" + tjq('#hotel-room-availability').html() + "<br/>" + tjq('#hotel-availability').html() + "<br/>" + tjq('#hotel-room-detail').html();
+        tjq('body').append('<iframe id="printf" style="display:none;" name="printf"><</iframe>');
+        tjq('#printf').contents().find('body').append(cikti);
+        window.frames["printf"].focus();
+        window.frames["printf"].print();
+    }
+
+</script>

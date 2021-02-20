@@ -5027,7 +5027,8 @@ ul.check-circle li:before {
         height: 42px;
         background: #fff;
         line-height: 42px;
-        font-size: 0.9167em;
+        font-size: 13px;
+        text-transform:none !important;
     }
 
         .icon-box.style1 > i {
@@ -5632,8 +5633,7 @@ ul.check-circle li:before {
 
 .listing-style3.hotel figure img {
     width: 100%;
-    height: auto;
-}
+ }
 
 .listing-style3.hotel .box-title {
     margin: 0;
