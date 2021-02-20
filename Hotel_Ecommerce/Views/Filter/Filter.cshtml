@@ -92,7 +92,7 @@
                         {
                             <article class="box">
                                 <figure class="col-sm-5 col-md-4">
-                                    <a title="" href="@otel.OtelLink" class="hover-effect popup-gallery"><img style="width:270px;height:220px" width="270" height="160" alt="" src="@otel.OtelAnasayfaResmi"></a>
+                                    <a title="" href="@otel.OtelLink" class="hover-effect "><img style="width:270px;height:220px" width="270" height="160" alt="" src="@otel.OtelAnasayfaResmi"></a>
                                 </figure>
                                 <div class="details col-sm-7 col-md-8">
                                     <div>
@@ -148,10 +148,11 @@
             data: { secilenKonaklamalar: secilenKonaklamalar, secilenOlanaklar: secilenOlanaklar, otelbolgesi: '@Html.Raw(Model.Bolge)', otelil: '@Html.Raw(Model.Il)', otelilce:'@Html.Raw(Model.Ilce)'},
             dataType: "json",
             success: function (deger) {
+                console.log(deger);
                 tjq("#divOtelList").empty();
                 var div = "";
                 for (var i = 0; i < deger.otellistesi.length; i++) {
-                    div += '<article class="box"><figure class="col-sm-5 col-md-4"><a title="" href="' + deger.otellistesi[i].OtelLink + '" class="hover-effect popup-gallery"><img tyle="width:270px;height:220px" width="270" height="160" alt="" src="' + deger.otellistesi[i].OtelAnasayfaResmi+'"></a></figure><div class="details col-sm-7 col-md-8"><div><div><h4 class="box-title">' + deger.otellistesi[i].OtelAdi + '<small><i class="soap-icon-departure yellow-color"></i>' + deger.otellistesi[i].otelil + ',' + deger.otellistesi[i].otelilce + ',' + '@Html.Raw(Model.Bolge)' + '</small></h4></div><div><span style="color:darkred">' + deger.otellistesi[i].KonaklamaTipi+'</span></div></div><div><p>' + deger.otellistesi[i].OtelDivBilgi+'.. </p><div><a class="button btn-small full-width text-center" title="" href="' + deger.otellistesi[i].OtelLink + '">Detay</a></div></div></div></article>';
+                    div += '<article class="box"><figure class="col-sm-5 col-md-4"><a title="" href="' + deger.otellistesi[i].OtelLink + '" class="hover-effect "><img tyle="width:270px;height:220px" width="270" height="160" alt="" src="' + deger.otellistesi[i].OtelAnasayfaResmi+'"></a></figure><div class="details col-sm-7 col-md-8"><div><div><h4 class="box-title">' + deger.otellistesi[i].OtelAdi + '<small><i class="soap-icon-departure yellow-color"></i>' + deger.otellistesi[i].otelil + ',' + deger.otellistesi[i].otelilce + ',' + '@Html.Raw(Model.Bolge)' + '</small></h4></div><div><span style="color:darkred">' + deger.otellistesi[i].KonaklamaTipi+'</span></div></div><div><p>' + deger.otellistesi[i].OtelDivBilgi+'.. </p><div><a class="button btn-small full-width text-center" title="" href="' + deger.otellistesi[i].OtelLink + '">Detay</a></div></div></div></article>';
                 }
                 tjq("#divOtelList").empty().append(div);
                 tjq(".search-results-title").empty().append("<b>"+deger.otellistesi.length+"</b> sonuç bulundu.")

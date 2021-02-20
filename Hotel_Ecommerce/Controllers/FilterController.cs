@@ -109,7 +109,7 @@ namespace Hotel_Ecommerce.Controllers
                                      join otelolanak in _unitOfWork.OtelOzellikleri.ToList() on otel._id equals otelolanak.OtelSubID
                                      where otel._id == otelolanak.OtelSubID
                                      select new FiltreOtelOzellikleri { OlanakAdi = otelolanak.OlanakAdi, KacOteldeVar = _unitOfWork.OtelOzellikleri.Count(x => x.OlanakAdi == otelolanak.OlanakAdi), OlanakveSayisi = otelolanak.OlanakAdi + "(" + _unitOfWork.OtelOzellikleri.Count(x => x.OlanakAdi == otelolanak.OlanakAdi) + ")" }).OrderByDescending(x => x.KacOteldeVar).ToList();
-          
+
 
 
 
@@ -128,17 +128,17 @@ namespace Hotel_Ecommerce.Controllers
         List<OtelFiltrelenmisListe> FiltreliVeri = new List<OtelFiltrelenmisListe>();
 
         [Route("otel-ara-filtre")]
-        public ActionResult FiltreYap(string[] secilenKonaklamalar, string[] secilenOlanaklar, string otelbolgesi,string otelil,string otelilce)
+        public ActionResult FiltreYap(string[] secilenKonaklamalar, string[] secilenOlanaklar, string otelbolgesi, string otelil, string otelilce)
         {
             try
             {
                 int konaklamaL = secilenKonaklamalar == null ? 0 : secilenKonaklamalar.Length;
                 int olanaklarL = secilenOlanaklar == null ? 0 : secilenOlanaklar.Length;
 
-            
-             
+
+
                 List<Oteller> liste = _unitOfWork.Oteller.Where(x => x.OtelLink.Contains(otelbolgesi) && x.OtelAktifMi == true).OrderByDescending(x => x.OtelOncelik).ToList();
-                
+
                 if (otelbolgesi != "")
                 {
                     if (otelil == "" && otelilce == "")
@@ -237,6 +237,7 @@ namespace Hotel_Ecommerce.Controllers
             public string OlanakAdi { get; set; }
             public int OtelGosterimSayisi { get; set; }
             public bool OtelOncelik { get; set; }
+            public string OtelLink { get; set; }
         }
         private void OtelleriSplitYap(List<Oteller> liste, List<OtelFiltrelenmisListe> filtrelist)
         {
@@ -263,6 +264,7 @@ namespace Hotel_Ecommerce.Controllers
                     {
                         o.OlanakAdi += itemolanak.OlanakAdi + ",";
                     }
+                    o.OtelLink = item.OtelLink;
                     filtrelist.Add(o);
                 }
 
