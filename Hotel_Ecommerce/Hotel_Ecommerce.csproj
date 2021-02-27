@@ -116,6 +116,7 @@
     <Content Include="Areas\Files\build\js\custom.js" />
     <Content Include="Areas\Files\build\js\custom.min.js" />
     <Content Include="Areas\Files\cjs\HoldOn.min.js" />
+    <Content Include="Areas\Files\cjs\images\OtelTeklifiAl.js" />
     <Content Include="Areas\Files\cjs\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Areas\Files\cjs\images\ui-bg_glass_75_dadada_1x400.png" />
     <Content Include="Areas\Files\cjs\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
@@ -526,6 +527,47 @@
     <Content Include="Areas\Files\images\fav.ico" />
     <Content Include="Areas\Files\images\galery.png" />
     <Content Include="Areas\Files\images\info.png" />
+    <Content Include="Areas\Files\images\mice\1g0d5b.jpg" />
+    <Content Include="Areas\Files\images\mice\2650448.jpg" />
+    <Content Include="Areas\Files\images\mice\3175367.jpg" />
+    <Content Include="Areas\Files\images\mice\airport-transfer-car-driver.jpg" />
+    <Content Include="Areas\Files\images\mice\bilişim sistemleri.jpg" />
+    <Content Include="Areas\Files\images\mice\etkinlik1.jpg" />
+    <Content Include="Areas\Files\images\mice\etkinlik2.jpg" />
+    <Content Include="Areas\Files\images\mice\gauguin_gallery-images_1640x690_cg.ship2_u0a4583__swiper.jpg" />
+    <Content Include="Areas\Files\images\mice\headway-F2KRf_QfCqw-unsplash-scaled-e1589731269537.jpg" />
+    <Content Include="Areas\Files\images\mice\konferans1.jpg" />
+    <Content Include="Areas\Files\images\mice\konferans2.jpg" />
+    <Content Include="Areas\Files\images\mice\konferans3.jpg" />
+    <Content Include="Areas\Files\images\mice\led ekran.jpg" />
+    <Content Include="Areas\Files\images\mice\led ekran.png" />
+    <Content Include="Areas\Files\images\mice\led ekran2.png" />
+    <Content Include="Areas\Files\images\mice\meetings-2c-incentives-2c-conferences-and-exhibitions-28mice-29service-500x500.png" />
+    <Content Include="Areas\Files\images\mice\mice toplanti2.jpg" />
+    <Content Include="Areas\Files\images\mice\MICE-Meetings-Incentives-Conventions-and-Exhibitions-An-Overview.jpg" />
+    <Content Include="Areas\Files\images\mice\photo-1587825140708-dfaf72ae4b04.png" />
+    <Content Include="Areas\Files\images\mice\projeksiyon cihazı.jpg" />
+    <Content Include="Areas\Files\images\mice\sahne dekor tasarım.jpg" />
+    <Content Include="Areas\Files\images\mice\sahne dekor ve tasarım.jpg" />
+    <Content Include="Areas\Files\images\mice\sahne dekor ve tasarım2.png" />
+    <Content Include="Areas\Files\images\mice\sahne ve tasarım 2.jpg" />
+    <Content Include="Areas\Files\images\mice\sahne ve tasarım 3.jpg" />
+    <Content Include="Areas\Files\images\mice\sahne ve tasarım 4.png" />
+    <Content Include="Areas\Files\images\mice\sahne ve tasarım.jpg" />
+    <Content Include="Areas\Files\images\mice\Screen-Hire-lonon.png" />
+    <Content Include="Areas\Files\images\mice\ses sistemleri.jpg" />
+    <Content Include="Areas\Files\images\mice\ses sistemleri2.jpg" />
+    <Content Include="Areas\Files\images\mice\simultane sistem.jpg" />
+    <Content Include="Areas\Files\images\mice\Simultane-Tercüme-Çözümlerimiz-Görsel.jpg" />
+    <Content Include="Areas\Files\images\mice\TBTC-Conf-790x321.jpg" />
+    <Content Include="Areas\Files\images\mice\Transfer-Service-Novotel-Phuket-resort.jpg" />
+    <Content Include="Areas\Files\images\mice\watchout1.jpg" />
+    <Content Include="Areas\Files\images\mice\watchout2.jpg" />
+    <Content Include="Areas\Files\images\mice\watchout3.jpg" />
+    <Content Include="Areas\Files\images\mice\watchout4.png" />
+    <Content Include="Areas\Files\images\mice\zly3s645.png" />
+    <Content Include="Areas\Files\images\mice\ışık ve truss.jpg" />
+    <Content Include="Areas\Files\images\mice\ışık ve truss3.jpg" />
     <Content Include="Areas\Files\images\referanslar\1552645796167.png" />
     <Content Include="Areas\Files\images\referanslar\afyoncimento.png" />
     <Content Include="Areas\Files\images\referanslar\aile.png" />
@@ -5906,10 +5948,13 @@
     <Compile Include="Controllers\CookieController.cs" />
     <Compile Include="Controllers\DetailController.cs" />
     <Compile Include="Controllers\FilterController.cs" />
+    <Compile Include="Controllers\GetTurMenuController.cs" />
     <Compile Include="Controllers\GizlilikController.cs" />
     <Compile Include="Controllers\HakkimizdaController.cs" />
     <Compile Include="Controllers\HizmetlerimizController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MICEController.cs" />
+    <Compile Include="Controllers\OtelTeklifiGonderController.cs" />
     <Compile Include="Controllers\Services\SearchAutoCompleteController.cs" />
     <Compile Include="Controllers\KisiselVerileriKorumaController.cs" />
     <Compile Include="Controllers\KullaniciSözlesmesiController.cs" />
@@ -6856,6 +6901,7 @@
     <Content Include="Content\assest\flatpickr\scrollPlugin.js.map" />
     <Content Include="Content\assest\flatpickr\weekSelect\weekSelect.js.map" />
     <Content Include="Content\assest\autocompsearch\scripts\data.json" />
+    <Content Include="Areas\Files\images\mice\photo-1587825140708-dfaf72ae4b04.webp" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -6869,6 +6915,9 @@
     <Content Include="Views\BecomingTeknik\BecomingTeknik.cshtml" />
     <Content Include="Views\Filter\Filter.cshtml" />
     <Content Include="Views\Detail\Detail.cshtml" />
+    <Content Include="Views\GetTurMenu\YurtIciGetTurMenu.cshtml" />
+    <Content Include="Views\GetTurMenu\YurtDisiGetTurMenu.cshtml" />
+    <Content Include="Views\MICE\MICE.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -6891,8 +6940,9 @@
     <Folder Include="Content\assest\images\themes\header\style07\" />
     <Folder Include="Content\images\" />
     <Folder Include="Views\Base\" />
-    <Folder Include="Views\ServiceSiziArayallim\" />
+    <Folder Include="Views\OtelTeklifiGonder\" />
     <Folder Include="Views\SearchAutoComplete\" />
+    <Folder Include="Views\ServiceSiziArayallim\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Hotel_Ecommerce.Helper\Hotel_Ecommerce.Helper.csproj">

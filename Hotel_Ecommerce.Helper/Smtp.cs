@@ -54,17 +54,6 @@ namespace Hotel_Ecommerce.Helper
             istemci.Send(mesaj);
 
 
-            //MailMessage mesaj = new MailMessage();
-            //mesaj.From = new MailAddress("info@becomingtur.com", "Becoming Tur");
-            //mesaj.Bcc.Add("ercument@becomingtur.com");
-            //mesaj.To.Add(gelenmail);
-            //mesaj.Subject = "Rezervasyon Talebi";
-            //mesaj.Body = MailMsg;
-            //mesaj.IsBodyHtml = true;
-            //SmtpClient client = new SmtpClient("smtp.yandex.ru", 587);
-            //client.Credentials = new NetworkCredential("info@becomingtur.com", "5hqyb64h");
-            //client.EnableSsl = true;
-            //client.Send(mesaj);
 
 
             return "";

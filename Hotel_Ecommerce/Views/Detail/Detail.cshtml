@@ -9,8 +9,8 @@
 }
 
 <style>
-    .navbar-brand img{
-        margin-top:-23px;
+    .navbar-brand img {
+        margin-top: -23px;
     }
 </style>
 <link href="~/Content/assest/components/revolution_slider/css/settings.css" rel="stylesheet" />
@@ -50,7 +50,7 @@
                                 </ul>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
 
@@ -72,7 +72,7 @@
                             @Html.Raw(Model.Otel.OdaAciklama)
                         </div>
                         <div class="tab-pane fade" id="hotel-availability">
-                          
+
                             <ul class="amenities clearfix style1">
                                 @foreach (var item in Model.OtelOzellikleri)
                                 {
@@ -83,7 +83,7 @@
 
 
                             </ul>
-                           
+
                         </div>
                         <div class="tab-pane fade" id="hotel-room-detail">
                             <ul class="amenities clearfix style1">
@@ -95,14 +95,14 @@
                                     </li>
                                 }
                             </ul>
-                        
+
 
                         </div>
                         <div class="tab-pane fade" id="hotel-map">
-                         <iframe width="100%" height="400px" src="@Html.Raw(Model.iframeMap)"></iframe>
+                            <iframe width="100%" height="400px" src="@Html.Raw(Model.iframeMap)"></iframe>
 
                         </div>
-                    
+
                     </div>
 
                 </div>
@@ -110,28 +110,28 @@
             <div class="sidebar col-md-3">
                 <article class="detailed-logo">
                     @*<figure>
-                        <img width="114" height="85" src="@Model.Otel.OtelAnasayfaResmi" alt="">
-                    </figure>*@
+                            <img width="114" height="85" src="@Model.Otel.OtelAnasayfaResmi" alt="">
+                        </figure>*@
                     <div class="details">
                         <h2 class="box-title">@Model.Otel.OtelAdi<small><i class="soap-icon-departure yellow-color"></i><span style="text-transform:none;font-family:Arial;color:black;font-weight:bold" class="fourty-space"> @Model.Otel.Otelil,@Model.Otel.OtelBolgesi</span></small></h2>
                         <span class="price clearfix">
                             <small class="pull-left" style="text-transform:none;color:darkred;font-weight:bold">@Model.Otel.KonaklamaTipi.Substring(0, Model.Otel.KonaklamaTipi.Length - 1) </small><br />
                             <small class="pull-left" style="text-transform:none;color:darkred;font-weight:bold">@Model.Otel.OtelDivBilgi </small>
                         </span>
-                       
+
                     </div>
                 </article>
                 <div class="travelo-box contact-box" align="center">
                     <p>Otellerimiz ile ilgili detayları ücretsiz olarak öğrenebilirsiniz </p>
                     <address class="contact-details">
-                        <span class="contact-phone"  style="font-size:17px"><i class="soap-icon-phone"></i> 05xx 000 00 00</span>
+                        <span class="contact-phone" style="font-size:17px"><i class="soap-icon-phone"></i> 05xx 000 00 00</span>
                         <br>
                         <a class="contact-phone" href="#" style="font-size:16px"><i class="soap-icon-calendar"></i> info@@company.com</a><br />
                     </address><br />
-                    <button style="width:100%" class="btn btn-success">Fiyat Teklifi Al</button>
+                    <button style="width:100%" class="btn btn-success" onclick=" openOtelTeklifAl();datasetrez();">Fiyat Teklifi Al</button>
 
                 </div>
-                 
+
                 <div class="travelo-box book-with-us-box">
                     <h4>Neden biz?</h4>
                     <ul>
@@ -157,6 +157,142 @@
         </div>
     </div>
 </section>
+
+
+<div id="ModalTeklifAl" class="modal fade" style="z-index: 999999" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #E3000F; color: white">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" style="color: #fff">Otel Fiyat Teklifi Formu</h4>
+            </div>
+            <div id="talepformual">
+                <div class="modal-body">
+                    <br />
+
+                    <input type="text" class="form-control" disabled="disabled" runat="server" id="lblteklifoteladi" value="'@Model.Otel.OtelAdi"/><br />
+                    <label>Rezervasyon Tarihleri</label>
+                    <br />
+
+                    <input type="text" class="form-control" id="txtteklifgiriscikistarihi" /><br />
+                    <input type="text" placeholder="Yolcu adı giriniz." maxlength="50" class="form-control" id="txtyolcuadi" /><br />
+                    <label>Telefon numaranız</label>
+                    <input type="text" placeholder="Yolcu telefon giriniz." maxlength="20" onkeypress='return event.charCode >= 48 && event.charCode <= 57' class="form-control" id="txtyolcutelefon" /><br />
+                    <label>E mail adresiniz</label>
+                    <input type="email" placeholder="Yolcu Email giriniz" maxlength="100" id="txtyolcuemail" class="form-control" />
+                    <br />
+                    <label>Yetişkin Sayısı</label>
+                    <select id="txtteklifysayi" class="form-control">
+                        <option value="1">1 Yetişkin</option>
+                        <option selected="selected" value="2">2 Yetişkin</option>
+                        <option value="3">3 Yetişkin</option>
+                        <option value="4">4 Yetişkin</option>
+                    </select><br />
+                    <br />
+                    <br />
+
+                    <label>Çocuk Sayısı</label>
+                    <select id="txtteklifcsayi" onclick="teklifcocukvh()" class="form-control">
+                        <option value="0" selected="selected">0 Çocuk</option>
+                        <option value="1">1 Çocuk</option>
+                        <option value="2">2 Çocuk</option>
+
+                    </select><br />
+
+                    <br />
+                    <br />
+                    <div id="teklifcocukyaslaridiv">
+                        <div id="teklifcocuk1yasdiv">
+                            <label>1.Çocuk Yaşı</label>
+                            <select id="selectteklifcocuk1yas" class="form-control">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+
+                            </select><br />
+                            <br />
+                        </div>
+                        <div id="teklifcocuk2yasdiv">
+                            <label>2.Çocuk Yaşı</label>
+                            <select id="selectteklifcocuk2yas" class="form-control">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+
+                            </select><br />
+                            <br />
+                        </div>
+                        <input type="hidden" id="hiddenidno" runat="server" />
+                    </div>
+
+                </div>
+            </div>
+            <div id="talepformok" style="display: none">
+                <div class="row text-center">
+                    <div class="col-sm-12">
+
+                        <br />
+                        <img src="~/Content/assest/images/logo.png" style="width:50%;" />
+                        <br />       <br />
+                        <h3>
+                            Merhaba,
+                            <label id="lblotelteklifadsoyad" style="font-weight: bold; font-size: 24px; font-family: Arial"></label>
+                        </h3>
+                        <p style="font-size: 17px; color: #5C5C5C;">
+                            Otel fiyat teklifi isteğiniz tarafımıza ulaşmıştır.<br />
+                            En kısa sürede sizlerle iletişim'e geçecektir.
+                            <br />
+                            Bizi tercih ettiğiniz için teşekkür ederiz.Tatil dolu günler dileriz
+                        </p>
+
+                        <br />
+                        <br />
+                    </div>
+
+                </div>
+            </div>
+            <div id="oteltalepyukleniyor" style="display: none" align="center">
+                <div class="row text-center">
+                    <div class="col-sm-12">
+                        <br />
+
+                        <img src="/ThemeFiles/images/salturyukleniyor.gif" style="display: block; margin: 0 auto;" id="loading-indicator" />
+                        <br />
+                        <h4>Lütfen bekleyin..Teklif isteği gönderiliyor..</h4>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+
+                <input type="button" onclick="AjaxFiyatTalepEt();" id="btnoteltalep" value="GÖNDER" class="btn btn-success" formnovalidate />
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
 <script type="text/javascript">
     function AjaxProgramiYazdir() {
         var cikti = "<style>h1{color:black !important}body{color:black !important}</style>" + tjq('#hotel-description').html() + "<br/>" + tjq('#hotel-room-availability').html() + "<br/>" + tjq('#hotel-availability').html() + "<br/>" + tjq('#hotel-room-detail').html();
@@ -166,4 +302,71 @@
         window.frames["printf"].print();
     }
 
+   
+</script>
+<script>
+   
+    function openOtelTeklifAl() {
+        jQuery('#ModalTeklifAl').modal('show');
+        var currentDay = '@DateTime.Today.ToString("dd/MM/yyyy")';
+        var weekLater = '@DateTime.Today.AddDays(7).ToString("dd/MM/yyy")';
+        jQuery("#txtteklifgiriscikistarihi").val(currentDay + " / " + weekLater);
+    }
+    function AjaxFiyatTalepEt() {
+
+        var txtoteladi = '@Model.Otel.OtelAdi';
+        var txtreztarihi = jQuery('#txtteklifgiriscikistarihi').val();
+        var txtyolcuadi = jQuery('#txtyolcuadi').val();
+        var txtyolcutel = jQuery('#txtyolcutelefon').val();
+        var txtyolcuemail = jQuery('#txtyolcuemail').val();
+        var txtysayisi = jQuery('#txtteklifysayi').val();
+        var txtcsayisi = jQuery('#txtteklifcsayi').val();
+        var txtcocuk1yas = jQuery('#selectteklifcocuk1yas').val();
+        var txtcocuk2yas = jQuery('#selectteklifcocuk2yas').val();
+        if (txtreztarihi.length > 3 && txtyolcuadi.length > 3 && txtyolcutel.length > 3 && txtyolcuemail.length > 3) {
+
+            jQuery.ajax({
+                type: "POST",
+                url: "/ajax-fiyat-gonder",
+
+                data: { txtoteladi: txtoteladi, txtreztarihi: txtreztarihi, txtyolcuadi: txtyolcuadi, txtyolcutel: txtyolcutel, txtyolcuemail: txtyolcuemail, txtysayisi: txtysayisi, txtcsayisi: txtcsayisi, txtcocuk1yas: txtcocuk1yas, txtcocuk2yas: txtcocuk2yas },
+                dataType: "json",
+                beforeSend: function (deger) {
+                    jQuery('#talepformual').hide();
+                    jQuery('#talepformok').hide();
+                    jQuery('#btnoteltalep').hide();
+                    jQuery('#oteltalepyukleniyor').show();
+
+                },
+                success: function (deger) {
+                    if (deger.islem == "true") {
+                        jQuery("#lblotelteklifadsoyad").empty();
+                        jQuery("#lblotelteklifadsoyad").append(txtyolcuadi);
+                        jQuery('#oteltalepyukleniyor').hide();
+                        jQuery('#btnoteltalep').hide();
+                        jQuery('#talepformok').show();
+
+                    }
+                    else {
+                        jQuery('#talepformok').hide();
+                        jQuery('#oteltalepyukleniyor').hide();
+                        jQuery('#btnoteltalep').show();
+                        jQuery('#talepformual').show();
+                        alert("Hata oluştu, lütfen bilgileri kontrol edip tekrar deneyiniz");
+                    }
+                },
+                error: function (deger) {
+                    jQuery('#talepformok').hide();
+                    jQuery('#oteltalepyukleniyor').hide();
+                    jQuery('#btnoteltalep').show();
+                    jQuery('#talepformual').show();
+                    alert("Hata oluştu, lütfen bilgileri kontrol edip tekrar deneyiniz");
+
+                }
+            });
+        }
+        else {
+            alert("Tüm alanların doldurulması zorunludur.");
+        }
+    }
 </script>
