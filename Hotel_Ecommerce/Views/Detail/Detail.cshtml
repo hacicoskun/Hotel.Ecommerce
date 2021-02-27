@@ -176,68 +176,80 @@
                     <label>Rezervasyon Tarihleri</label>
                     <br />
 
-                    <input type="text" class="form-control" id="txtteklifgiriscikistarihi" /><br />
-                    <input type="text" placeholder="Yolcu adı giriniz." maxlength="50" class="form-control" id="txtyolcuadi" /><br />
+                    <input type="text" class="form-control" id="txtteklifgiriscikistarihi" value="@(Session["musterireztarihleri"]==null ? "":Session["musterireztarihleri"].ToString())" /><br />
+                    <input type="text" placeholder="Yolcu adı giriniz." maxlength="50" class="form-control" id="txtyolcuadi" value="@(Session["musteriadi"]==null ? "":Session["musteriadi"].ToString())" /><br />
                     <label>Telefon numaranız</label>
-                    <input type="text" placeholder="Yolcu telefon giriniz." maxlength="20" onkeypress='return event.charCode >= 48 && event.charCode <= 57' class="form-control" id="txtyolcutelefon" /><br />
+                    <input type="text" placeholder="Yolcu telefon giriniz." maxlength="20" onkeypress='return event.charCode >= 48 && event.charCode <= 57' class="form-control" id="txtyolcutelefon" value="@(Session["musteritel"]==null ? "":Session["musteritel"].ToString())"/><br />
                     <label>E mail adresiniz</label>
-                    <input type="email" placeholder="Yolcu Email giriniz" maxlength="100" id="txtyolcuemail" class="form-control" />
+                    <input type="email" placeholder="Yolcu Email giriniz" maxlength="100" id="txtyolcuemail" class="form-control" value="@(Session["musterimail"]==null ? "":Session["musterimail"].ToString())"  />
                     <br />
                     <label>Yetişkin Sayısı</label>
                     <select id="txtteklifysayi" class="form-control">
-                        <option value="1">1 Yetişkin</option>
-                        <option selected="selected" value="2">2 Yetişkin</option>
-                        <option value="3">3 Yetişkin</option>
-                        <option value="4">4 Yetişkin</option>
+                        @for (int i = 0; i < 6; i++)
+                        {
+                            if (Session["musteriyetiskinsayisi"] != null)
+                            {
+                                <option @(Session["musteriyetiskinsayisi"].ToString() == i.ToString() ? "selected" : "") value="@i">@i</option>
+                            }
+                            else
+                            {
+                                <option value="@i">@i</option>
+                            }
+                        }
                     </select><br />
-                    <br />
-                    <br />
+    
+              
 
                     <label>Çocuk Sayısı</label>
-                    <select id="txtteklifcsayi" onclick="teklifcocukvh()" class="form-control">
-                        <option value="0" selected="selected">0 Çocuk</option>
-                        <option value="1">1 Çocuk</option>
-                        <option value="2">2 Çocuk</option>
+                    <select id="txtteklifcsayi"  class="form-control" onchange="mustericocukyas()">
+                    @for (int i = 0; i < 3; i++)
+                    {
+                        if (Session["mustericocuksayisi"] !=null )
+                        {
+                        <option @(Session["mustericocuksayisi"].ToString() == i.ToString() ? "selected" : "") value="@i">@i</option>
+                        }
+                        else
+                        {
+                    <option value="@i">@i</option>
+                        }
+                    }
+                        
 
                     </select><br />
 
-                    <br />
-                    <br />
                     <div id="teklifcocukyaslaridiv">
                         <div id="teklifcocuk1yasdiv">
                             <label>1.Çocuk Yaşı</label>
                             <select id="selectteklifcocuk1yas" class="form-control">
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
+                                @for (int i = 0; i < 12; i++)
+                                {
+                                    if (Session["mustericocuksayisi1"] != null)
+                                    {
+                                        <option @(Session["mustericocuksayisi1"].ToString() == i.ToString() ? "selected" : "") value="@i">@i</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@i">@i</option>
+                                    }
+                                }
 
-                            </select><br />
+                            </select>
                             <br />
                         </div>
                         <div id="teklifcocuk2yasdiv">
                             <label>2.Çocuk Yaşı</label>
                             <select id="selectteklifcocuk2yas" class="form-control">
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
+                                @for (int i = 0; i < 12; i++)
+                                {
+                                    if (Session["mustericocuksayisi2"] != null)
+                                    {
+                                        <option @(Session["mustericocuksayisi2"].ToString() == i.ToString() ? "selected" : "") value="@i">@i</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@i">@i</option>
+                                    }
+                                }
 
                             </select><br />
                             <br />
@@ -276,7 +288,7 @@
                     <div class="col-sm-12">
                         <br />
 
-                        <img src="/ThemeFiles/images/salturyukleniyor.gif" style="display: block; margin: 0 auto;" id="loading-indicator" />
+                        @*<img src="/ThemeFiles/images/salturyukleniyor.gif" style="display: block; margin: 0 auto;" id="loading-indicator" />*@
                         <br />
                         <h4>Lütfen bekleyin..Teklif isteği gönderiliyor..</h4>
 
@@ -305,7 +317,23 @@
    
 </script>
 <script>
-   
+    function mustericocukyas() {
+        var cocuksayisi = jQuery("#txtteklifcsayi").val();
+        if (cocuksayisi == "1") {
+            debugger
+            jQuery("#teklifcocuk1yasdiv").show();
+            jQuery("#teklifcocuk2yasdiv").hide();
+        }
+        else if (cocuksayisi == "2") {
+            jQuery("#teklifcocuk1yasdiv").show();
+            jQuery("#teklifcocuk2yasdiv").show();
+        }
+        else {
+            jQuery("#teklifcocuk1yasdiv").hide();
+            jQuery("#teklifcocuk2yasdiv").hide();
+        }
+
+    }
     function openOtelTeklifAl() {
         jQuery('#ModalTeklifAl').modal('show');
         var currentDay = '@DateTime.Today.ToString("dd/MM/yyyy")';
