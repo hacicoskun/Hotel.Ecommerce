@@ -21,25 +21,11 @@ namespace Hotel_Ecommerce.Controllers
         public ActionResult Filter()
         {
 
-            string OtelveyaBolge = Request.QueryString["OtelveyaBolge"];
-            string GirisTarihi = Request.QueryString["GirisTarihi"];
-            string CikisTarihi = Request.QueryString["CikisTarihi"];
-            string YetiskinSayisi = Request.QueryString["YetiskinSayisi"];
-            string CocukSayisi = Request.QueryString["CocukSayisi"];
-            string CocukYas1 = Request.QueryString["CocukYas1"];
-            string CocukYas2 = Request.QueryString["CocukYas2"];
-
-            Session.Add("otelsecimisession", OtelveyaBolge);
-            Session.Add("giristarihiession", GirisTarihi);
-            Session.Add("cikistarihiession", CikisTarihi);
-            Session.Add("yetiskinsayisisession", YetiskinSayisi);
-            Session.Add("cocuksayisisession", CocukSayisi);
-            Session.Add("cocukyas1session", CocukYas1);
-            Session.Add("cocukyas2session", CocukYas2);
+   
 
             #region Otel Filtre
             FiltreOtel filtreOtel = new FiltreOtel();
-
+             
 
             string otelbolgesi = Request.QueryString["OtelBolgesi"] == null ? "" : Request.QueryString["OtelBolgesi"];
             string otelil = Request.QueryString["Otelil"] == null ? "" : Request.QueryString["Otelil"];
@@ -123,6 +109,19 @@ namespace Hotel_Ecommerce.Controllers
             return View(filtreOtel);
         }
 
+        [Route("arama-sonuclari-session")]
+        public ActionResult SearchResultSetSession(string OtelveyaBolge,string GirisTarihi,string CikisTarihi,string YetiskinSayisi,string CocukSayisi,string CocukYas1,string CocukYas2)
+        {
+
+            Session.Add("otelsecimisession", OtelveyaBolge);
+            Session.Add("giristarihisession", GirisTarihi);
+            Session.Add("cikistarihisession", CikisTarihi);
+            Session.Add("yetiskinsayisisession", YetiskinSayisi);
+            Session.Add("cocuksayisisession", CocukSayisi);
+            Session.Add("cocukyas1session", CocukYas1);
+            Session.Add("cocukyas2session", CocukYas2);
+            return Json(true);
+        }
 
         List<OtelFiltrelenmisListe> filtrelist = new List<OtelFiltrelenmisListe>();
         List<OtelFiltrelenmisListe> FiltreliVeri = new List<OtelFiltrelenmisListe>();

@@ -107,23 +107,36 @@ function OtelAra() {
     var CocukSayisi = tjq("#dropCocukSayisi_MP_cBdLN29i2").val();
     var CocukYas1 = "0";
     var CocukYas2 = "0";
-    if (CocukSayisi == "1") {
+    if (CocukSayisi === "1") {
         CocukYas1 = tjq("#dropCocukYas1 option:selected").val();
     }
-    else if (CocukSayisi == "2") {
+    else if (CocukSayisi === "2") {
         CocukYas1 = tjq("#dropCocukYas1 option:selected").val();
         CocukYas2 = tjq("#dropCocukYas2 option:selected").val();
     }
-    if (OtelveyaBolge.trim() != "" && GirisTarihi.trim() != "" && CikisTarihi.trim() != "" && CikisTarihi.trim() != "" && YetiskinSayisi.trim() != "") {
+    if (OtelveyaBolge.trim() !== "" && GirisTarihi.trim() !== "" && CikisTarihi.trim() !== "" && CikisTarihi.trim() !== "" && YetiskinSayisi.trim() !== "") {
         var type = OtelveyaBolge.split(',').length;
 
         if (!isOtel) {
-            if (type == 2)/*Otel Bölge ve il arama*/ {
-                window.location.href = "/arama-sonuclari?OtelBolgesi=" + OtelveyaBolge.split(',')[1] + " Otelleri&Otelil=" + OtelveyaBolge.split(',')[0].replace(" Otelleri", "").trim();
-            }
-            else if (type == 3)/*Otel Bölge ve il arama*/ {
-                window.location.href = "/arama-sonuclari?OtelBolgesi=" + OtelveyaBolge.split(',')[2] + " Otelleri&Otelil=" + OtelveyaBolge.split(',')[0] + "&Otelilce=" + OtelveyaBolge.split(',')[1].replace(" Otelleri", "").trim();
-            }
+            tjq.ajax({
+                url: "/arama-sonuclari-session",
+                dataType: "json",
+                type:"POST",
+                data: { OtelveyaBolge: OtelveyaBolge, GirisTarihi: GirisTarihi, CikisTarihi: CikisTarihi, YetiskinSayisi: YetiskinSayisi, CocukSayisi: CocukSayisi, CocukYas1: CocukYas1, CocukYas2: CocukYas2 },
+                beforeSend: function () {
+
+                },
+                success: function (item) {
+                     
+                    if (type === 2)/*Otel Bölge ve il arama*/ {
+                        window.location.href = "/arama-sonuclari?OtelBolgesi=" + OtelveyaBolge.split(',')[1] + " Otelleri&Otelil=" + OtelveyaBolge.split(',')[0].replace(" Otelleri", "").trim();
+                    }
+                    else if (type === 3)/*Otel Bölge ve il arama*/ {
+                        window.location.href = "/arama-sonuclari?OtelBolgesi=" + OtelveyaBolge.split(',')[2] + " Otelleri&Otelil=" + OtelveyaBolge.split(',')[0] + "&Otelilce=" + OtelveyaBolge.split(',')[1].replace(" Otelleri", "").trim();
+                    }
+                }
+            });
+            
         }
         else {
             window.location.href = otelLink;
