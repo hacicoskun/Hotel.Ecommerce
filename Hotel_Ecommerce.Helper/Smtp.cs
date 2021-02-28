@@ -41,12 +41,12 @@ namespace Hotel_Ecommerce.Helper
 
             MailMessage mesaj = new MailMessage();
             SmtpClient istemci = new SmtpClient();
-            istemci.Credentials = new System.Net.NetworkCredential("uye@mevsimtazesi.com", "KTfn34H4");
+            istemci.Credentials = new System.Net.NetworkCredential("mail@becomingtur.com", "He9s5BkA");
             istemci.Port = 587;
-            istemci.Host = "mail.mevsimtazesi.com";
-            istemci.EnableSsl = true;
+            istemci.Host = "smtp.becomingtur.com";
+            istemci.EnableSsl = false;
             mesaj.To.Add("gunayozcan06@gmail.com");//kime gönderilecek
-            mesaj.From = new MailAddress("uye@mevsimtazesi.com", "Arama Talebi");
+            mesaj.From = new MailAddress("mail@becomingtur.com", "Arama Talebi");
             mesaj.Subject = "İletişim İsteği";
             mesaj.Body = MailMsg;
             mesaj.IsBodyHtml = true;
