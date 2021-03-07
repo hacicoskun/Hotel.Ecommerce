@@ -5948,7 +5948,7 @@
     <Compile Include="Controllers\CookieController.cs" />
     <Compile Include="Controllers\DetailController.cs" />
     <Compile Include="Controllers\FilterController.cs" />
-    <Compile Include="Controllers\GetTurMenuController.cs" />
+    <Compile Include="Controllers\TurMenuController.cs" />
     <Compile Include="Controllers\GizlilikController.cs" />
     <Compile Include="Controllers\HakkimizdaController.cs" />
     <Compile Include="Controllers\HizmetlerimizController.cs" />
