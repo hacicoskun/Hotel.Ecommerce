@@ -24,10 +24,10 @@ namespace Hotel_Ecommerce.Areas.Admin.Controllers
             var deger = "0";
         
             
-            if (Baslik.Trim()!="" && İcerik.Trim()!="" && !_unitOfWork.TurMenusu.Any(x => x.Baslik == Baslik))
-            {            
-                    TurMenusu turmenusu = new TurMenusu
-                    {
+            if (Baslik.Trim()!="" && İcerik.Trim()!="" && !_unitOfWork.SayfalarMenusu.Any(x => x.Baslik == Baslik))
+            {
+                SayfalarMenusu turmenusu = new SayfalarMenusu
+                {
                         Baslik = Baslik,
                         İcerik = İcerik,
                         CreatedDate = DateTime.Now,
@@ -35,13 +35,13 @@ namespace Hotel_Ecommerce.Areas.Admin.Controllers
                         IsActive = true,
 
                     };
-                    _unitOfWork.TurMenusu.Insert(turmenusu);
+                    _unitOfWork.SayfalarMenusu.Insert(turmenusu);
                     _unitOfWork.Save();
                     deger = "1";
                     return Json(deger);
                 
             }
-            else if (_unitOfWork.TurMenusu.Any(x=>x.Baslik==Baslik))
+            else if (_unitOfWork.SayfalarMenusu.Any(x=>x.Baslik==Baslik))
             {
                 UpdateTurMenu(Baslik, İcerik);
                 deger = "1";
@@ -58,7 +58,7 @@ namespace Hotel_Ecommerce.Areas.Admin.Controllers
         [Route("get-tur-menusu-icerik")]
         public ActionResult GetTurMenu(string Baslik)
           {
-            var deger = _unitOfWork.TurMenusu.FirstOrDefault(x => x.Baslik.ToLower() == Baslik.ToLower()).İcerik;
+            var deger = _unitOfWork.SayfalarMenusu.FirstOrDefault(x => x.Baslik.ToLower() == Baslik.ToLower()).İcerik;
             return Json(deger);
 
         }
@@ -68,13 +68,13 @@ namespace Hotel_Ecommerce.Areas.Admin.Controllers
         {
             var deger = "0";
 
-            if (_unitOfWork.TurMenusu.Any(x=>x.Baslik.ToLower()==Baslik.ToLower()))
+            if (_unitOfWork.SayfalarMenusu.Any(x=>x.Baslik.ToLower()==Baslik.ToLower()))
             {
-                TurMenusu turmenusu = _unitOfWork.TurMenusu.Find(x => x.Baslik == Baslik);
+                SayfalarMenusu turmenusu = _unitOfWork.SayfalarMenusu.Find(x => x.Baslik == Baslik);
                 turmenusu.CreatedDate = DateTime.Now;
                 turmenusu.Baslik = Baslik;
                 turmenusu.İcerik = İcerik;
-                _unitOfWork.TurMenusu.Update(turmenusu);
+                _unitOfWork.SayfalarMenusu.Update(turmenusu);
                 _unitOfWork.Save();
                 deger = "1";
                 return Json(deger);

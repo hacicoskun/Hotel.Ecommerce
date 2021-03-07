@@ -19,7 +19,7 @@ namespace MevsimTazesi.Repository.UnitOfWork
         IYorumlar Yorumlar { get; }
         IOtelTemalari OtelTemalari { get; }
         IOtelTemalariListesi OtelTemalariListesi { get; }
-         ITurMenusu TurMenusu { get; }
+         ISayfalarMenusu SayfalarMenusu { get; }
         int Save();
     }
 }

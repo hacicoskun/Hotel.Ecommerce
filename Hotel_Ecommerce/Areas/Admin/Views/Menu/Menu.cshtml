@@ -12,6 +12,14 @@
         <select class="form-control" id="dropTurType" onchange="funcGetİcerik()">
             <option value="YurticiTurları">Yurtiçi Turlar</option>
             <option value="YurtdisiTurları">Yurtdışı Turlar</option>
+            <option value="Bilet">Bilet</option>
+            <option value="Vize">Vize</option>
+            <option value="Mice">MİCE</option>
+            <option value="Hizmetlerimiz">Hizmetlerimiz</option>
+            <option value="Transfer">Transfer</option>
+            <option value="Cruise">Cruise</option>
+            <option value="OzelYatKiralama">Özel Yat Kiralama</option>
+            <option value="OzelVillaKiralama">Özel Villa Kiralama</option>
             @*<option value="GemiTurları">Gemi Turları</option>
             <option value="MaviTekneTurları">Mavi Tekne Turları</option>*@
         </select>
@@ -20,7 +28,7 @@
 <div class="row">
     <div class="col-xs-12">
         <hr />
-        <label>Tur Menü İçeriği</label>
+        <label>Menü İçeriği</label>
         <input id="ckeditorMenuİcerik" type="hidden" class="ckeditor" name="ckeditorMenuİcerik">
     </div>
 </div>
@@ -101,7 +109,7 @@
             }
         });
     }
-
+ 
     function funcGetİcerik() {
         var Baslik = document.getElementById("dropTurType").value;
         $.ajax({
@@ -120,5 +128,8 @@
         });
     }
 
+    $(document).ready(function () {
+        funcGetİcerik()
+    })
 </script>
 

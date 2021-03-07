@@ -21,7 +21,7 @@ namespace Hotel_Ecommerce.DAL.Context
         public DbSet<OtelTeklifleri> OtelTeklifleri { get; set; }
         public DbSet<SiziArayalim> SiziArayalim { get; set; } 
         public DbSet<Yorumlar> Yorumlar { get; set; }
-        public DbSet<TurMenusu> TurMenusu { get; set; }
+        public DbSet<SayfalarMenusu> SayfalarMenusu { get; set; }
        
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

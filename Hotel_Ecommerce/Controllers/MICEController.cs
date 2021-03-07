@@ -9,7 +9,7 @@ namespace Hotel_Ecommerce.Controllers
     public class MICEController : Controller
     {
         // GET: MICE
-        [Route("MICE")]
+        [Route("old-MICE")]
         public ActionResult MICE()
         {
             return View();
