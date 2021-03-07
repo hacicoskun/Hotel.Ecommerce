@@ -7,17 +7,17 @@ using System.Web.Mvc;
 
 namespace Hotel_Ecommerce.Controllers
 {
-    public class GetTurMenuController : AdminBaseController
+    public class TurMenuController : AdminBaseController
     {
         // GET: GetTurMenu
-        [Route("get-yurtici-tur-menu")]
+        [Route("yurtici-turlar")]
         public ActionResult YurtIciGetTurMenu()
         {
             var values = _unitOfWork.TurMenusu.Find(x => x.Baslik == "YurticiTurları");
             ViewBag.valueIci = values.İcerik;
             return View();
         }
-        [Route("get-yurtdisi-tur-menu")]
+        [Route("yurtdisi-turlar")]
         public ActionResult YurtDisiGetTurMenu()
         {
             var values = _unitOfWork.TurMenusu.Find(x => x.Baslik == "YurtdisiTurları");

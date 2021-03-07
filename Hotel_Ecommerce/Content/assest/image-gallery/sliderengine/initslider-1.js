@@ -20,9 +20,9 @@ jQuery(document).ready(function(){
 
         jsfolder:jsFolder,
 
-        width:760,
+        width:1100,
 
-        height:400,
+        height:500,
 
         skinsfoldername:"",
 
