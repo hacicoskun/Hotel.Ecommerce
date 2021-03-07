@@ -5948,7 +5948,7 @@
     <Compile Include="Controllers\CookieController.cs" />
     <Compile Include="Controllers\DetailController.cs" />
     <Compile Include="Controllers\FilterController.cs" />
-    <Compile Include="Controllers\TurMenuController.cs" />
+    <Compile Include="Controllers\SayfalarMenusuController.cs" />
     <Compile Include="Controllers\GizlilikController.cs" />
     <Compile Include="Controllers\HakkimizdaController.cs" />
     <Compile Include="Controllers\HizmetlerimizController.cs" />
@@ -6915,9 +6915,17 @@
     <Content Include="Views\BecomingTeknik\BecomingTeknik.cshtml" />
     <Content Include="Views\Filter\Filter.cshtml" />
     <Content Include="Views\Detail\Detail.cshtml" />
-    <Content Include="Views\GetTurMenu\YurtIciGetTurMenu.cshtml" />
-    <Content Include="Views\GetTurMenu\YurtDisiGetTurMenu.cshtml" />
+    <Content Include="Views\SayfalarMenusu\YurtIciGetTurMenu.cshtml" />
+    <Content Include="Views\SayfalarMenusu\YurtDisiGetTurMenu.cshtml" />
     <Content Include="Views\MICE\MICE.cshtml" />
+    <Content Include="Views\SayfalarMenusu\BiletGetTurMenu.cshtml" />
+    <Content Include="Views\SayfalarMenusu\VizeGetTurMenu.cshtml" />
+    <Content Include="Views\SayfalarMenusu\MiceGetTurMenu.cshtml" />
+    <Content Include="Views\SayfalarMenusu\HizmetlerimizGetTurMenu.cshtml" />
+    <Content Include="Views\SayfalarMenusu\TransferGetTurMenu.cshtml" />
+    <Content Include="Views\SayfalarMenusu\CruiseGetTurMenu.cshtml" />
+    <Content Include="Views\SayfalarMenusu\OzelYatGetTurMenu.cshtml" />
+    <Content Include="Views\SayfalarMenusu\OzelVillaGetTurMenu.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

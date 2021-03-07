@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 
 namespace Hotel_Ecommerce.DAL.Concrete
 {
-    [Table("TurMenusu")]
-    public class TurMenusu : BaseEntity
+    [Table("SayfalarMenusu")]
+    public class SayfalarMenusu : BaseEntity
     {
         public string Baslik { get; set; }
         public string İcerik { get; set; }

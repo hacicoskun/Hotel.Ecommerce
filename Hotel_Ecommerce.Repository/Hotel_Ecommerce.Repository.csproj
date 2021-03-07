@@ -62,7 +62,7 @@
     <Compile Include="Interfaces\ILoginUsers.cs" />
     <Compile Include="Interfaces\IOtelTemalariListesi.cs" />
     <Compile Include="Interfaces\IOtelTemalari.cs" />
-    <Compile Include="Interfaces\ITurMenusu.cs" />
+    <Compile Include="Interfaces\ISayfalarMenusu.cs" />
     <Compile Include="Interfaces\IYorumlar.cs" />
     <Compile Include="Interfaces\ISiziArayalim.cs" />
     <Compile Include="Interfaces\IOtelTeklifleri.cs" />
@@ -84,7 +84,7 @@
     <Compile Include="Repositories\OtelTemalariListesiRepository.cs" />
     <Compile Include="Repositories\SiziArayalimRepository.cs" />
     <Compile Include="Repositories\OtelTemalariRepository.cs" />
-    <Compile Include="Repositories\TurMenusuRepository.cs" />
+    <Compile Include="Repositories\SayfalarMenusuRepository.cs" />
     <Compile Include="Repositories\YorumlarRepository.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="UnitOfWork\IUnitOfWork.cs" />

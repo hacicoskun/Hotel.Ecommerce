@@ -5,10 +5,10 @@ using Hotel_Ecommerce.Repository.Interfaces;
 namespace Hotel_Ecommerce.Repository.Repositories
 {
 
-    public class TurMenusuRepository : Repository<TurMenusu>, ITurMenusu
+    public class SayfalarMenusuRepository : Repository<SayfalarMenusu>, ISayfalarMenusu
     {
         DatabaseContext _context;
-        public TurMenusuRepository(DatabaseContext db) : base(db)
+        public SayfalarMenusuRepository(DatabaseContext db) : base(db)
         {
             _context = db;
         }
